@@ -42,7 +42,17 @@ export default defineConfig(async () => {
   process.env.MINIFLARE_REGISTRY_PATH ??= '.wrangler/registry';
 
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
-  const { cloudflare } = await import('@cloudflare/vite-plugin');
+  // The preview host runs FreeBSD, which workerd does not distribute a binary
+  // for. Production builds still include the Cloudflare adapter normally.
+  const cloudflarePlugins =
+    process.platform === 'freebsd'
+      ? []
+      : [
+          (await import('@cloudflare/vite-plugin')).cloudflare({
+            viteEnvironment: { name: 'rsc', childEnvironments: ['ssr'] },
+            config: localBindingConfig,
+          }),
+        ];
 
   return {
     css: { postcss: { plugins: [tailwindcss()] } },
@@ -52,10 +62,7 @@ export default defineConfig(async () => {
     plugins: [
       vinext(),
       sites(),
-      cloudflare({
-        viteEnvironment: { name: 'rsc', childEnvironments: ['ssr'] },
-        config: localBindingConfig,
-      }),
+      ...cloudflarePlugins,
     ],
   };
 });
