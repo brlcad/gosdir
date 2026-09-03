@@ -52,7 +52,7 @@ export function SiteHeader() {
         </nav>
         <div className="hidden items-center gap-3 sm:flex">
           <Link href="/contact" className="text-sm font-bold text-ink hover:text-blue">Contact</Link>
-          <Link href="/submit" className="button-primary">
+          <Link href="/contribute" className="button-primary">
             <Plus className="size-4" /> Submit a record
           </Link>
         </div>
@@ -76,7 +76,7 @@ export function SiteHeader() {
             ))}
             <div className="mt-2 grid grid-cols-2 gap-2">
               <Link href="/contact" className="button-secondary justify-center" onClick={() => setOpen(false)}>Contact</Link>
-              <Link href="/submit" className="button-primary justify-center" onClick={() => setOpen(false)}>Submit</Link>
+              <Link href="/contribute" className="button-primary justify-center" onClick={() => setOpen(false)}>Submit</Link>
             </div>
           </div>
         </nav>
@@ -108,7 +108,7 @@ export function SiteFooter() {
             <Link href="/methodology" className="hover:text-white">Methodology</Link>
             <Link href="/glossary" className="hover:text-white">Glossary</Link>
             <Link href="/contact" className="hover:text-white">Contact & corrections</Link>
-            <Link href="/submit" className="hover:text-white">Submit a record</Link>
+            <Link href="/contribute" className="hover:text-white">Submit a record</Link>
           </div>
         </div>
       </div>
@@ -121,4 +121,3 @@ export function SiteFooter() {
     </footer>
   );
 }
-

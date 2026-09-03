@@ -132,7 +132,7 @@ export default function Home() {
             <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight md:text-5xl">Help close the map.</h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-white/75">Submit a repository with sponsor and license evidence. Every record is reviewed before it appears.</p>
           </div>
-          <Link href="/submit" className="button-light">Submit for verification <ArrowRight className="size-4" /></Link>
+          <Link href="/contribute" className="button-light">Submit for verification <ArrowRight className="size-4" /></Link>
         </div>
       </section>
     </main>
