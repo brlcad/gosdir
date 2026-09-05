@@ -1,2 +1,5 @@
 DirectoryIndex index.html
 Options -Indexes
+
+SetEnvIf Request_URI "^/(?:index\.html|favicon\.svg|og\.png|site-assets/[A-Za-z0-9._-]+\.(?:css|js)|(?:contact|contribute|coverage|directory|glossary|methodology|policy|timeline)(?:/index\.html)?/?)?$" gosdir_public
+Require env gosdir_public
