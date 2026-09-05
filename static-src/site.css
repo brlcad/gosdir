@@ -1,0 +1,7 @@
+@import '../app/globals.css';
+@source './**/*.{html,ts,tsx}';
+@source '../components/**/*.{ts,tsx}';
+
+body { min-width: 320px; }
+.route-button { cursor: pointer; }
+.route-button:focus-visible { outline: 3px solid #165dff; outline-offset: 3px; }

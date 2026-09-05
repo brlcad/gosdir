@@ -10,6 +10,7 @@
 
 # testing
 /coverage
+!/coverage/
 
 # next.js
 /.next/
@@ -33,6 +34,7 @@ yarn-error.log*
 .vercel
 next-env.d.ts
 /dist/
+/.apache-build/
 /.wrangler/
 /outputs/
 /work/

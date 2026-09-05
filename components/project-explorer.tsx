@@ -108,7 +108,7 @@ export function ProjectExplorer() {
       </div>
 
       {selected && (
-        <div className="fixed inset-0 z-[80] grid place-items-center bg-ink/60 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="record-title" onMouseDown={(event) => { if (event.target === event.currentTarget) setSelected(null); }}>
+        <dialog open className="fixed inset-0 z-[80] m-0 grid h-full max-h-none w-full max-w-none place-items-center border-0 bg-ink/60 p-4 backdrop-blur-sm" aria-modal="true" aria-labelledby="record-title">
           <article className="max-h-[90vh] w-full max-w-2xl overflow-y-auto bg-white shadow-2xl">
             <div className="flex items-start justify-between border-b border-line bg-paper p-6 sm:p-8">
               <div>
@@ -138,7 +138,7 @@ export function ProjectExplorer() {
               <p className="mt-6 flex items-start gap-2 text-xs leading-5 text-slate"><ShieldCheck className="mt-0.5 size-4 shrink-0 text-green" /> Verified means the launch review found government sponsorship evidence and an eligible license. It is not a security or procurement endorsement.</p>
             </div>
           </article>
-        </div>
+        </dialog>
       )}
     </>
   );
