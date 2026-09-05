@@ -19,3 +19,15 @@ folders.
 Apache should bind both site virtual hosts to `204.109.58.162`, use
 `/usr/web/gosdir.com` as `DocumentRoot`, set `DirectoryIndex index.html`, and
 disable directory indexing with `Options -Indexes`.
+
+The reviewed virtual-host configuration is tracked at
+`deploy/apache/gosdir.conf`. Activating it requires administrator privileges:
+
+```sh
+sudo cp /usr/local/etc/apache24/Includes/gosdir.conf /usr/local/etc/apache24/Includes/gosdir.conf.bak
+sudo install -m 644 /usr/web/gosdir.com/deploy/apache/gosdir.conf /usr/local/etc/apache24/Includes/gosdir.conf
+sudo apachectl configtest
+sudo service apache24 reload
+```
+
+Only reload after the configuration test reports `Syntax OK`.
