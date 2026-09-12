@@ -17,7 +17,7 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
     setPacketUrl(`${ISSUE_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`);
   };
 
-  if (packetUrl) return (
+  const ready = packetUrl ? (
     <div className="border border-green/25 bg-white p-8 text-center shadow-[7px_7px_0_#b8f245] sm:p-12">
       <CheckCircle2 className="mx-auto size-11 text-green" />
       <p className="eyebrow mt-5 text-green">Local validation complete</p>
@@ -29,10 +29,11 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
       </div>
       {mode === 'project' && <a href="/review/" className="mt-7 inline-flex text-sm font-extrabold text-blue hover:text-ink">See how reviewers process submissions →</a>}
     </div>
-  );
+  ) : null;
 
   return (
-    <form onSubmit={onSubmit} className="border border-line bg-white p-6 sm:p-8">
+    <>
+    <form onSubmit={onSubmit} className={`${packetUrl ? 'hidden' : ''} border border-line bg-white p-6 sm:p-8`}>
       {mode === 'project' ? (
         <>
           <div className="flex flex-col gap-5 border-b border-line pb-6 sm:flex-row sm:items-center sm:justify-between">
@@ -60,6 +61,8 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
         </>
       )}
     </form>
+    {ready}
+    </>
   );
 }
 
@@ -71,8 +74,9 @@ function ProjectFields() {
     <Field label="Geography"><input required maxLength={120} name="geography" placeholder="Country, state, or territory" /></Field>
     <Field label="Service domain"><input required maxLength={100} name="domain" placeholder="Cybersecurity, design systems…" /></Field>
     <Field label="SPDX license"><input required maxLength={100} name="license" placeholder="MIT, Apache-2.0, GPL-3.0-only…" /></Field>
-    <Field label="Repository URL" wide><input required type="url" name="repository" placeholder="https://github.com/organization/project" /></Field>
-    <Field label="Official government source" wide><input required type="url" name="officialSource" placeholder="https://agency.gov/program-or-publication" /></Field>
+    <Field label="Project status"><select required name="projectStatus" defaultValue="Active"><option>Active</option><option>Maintained</option><option>Reference</option></select></Field>
+    <Field label="Repository URL" wide><input required type="url" pattern="https?://.*" name="repository" placeholder="https://github.com/organization/project" /></Field>
+    <Field label="Official government source" wide><input required type="url" pattern="https?://.*" name="officialSource" placeholder="https://agency.gov/program-or-publication" /></Field>
     <Field label="Plain-language summary" wide><textarea required maxLength={1200} name="summary" rows={4} placeholder="What does the software do and who can learn from or reuse it?" /></Field>
     <Field label="Why it belongs" wide><textarea required maxLength={1800} name="notes" rows={5} placeholder="Explain exactly how the official source establishes direct government sponsorship, commissioning, or stewardship." /></Field>
   </div>;
@@ -83,10 +87,10 @@ function PolicyFields() {
     <Field label="Policy title" wide><input required maxLength={220} name="policyTitle" placeholder="Full official title" /></Field>
     <Field label="Issuing body"><input required maxLength={180} name="issuer" placeholder="Legislature, executive office, agency…" /></Field>
     <Field label="Geography"><input required maxLength={120} name="geography" placeholder="Country, state, or jurisdiction" /></Field>
-    <Field label="Year"><input required type="number" min="1980" max="2100" name="year" placeholder="2026" /></Field>
+    <Field label="Year"><input required type="text" pattern="(?:[0-9]{4}|Undated)" title="Enter a four-digit year or Undated" name="year" placeholder="2026 or Undated" /></Field>
     <Field label="Instrument type"><select required name="instrumentType" defaultValue=""><option value="" disabled>Select one</option><option>Law</option><option>Regulation</option><option>Executive action</option><option>Policy memorandum</option><option>Administrative policy</option><option>Strategy</option><option>Standard</option><option>Implementation guidance</option><option>Research / reference</option></select></Field>
     <Field label="Status"><select required name="status" defaultValue="Current"><option>Current</option><option>Reference</option><option>Superseded</option></select></Field>
-    <Field label="Primary source" wide><input required type="url" name="primarySource" placeholder="https://official-government-source.example/policy" /></Field>
+    <Field label="Primary source" wide><input required type="url" pattern="https?://.*" name="primarySource" placeholder="https://official-government-source.example/policy" /></Field>
     <Field label="Plain-language summary" wide><textarea required maxLength={1400} name="summary" rows={5} placeholder="What does it require, authorize, recommend, or document? Avoid implying more than the source says." /></Field>
     <Field label="Why it belongs" wide><textarea required maxLength={1400} name="notes" rows={4} placeholder="Explain its direct relevance to government open source use, contribution, release, procurement, or stewardship." /></Field>
   </div>;
@@ -104,6 +108,7 @@ function projectPacket(form: FormData) {
       ['Service domain', value(form, 'domain')],
       ['Repository', value(form, 'repository')],
       ['Official source', value(form, 'officialSource')],
+      ['Project status', value(form, 'projectStatus')],
       ['SPDX license', value(form, 'license')],
       ['Summary', value(form, 'summary')],
       ['Why it belongs', value(form, 'notes')],

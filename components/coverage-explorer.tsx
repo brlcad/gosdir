@@ -20,7 +20,7 @@ const federalAgencies = [
   ['DOL', 'Department of Labor'], ['ED', 'Department of Education'], ['EPA', 'Environmental Protection Agency'], ['STATE', 'Department of State'],
 ];
 const sponsorMatches: Record<string, string[]> = {
-  GSA: ['General Services Administration'], DOD: ['Department of Defense'], NASA: ['National Aeronautics'], NIST: ['National Institute'], DOE: ['Department of Energy'], VA: ['Veterans Affairs'], HHS: ['Health', 'CMS'], USDA: ['Agriculture'], DOC: ['Commerce'], DHS: ['Homeland'], DOI: ['Interior'], DOJ: ['Justice'], DOL: ['Labor'], ED: ['Education'], EPA: ['Environmental'], STATE: ['Department of State'],
+  GSA: ['General Services Administration'], DOD: ['Department of Defense', 'National Security Agency', 'NSA', 'Army', 'Air Force', 'TAK Product Center', 'National Geospatial-Intelligence Agency'], NASA: ['National Aeronautics'], NIST: ['National Institute'], DOE: ['Department of Energy'], VA: ['Veterans Affairs'], HHS: ['Health', 'CMS'], USDA: ['Agriculture'], DOC: ['Commerce'], DHS: ['Homeland'], DOI: ['Interior'], DOJ: ['Justice'], DOL: ['Labor'], ED: ['Education'], EPA: ['Environmental'], STATE: ['Department of State'],
 };
 const countries = [
   { code: 'CA', name: 'Canada', left: 19, top: 29 }, { code: 'US', name: 'United States', left: 24, top: 42 }, { code: 'UK', name: 'United Kingdom', left: 47, top: 27 },

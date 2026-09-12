@@ -3,10 +3,10 @@ import { PageIntro } from '@/components/page-intro';
 import { officialSources } from '@/lib/data';
 
 const criteria = [
-  ['01', 'Public sponsor', 'A government body or government-established delivery organization must directly sponsor, commission, or steward the work.'],
+  ['01', 'Government provenance', 'Official evidence must show that government created, commissioned, funded, sponsored, or directly stewarded the work; government use alone does not qualify.'],
   ['02', 'Public source', 'The canonical source repository must be accessible without an account or special permission.'],
   ['03', 'Eligible license', 'The project must use an OSI-approved license or carry a clear public-domain dedication. Source-available terms do not qualify.'],
-  ['04', 'Primary evidence', 'An official government page, verified organization, policy, or procurement record must establish sponsorship.'],
+  ['04', 'Primary evidence', 'An official government page, verified organization, policy, repository, or procurement record must establish that relationship.'],
 ];
 
 const pipeline = [

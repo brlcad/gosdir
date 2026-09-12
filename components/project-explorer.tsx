@@ -88,7 +88,7 @@ export function ProjectExplorer() {
                   <span className="rounded-full bg-paper px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[.08em] text-slate">{project.jurisdiction}</span>
                 </div>
                 <div className="mt-6 border-t border-line pt-5">
-                  <p className="eyebrow text-slate">Sponsor</p>
+                  <p className="eyebrow text-slate">Sponsor / provenance</p>
                   <p className="mt-1 text-sm font-bold text-ink">{project.sponsor}</p>
                 </div>
                 <button type="button" className="mt-6 flex w-full items-center justify-between border-t border-line pt-5 text-sm font-extrabold text-blue hover:text-ink" onClick={() => setSelected(project)}>
@@ -121,7 +121,7 @@ export function ProjectExplorer() {
               <p className="text-base leading-7 text-slate">{selected.summary}</p>
               <dl className="mt-8 grid gap-px border border-line bg-line sm:grid-cols-2">
                 {[
-                  ['Government sponsor', selected.sponsor],
+                  ['Sponsor / provenance', selected.sponsor],
                   ['Jurisdiction', `${selected.jurisdiction} · ${selected.geography}`],
                   ['License', selected.license],
                   ['Service domain', selected.domain],
@@ -134,8 +134,9 @@ export function ProjectExplorer() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href={selected.repository} target="_blank" rel="noreferrer" className="button-primary justify-center"><Code2 className="size-4" /> Open repository</a>
                 <a href={selected.officialUrl} target="_blank" rel="noreferrer" className="button-secondary justify-center">Official project page <ArrowUpRight className="size-4" /></a>
+                {selected.evidenceUrl && <a href={selected.evidenceUrl} target="_blank" rel="noreferrer" className="button-secondary justify-center">Provenance evidence <ArrowUpRight className="size-4" /></a>}
               </div>
-              <p className="mt-6 flex items-start gap-2 text-xs leading-5 text-slate"><ShieldCheck className="mt-0.5 size-4 shrink-0 text-green" /> Verified means the launch review found government sponsorship evidence and an eligible license. It is not a security or procurement endorsement.</p>
+              <p className="mt-6 flex items-start gap-2 text-xs leading-5 text-slate"><ShieldCheck className="mt-0.5 size-4 shrink-0 text-green" /> Verified means the review found documented government provenance and an eligible license. It is not a security or procurement endorsement.</p>
             </div>
           </article>
         </dialog>

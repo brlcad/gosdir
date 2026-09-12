@@ -1,3 +1,5 @@
+import { officialSourceExpansion, policyExpansion, projectExpansion, timelineExpansion } from './catalog-expansion';
+
 export type Jurisdiction = 'U.S. federal' | 'U.S. state' | 'International';
 
 export type Project = {
@@ -11,6 +13,7 @@ export type Project = {
   license: string;
   repository: string;
   officialUrl: string;
+  evidenceUrl?: string;
   status: 'Active' | 'Maintained' | 'Reference';
   featured?: boolean;
   verified: string;
@@ -298,9 +301,11 @@ export const projects: Project[] = [
   },
 ];
 
+projects.push(...projectExpansion);
+
 export type Policy = {
   id: string;
-  year: number;
+  year: number | 'Undated';
   title: string;
   issuer: string;
   geography: string;
@@ -320,9 +325,9 @@ export const policies: Policy[] = [
     geography: 'United States',
     type: 'Memorandum',
     status: 'Current',
-    summary: 'Establishes government-wide source-code reuse and the federal open source pilot that led to Code.gov.',
+    summary: 'Establishes government-wide source-code reuse and the three-year open source pilot that led to Code.gov; the pilot period elapsed, while the broader reuse and publication direction remains operative.',
     url: 'https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m_16_21.pdf',
-    reviewed: '2026-09-03',
+    reviewed: '2026-09-12',
   },
   {
     id: 'dod-2022',
@@ -410,7 +415,17 @@ export const policies: Policy[] = [
   },
 ];
 
-export const timeline = [
+policies.push(...policyExpansion);
+
+export type TimelineEvent = {
+  year: string;
+  title: string;
+  body: string;
+  projectId?: string;
+  policyId?: string;
+};
+
+export const timeline: TimelineEvent[] = [
   { year: '1998', title: 'Open Source Definition becomes the common license test', body: 'OSI establishes a durable, public standard for software freedom and approved licenses.', policyId: 'osi-licenses' },
   { year: '2001', title: 'Estonia launches X-Road', body: 'A national data exchange foundation becomes a long-running example of reusable public infrastructure.', projectId: 'x-road' },
   { year: '2011', title: 'UK policy shifts toward open delivery', body: 'Government digital practice makes open source and code publication part of mainstream service delivery.' },
@@ -422,6 +437,9 @@ export const timeline = [
   { year: '2024', title: 'Interoperable Europe Act enters into force', body: 'European public administrations gain a shared legal framework for interoperable solutions.', policyId: 'interoperable-europe' },
   { year: '2026', title: 'European Commission refreshes open source strategy', body: 'The Commission links public-sector reuse, digital commons, and strategic technology capacity.', policyId: 'eu-open-source' },
 ];
+
+timeline.push(...timelineExpansion);
+timeline.sort((left, right) => Number(left.year) - Number(right.year));
 
 export const glossary = [
   { term: 'Code inventory', definition: 'A machine-readable or human-readable catalog of software owned, commissioned, or maintained by an organization.' },
@@ -447,3 +465,4 @@ export const officialSources = [
   { label: 'OSI license list', url: 'https://opensource.org/licenses', note: 'Canonical license eligibility reference' },
 ];
 
+officialSources.push(...officialSourceExpansion);

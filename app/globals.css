@@ -203,3 +203,20 @@ button, input, textarea, select { font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+@media print {
+  @page { margin: 0.55in; }
+  html { scroll-behavior: auto; font-size: 11px; }
+  body { background: white; color: #111b34; }
+  .site-header, .site-footer, .print\:hidden { display: none !important; }
+  .page-shell { width: 100%; max-width: none; padding-inline: 0; }
+  aside { position: static !important; }
+  article, ol > li, .timeline-event { break-inside: avoid; }
+  .bg-ink { background: white !important; border-color: #5f6878 !important; }
+  .bg-ink, .bg-ink * { color: #111b34 !important; }
+  a { color: #165dff !important; text-decoration: underline; }
+  button { box-shadow: none !important; }
+  .shadow-2xl, [class*="shadow-"] { box-shadow: none !important; }
+  .lg\:sticky { position: static !important; }
+  section { padding-block: 0.2in !important; }
+}

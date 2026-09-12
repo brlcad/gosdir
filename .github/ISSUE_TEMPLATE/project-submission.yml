@@ -1,8 +1,6 @@
 name: Submit a project record
 description: Propose government-sponsored open source software for editorial review.
 title: "[submission: project] "
-labels:
-  - submission
 body:
   - type: markdown
     attributes:
@@ -37,6 +35,24 @@ body:
     attributes:
       label: Geography
       placeholder: Country, state, or territory
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: Service domain
+      placeholder: Cybersecurity, design systems, geospatial…
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Project status
+      description: Choose the most accurate current stewardship posture.
+      options:
+        - Active
+        - Maintained
+        - Reference
     validations:
       required: true
   - type: input

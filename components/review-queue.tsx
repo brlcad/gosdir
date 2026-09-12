@@ -86,7 +86,12 @@ export function ReviewQueue() {
   useEffect(() => {
     try {
       const saved = window.localStorage.getItem(STORAGE_KEY);
-      if (saved) setChecks(JSON.parse(saved) as SavedChecks);
+      if (saved) {
+        const parsed = JSON.parse(saved) as unknown;
+        if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+          setChecks(Object.fromEntries(Object.entries(parsed).filter(([key, value]) => /^\d+$/.test(key) && Array.isArray(value)).map(([key, value]) => [key, value.slice(0, 5).map(Boolean)])));
+        }
+      }
     } catch {
       // Local review state is an enhancement; the shared GitHub queue still works without it.
     }
@@ -125,6 +130,7 @@ export function ReviewQueue() {
   };
 
   const copyDraft = async (issue: GitHubIssue) => {
+    if (validationFor(issue).length) return;
     try {
       await navigator.clipboard.writeText(JSON.stringify(recordDraft(issue), null, 2));
       setCopied(true);
@@ -158,8 +164,10 @@ export function ReviewQueue() {
         <button type="button" onClick={() => void loadQueue()} className="button-secondary justify-center" disabled={loading}><RefreshCw className={`size-4 ${loading ? 'animate-spin' : ''}`} /> Refresh</button>
       </div>
 
+      {error && issues.length > 0 && <div role="alert" className="mt-4 flex items-start gap-3 border-l-4 border-amber-500 bg-amber-50 p-4 text-sm leading-6 text-amber-950"><AlertTriangle className="mt-0.5 size-5 shrink-0" /><p><strong>Refresh failed.</strong> {error} The last loaded queue remains visible.</p></div>}
+
       {loading && !issues.length ? (
-        <div className="mt-6 grid min-h-72 place-items-center border border-line bg-white text-center"><div><Loader2 className="mx-auto size-8 animate-spin text-blue" /><p className="mt-4 text-sm font-bold text-ink">Loading the public queue…</p></div></div>
+        <div role="status" aria-live="polite" className="mt-6 grid min-h-72 place-items-center border border-line bg-white text-center"><div><Loader2 className="mx-auto size-8 animate-spin text-blue" /><p className="mt-4 text-sm font-bold text-ink">Loading the public queue…</p></div></div>
       ) : error && !issues.length ? (
         <QueueMessage icon={<AlertTriangle className="size-8 text-blue" />} title="The embedded queue is temporarily unavailable" body={`${error} You can continue reviewing on GitHub; no submissions or checklist data were changed.`} action={<a href={QUEUE_URL} target="_blank" rel="noreferrer" className="button-primary">Open GitHub queue <ExternalLink className="size-4" /></a>} />
       ) : !issues.length ? (
@@ -171,7 +179,7 @@ export function ReviewQueue() {
           <div className="grid max-h-[760px] gap-2 overflow-y-auto pr-1" aria-label="Open submissions">
             {filtered.map((issue) => {
               const progress = progressFor(issue);
-              return <button type="button" key={issue.number} onClick={() => { setSelectedNumber(issue.number); setCopied(false); }} className={`border bg-white p-5 text-left transition-all hover:border-blue hover:shadow-[4px_4px_0_#b8f245] ${selected?.number === issue.number ? 'border-blue shadow-[4px_4px_0_#b8f245]' : 'border-line'}`}>
+              return <button type="button" key={issue.number} aria-pressed={selected?.number === issue.number} onClick={() => { setSelectedNumber(issue.number); setCopied(false); }} className={`border bg-white p-5 text-left transition-all hover:border-blue hover:shadow-[4px_4px_0_#b8f245] ${selected?.number === issue.number ? 'border-blue shadow-[4px_4px_0_#b8f245]' : 'border-line'}`}>
                 <span className="flex items-center justify-between gap-3"><span className="license-pill">{kindFor(issue)}</span><span className="font-mono text-[11px] font-bold text-slate">#{issue.number}</span></span>
                 <strong className="mt-4 block font-display text-lg leading-6 tracking-tight text-ink">{cleanTitle(issue.title)}</strong>
                 <span className="mt-3 flex items-center justify-between gap-3 text-xs text-slate"><span>@{issue.user?.login ?? 'unknown'}</span><span>{progress.complete}/{progress.total} checked</span></span>
@@ -184,7 +192,7 @@ export function ReviewQueue() {
         </div>
       )}
 
-      <div className="mt-6 flex items-start gap-3 border-l-4 border-signal bg-white p-5 text-sm leading-6 text-slate"><ShieldCheck className="mt-0.5 size-5 shrink-0 text-green" /><p><strong className="text-ink">Security boundary:</strong> issue text is displayed as plain text, links are limited to HTTP(S), and the checklist stays in this browser. Approval, discussion, and closing remain authenticated GitHub actions; publication still requires a reviewed code change.</p></div>
+      <div className="mt-6 flex items-start gap-3 border-l-4 border-signal bg-white p-5 text-sm leading-6 text-slate"><ShieldCheck className="mt-0.5 size-5 shrink-0 text-green" /><p><strong className="text-ink">Security and privacy boundary:</strong> issue text is displayed as plain text, links are limited to HTTP(S), and the checklist stays in this browser. Loading this embedded view requests public issue data directly from GitHub. Approval, discussion, and closing remain authenticated GitHub actions; publication still requires a reviewed code change.</p></div>
     </section>
   );
 }
@@ -194,6 +202,8 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
   const checklist = checklistFor(issue);
   const complete = checked.filter(Boolean).length;
   const ready = complete === checklist.length;
+  const problems = validationFor(issue);
+  const canCopy = ready && problems.length === 0;
   return <article className="border border-line bg-white">
     <header className="border-b border-line bg-paper p-6 sm:p-8">
       <div className="flex flex-wrap items-center gap-2"><span className="license-pill">{kindFor(issue)} submission</span><span className={ready ? 'status-pill' : 'rounded-full border border-line bg-white px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[.08em] text-slate'}>{ready ? 'checklist ready' : `${complete} of ${checklist.length} checks`}</span><span className="ml-auto font-mono text-xs font-bold text-slate">#{issue.number}</span></div>
@@ -204,18 +214,21 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
     <div className="p-6 sm:p-8">
       {Object.keys(fields).length > 0 && <dl className="grid gap-px border border-line bg-line sm:grid-cols-2">{Object.entries(fields).map(([label, value]) => <div key={label} className={label === 'Summary' || label === 'Why it belongs' ? 'bg-white p-4 sm:col-span-2' : 'bg-white p-4'}><dt className="eyebrow text-slate">{label}</dt><dd className="mt-2 break-words text-sm font-semibold leading-6 text-ink">{safeUrl(value) ? <a href={value} target="_blank" rel="noreferrer" className="text-blue underline decoration-blue/30 underline-offset-4 hover:text-ink">{value} ↗</a> : value}</dd></div>)}</dl>}
 
+      {problems.length > 0 && <div role="alert" className="mt-5 border-l-4 border-amber-500 bg-amber-50 p-4 text-sm leading-6 text-amber-950"><strong>Draft blocked:</strong> {problems.join(' ')}</div>}
+
       <div className="mt-8">
         <div className="flex items-end justify-between gap-4"><div><p className="eyebrow text-blue">Editorial checklist</p><h4 className="mt-2 font-display text-xl font-black tracking-tight">Prove each claim before drafting.</h4></div><span className="font-mono text-xs font-bold text-slate">Saved on this device</span></div>
-        <div className="mt-5 grid gap-2">{checklist.map((label, index) => <label key={label} className={`flex cursor-pointer items-start gap-3 border p-4 text-sm font-bold leading-6 transition-colors ${checked[index] ? 'border-green/25 bg-green/5 text-green' : 'border-line bg-paper text-ink hover:border-blue'}`}><input type="checkbox" checked={Boolean(checked[index])} onChange={() => toggleCheck(issue, index)} className="sr-only" /><span className="grid size-6 shrink-0 place-items-center rounded-full border border-current">{checked[index] && <Check className="size-3.5" />}</span><span>{label}</span></label>)}</div>
+        <div className="mt-5 grid gap-2">{checklist.map((label, index) => <label key={label} className={`flex cursor-pointer items-start gap-3 border p-4 text-sm font-bold leading-6 text-ink transition-colors focus-within:ring-2 focus-within:ring-blue focus-within:ring-offset-2 ${checked[index] ? 'border-green/25 bg-green/5' : 'border-line bg-paper hover:border-blue'}`}><input type="checkbox" checked={Boolean(checked[index])} onChange={() => toggleCheck(issue, index)} className="sr-only" /><span className="grid size-6 shrink-0 place-items-center rounded-full border border-green text-green">{checked[index] && <Check className="size-3.5" />}</span><span>{label}</span></label>)}</div>
       </div>
 
       <details className="mt-8 border border-line bg-paper p-5"><summary className="cursor-pointer text-sm font-extrabold text-ink">View raw submission text</summary><pre className="mt-4 whitespace-pre-wrap break-words font-sans text-xs leading-6 text-slate">{issue.body || 'No issue body was provided.'}</pre></details>
 
       <div className="mt-8 flex flex-col gap-3 border-t border-line pt-6 sm:flex-row">
         <a href={issue.html_url} target="_blank" rel="noreferrer" className="button-primary justify-center"><Github className="size-4" /> Discuss on GitHub</a>
-        <button type="button" onClick={() => void copyDraft(issue)} className="button-secondary justify-center"><Clipboard className="size-4" /> {copied ? 'Draft copied' : 'Copy record draft'}</button>
+        <button type="button" onClick={() => void copyDraft(issue)} disabled={!canCopy} title={!ready ? 'Complete the editorial checklist first' : problems[0]} className="button-secondary justify-center disabled:cursor-not-allowed disabled:opacity-45"><Clipboard className="size-4" /> {copied ? 'Draft copied' : 'Copy record draft'}</button>
+        <span className="sr-only" aria-live="polite">{copied ? 'Record draft copied to the clipboard.' : ''}</span>
       </div>
-      {ready && <p className="mt-5 flex items-start gap-2 border-l-4 border-green bg-green/5 p-4 text-sm leading-6 text-slate"><CheckCircle2 className="mt-0.5 size-5 shrink-0 text-green" /><span><strong className="text-ink">Ready for an editor decision.</strong> Record completion here does not approve or publish it; leave the evidence decision on GitHub and ship accepted data through normal review.</span></p>}
+      {canCopy && <p className="mt-5 flex items-start gap-2 border-l-4 border-green bg-green/5 p-4 text-sm leading-6 text-slate"><CheckCircle2 className="mt-0.5 size-5 shrink-0 text-green" /><span><strong className="text-ink">Ready for an editor decision.</strong> Record completion here does not approve or publish it; leave the evidence decision on GitHub and ship accepted data through normal review.</span></p>}
     </div>
   </article>;
 }
@@ -250,8 +263,8 @@ function fieldsFor(issue: GitHubIssue) {
     ]
     : [
       ['Project name', ['Project name']], ['Government sponsor', ['Government sponsor']], ['Geography', ['Geography']],
-      ['Jurisdiction', ['Jurisdiction']], ['Service domain', ['Service domain']], ['Repository', ['Repository', 'Canonical repository']],
-      ['Official source', ['Official source']], ['License', ['SPDX license', 'SPDX license or public-domain basis']],
+      ['Jurisdiction', ['Jurisdiction']], ['Service domain', ['Service domain']], ['Project status', ['Project status']],
+      ['Repository', ['Repository', 'Canonical repository']], ['Official source', ['Official source']], ['License', ['SPDX license', 'SPDX license or public-domain basis']],
       ['Summary', ['Summary', 'Summary and evidence']], ['Why it belongs', ['Why it belongs']],
     ];
   return Object.fromEntries(definitions.map(([label, aliases]) => [label, aliases.map((heading) => fieldValue(issue.body, heading)).find(Boolean) ?? '']).filter(([, value]) => value)) as Record<string, string>;
@@ -261,11 +274,30 @@ function safeUrl(value: string) {
   try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol); } catch { return false; }
 }
 
+function validationFor(issue: GitHubIssue) {
+  const fields = fieldsFor(issue);
+  const required = kindFor(issue) === 'policy'
+    ? ['Policy title', 'Issuer', 'Geography', 'Year', 'Instrument type', 'Status', 'Primary source', 'Summary']
+    : ['Project name', 'Government sponsor', 'Geography', 'Jurisdiction', 'Service domain', 'Project status', 'Repository', 'Official source', 'License', 'Summary'];
+  const missing = required.filter((field) => !fields[field]);
+  const problems: string[] = [];
+  if (missing.length) problems.push(`Missing ${missing.join(', ')}.`);
+  if (kindFor(issue) === 'policy' && fields.Year && !/^(?:\d{4}|Undated)$/i.test(fields.Year)) problems.push('Year must be four digits or “Undated”.');
+  const urlFields = kindFor(issue) === 'policy' ? ['Primary source'] : ['Repository', 'Official source'];
+  const invalidUrls = urlFields.filter((field) => fields[field] && !safeUrl(fields[field]));
+  if (invalidUrls.length) problems.push(`${invalidUrls.join(' and ')} must use an HTTP(S) URL.`);
+  if (fields['Project status'] && !['Active', 'Maintained', 'Reference'].includes(fields['Project status'])) problems.push('Project status is not recognized.');
+  if (kindFor(issue) === 'policy' && fields.Status && !['Current', 'Reference', 'Superseded'].includes(fields.Status)) problems.push('Policy status is not recognized.');
+  if (fields.Jurisdiction && !['U.S. federal', 'U.S. state', 'International'].includes(fields.Jurisdiction)) problems.push('Jurisdiction is not recognized.');
+  return problems;
+}
+
 function recordDraft(issue: GitHubIssue) {
   const isPolicy = kindFor(issue) === 'policy';
+  const policyYear = fieldValue(issue.body, 'Year');
   if (isPolicy) return {
     id: slugify(fieldValue(issue.body, 'Policy title') || cleanTitle(issue.title)),
-    year: Number(fieldValue(issue.body, 'Year')) || new Date().getUTCFullYear(),
+    year: /^undated$/i.test(policyYear) ? 'Undated' : Number(policyYear),
     title: fieldValue(issue.body, 'Policy title') || cleanTitle(issue.title),
     issuer: fieldValue(issue.body, 'Issuer'),
     geography: fieldValue(issue.body, 'Geography'),
@@ -287,7 +319,7 @@ function recordDraft(issue: GitHubIssue) {
     license: firstField(issue.body, ['SPDX license', 'SPDX license or public-domain basis']),
     repository: firstField(issue.body, ['Repository', 'Canonical repository']),
     officialUrl: fieldValue(issue.body, 'Official source'),
-    status: 'Reference',
+    status: fieldValue(issue.body, 'Project status') || 'Reference',
     verified: new Date().toISOString().slice(0, 10),
     tags: [],
   };

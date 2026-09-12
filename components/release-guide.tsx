@@ -25,7 +25,7 @@ const lenses: Record<Lens, { label: string; heading: string; body: React.ReactNo
   federal: {
     label: 'U.S. federal',
     heading: 'Separate employee work from third-party code.',
-    body: <>Works created by U.S. federal employees as part of official duties generally lack domestic copyright protection under <a href="https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title17-section105" target="_blank" rel="noreferrer">17 U.S.C. § 105 ↗</a>. Contractor, grantee, partner, and pre-existing code can carry different rights. A clear public-domain notice may fit wholly federal work; mixed works need an authorized license and rights analysis.</>,
+    body: <>Works created by U.S. federal employees as part of official duties generally lack domestic copyright protection under <a href="https://uscode.house.gov/view.xhtml?req=%28title%3A17%20section%3A105%20edition%3Aprelim%29" target="_blank" rel="noreferrer">17 U.S.C. § 105 ↗</a>. Contractor, grantee, partner, and pre-existing code can carry different rights. A clear public-domain notice may fit wholly federal work; mixed works need an authorized license and rights analysis.</>,
   },
   state: {
     label: 'U.S. state / local',
@@ -90,7 +90,7 @@ const steps = [
   {
     number: '05',
     icon: FileCheck2,
-    label: 'Decision gate',
+    label: 'License control',
     title: 'Can you grant recipients clear, open reuse rights?',
     body: 'Use a standard OSI-approved license when the organization controls licensable copyright. Check compatibility with inbound code and dependencies, procurement terms, patent needs, and contribution model. For material that is genuinely public domain, publish a precise notice explaining the basis and treatment outside the home jurisdiction.',
     evidence: ['License decision and approver', 'Compatibility review', 'SPDX identifiers and notices'],
@@ -107,7 +107,7 @@ const steps = [
   {
     number: '07',
     icon: KeyRound,
-    label: 'Decision gate',
+    label: 'Approval control',
     title: 'Have all required officials approved this exact release?',
     body: 'Route the final candidate through the reviews your organization requires. Common sign-offs include the program owner, counsel or intellectual-property office, security and public-release authority, privacy, export control, records, accessibility, procurement, and communications or trademark teams.',
     evidence: ['Final source hash or tag', 'Recorded approvals', 'Approved public description'],
@@ -134,7 +134,7 @@ export function ReleaseGuide() {
   return <>
     <section className="border-b border-line bg-white">
       <div className="page-shell py-12 lg:py-16">
-        <div className="flex flex-wrap items-end justify-between gap-5"><div><p className="eyebrow text-blue">The reusable release path</p><h2 className="mt-3 max-w-3xl font-display text-3xl font-black tracking-[-.045em] text-ink sm:text-5xl">Two gates before the green light.</h2></div><button type="button" onClick={() => window.print()} className="button-secondary print:hidden"><Printer className="size-4" /> Print this guide</button></div>
+        <div className="flex flex-wrap items-end justify-between gap-5"><div><p className="eyebrow text-blue">The reusable release path</p><h2 className="mt-3 max-w-3xl font-display text-3xl font-black tracking-[-.045em] text-ink sm:text-5xl">Clear the stop gates. Then earn the green light.</h2></div><button type="button" onClick={() => window.print()} className="button-secondary print:hidden"><Printer className="size-4" /> Print this guide</button></div>
 
         <div className="mt-9 grid gap-2 lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] lg:items-stretch" aria-label="Release decision flow">
           <FlowNode label="Start" title="Define the release" detail="owner · scope · outcome" />
@@ -157,7 +157,7 @@ export function ReleaseGuide() {
       <div className="grid gap-8 lg:grid-cols-[300px_1fr] lg:items-start">
         <aside className="border border-line bg-ink p-6 text-white lg:sticky lg:top-24">
           <p className="eyebrow text-signal">Choose your legal lens</p>
-          <div className="mt-5 grid gap-2" role="tablist" aria-label="Jurisdiction lens">{(Object.keys(lenses) as Lens[]).map((key) => <button key={key} type="button" role="tab" aria-selected={lens === key} onClick={() => setLens(key)} className={`border px-4 py-3 text-left text-sm font-extrabold ${lens === key ? 'border-signal bg-signal text-ink' : 'border-white/15 text-white/70 hover:border-white/45 hover:text-white'}`}>{lenses[key].label}</button>)}</div>
+          <div className="mt-5 grid gap-2" aria-label="Jurisdiction lens">{(Object.keys(lenses) as Lens[]).map((key) => <button key={key} type="button" aria-pressed={lens === key} onClick={() => setLens(key)} className={`border px-4 py-3 text-left text-sm font-extrabold ${lens === key ? 'border-signal bg-signal text-ink' : 'border-white/15 text-white/70 hover:border-white/45 hover:text-white'}`}>{lenses[key].label}</button>)}</div>
           <div className="mt-6 border-t border-white/15 pt-6"><h3 className="font-display text-xl font-black tracking-tight">{lenses[lens].heading}</h3><p className="mt-3 text-sm leading-6 text-white/65 [&_a]:font-bold [&_a]:text-signal [&_a]:underline [&_a]:underline-offset-4">{lenses[lens].body}</p></div>
           <div className="mt-6 flex items-start gap-2 border-l-2 border-signal pl-3 text-xs leading-5 text-white/55"><AlertTriangle className="mt-0.5 size-4 shrink-0 text-signal" /> This guide is orientation, not legal authorization. Follow the controlling law, contract, policy, and designated reviewers for your organization.</div>
         </aside>
@@ -172,7 +172,7 @@ export function ReleaseGuide() {
       <div className="page-shell py-14 lg:py-20">
         <div className="grid gap-9 lg:grid-cols-[.65fr_1.35fr]">
           <div><p className="eyebrow text-blue">Working checklist</p><h2 className="section-title">Build the release packet.</h2><p className="mt-5 text-base leading-7 text-slate">Checkmarks stay only for this page visit. They help organize evidence; they are not approvals.</p><div className="mt-7 border border-line bg-paper p-5"><div className="flex items-center justify-between gap-4"><span className="font-display text-3xl font-black text-ink">{percent}%</span><button type="button" onClick={reset} className="text-sm font-extrabold text-blue hover:text-ink">Reset</button></div><div className="mt-4 h-2 overflow-hidden rounded-full bg-line"><div className="h-full bg-blue transition-[width]" style={{ width: `${percent}%` }} /></div><p className="mt-3 font-mono text-[11px] font-bold uppercase tracking-[.1em] text-slate">{complete} of {releaseChecks.length} prepared</p></div></div>
-          <div className="grid gap-2">{releaseChecks.map((label, index) => <label key={label} className={`flex cursor-pointer items-start gap-3 border p-4 text-sm font-bold leading-6 ${checked[index] ? 'border-green/25 bg-green/5 text-green' : 'border-line bg-paper text-ink hover:border-blue'}`}><input className="sr-only" type="checkbox" checked={checked[index]} onChange={() => setChecked((current) => current.map((value, itemIndex) => itemIndex === index ? !value : value))} /><span className="grid size-6 shrink-0 place-items-center rounded-full border border-current">{checked[index] && <Check className="size-3.5" />}</span><span>{label}</span></label>)}</div>
+          <div className="grid gap-2">{releaseChecks.map((label, index) => <label key={label} className={`flex cursor-pointer items-start gap-3 border p-4 text-sm font-bold leading-6 text-ink focus-within:ring-2 focus-within:ring-blue focus-within:ring-offset-2 ${checked[index] ? 'border-green/25 bg-green/5' : 'border-line bg-paper hover:border-blue'}`}><input className="sr-only" type="checkbox" checked={checked[index]} onChange={() => setChecked((current) => current.map((value, itemIndex) => itemIndex === index ? !value : value))} /><span className="grid size-6 shrink-0 place-items-center rounded-full border border-green text-green">{checked[index] && <Check className="size-3.5" />}</span><span>{label}</span></label>)}</div>
         </div>
       </div>
     </section>

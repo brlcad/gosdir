@@ -1,8 +1,6 @@
 name: Submit a policy record
 description: Propose an official open source law, policy, order, standard, strategy, or guide.
 title: "[submission: policy] "
-labels:
-  - submission
 body:
   - type: markdown
     attributes:

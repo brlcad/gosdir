@@ -13,6 +13,7 @@ const nav = [
   { href: '/policy', label: 'Policy' },
   { href: '/timeline', label: 'Timeline' },
   { href: '/guide', label: 'Release guide' },
+  { href: '/review', label: 'Review' },
   { href: '/glossary', label: 'Glossary' },
 ];
 
@@ -25,7 +26,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-xl">
+    <header className="site-header sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-xl">
       <div className="page-shell flex h-[74px] items-center justify-between gap-5">
         <Brand />
         <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Primary navigation">
@@ -44,7 +45,7 @@ export function SiteHeader() {
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/15 bg-ink text-white">
+    <footer className="site-footer border-t border-white/15 bg-ink text-white">
       <div className="page-shell grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div><p className="font-display text-2xl font-extrabold tracking-tight">Public money.<br />Reusable code.</p><p className="mt-4 max-w-sm text-sm leading-6 text-white/60">An independent, source-backed directory for finding government-sponsored open source and the policy that supports it.</p></div>
         <FooterGroup title="Explore" links={[["/directory", "Project directory"], ["/coverage", "Coverage maps"], ["/policy", "Policy library"], ["/timeline", "Timeline"], ["/guide", "Release guide"]]} />
