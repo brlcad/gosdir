@@ -100,6 +100,51 @@ button, input, textarea, select { font: inherit; }
   mask-image: linear-gradient(to right, black, transparent 85%);
 }
 
+.home-hero {
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 76% 22%, rgb(22 93 255 / .11), transparent 31rem),
+    linear-gradient(115deg, #f5f2ea 0%, #f5f2ea 62%, #eeece5 100%);
+}
+
+.hero-watermark {
+  position: absolute;
+  right: -0.055em;
+  bottom: -0.24em;
+  z-index: -1;
+  color: rgb(17 27 52 / .035);
+  font: 900 clamp(9rem, 23vw, 24rem) / .8 var(--font-geist-sans);
+  letter-spacing: -.09em;
+  pointer-events: none;
+  user-select: none;
+}
+
+.directory-board::before {
+  content: '';
+  position: absolute;
+  inset: 14px -14px -14px 14px;
+  z-index: 0;
+  border: 2px solid #111b34;
+  background: #b8f245;
+}
+
+.directory-board::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border-top: 2px solid #165dff;
+  border-right: 2px solid #165dff;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .directory-board { width: min(100% - 14px, 720px); }
+}
+
 .globe-field {
   position: relative;
   height: 240px;
