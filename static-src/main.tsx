@@ -3,6 +3,7 @@ import type { FormEvent, ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ArrowRight, CheckCircle2, Globe2, Landmark, Map, Menu, Plus, Search, ShieldCheck, X } from 'lucide-react';
 import { CoverageExplorer } from '@/components/coverage-explorer';
+import { BrandLockup } from '@/components/brand-lockup';
 import { PageIntro } from '@/components/page-intro';
 import { PolicyLibrary } from '@/components/policy-library';
 import { ProjectExplorer } from '@/components/project-explorer';
@@ -13,15 +14,15 @@ import './site.css';
 type View = 'home' | 'directory' | 'coverage' | 'policy' | 'timeline' | 'glossary' | 'methodology' | 'contribute' | 'contact';
 
 const routeTitles: Record<View, string> = {
-  home: 'Public Code Index — Government Open Source Directory',
-  directory: 'Project Directory — Public Code Index',
-  coverage: 'Coverage Atlas — Public Code Index',
-  policy: 'Policy Library — Public Code Index',
-  timeline: 'Timeline — Public Code Index',
-  glossary: 'Glossary — Public Code Index',
-  methodology: 'Methodology — Public Code Index',
-  contribute: 'Submit a Record — Public Code Index',
-  contact: 'Contact — Public Code Index',
+  home: 'GOSDIR — Government Open Source Directory',
+  directory: 'Project Directory — GOSDIR',
+  coverage: 'Coverage Atlas — GOSDIR',
+  policy: 'Policy Library — GOSDIR',
+  timeline: 'Timeline — GOSDIR',
+  glossary: 'Glossary — GOSDIR',
+  methodology: 'Methodology — GOSDIR',
+  contribute: 'Submit a Record — GOSDIR',
+  contact: 'Contact — GOSDIR',
 };
 
 function routeFromPath(): View {
@@ -73,13 +74,12 @@ function StaticHeader({ view, navigate }: { view: View; navigate: (view: View) =
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-xl">
       <div className="page-shell flex h-[74px] items-center justify-between gap-6">
-        <button type="button" onClick={() => go('home')} className="route-button group flex items-center gap-3 text-left" aria-label="Public Code Index home">
-          <span className="grid size-9 grid-cols-2 gap-[3px] rounded-[10px] bg-ink p-[7px] shadow-[0_3px_0_#b8f245]"><span className="rounded-[2px] bg-signal" /><span className="rounded-[2px] border border-white/70" /><span className="rounded-[2px] border border-white/70" /><span className="rounded-[2px] bg-white" /></span>
-          <span className="leading-none"><span className="block text-[15px] font-extrabold tracking-[-0.02em] text-ink">Public Code</span><span className="mt-1 block font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-slate">Index / Gov OSS</span></span>
+        <button type="button" onClick={() => go('home')} className="route-button group text-left" aria-label="GOSDIR — Government Open Source Directory home">
+          <BrandLockup />
         </button>
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">{nav.map(([key, label]) => <button type="button" key={key} onClick={() => go(key)} className={`nav-link route-button ${view === key ? 'nav-link-active' : ''}`}>{label}</button>)}</nav>
-        <div className="hidden items-center gap-3 sm:flex"><button type="button" onClick={() => go('contact')} className="route-button text-sm font-bold text-ink hover:text-blue">Contact</button><button type="button" onClick={() => go('contribute')} className="button-primary route-button"><Plus className="size-4" /> Submit a record</button></div>
-        <button type="button" className="route-button grid size-10 place-items-center rounded-lg border border-line bg-white lg:hidden" onClick={() => setOpen((value) => !value)} aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open}>{open ? <X className="size-5" /> : <Menu className="size-5" />}</button>
+        <div className="hidden items-center gap-3 lg:flex"><button type="button" onClick={() => go('contact')} className="route-button text-sm font-bold text-ink hover:text-blue">Contact</button><button type="button" onClick={() => go('contribute')} className="button-primary route-button"><Plus className="size-4" /> Submit a record</button></div>
+        <button type="button" className="route-button grid size-11 place-items-center rounded-lg border border-line bg-white lg:hidden" onClick={() => setOpen((value) => !value)} aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open}>{open ? <X className="size-5" /> : <Menu className="size-5" />}</button>
       </div>
       {open && <nav className="border-t border-line bg-paper px-5 py-4 lg:hidden" aria-label="Mobile navigation"><div className="mx-auto grid max-w-6xl gap-1">{nav.map(([key, label]) => <button type="button" key={key} onClick={() => go(key)} className="route-button rounded-lg px-3 py-3 text-left text-base font-bold hover:bg-white">{label}</button>)}<div className="mt-2 grid grid-cols-2 gap-2"><button type="button" onClick={() => go('contact')} className="button-secondary route-button justify-center">Contact</button><button type="button" onClick={() => go('contribute')} className="button-primary route-button justify-center">Submit</button></div></div></nav>}
     </header>

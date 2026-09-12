@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, Plus, X } from 'lucide-react';
 import { useState } from 'react';
+import { BrandLockup } from '@/components/brand-lockup';
 import { cn } from '@/lib/utils';
 
 const nav = [
@@ -16,17 +17,8 @@ const nav = [
 
 export function Brand() {
   return (
-    <Link href="/" className="group flex items-center gap-3" aria-label="Public Code Index home">
-      <span className="grid size-9 grid-cols-2 gap-[3px] rounded-[10px] bg-ink p-[7px] shadow-[0_3px_0_#b8f245] transition-transform group-hover:-translate-y-0.5">
-        <span className="rounded-[2px] bg-signal" />
-        <span className="rounded-[2px] border border-white/70" />
-        <span className="rounded-[2px] border border-white/70" />
-        <span className="rounded-[2px] bg-white" />
-      </span>
-      <span className="leading-none">
-        <span className="block text-[15px] font-extrabold tracking-[-0.02em] text-ink">Public Code</span>
-        <span className="mt-1 block font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-slate">Index / Gov OSS</span>
-      </span>
+    <Link href="/" className="group" aria-label="GOSDIR — Government Open Source Directory home">
+      <BrandLockup />
     </Link>
   );
 }
@@ -50,7 +42,7 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <div className="hidden items-center gap-3 sm:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <Link href="/contact" className="text-sm font-bold text-ink hover:text-blue">Contact</Link>
           <Link href="/contribute" className="button-primary">
             <Plus className="size-4" /> Submit a record
@@ -58,7 +50,7 @@ export function SiteHeader() {
         </div>
         <button
           type="button"
-          className="grid size-10 place-items-center rounded-lg border border-line bg-white lg:hidden"
+          className="grid size-11 place-items-center rounded-lg border border-line bg-white lg:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-label={open ? 'Close navigation' : 'Open navigation'}
           aria-expanded={open}

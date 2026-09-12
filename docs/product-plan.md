@@ -1,8 +1,17 @@
-# Public Code Index — product plan
+# GOSDIR — Government Open Source Directory product plan
+
+## Brand architecture
+
+- **Product name:** GOSDIR
+- **Full name:** Government Open Source Directory
+- **Campaign line:** Public code, public value.
+- **Naming rule:** “Public code” describes the mission and appears in editorial language; it is not presented as the product name.
 
 ## Product promise
 
-Public Code Index helps public servants, maintainers, researchers, procurement teams, journalists, and residents find government-sponsored open source software and the policy infrastructure that makes it possible. It is a discovery and evidence product: every published record must link to a public repository, identify a government sponsor, and carry an OSI-approved license or an explicit public-domain dedication.
+GOSDIR helps public servants, maintainers, researchers, procurement teams, journalists, and residents find government-sponsored open source software and the policy infrastructure that makes it possible. It is a discovery and evidence product: every published record must link to a public repository, identify a government sponsor, and carry an OSI-approved license or an explicit public-domain dedication.
+
+The first screen should answer three questions without scrolling: what GOSDIR is, what a visitor can find here, and why the records are trustworthy. Search is the primary action; directory, policy, and coverage paths remain immediately visible.
 
 ## Core audiences and jobs
 
