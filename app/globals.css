@@ -65,6 +65,10 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-geist-sans), Arial, sans-serif; }
 a { text-decoration: none; }
 button, input, textarea, select { font: inherit; }
+:where(a, button, input, select, textarea):focus-visible { outline: 3px solid #165dff; outline-offset: 3px; }
+.search-panel:focus-within { box-shadow: 6px 6px 0 #111b34, 0 0 0 3px #b8f245; }
+.search-panel input:focus-visible { outline: none; }
+
 ::selection { background: #b8f245; color: #111b34; }
 
 @layer utilities {
@@ -111,7 +115,7 @@ button, input, textarea, select { font: inherit; }
   position: absolute;
   right: -0.055em;
   bottom: -0.24em;
-  z-index: -1;
+  z-index: 0;
   color: rgb(17 27 52 / .035);
   font: 900 clamp(9rem, 23vw, 24rem) / .8 var(--font-geist-sans);
   letter-spacing: -.09em;
@@ -142,7 +146,14 @@ button, input, textarea, select { font: inherit; }
 }
 
 @media (max-width: 1023px) {
-  .directory-board { width: min(100% - 14px, 720px); }
+  .directory-board { width: min(100% - 14px, 720px); margin-inline: auto; }
+}
+
+@media (max-width: 480px) {
+  .home-hero .search-panel { display: grid; grid-template-columns: 20px minmax(0, 1fr); padding: 12px; }
+  .home-hero .search-panel .button-primary { grid-column: 1 / -1; width: 100%; justify-content: center; }
+  .directory-board::before { inset: 8px -8px -8px 8px; }
+  .directory-board::after { top: -6px; right: -6px; }
 }
 
 .globe-field {

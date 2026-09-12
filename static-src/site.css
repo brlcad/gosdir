@@ -2,6 +2,12 @@
 @source './**/*.{html,ts,tsx}';
 @source '../components/**/*.{ts,tsx}';
 
+:root {
+  --font-geist-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-geist-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+
 body { min-width: 320px; }
 .route-button { cursor: pointer; }
 .route-button:focus-visible { outline: 3px solid #165dff; outline-offset: 3px; }

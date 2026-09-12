@@ -53,7 +53,7 @@ export function HomeLanding() {
               <p className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-blue">GOSDIR / Government Open Source Directory</p>
             </div>
 
-            <h1 className="mt-7 max-w-4xl font-display text-[clamp(3.25rem,7vw,6.65rem)] font-black leading-[.86] tracking-[-0.072em] text-ink">
+            <h1 className="mt-7 max-w-4xl font-display text-[clamp(2.8rem,14vw,6.65rem)] font-black leading-[.86] tracking-[-0.072em] text-ink">
               Public code,<br /><span className="text-blue">public value.</span>
             </h1>
 
@@ -121,7 +121,7 @@ export function HomeLanding() {
                   {coverage.map(({ label, count, icon: Icon }) => (
                     <div key={label} className="grid grid-cols-[minmax(100px,1fr)_minmax(100px,1.35fr)_24px] items-center gap-3">
                       <span className="inline-flex items-center gap-2 text-sm font-semibold text-white/75"><Icon className="size-4 text-signal" /> {label}</span>
-                      <span className="h-2 overflow-hidden rounded-full bg-white/10">
+                      <span className="h-2 overflow-hidden rounded-full bg-white/10" aria-hidden="true">
                         <span className="block h-full rounded-full bg-signal" style={{ width: `${(count / projects.length) * 100}%` }} />
                       </span>
                       <strong className="text-right font-mono text-sm text-white">{count}</strong>
@@ -216,9 +216,9 @@ export function HomeLanding() {
 
 function SnapshotMetric({ value, label }: { value: number; label: string }) {
   return (
-    <div className="bg-ink px-3 py-4 sm:px-4">
-      <dd className="font-mono text-2xl font-black text-signal sm:text-3xl">{value}</dd>
-      <dt className="mt-2 text-xs font-bold leading-4 text-white/55">{label}</dt>
+    <div className="flex flex-col bg-ink px-3 py-4 sm:px-4">
+      <dt className="order-2 mt-2 text-xs font-bold leading-4 text-white/55">{label}</dt>
+      <dd className="order-1 font-mono text-2xl font-black text-signal sm:text-3xl">{value}</dd>
     </div>
   );
 }

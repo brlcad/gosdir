@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ArrowUpRight, FileText, Search, SlidersHorizontal } from 'lucide-react';
 import { policies } from '@/lib/data';
 
@@ -8,6 +8,13 @@ export function PolicyLibrary() {
   const [query, setQuery] = useState('');
   const [type, setType] = useState('All instruments');
   const types = ['All instruments', ...Array.from(new Set(policies.map((item) => item.type))).sort()];
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const selected = policies.find((policy) => policy.id === params.get('record'));
+    setQuery(params.get('q') ?? selected?.title ?? '');
+  }, []);
+
   const filtered = useMemo(() => policies.filter((policy) => {
     const needle = query.toLowerCase();
     return (!needle || [policy.title, policy.issuer, policy.geography, policy.summary, policy.type].join(' ').toLowerCase().includes(needle)) && (type === 'All instruments' || policy.type === type);
