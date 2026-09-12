@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Prepare a structured submission on GOSDIR
+    url: https://gosdir.com/contribute/
+    about: Build a prefilled project or policy packet before opening the GitHub issue.
+  - name: Read the inclusion methodology
+    url: https://gosdir.com/methodology/
+    about: Check sponsorship, source, license, and evidence requirements first.

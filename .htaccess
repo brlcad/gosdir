@@ -5,5 +5,5 @@ Options -Indexes
     Redirect permanent "/" "https://gosdir.com/"
 </If>
 
-SetEnvIf Request_URI "^/(?:index\.html|favicon\.svg|og\.png|site-assets/[A-Za-z0-9._-]+\.(?:css|js)|(?:contact|contribute|coverage|directory|glossary|methodology|policy|timeline)(?:/index\.html)?/?)?$" gosdir_public
+SetEnvIf Request_URI "^/(?:index\.html|favicon\.svg|og\.png|site-assets/[A-Za-z0-9._-]+\.(?:css|js)|(?:contact|contribute|coverage|directory|glossary|guide|methodology|policy|review|timeline)(?:/index\.html)?/?)?$" gosdir_public
 Require env gosdir_public

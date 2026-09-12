@@ -1,0 +1,83 @@
+name: Submit a policy record
+description: Propose an official open source law, policy, order, standard, strategy, or guide.
+title: "[submission: policy] "
+labels:
+  - submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Link to the controlling official source whenever possible. Everything entered here becomes public; do not include nonpublic or sensitive information.
+  - type: input
+    id: title
+    attributes:
+      label: Policy title
+    validations:
+      required: true
+  - type: input
+    id: issuer
+    attributes:
+      label: Issuer
+      placeholder: Legislature, executive office, agency, or standards body
+    validations:
+      required: true
+  - type: input
+    id: geography
+    attributes:
+      label: Geography
+      placeholder: Country, state, or jurisdiction
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      placeholder: "2026"
+    validations:
+      required: true
+  - type: dropdown
+    id: instrument
+    attributes:
+      label: Instrument type
+      options:
+        - Law or regulation
+        - Executive action or order
+        - Government-wide policy
+        - Agency or departmental policy
+        - Standard or implementation guide
+        - Strategy or roadmap
+        - Court or oversight action
+        - Other official instrument
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Current
+        - Reference
+        - Superseded
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Primary source
+      placeholder: https://government.example/policy
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary and relevance
+      description: Explain what the instrument does and why it materially affects government open source.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Source confirmation
+      options:
+        - label: I checked the official source and understand that GOSDIR summaries are orientation, not legal advice.
+          required: true

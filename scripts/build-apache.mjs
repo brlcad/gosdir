@@ -6,7 +6,7 @@ import path from 'node:path';
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const stagingPath = path.join(projectRoot, '.apache-build');
 const assetsPath = path.join(projectRoot, 'site-assets');
-const routes = ['directory', 'coverage', 'policy', 'timeline', 'glossary', 'methodology', 'contribute', 'contact'];
+const routes = ['directory', 'coverage', 'policy', 'timeline', 'guide', 'glossary', 'methodology', 'contribute', 'review', 'contact'];
 
 await build({ configFile: path.join(projectRoot, 'vite.static.config.ts') });
 await rm(assetsPath, { recursive: true, force: true });

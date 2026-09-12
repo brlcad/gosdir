@@ -1,0 +1,77 @@
+name: Submit a project record
+description: Propose government-sponsored open source software for editorial review.
+title: "[submission: project] "
+labels:
+  - submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve GOSDIR. Everything entered here becomes public. Do not include sensitive, classified, export-controlled, personal, or security-relevant nonpublic information.
+  - type: input
+    id: project
+    attributes:
+      label: Project name
+      placeholder: Official project name
+    validations:
+      required: true
+  - type: input
+    id: sponsor
+    attributes:
+      label: Government sponsor
+      description: Agency, department, government unit, or government-established steward.
+    validations:
+      required: true
+  - type: dropdown
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction
+      options:
+        - U.S. federal
+        - U.S. state
+        - International
+    validations:
+      required: true
+  - type: input
+    id: geography
+    attributes:
+      label: Geography
+      placeholder: Country, state, or territory
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Canonical repository
+      placeholder: https://github.com/organization/project
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source
+      description: Link to the strongest public evidence of government sponsorship.
+      placeholder: https://agency.gov/project-or-publication
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: SPDX license or public-domain basis
+      placeholder: Apache-2.0, MIT, GPL-3.0-only, public domain…
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary and evidence
+      description: What does the project do, and how does the official source prove the sponsor’s role?
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Public-information confirmation
+      options:
+        - label: I used only public information and understand that this submission does not publish or endorse the project.
+          required: true
