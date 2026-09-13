@@ -7,8 +7,10 @@ Generate the browser-ready static site with:
 npm run build:apache
 ```
 
-The command builds into a temporary staging directory, then atomically replaces
-the generated root entry point and asset bundle. It also writes an `index.html`
+The command builds into a temporary staging directory, publishes the new
+fingerprinted assets first, then atomically replaces each generated HTML entry
+point. It retains the immediately previous asset generation so a browser holding
+older HTML cannot request a just-deleted bundle. It also writes an `index.html`
 entry point for each public route so Apache can serve direct visits without a
 rewrite module.
 

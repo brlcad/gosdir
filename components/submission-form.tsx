@@ -1,7 +1,7 @@
 'use client';
 
 import { FormEvent, useState } from 'react';
-import { ArrowUpRight, CheckCircle2, Code2, FileText, Github, LockKeyhole, RotateCcw, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, CircleDot, Code2, FileText, LockKeyhole, RotateCcw, ShieldCheck } from 'lucide-react';
 
 const ISSUE_URL = 'https://github.com/brlcad/gosdir/issues/new';
 type RecordKind = 'project' | 'policy';
@@ -24,7 +24,7 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
       <h2 className="mt-3 font-display text-3xl font-black tracking-tight">Your {mode === 'contact' ? 'message' : `${recordKind} packet`} is ready.</h2>
       <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-slate">Nothing has been sent yet. Continue to GitHub, review the public issue one more time, then choose <strong className="text-ink">Submit new issue</strong>. Your GitHub account provides attribution without GOSDIR collecting contact details.</p>
       <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
-        <a href={packetUrl} target="_blank" rel="noreferrer" className="button-primary justify-center"><Github className="size-4" /> Continue on GitHub <ArrowUpRight className="size-4" /></a>
+        <a href={packetUrl} target="_blank" rel="noreferrer" className="button-primary justify-center"><CircleDot className="size-4" /> Continue on GitHub <ArrowUpRight className="size-4" /></a>
         <button type="button" className="button-secondary justify-center" onClick={() => setPacketUrl('')}><RotateCcw className="size-4" /> Edit packet</button>
       </div>
       {mode === 'project' && <a href="/review/" className="mt-7 inline-flex text-sm font-extrabold text-blue hover:text-ink">See how reviewers process submissions →</a>}
@@ -51,7 +51,7 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
         </>
       ) : (
         <>
-          <div className="flex items-center gap-3 border-b border-line pb-6"><span className="icon-tile size-10 shadow-none"><Github className="size-5" /></span><div><p className="text-sm font-extrabold text-ink">Public contact issue</p><p className="mt-1 text-xs text-slate">Corrections and questions are handled transparently on GitHub.</p></div></div>
+          <div className="flex items-center gap-3 border-b border-line pb-6"><span className="icon-tile size-10 shadow-none"><CircleDot className="size-5" /></span><div><p className="text-sm font-extrabold text-ink">Public contact issue</p><p className="mt-1 text-xs text-slate">Corrections and questions are handled transparently on GitHub.</p></div></div>
           <div className="mt-7 grid gap-5">
             <Field label="Topic"><select required name="topic" defaultValue=""><option value="" disabled>Choose a topic</option><option>Correction</option><option>Source suggestion</option><option>Accessibility issue</option><option>General question</option></select></Field>
             <Field label="Message"><textarea required maxLength={2500} name="message" rows={8} placeholder="Include public source links and enough detail for an editor to act." /></Field>

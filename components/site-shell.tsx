@@ -13,7 +13,6 @@ const nav = [
   { href: '/policy', label: 'Policy' },
   { href: '/timeline', label: 'Timeline' },
   { href: '/guide', label: 'Release guide' },
-  { href: '/review', label: 'Review' },
   { href: '/glossary', label: 'Glossary' },
 ];
 

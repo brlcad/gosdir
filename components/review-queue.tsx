@@ -5,9 +5,9 @@ import {
   AlertTriangle,
   Check,
   CheckCircle2,
+  CircleDot,
   Clipboard,
   ExternalLink,
-  Github,
   Loader2,
   RefreshCw,
   Search,
@@ -149,7 +149,7 @@ export function ReviewQueue() {
             <h2 id="queue-heading" className="mt-3 font-display text-3xl font-black tracking-[-.04em] sm:text-4xl">Evidence first. Publishing last.</h2>
             <p className="mt-4 max-w-2xl text-sm leading-6 text-white/65 sm:text-base">Open GitHub issues are the shared record. This page adds a private, device-local checklist so reviewers can inspect a submission before proposing a data change.</p>
           </div>
-          <a href={QUEUE_URL} target="_blank" rel="noreferrer" className="button-light shrink-0"><Github className="size-4" /> Open queue on GitHub</a>
+          <a href={QUEUE_URL} target="_blank" rel="noreferrer" className="button-light shrink-0"><CircleDot className="size-4" /> Open queue on GitHub</a>
         </div>
         <dl className="grid grid-cols-3 divide-x divide-white/15">
           <QueueMetric value={issues.length} label="Open" />
@@ -224,7 +224,7 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
       <details className="mt-8 border border-line bg-paper p-5"><summary className="cursor-pointer text-sm font-extrabold text-ink">View raw submission text</summary><pre className="mt-4 whitespace-pre-wrap break-words font-sans text-xs leading-6 text-slate">{issue.body || 'No issue body was provided.'}</pre></details>
 
       <div className="mt-8 flex flex-col gap-3 border-t border-line pt-6 sm:flex-row">
-        <a href={issue.html_url} target="_blank" rel="noreferrer" className="button-primary justify-center"><Github className="size-4" /> Discuss on GitHub</a>
+        <a href={issue.html_url} target="_blank" rel="noreferrer" className="button-primary justify-center"><CircleDot className="size-4" /> Discuss on GitHub</a>
         <button type="button" onClick={() => void copyDraft(issue)} disabled={!canCopy} title={!ready ? 'Complete the editorial checklist first' : problems[0]} className="button-secondary justify-center disabled:cursor-not-allowed disabled:opacity-45"><Clipboard className="size-4" /> {copied ? 'Draft copied' : 'Copy record draft'}</button>
         <span className="sr-only" aria-live="polite">{copied ? 'Record draft copied to the clipboard.' : ''}</span>
       </div>

@@ -70,7 +70,7 @@ function App() {
   </>;
 }
 
-const primaryNav: [View, string][] = [['directory', 'Directory'], ['coverage', 'Coverage'], ['policy', 'Policy'], ['timeline', 'Timeline'], ['guide', 'Release guide'], ['review', 'Review'], ['glossary', 'Glossary']];
+const primaryNav: [View, string][] = [['directory', 'Directory'], ['coverage', 'Coverage'], ['policy', 'Policy'], ['timeline', 'Timeline'], ['guide', 'Release guide'], ['glossary', 'Glossary']];
 
 function StaticHeader({ view, navigate }: { view: View; navigate: (view: View) => void }) {
   const [open, setOpen] = useState(false);
