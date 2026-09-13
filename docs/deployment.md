@@ -1,6 +1,10 @@
 # Apache deployment
 
 The production document root is the repository root at `/usr/web/gosdir.com`.
+On the FreeBSD production host, install locked dependencies with
+`npm ci --ignore-scripts`; the optional Cloudflare preview runtime does not
+publish a FreeBSD `workerd` binary and is not needed for the Apache build.
+
 Generate the browser-ready static site with:
 
 ```sh
@@ -22,12 +26,22 @@ Apache should bind both site virtual hosts to `204.109.58.162`, use
 `/usr/web/gosdir.com` as `DocumentRoot`, set `DirectoryIndex index.html`, and
 disable directory indexing with `Options -Indexes`.
 
-The reviewed virtual-host configuration is tracked at
-`deploy/apache/gosdir.conf`. Activating it requires administrator privileges:
+The Apache virtual-host configuration is intentionally host-local at
+`/usr/local/etc/apache24/Includes/gosdir.conf`. It is not committed because this
+repository is public and the file contains host-specific TLS and server
+configuration. Keep certificate paths, private host details, and other
+machine-specific settings out of the repository.
+
+The version-controlled root `.htaccess` contains the application-level Apache
+directives: the default index, disabled directory listings, HTTPS redirect,
+public-route allowlist, security headers, and cache policy. The host-local
+virtual host must allow these overrides and provide the address binding,
+hostname, TLS certificates, and document-root configuration.
+
+After changing the host-local configuration, validate it before reloading
+Apache:
 
 ```sh
-sudo cp /usr/local/etc/apache24/Includes/gosdir.conf /usr/local/etc/apache24/Includes/gosdir.conf.bak
-sudo install -m 644 /usr/web/gosdir.com/deploy/apache/gosdir.conf /usr/local/etc/apache24/Includes/gosdir.conf
 sudo apachectl configtest
 sudo service apache24 reload
 ```

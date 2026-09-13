@@ -25,6 +25,13 @@ npm install
 npm run dev
 ```
 
+Run the same source checks used by CI before committing:
+
+```sh
+npm run check
+npm run build
+```
+
 The development app uses Vinext. The production site served by Apache is generated as a static single-page application:
 
 ```sh

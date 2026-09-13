@@ -6,7 +6,6 @@ import {
   ArrowDown,
   ArrowRight,
   Check,
-  CheckCircle2,
   CircleStop,
   FileCheck2,
   GitBranch,

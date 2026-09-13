@@ -1,0 +1,13 @@
+# Generated static deployment output. Source HTML and CSS live in static-src/.
+/index.html
+/contact/
+/contribute/
+/coverage/
+/directory/
+/glossary/
+/guide/
+/methodology/
+/policy/
+/review/
+/timeline/
+/site-assets/

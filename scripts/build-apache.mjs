@@ -1,5 +1,13 @@
 import { build } from 'vite';
-import { cp, copyFile, mkdir, readFile, readdir, rename, rm } from 'node:fs/promises';
+import {
+  cp,
+  copyFile,
+  mkdir,
+  readFile,
+  readdir,
+  rename,
+  rm,
+} from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -7,10 +15,23 @@ const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const stagingPath = path.join(projectRoot, '.apache-build');
 const assetsPath = path.join(projectRoot, 'site-assets');
 const rootIndexPath = path.join(projectRoot, 'index.html');
-const routes = ['directory', 'coverage', 'policy', 'timeline', 'guide', 'glossary', 'methodology', 'contribute', 'review', 'contact'];
+const routes = [
+  'directory',
+  'coverage',
+  'policy',
+  'timeline',
+  'guide',
+  'glossary',
+  'methodology',
+  'contribute',
+  'review',
+  'contact',
+];
 
 function referencedAssets(html) {
-  return [...html.matchAll(/\/site-assets\/([^"'?]+)/g)].map((match) => match[1]);
+  return [...html.matchAll(/\/site-assets\/([^"'?]+)/g)].map(
+    (match) => match[1],
+  );
 }
 
 async function replaceFile(source, destination) {
@@ -23,12 +44,36 @@ const previousHtml = await readFile(rootIndexPath, 'utf8').catch(() => '');
 await build({ configFile: path.join(projectRoot, 'vite.static.config.ts') });
 const stagedIndexPath = path.join(stagingPath, 'index.html');
 const stagedHtml = await readFile(stagedIndexPath, 'utf8');
-const retainedAssets = new Set([...referencedAssets(previousHtml), ...referencedAssets(stagedHtml)]);
+const previousAssets = new Set(referencedAssets(previousHtml));
+const stagedAssets = new Set(referencedAssets(stagedHtml));
+const generationChanged =
+  previousAssets.size !== stagedAssets.size ||
+  [...previousAssets].some((asset) => !stagedAssets.has(asset));
 
 await mkdir(assetsPath, { recursive: true });
-await cp(path.join(stagingPath, 'site-assets'), assetsPath, { recursive: true });
-await copyFile(path.join(projectRoot, 'public', 'favicon.svg'), path.join(projectRoot, 'favicon.svg'));
-await copyFile(path.join(projectRoot, 'public', 'og.png'), path.join(projectRoot, 'og.png'));
+const existingAssets = await readdir(assetsPath, { withFileTypes: true });
+const retainedAssets = new Set(stagedAssets);
+
+if (generationChanged) {
+  for (const asset of previousAssets) retainedAssets.add(asset);
+} else {
+  // A repeat build must not discard the fallback generation retained by the
+  // deployment that produced the current HTML.
+  for (const entry of existingAssets)
+    if (entry.isFile()) retainedAssets.add(entry.name);
+}
+
+await cp(path.join(stagingPath, 'site-assets'), assetsPath, {
+  recursive: true,
+});
+await copyFile(
+  path.join(projectRoot, 'public', 'favicon.svg'),
+  path.join(projectRoot, 'favicon.svg'),
+);
+await copyFile(
+  path.join(projectRoot, 'public', 'og.png'),
+  path.join(projectRoot, 'og.png'),
+);
 
 for (const route of routes) {
   const routeDirectory = path.join(projectRoot, route);
