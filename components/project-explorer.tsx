@@ -1,18 +1,21 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowUpRight, Check, Code2, Filter, Search, ShieldCheck, X } from 'lucide-react';
 import { agencySearchTextByProjectId } from '@/lib/catalog/agency-relations';
 import { projects } from '@/lib/catalog/software';
 import type { Project } from '@/lib/catalog/types';
 
 const jurisdictions = ['All jurisdictions', 'U.S. federal', 'U.S. state', 'International'];
+const PAGE_SIZE = 24;
 
 export function ProjectExplorer() {
   const [query, setQuery] = useState('');
   const [jurisdiction, setJurisdiction] = useState('All jurisdictions');
   const [domain, setDomain] = useState('All domains');
+  const [page, setPage] = useState(1);
   const [selected, setSelected] = useState<Project | null>(null);
+  const statusRef = useRef<HTMLParagraphElement>(null);
   const domains = ['All domains', ...Array.from(new Set(projects.map((item) => item.domain))).sort()];
 
   useEffect(() => {
@@ -46,10 +49,21 @@ export function ProjectExplorer() {
     });
   }, [domain, jurisdiction, query]);
 
+  const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const currentPage = Math.min(page, pageCount);
+  const visibleProjects = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const rangeStart = filtered.length ? (currentPage - 1) * PAGE_SIZE + 1 : 0;
+  const rangeEnd = Math.min(currentPage * PAGE_SIZE, filtered.length);
+
   const reset = () => {
     setQuery('');
     setJurisdiction('All jurisdictions');
     setDomain('All domains');
+    setPage(1);
+  };
+  const changePage = (nextPage: number) => {
+    setPage(nextPage);
+    requestAnimationFrame(() => statusRef.current?.focus());
   };
 
   return (
@@ -60,20 +74,20 @@ export function ProjectExplorer() {
             <label className="filter-control">
               <Search className="size-4 text-blue" />
               <span className="sr-only">Search projects</span>
-              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search name, agency, place, license…" className="w-full bg-transparent outline-none" />
-              {query && <button type="button" onClick={() => setQuery('')} aria-label="Clear search"><X className="size-4 text-slate" /></button>}
+              <input value={query} onChange={(event) => { setQuery(event.target.value); setPage(1); }} placeholder="Search name, agency, place, license…" className="w-full bg-transparent outline-none" />
+              {query && <button type="button" onClick={() => { setQuery(''); setPage(1); }} aria-label="Clear search"><X className="size-4 text-slate" /></button>}
             </label>
             <label className="filter-control">
               <Filter className="size-4 text-blue" />
               <span className="sr-only">Filter by jurisdiction</span>
-              <select value={jurisdiction} onChange={(event) => setJurisdiction(event.target.value)} className="w-full appearance-none bg-transparent outline-none">
+              <select value={jurisdiction} onChange={(event) => { setJurisdiction(event.target.value); setPage(1); }} className="w-full appearance-none bg-transparent outline-none">
                 {jurisdictions.map((item) => <option key={item}>{item}</option>)}
               </select>
             </label>
             <label className="filter-control">
               <span className="font-mono text-[10px] font-bold text-blue">TYPE</span>
               <span className="sr-only">Filter by domain</span>
-              <select value={domain} onChange={(event) => setDomain(event.target.value)} className="w-full appearance-none bg-transparent outline-none">
+              <select value={domain} onChange={(event) => { setDomain(event.target.value); setPage(1); }} className="w-full appearance-none bg-transparent outline-none">
                 {domains.map((item) => <option key={item}>{item}</option>)}
               </select>
             </label>
@@ -84,13 +98,17 @@ export function ProjectExplorer() {
               <button type="button" onClick={reset} className="text-sm font-bold text-blue hover:text-ink">Reset filters</button>
             )}
           </div>
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
+            <p ref={statusRef} tabIndex={-1} className="text-sm text-slate" aria-live="polite" aria-atomic="true">{filtered.length ? `Showing ${rangeStart}–${rangeEnd} of ${filtered.length}` : 'Showing 0 of 0'}</p>
+            {filtered.length > PAGE_SIZE && <ProjectPagination page={currentPage} pageCount={pageCount} setPage={changePage} />}
+          </div>
         </div>
       </div>
 
       <div className="page-shell py-10 lg:py-14">
         {filtered.length ? (
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {filtered.map((project) => (
+            {visibleProjects.map((project) => (
               <article key={project.id} className="directory-card">
                 <div className="flex items-start justify-between gap-3">
                   <span className="status-pill"><Check className="size-3" /> Verified</span>
@@ -119,6 +137,11 @@ export function ProjectExplorer() {
             <h2 className="mt-4 font-display text-2xl font-extrabold">No verified records match</h2>
             <p className="mt-2 text-sm text-slate">Try a broader term or reset the filters.</p>
             <button type="button" onClick={reset} className="button-secondary mt-6">Reset filters</button>
+          </div>
+        )}
+        {filtered.length > PAGE_SIZE && (
+          <div className="mt-8 flex justify-end">
+            <ProjectPagination page={currentPage} pageCount={pageCount} setPage={changePage} />
           </div>
         )}
       </div>
@@ -158,5 +181,19 @@ export function ProjectExplorer() {
         </dialog>
       )}
     </>
+  );
+}
+
+function ProjectPagination({ page, pageCount, setPage }: {
+  page: number;
+  pageCount: number;
+  setPage: (page: number) => void;
+}) {
+  return (
+    <nav className="flex items-center gap-3" aria-label="Project result pages">
+      <button type="button" className="button-secondary disabled:cursor-not-allowed disabled:opacity-45" disabled={page === 1} onClick={() => setPage(page - 1)}>Previous</button>
+      <span className="text-sm font-bold text-ink">Page {page} of {pageCount}</span>
+      <button type="button" className="button-secondary disabled:cursor-not-allowed disabled:opacity-45" disabled={page === pageCount} onClick={() => setPage(page + 1)}>Next</button>
+    </nav>
   );
 }
