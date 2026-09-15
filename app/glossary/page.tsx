@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
 import { PageIntro } from '@/components/page-intro';
-import { glossary } from '@/lib/data';
+import { glossary } from '@/lib/catalog/glossary';
 
 export default function GlossaryPage() {
   const [query, setQuery] = useState('');

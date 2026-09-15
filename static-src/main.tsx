@@ -10,7 +10,9 @@ import { ProjectExplorer } from '@/components/project-explorer';
 import { ReleaseGuide } from '@/components/release-guide';
 import { ReviewQueue } from '@/components/review-queue';
 import { SubmissionForm } from '@/components/submission-form';
-import { glossary, officialSources, timeline } from '@/lib/data';
+import { glossary } from '@/lib/catalog/glossary';
+import { officialSources } from '@/lib/catalog/sources';
+import { timeline } from '@/lib/catalog/timeline';
 import './site.css';
 
 type View = 'home' | 'directory' | 'coverage' | 'policy' | 'timeline' | 'guide' | 'glossary' | 'methodology' | 'contribute' | 'review' | 'contact';

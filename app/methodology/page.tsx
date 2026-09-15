@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { PageIntro } from '@/components/page-intro';
-import { officialSources } from '@/lib/data';
+import { officialSources } from '@/lib/catalog/sources';
 
 const criteria = [
   ['01', 'Government provenance', 'Official evidence must show that government created, commissioned, funded, sponsored, or directly stewarded the work; government use alone does not qualify.'],

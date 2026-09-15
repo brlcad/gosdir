@@ -13,6 +13,7 @@ import {
   Search,
   ShieldCheck,
 } from 'lucide-react';
+import type { Policy, Project } from '@/lib/catalog/types';
 
 const REPOSITORY = 'brlcad/gosdir';
 const API_URL = `https://api.github.com/repos/${REPOSITORY}/issues?state=open&per_page=100`;
@@ -36,7 +37,7 @@ type GitHubIssue = {
 type SavedChecks = Record<string, boolean[]>;
 
 const projectChecks = [
-  'Government sponsor and its direct role are supported',
+  'Government sponsor and direct role are supported; resolve each canonical agency ID or add its agency record',
   'Canonical repository is public and matches the project',
   'License is OSI-approved or public-domain status is clear',
   'Official source supports the sponsorship claim',
@@ -204,6 +205,7 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
   const ready = complete === checklist.length;
   const problems = validationFor(issue);
   const canCopy = ready && problems.length === 0;
+  const unresolvedAgencyIds = kindFor(issue) === 'project' && parseAgencyIds(fields['Canonical agency IDs'] ?? '').length === 0;
   return <article className="border border-line bg-white">
     <header className="border-b border-line bg-paper p-6 sm:p-8">
       <div className="flex flex-wrap items-center gap-2"><span className="license-pill">{kindFor(issue)} submission</span><span className={ready ? 'status-pill' : 'rounded-full border border-line bg-white px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[.08em] text-slate'}>{ready ? 'checklist ready' : `${complete} of ${checklist.length} checks`}</span><span className="ml-auto font-mono text-xs font-bold text-slate">#{issue.number}</span></div>
@@ -222,6 +224,7 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
       </div>
 
       <details className="mt-8 border border-line bg-paper p-5"><summary className="cursor-pointer text-sm font-extrabold text-ink">View raw submission text</summary><pre className="mt-4 whitespace-pre-wrap break-words font-sans text-xs leading-6 text-slate">{issue.body || 'No issue body was provided.'}</pre></details>
+      {unresolvedAgencyIds && <p className="mt-5 border-l-4 border-amber-500 bg-amber-50 p-4 text-sm leading-6 text-amber-950"><strong>Agency IDs unresolved:</strong> the copied project draft will contain <code>agencyIds: []</code>. Resolve it against <code>agencies.ts</code>, adding a canonical agency record when needed, before commit.</p>}
 
       <div className="mt-8 flex flex-col gap-3 border-t border-line pt-6 sm:flex-row">
         <a href={issue.html_url} target="_blank" rel="noreferrer" className="button-primary justify-center"><CircleDot className="size-4" /> Discuss on GitHub</a>
@@ -251,7 +254,8 @@ function fieldValue(body: string | null, heading: string) {
   if (!body) return '';
   const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const match = body.match(new RegExp(`(?:^|\\n)#{2,3}\\s+${escaped}\\s*\\n+([\\s\\S]*?)(?=\\n#{2,3}\\s+|$)`, 'i'));
-  return match?.[1]?.replace(/<!--[^]*?-->/g, '').trim() ?? '';
+  const value = match?.[1]?.replace(/<!--[^]*?-->/g, '').trim() ?? '';
+  return /^_No response_$/i.test(value) ? '' : value;
 }
 
 function fieldsFor(issue: GitHubIssue) {
@@ -262,7 +266,7 @@ function fieldsFor(issue: GitHubIssue) {
       ['Summary', ['Summary', 'Summary and relevance']], ['Why it belongs', ['Why it belongs']],
     ]
     : [
-      ['Project name', ['Project name']], ['Government sponsor', ['Government sponsor']], ['Geography', ['Geography']],
+      ['Project name', ['Project name']], ['Government sponsor', ['Government sponsor']], ['Canonical agency IDs', ['Canonical agency IDs', 'Agency IDs']], ['Geography', ['Geography']],
       ['Jurisdiction', ['Jurisdiction']], ['Service domain', ['Service domain']], ['Project status', ['Project status']],
       ['Repository', ['Repository', 'Canonical repository']], ['Official source', ['Official source']], ['License', ['SPDX license', 'SPDX license or public-domain basis']],
       ['Summary', ['Summary', 'Summary and evidence']], ['Why it belongs', ['Why it belongs']],
@@ -282,6 +286,15 @@ function validationFor(issue: GitHubIssue) {
   const missing = required.filter((field) => !fields[field]);
   const problems: string[] = [];
   if (missing.length) problems.push(`Missing ${missing.join(', ')}.`);
+  const agencyIdsText = fields['Canonical agency IDs'] ?? '';
+  if (kindFor(issue) === 'project' && agencyIdsText) {
+    const agencyIds = parseAgencyIds(agencyIdsText);
+    if (!agencyIds.length) problems.push('Canonical agency IDs must include at least one slug when supplied.');
+    const invalid = agencyIds.filter((id) => !agencyIdPattern.test(id));
+    if (invalid.length) problems.push(`Canonical agency IDs must be lowercase slugs. Invalid: ${invalid.join(', ')}.`);
+    const duplicates = [...new Set(agencyIds.filter((id, index) => agencyIds.indexOf(id) !== index))];
+    if (duplicates.length) problems.push(`Canonical agency IDs must be unique. Repeated: ${duplicates.join(', ')}.`);
+  }
   if (kindFor(issue) === 'policy' && fields.Year && !/^(?:\d{4}|Undated)$/i.test(fields.Year)) problems.push('Year must be four digits or “Undated”.');
   const urlFields = kindFor(issue) === 'policy' ? ['Primary source'] : ['Repository', 'Official source'];
   const invalidUrls = urlFields.filter((field) => fields[field] && !safeUrl(fields[field]));
@@ -294,39 +307,59 @@ function validationFor(issue: GitHubIssue) {
 
 function recordDraft(issue: GitHubIssue) {
   const isPolicy = kindFor(issue) === 'policy';
-  const policyYear = fieldValue(issue.body, 'Year');
+  const policyYearText = fieldValue(issue.body, 'Year');
   if (isPolicy) return {
     id: slugify(fieldValue(issue.body, 'Policy title') || cleanTitle(issue.title)),
-    year: /^undated$/i.test(policyYear) ? 'Undated' : Number(policyYear),
+    year: policyYear(policyYearText),
     title: fieldValue(issue.body, 'Policy title') || cleanTitle(issue.title),
     issuer: fieldValue(issue.body, 'Issuer'),
     geography: fieldValue(issue.body, 'Geography'),
     type: fieldValue(issue.body, 'Instrument type'),
-    status: fieldValue(issue.body, 'Status') || 'Reference',
+    status: policyStatus(fieldValue(issue.body, 'Status')),
     summary: firstField(issue.body, ['Summary', 'Summary and relevance']),
     url: fieldValue(issue.body, 'Primary source'),
     reviewed: new Date().toISOString().slice(0, 10),
-  };
-  const jurisdiction = fieldValue(issue.body, 'Jurisdiction');
+  } satisfies Policy;
   return {
     id: slugify(fieldValue(issue.body, 'Project name') || cleanTitle(issue.title)),
     name: fieldValue(issue.body, 'Project name') || cleanTitle(issue.title),
     summary: firstField(issue.body, ['Summary', 'Summary and evidence']),
     sponsor: fieldValue(issue.body, 'Government sponsor'),
+    agencyIds: parseAgencyIds(firstField(issue.body, ['Canonical agency IDs', 'Agency IDs'])),
     geography: fieldValue(issue.body, 'Geography'),
-    jurisdiction,
+    jurisdiction: projectJurisdiction(fieldValue(issue.body, 'Jurisdiction')),
     domain: fieldValue(issue.body, 'Service domain'),
     license: firstField(issue.body, ['SPDX license', 'SPDX license or public-domain basis']),
     repository: firstField(issue.body, ['Repository', 'Canonical repository']),
     officialUrl: fieldValue(issue.body, 'Official source'),
-    status: fieldValue(issue.body, 'Project status') || 'Reference',
+    status: projectStatus(fieldValue(issue.body, 'Project status')),
     verified: new Date().toISOString().slice(0, 10),
     tags: [],
-  };
+  } satisfies Project;
 }
 
 function firstField(body: string | null, headings: string[]) {
   return headings.map((heading) => fieldValue(body, heading)).find(Boolean) ?? '';
+}
+
+const agencyIdPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+function parseAgencyIds(input: string) { return input.split(/[,\n]/).map((id) => id.trim()).filter(Boolean); }
+function policyYear(value: string): Policy['year'] {
+  if (/^undated$/i.test(value)) return 'Undated';
+  if (/^\d{4}$/.test(value)) return Number(value);
+  throw new Error(`Invalid policy year: ${value}`);
+}
+function policyStatus(value: string): Policy['status'] {
+  if (value === 'Current' || value === 'Reference' || value === 'Superseded') return value;
+  throw new Error(`Invalid policy status: ${value}`);
+}
+function projectJurisdiction(value: string): Project['jurisdiction'] {
+  if (value === 'U.S. federal' || value === 'U.S. state' || value === 'International') return value;
+  throw new Error(`Invalid project jurisdiction: ${value}`);
+}
+function projectStatus(value: string): Project['status'] {
+  if (value === 'Active' || value === 'Maintained' || value === 'Reference') return value;
+  throw new Error(`Invalid project status: ${value}`);
 }
 
 function slugify(value: string) { return value.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').slice(0, 64); }

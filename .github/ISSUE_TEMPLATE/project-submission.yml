@@ -20,6 +20,14 @@ body:
       description: Agency, department, government unit, or government-established steward.
     validations:
       required: true
+  - type: textarea
+    id: agency_ids
+    attributes:
+      label: Canonical agency IDs
+      description: Optional. Enter comma- or newline-separated lowercase slug IDs. Use an existing ID or propose one for editors to resolve; this issue does not add the agency record.
+      placeholder: |
+        us-gsa
+        us-nasa
   - type: dropdown
     id: jurisdiction
     attributes:

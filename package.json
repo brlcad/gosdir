@@ -10,10 +10,11 @@
     "build": "vinext build",
     "build:apache": "node scripts/build-apache.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
+    "check:catalog": "node scripts/check-catalog.mjs",
     "lint": "oxlint . --deny-warnings",
     "typecheck": "tsc --noEmit --incremental false",
     "format": "oxfmt --ignore-path=.oxfmtignore .",
-    "check": "npm run lint && npm run typecheck"
+    "check": "npm run check:catalog && npm run lint && npm run typecheck"
   },
   "dependencies": {
     "react": "19.2.6",

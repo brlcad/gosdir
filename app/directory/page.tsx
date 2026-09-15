@@ -1,6 +1,7 @@
 import { PageIntro } from '@/components/page-intro';
 import { ProjectExplorer } from '@/components/project-explorer';
-import { projects } from '@/lib/data';
+import { representedAgencyIds } from '@/lib/catalog/agency-relations';
+import { projects } from '@/lib/catalog/software';
 
 export default function DirectoryPage() {
   return (
@@ -9,7 +10,7 @@ export default function DirectoryPage() {
         eyebrow="Project directory"
         title="Open source, with a public mandate."
         description="Explore reusable software with an identifiable government sponsor and an OSI-approved license or clear public-domain status. Every record links to its evidence."
-        aside={<div className="grid grid-cols-2 gap-px border border-line bg-line"><Stat value={String(projects.length)} label="Launch records" /><Stat value={String(new Set(projects.map((item) => item.sponsor)).size)} label="Public sponsors" /></div>}
+        aside={<div className="grid grid-cols-2 gap-px border border-line bg-line"><Stat value={String(projects.length)} label="Launch records" /><Stat value={String(representedAgencyIds.size)} label="Agencies represented" /></div>}
       />
       <ProjectExplorer />
     </main>

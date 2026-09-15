@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { PageIntro } from '@/components/page-intro';
-import { timeline } from '@/lib/data';
+import { timeline } from '@/lib/catalog/timeline';
 
 export default function TimelinePage() {
   return (

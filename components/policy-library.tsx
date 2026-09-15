@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowUpRight, FileText, Search, SlidersHorizontal } from 'lucide-react';
-import { policies } from '@/lib/data';
+import { policies } from '@/lib/catalog/policies';
 
 export function PolicyLibrary() {
   const [query, setQuery] = useState('');

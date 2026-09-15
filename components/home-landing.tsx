@@ -9,10 +9,11 @@ import {
   ShieldCheck,
   Sparkles,
 } from 'lucide-react';
-import { policies, projects } from '@/lib/data';
+import { representedAgencyIds } from '@/lib/catalog/agency-relations';
+import { policies } from '@/lib/catalog/policies';
+import { projects } from '@/lib/catalog/software';
 
 const featured = projects.filter((project) => project.featured).slice(0, 4);
-const sponsorCount = new Set(projects.map((project) => project.sponsor)).size;
 
 const coverage = [
   {
@@ -109,7 +110,7 @@ export function HomeLanding() {
               <dl className="mt-7 grid grid-cols-3 gap-px border border-white/15 bg-white/15">
                 <SnapshotMetric value={projects.length} label="Project records" />
                 <SnapshotMetric value={policies.length} label="Policy + reference" />
-                <SnapshotMetric value={sponsorCount} label="Sponsor labels" />
+                <SnapshotMetric value={representedAgencyIds.size} label="Agencies represented" />
               </dl>
 
               <div className="mt-7">

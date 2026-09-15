@@ -13,6 +13,15 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
+    if (mode === 'project' && recordKind === 'project') {
+      const problem = agencyIdsProblem(value(form, 'agencyIds'));
+      const input = event.currentTarget.elements.namedItem('agencyIds');
+      if (input instanceof HTMLTextAreaElement) input.setCustomValidity(problem);
+      if (problem) {
+        if (input instanceof HTMLTextAreaElement) input.reportValidity();
+        return;
+      }
+    }
     const { title, body } = mode === 'contact' ? contactPacket(form) : recordKind === 'policy' ? policyPacket(form) : projectPacket(form);
     setPacketUrl(`${ISSUE_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`);
   };
@@ -70,6 +79,8 @@ function ProjectFields() {
   return <div className="mt-7 grid gap-5 sm:grid-cols-2">
     <Field label="Project name"><input required maxLength={120} name="projectName" placeholder="e.g. Service name" /></Field>
     <Field label="Government sponsor"><input required maxLength={180} name="sponsor" placeholder="Agency or department" /></Field>
+    <Field label="Canonical agency IDs (optional)" wide><textarea maxLength={800} name="agencyIds" rows={3} aria-describedby="canonical-agency-ids-help" placeholder="us-gsa, us-nasa" onInput={(event) => event.currentTarget.setCustomValidity('')} /></Field>
+    <p id="canonical-agency-ids-help" className="-mt-3 text-xs leading-5 text-slate sm:col-span-2">If known, enter existing agency IDs or propose lowercase slugs for editors to resolve in the reviewed data change. Separate multiple IDs with commas or new lines.</p>
     <Field label="Jurisdiction"><select required name="jurisdiction" defaultValue=""><option value="" disabled>Select one</option><option>U.S. federal</option><option>U.S. state</option><option>International</option></select></Field>
     <Field label="Geography"><input required maxLength={120} name="geography" placeholder="Country, state, or territory" /></Field>
     <Field label="Service domain"><input required maxLength={100} name="domain" placeholder="Cybersecurity, design systems…" /></Field>
@@ -103,6 +114,7 @@ function projectPacket(form: FormData) {
     body: issueBody([
       ['Project name', name],
       ['Government sponsor', value(form, 'sponsor')],
+      ['Canonical agency IDs', parseAgencyIds(value(form, 'agencyIds')).join(', ')],
       ['Geography', value(form, 'geography')],
       ['Jurisdiction', value(form, 'jurisdiction')],
       ['Service domain', value(form, 'domain')],
@@ -143,6 +155,18 @@ function contactPacket(form: FormData) {
 
 function issueBody(sections: Array<[string, string]>) { return `${sections.map(([heading, content]) => `## ${heading}\n${content}`).join('\n\n')}\n\n---\nPrepared at https://gosdir.com/contribute/`; }
 function value(form: FormData, name: string) { return String(form.get(name) ?? '').trim(); }
+
+const agencyIdPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+function parseAgencyIds(input: string) { return input.split(/[,\n]/).map((id) => id.trim()).filter(Boolean); }
+function agencyIdsProblem(input: string) {
+  const ids = parseAgencyIds(input);
+  if (!ids.length) return '';
+  const invalid = ids.filter((id) => !agencyIdPattern.test(id));
+  if (invalid.length) return `Agency IDs must be lowercase slugs such as “us-gsa”. Invalid: ${invalid.join(', ')}.`;
+  const duplicates = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
+  if (duplicates.length) return `Agency IDs must be unique. Repeated: ${duplicates.join(', ')}.`;
+  return '';
+}
 
 function Field({ label, wide, children }: { label: string; wide?: boolean; children: React.ReactElement<{ className?: string }> }) {
   return <label className={wide ? 'sm:col-span-2' : ''}><span className="mb-2 block text-sm font-extrabold text-ink">{label}</span><span className="form-field">{children}</span></label>;

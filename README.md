@@ -45,13 +45,21 @@ That command updates the tracked root `index.html`, route entrypoints, and hashe
 ```text
 app/                 framework route entrypoints
 components/          shared interface and feature components
-lib/data.ts          curated project, policy, timeline, and glossary data
+lib/catalog/agencies.ts  canonical government bodies and hierarchy
+lib/catalog/software.ts  canonical software records
+lib/catalog/policies.ts  canonical policy and publication records
+lib/catalog/timeline.ts  selected catalog-linked milestones
+lib/catalog/glossary.ts  plain-language definitions
+lib/catalog/sources.ts   official source references
+lib/catalog/types.ts     shared record schemas
 static-src/          Apache/static application shell
 scripts/             local build tooling
 docs/                product, deployment, and research documentation
 ```
 
-Both route surfaces share components and the same data source. Changes to public content should be made in source and followed by `npm run build:apache`; generated route files should not be edited by hand.
+Both route surfaces share components and import the canonical files under `lib/catalog/` directly. Catalogs are organized by record type, not by import-time expansion batches. Agency records are first-class entries: every software record's `agencyIds` values must exactly match `id` values in `agencies.ts`, and an agency's optional `parentAgencyId` must exactly match another agency `id`. Timeline `projectId` and `policyId` values likewise match their canonical record IDs. If one catalog eventually becomes unwieldy, split it into one explicitly indexed file per record under a same-named subdirectory. Changes to public content should be made in source and followed by `npm run build:apache`; generated route files should not be edited by hand.
+
+See [`lib/catalog/README.md`](lib/catalog/README.md) for record locations and contribution rules.
 
 ## Add or review a record
 
@@ -61,9 +69,10 @@ For a manual data contribution:
 
 1. Open a GitHub issue with the project name, sponsor, repository, primary source, jurisdiction, and SPDX license expression.
 2. Verify the sponsor and license against primary sources.
-3. Add the accepted record to `lib/data.ts` and update relevant coverage/timeline content.
-4. Run `npm run build:apache` and `npm run build`.
-5. Commit the source and generated Apache artifacts together.
+3. Add or update the government body in `lib/catalog/agencies.ts`, reusing an existing stable `id` when one already represents it. Set `parentAgencyId` only to an exact existing agency `id`.
+4. Add the accepted record to its canonical `lib/catalog/` file (`software.ts`, `policies.ts`, and so on). Every software `agencyIds` value must exactly match an agency `id`; timeline references must exactly match a software or policy `id`.
+5. Run `npm run check`, `npm run build:apache`, and `npm run build`.
+6. Commit the source and generated Apache artifacts together.
 
 Never put private, classified, export-controlled, personally identifying, security-sensitive, or otherwise restricted material into an issue or this repository.
 

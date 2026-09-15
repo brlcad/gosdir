@@ -2,7 +2,9 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowUpRight, Check, Code2, Filter, Search, ShieldCheck, X } from 'lucide-react';
-import { projects, type Project } from '@/lib/data';
+import { agencySearchTextByProjectId } from '@/lib/catalog/agency-relations';
+import { projects } from '@/lib/catalog/software';
+import type { Project } from '@/lib/catalog/types';
 
 const jurisdictions = ['All jurisdictions', 'U.S. federal', 'U.S. state', 'International'];
 
@@ -23,7 +25,21 @@ export function ProjectExplorer() {
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return projects.filter((project) => {
-      const matchesQuery = !needle || [project.name, project.summary, project.sponsor, project.geography, project.domain, project.license, ...project.tags].join(' ').toLowerCase().includes(needle);
+      const matchesQuery =
+        !needle ||
+        [
+          project.name,
+          project.summary,
+          project.sponsor,
+          agencySearchTextByProjectId.get(project.id),
+          project.geography,
+          project.domain,
+          project.license,
+          ...project.tags,
+        ]
+          .join(' ')
+          .toLowerCase()
+          .includes(needle);
       const matchesJurisdiction = jurisdiction === 'All jurisdictions' || project.jurisdiction === jurisdiction;
       const matchesDomain = domain === 'All domains' || project.domain === domain;
       return matchesQuery && matchesJurisdiction && matchesDomain;

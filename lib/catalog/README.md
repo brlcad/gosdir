@@ -10,7 +10,7 @@ This directory is the canonical, reviewable source for GOSDIR records. Each reco
 - `sources.ts` — official source references used by the methodology view
 - `types.ts` — shared schemas only
 
-`../data.ts` is a compatibility export for application code. Do not add records there.
+Application code imports the record type it needs directly from its canonical file. Do not create a second catalog barrel or expansion file.
 
 ## Contribution rules
 
