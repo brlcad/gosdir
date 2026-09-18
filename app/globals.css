@@ -3,8 +3,9 @@
 @import 'shadcn/tailwind.css';
 
 @source './**/*.{ts,tsx}';
-@source '../components/**/*.{ts,tsx}';
-@source not '../components/ui';
+@source '../components/*.{ts,tsx}';
+@source '../components/ui/dialog.tsx';
+@source '../components/ui/button.tsx';
 
 @custom-variant dark (&:is(.dark *));
 

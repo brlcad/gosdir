@@ -9,12 +9,12 @@ SetEnvIf Request_URI "^/(?:index\.html|favicon\.svg|og\.png|site-assets/[A-Za-z0
 Require env gosdir_public
 
 <IfModule mod_headers.c>
-    Header always set Content-Security-Policy "default-src 'self'; connect-src 'self' https://api.github.com; img-src 'self' data: https:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://github.com; frame-ancestors 'none'; upgrade-insecure-requests"
+    Header always set Content-Security-Policy "default-src 'self'; connect-src 'self' https://api.github.com; img-src 'self' data: https:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-src https://ko-fi.com; object-src 'none'; base-uri 'self'; form-action 'self' https://github.com; frame-ancestors 'none'; upgrade-insecure-requests"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
-    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(self \"https://ko-fi.com\")"
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "DENY"
-    Header always set Cross-Origin-Opener-Policy "same-origin"
+    Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
 
     <FilesMatch "^index\.html$">
         Header always set Cache-Control "no-cache, max-age=0, must-revalidate"

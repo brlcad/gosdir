@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { Menu, Plus, X } from 'lucide-react';
 import { useState } from 'react';
 import { BrandLockup } from '@/components/brand-lockup';
+import { SupportDialog } from '@/components/support-dialog';
 import { cn } from '@/lib/utils';
 
 const nav = [
@@ -46,7 +47,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer border-t border-white/15 bg-ink text-white">
       <div className="page-shell grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
-        <div><p className="font-display text-2xl font-extrabold tracking-tight">Public money.<br />Reusable code.</p><p className="mt-4 max-w-sm text-sm leading-6 text-white/60">An independent, source-backed directory for finding government-sponsored open source and the policy that supports it.</p><a href="https://ko-fi.com/gosdir" target="_blank" rel="noreferrer" className="mt-4 inline-block text-sm font-bold text-signal hover:text-white">Support GOSDIR ↗</a></div>
+        <div><p className="font-display text-2xl font-extrabold tracking-tight">Public money.<br />Reusable code.</p><p className="mt-4 max-w-sm text-sm leading-6 text-white/60">An independent, source-backed directory for finding government-sponsored open source and the policy that supports it.</p><SupportDialog /></div>
         <FooterGroup title="Explore" links={[["/directory", "Project directory"], ["/coverage", "Coverage maps"], ["/policy", "Policy library"], ["/timeline", "Timeline"], ["/guide", "Release guide"]]} />
         <FooterGroup title="Participate" links={[["/contribute", "Submit a record"], ["/review", "Review queue"], ["/methodology", "Methodology"], ["/glossary", "Glossary"], ["/contact", "Contact & corrections"]]} />
       </div>
