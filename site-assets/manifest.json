@@ -1,0 +1,11 @@
+{
+  "index.html": {
+    "file": "site-assets/index-BguPYoAu.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "site-assets/index-4emf-fUl.css"
+    ]
+  }
+}

@@ -17,6 +17,7 @@ export default defineConfig({
   build: {
     outDir: '../.apache-build',
     emptyOutDir: true,
+    manifest: 'site-assets/manifest.json',
     assetsDir: 'site-assets',
     chunkSizeWarningLimit: 800,
     rollupOptions: {
