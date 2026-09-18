@@ -1,3 +1,4 @@
+import { readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -7,6 +8,7 @@ const repositoryRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   '..',
 );
+const softwareDirectory = path.join(repositoryRoot, 'lib/catalog/software');
 const errors = [];
 const counts = {
   agencies: null,
@@ -21,7 +23,7 @@ const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const datePattern = /^(\d{4})-(\d{2})-(\d{2})$/;
 const catalogModules = {
   agencies: '/lib/catalog/agencies.ts',
-  projects: '/lib/catalog/software.ts',
+  projects: '/lib/catalog/software/index.ts',
   policies: '/lib/catalog/policies.ts',
   timeline: '/lib/catalog/timeline.ts',
   glossary: '/lib/catalog/glossary.ts',
@@ -254,6 +256,65 @@ function validateIds(entries, collectionName) {
   return ids;
 }
 
+function validateSoftwareRecordFiles(records, indexedProjects) {
+  const indexedIdCounts = new Map();
+  const recordIdCounts = new Map();
+
+  indexedProjects.forEach((project) => {
+    if (!isRecord(project) || typeof project.id !== 'string') return;
+    indexedIdCounts.set(project.id, (indexedIdCounts.get(project.id) ?? 0) + 1);
+  });
+
+  records.forEach(({ filename, project }) => {
+    const recordPath = `lib/catalog/software/${filename}`;
+
+    if (!isRecord(project)) {
+      errors.push(
+        `${recordPath} must default export a software record object; got ${describe(project)}`,
+      );
+      return;
+    }
+
+    const { id } = project;
+    if (typeof id !== 'string' || id.length === 0) {
+      errors.push(
+        `${recordPath} default export must have a nonempty id; got ${describe(id)}`,
+      );
+      return;
+    }
+
+    const expectedFilename = `${id}.ts`;
+    if (filename !== expectedFilename) {
+      errors.push(
+        `${recordPath} filename must match its project id; expected ${describe(expectedFilename)} for id ${describe(id)}`,
+      );
+    }
+
+    recordIdCounts.set(id, (recordIdCounts.get(id) ?? 0) + 1);
+  });
+
+  const allIds = new Set([...indexedIdCounts.keys(), ...recordIdCounts.keys()]);
+
+  for (const id of [...allIds].sort()) {
+    const indexedCount = indexedIdCounts.get(id) ?? 0;
+    const recordCount = recordIdCounts.get(id) ?? 0;
+
+    if (recordCount > indexedCount) {
+      const difference = recordCount - indexedCount;
+      errors.push(
+        `lib/catalog/software has ${difference} unindexed record file${difference === 1 ? '' : 's'} with project id ${describe(id)}; import each record exactly once in lib/catalog/software/index.ts`,
+      );
+    }
+
+    if (indexedCount > recordCount) {
+      const difference = indexedCount - recordCount;
+      errors.push(
+        `lib/catalog/software/index.ts has ${difference} project${difference === 1 ? '' : 's'} with id ${describe(id)} but no matching record file; add the record file or remove the index entry`,
+      );
+    }
+  }
+}
+
 function validateHttpUrl(
   entry,
   collectionName,
@@ -475,14 +536,34 @@ try {
     server: { middlewareMode: true },
   });
 
-  const catalog = Object.fromEntries(
-    await Promise.all(
+  const softwareRecordFilenames = (
+    await readdir(softwareDirectory, { withFileTypes: true })
+  )
+    .filter(
+      (entry) =>
+        entry.isFile() &&
+        entry.name.endsWith('.ts') &&
+        entry.name !== 'index.ts',
+    )
+    .map((entry) => entry.name)
+    .sort();
+
+  const [catalogEntries, softwareRecords] = await Promise.all([
+    Promise.all(
       Object.entries(catalogModules).map(async ([exportName, modulePath]) => [
         exportName,
         (await vite.ssrLoadModule(modulePath))[exportName],
       ]),
     ),
-  );
+    Promise.all(
+      softwareRecordFilenames.map(async (filename) => ({
+        filename,
+        project: (await vite.ssrLoadModule(`/lib/catalog/software/${filename}`))
+          .default,
+      })),
+    ),
+  ]);
+  const catalog = Object.fromEntries(catalogEntries);
   const agencies = requireArray(catalog, 'agencies');
   const projects = requireArray(catalog, 'projects');
   const policies = requireArray(catalog, 'policies');
@@ -495,6 +576,7 @@ try {
   const policyIds = validateIds(policies, 'policies');
 
   validateAgencyHierarchy(agencies, agencyIds);
+  validateSoftwareRecordFiles(softwareRecords, projects);
   validateProjectAgencyReferences(projects, agencyIds);
 
   validateRequiredStrings(agencies, 'agencies', [
