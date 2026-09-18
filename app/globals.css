@@ -4,6 +4,7 @@
 
 @source './**/*.{ts,tsx}';
 @source '../components/**/*.{ts,tsx}';
+@source not '../components/ui';
 
 @custom-variant dark (&:is(.dark *));
 
