@@ -22,6 +22,19 @@ export default defineConfig({
     chunkSizeWarningLimit: 800,
     rollupOptions: {
       output: {
+        // Keep shell-only edits from rotating every lazy route. Do not group
+        // all dependencies here: the heavier dialog code must stay on demand.
+        // React and Lucide share modules across the shell and route chunks.
+        manualChunks(id) {
+          if (
+            id.includes('/node_modules/react/') ||
+            id.includes('/node_modules/react-dom/') ||
+            id.includes('/node_modules/scheduler/') ||
+            id.includes('/node_modules/lucide-react/')
+          ) {
+            return 'ui-runtime';
+          }
+        },
         entryFileNames: 'site-assets/[name]-[hash].js',
         chunkFileNames: 'site-assets/[name]-[hash].js',
         assetFileNames: 'site-assets/[name]-[hash][extname]',
