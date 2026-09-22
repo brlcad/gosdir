@@ -13,7 +13,8 @@ import {
   Search,
   ShieldCheck,
 } from 'lucide-react';
-import type { Policy, Project } from '@/lib/catalog/types';
+import type { Policy, Project, TimelineEvent } from '@/lib/catalog/types';
+import { timelineRecordReference } from '@/lib/timeline-reference';
 
 const REPOSITORY = 'brlcad/gosdir';
 const API_URL = `https://api.github.com/repos/${REPOSITORY}/issues?state=open&per_page=100`;
@@ -50,6 +51,14 @@ const policyChecks = [
   'Current, reference, or superseded status is supported',
   'Summary reflects the source without overstating its effect',
   'Duplicate, citation, and timeline checks are complete',
+];
+
+const timelineChecks = [
+  'Year and title match the primary source',
+  'Source supports the proposed milestone description',
+  'Government open source relevance is clear',
+  'Existing milestone or duplicate has been checked',
+  'Related catalog record is correct or no link is needed',
 ];
 
 export function ReviewQueue() {
@@ -160,7 +169,7 @@ export function ReviewQueue() {
       </div>
 
       <div className="mt-6 grid gap-3 border border-line bg-white p-4 md:grid-cols-[1fr_220px_auto]">
-        <label className="filter-control"><Search className="size-4 text-blue" /><span className="sr-only">Search submissions</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search project, agency, issue…" className="w-full bg-transparent outline-none" /></label>
+        <label className="filter-control"><Search className="size-4 text-blue" /><span className="sr-only">Search submissions</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search project, milestone, issue…" className="w-full bg-transparent outline-none" /></label>
         <label className="filter-control"><span className="font-mono text-[10px] font-bold text-blue">STATE</span><span className="sr-only">Filter review state</span><select value={status} onChange={(event) => setStatus(event.target.value as QueueStatus)} className="w-full appearance-none bg-transparent outline-none"><option value="all">All submissions</option><option value="unreviewed">Unreviewed</option><option value="in-progress">In progress</option><option value="ready">Checklist ready</option></select></label>
         <button type="button" onClick={() => void loadQueue()} className="button-secondary justify-center" disabled={loading}><RefreshCw className={`size-4 ${loading ? 'animate-spin' : ''}`} /> Refresh</button>
       </div>
@@ -172,7 +181,7 @@ export function ReviewQueue() {
       ) : error && !issues.length ? (
         <QueueMessage icon={<AlertTriangle className="size-8 text-blue" />} title="The embedded queue is temporarily unavailable" body={`${error} You can continue reviewing on GitHub; no submissions or checklist data were changed.`} action={<a href={QUEUE_URL} target="_blank" rel="noreferrer" className="button-primary">Open GitHub queue <ExternalLink className="size-4" /></a>} />
       ) : !issues.length ? (
-        <QueueMessage icon={<CheckCircle2 className="size-9 text-green" />} title="The review queue is clear" body="There are no open issues marked as directory submissions. New project and policy packets will appear here after a contributor finishes the final GitHub submission step." action={<a href="/contribute/" className="button-primary">Prepare a submission</a>} />
+        <QueueMessage icon={<CheckCircle2 className="size-9 text-green" />} title="The review queue is clear" body="There are no open issues marked as directory submissions. New project, policy, and timeline packets will appear here after a contributor finishes the final GitHub submission step." action={<a href="/contribute/" className="button-primary">Prepare a submission</a>} />
       ) : !filtered.length ? (
         <QueueMessage icon={<Search className="size-8 text-blue" />} title="No submissions match" body="Try a broader search or change the review-state filter." action={<button type="button" onClick={() => { setQuery(''); setStatus('all'); }} className="button-secondary">Reset filters</button>} />
       ) : (
@@ -206,6 +215,7 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
   const problems = validationFor(issue);
   const canCopy = ready && problems.length === 0;
   const unresolvedAgencyIds = kindFor(issue) === 'project' && parseAgencyIds(fields['Canonical agency IDs'] ?? '').length === 0;
+  const timelineCorrection = kindFor(issue) === 'timeline' && fields['Change type'] === 'Correction';
   return <article className="border border-line bg-white">
     <header className="border-b border-line bg-paper p-6 sm:p-8">
       <div className="flex flex-wrap items-center gap-2"><span className="license-pill">{kindFor(issue)} submission</span><span className={ready ? 'status-pill' : 'rounded-full border border-line bg-white px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[.08em] text-slate'}>{ready ? 'checklist ready' : `${complete} of ${checklist.length} checks`}</span><span className="ml-auto font-mono text-xs font-bold text-slate">#{issue.number}</span></div>
@@ -214,7 +224,7 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
     </header>
 
     <div className="p-6 sm:p-8">
-      {Object.keys(fields).length > 0 && <dl className="grid gap-px border border-line bg-line sm:grid-cols-2">{Object.entries(fields).map(([label, value]) => <div key={label} className={label === 'Summary' || label === 'Why it belongs' ? 'bg-white p-4 sm:col-span-2' : 'bg-white p-4'}><dt className="eyebrow text-slate">{label}</dt><dd className="mt-2 break-words text-sm font-semibold leading-6 text-ink">{safeUrl(value) ? <a href={value} target="_blank" rel="noreferrer" className="text-blue underline decoration-blue/30 underline-offset-4 hover:text-ink">{value} ↗</a> : value}</dd></div>)}</dl>}
+      {Object.keys(fields).length > 0 && <dl className="grid gap-px border border-line bg-line sm:grid-cols-2">{Object.entries(fields).map(([label, value]) => <div key={label} className={label === 'Summary' || label === 'Why it belongs' || label === 'Description' || label === 'Reason for change' ? 'bg-white p-4 sm:col-span-2' : 'bg-white p-4'}><dt className="eyebrow text-slate">{label}</dt><dd className="mt-2 break-words text-sm font-semibold leading-6 text-ink">{safeUrl(value) ? <a href={value} target="_blank" rel="noreferrer" className="text-blue underline decoration-blue/30 underline-offset-4 hover:text-ink">{value} ↗</a> : value}</dd></div>)}</dl>}
 
       {problems.length > 0 && <div role="alert" className="mt-5 border-l-4 border-amber-500 bg-amber-50 p-4 text-sm leading-6 text-amber-950"><strong>Draft blocked:</strong> {problems.join(' ')}</div>}
 
@@ -228,8 +238,8 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
 
       <div className="mt-8 flex flex-col gap-3 border-t border-line pt-6 sm:flex-row">
         <a href={issue.html_url} target="_blank" rel="noreferrer" className="button-primary justify-center"><CircleDot className="size-4" /> Discuss on GitHub</a>
-        <button type="button" onClick={() => void copyDraft(issue)} disabled={!canCopy} title={!ready ? 'Complete the editorial checklist first' : problems[0]} className="button-secondary justify-center disabled:cursor-not-allowed disabled:opacity-45"><Clipboard className="size-4" /> {copied ? 'Draft copied' : 'Copy record draft'}</button>
-        <span className="sr-only" aria-live="polite">{copied ? 'Record draft copied to the clipboard.' : ''}</span>
+        <button type="button" onClick={() => void copyDraft(issue)} disabled={!canCopy} title={!ready ? 'Complete the editorial checklist first' : problems[0]} className="button-secondary justify-center disabled:cursor-not-allowed disabled:opacity-45"><Clipboard className="size-4" /> {copied ? 'Draft copied' : timelineCorrection ? 'Copy change notes' : 'Copy record draft'}</button>
+        <span className="sr-only" aria-live="polite">{copied ? (timelineCorrection ? 'Timeline change notes copied to the clipboard.' : 'Record draft copied to the clipboard.') : ''}</span>
       </div>
       {canCopy && <p className="mt-5 flex items-start gap-2 border-l-4 border-green bg-green/5 p-4 text-sm leading-6 text-slate"><CheckCircle2 className="mt-0.5 size-5 shrink-0 text-green" /><span><strong className="text-ink">Ready for an editor decision.</strong> Leave the evidence decision on GitHub; accepted records ship through normal code review.</span></p>}
     </div>
@@ -245,21 +255,33 @@ function isSubmission(issue: GitHubIssue) {
   return issue.title.toLowerCase().startsWith('[submission') || labels.some((label) => label.toLowerCase() === 'submission');
 }
 
-function kindFor(issue: GitHubIssue) { return issue.title.toLowerCase().includes('policy') || fieldValue(issue.body, 'Policy title') ? 'policy' : 'project'; }
-function checklistFor(issue: GitHubIssue) { return kindFor(issue) === 'policy' ? policyChecks : projectChecks; }
-function cleanTitle(title: string) { return title.replace(/^\[submission(?::\s*(?:project|policy))?\]\s*/i, '').trim() || 'Untitled submission'; }
+function kindFor(issue: GitHubIssue): 'project' | 'policy' | 'timeline' {
+  const explicit = issue.title.match(/^\[submission:\s*(project|policy|timeline)\]/i)?.[1]?.toLowerCase();
+  if (explicit === 'project' || explicit === 'policy' || explicit === 'timeline') return explicit;
+  if (fieldValue(issue.body, 'Milestone title')) return 'timeline';
+  return fieldValue(issue.body, 'Policy title') ? 'policy' : 'project';
+}
+function checklistFor(issue: GitHubIssue) { const kind = kindFor(issue); return kind === 'timeline' ? timelineChecks : kind === 'policy' ? policyChecks : projectChecks; }
+function cleanTitle(title: string) { return title.replace(/^\[submission(?::\s*(?:project|policy|timeline))?\]\s*/i, '').trim() || 'Untitled submission'; }
 function formatDate(value: string) { return new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(value)); }
 
 function fieldValue(body: string | null, heading: string) {
   if (!body) return '';
   const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const match = body.match(new RegExp(`(?:^|\\n)#{2,3}\\s+${escaped}\\s*\\n+([\\s\\S]*?)(?=\\n#{2,3}\\s+|$)`, 'i'));
+  const match = body.match(new RegExp(`(?:^|\\n)#{2,3}[ \\t]+${escaped}[ \\t]*\\r?\\n([\\s\\S]*?)(?=\\r?\\n#{2,3}[ \\t]+|$)`, 'i'));
   const value = match?.[1]?.replace(/<!--[^]*?-->/g, '').trim() ?? '';
   return /^_No response_$/i.test(value) ? '' : value;
 }
 
 function fieldsFor(issue: GitHubIssue) {
-  const definitions: Array<[string, string[]]> = kindFor(issue) === 'policy'
+  const kind = kindFor(issue);
+  const definitions: Array<[string, string[]]> = kind === 'timeline'
+    ? [
+      ['Change type', ['Change type']], ['Existing milestone', ['Existing milestone']], ['Year', ['Year']],
+      ['Milestone title', ['Milestone title']], ['Description', ['Description']], ['Primary source', ['Primary source']],
+      ['Related record', ['Related record']], ['Reason for change', ['Reason for change']],
+    ]
+    : kind === 'policy'
     ? [
       ['Policy title', ['Policy title']], ['Issuer', ['Issuer']], ['Geography', ['Geography']], ['Year', ['Year']],
       ['Instrument type', ['Instrument type']], ['Status', ['Status']], ['Primary source', ['Primary source']],
@@ -280,14 +302,17 @@ function safeUrl(value: string) {
 
 function validationFor(issue: GitHubIssue) {
   const fields = fieldsFor(issue);
-  const required = kindFor(issue) === 'policy'
+  const kind = kindFor(issue);
+  const required = kind === 'timeline'
+    ? ['Change type', 'Year', 'Milestone title', 'Description', 'Primary source', 'Reason for change']
+    : kind === 'policy'
     ? ['Policy title', 'Issuer', 'Geography', 'Year', 'Instrument type', 'Status', 'Primary source', 'Summary']
     : ['Project name', 'Government sponsor', 'Geography', 'Jurisdiction', 'Service domain', 'Project status', 'Repository', 'Official source', 'License', 'Summary'];
   const missing = required.filter((field) => !fields[field]);
   const problems: string[] = [];
   if (missing.length) problems.push(`Missing ${missing.join(', ')}.`);
   const agencyIdsText = fields['Canonical agency IDs'] ?? '';
-  if (kindFor(issue) === 'project' && agencyIdsText) {
+  if (kind === 'project' && agencyIdsText) {
     const agencyIds = parseAgencyIds(agencyIdsText);
     if (!agencyIds.length) problems.push('Canonical agency IDs must include at least one slug when supplied.');
     const invalid = agencyIds.filter((id) => !agencyIdPattern.test(id));
@@ -295,18 +320,43 @@ function validationFor(issue: GitHubIssue) {
     const duplicates = [...new Set(agencyIds.filter((id, index) => agencyIds.indexOf(id) !== index))];
     if (duplicates.length) problems.push(`Canonical agency IDs must be unique. Repeated: ${duplicates.join(', ')}.`);
   }
-  if (kindFor(issue) === 'policy' && fields.Year && !/^(?:\d{4}|Undated)$/i.test(fields.Year)) problems.push('Year must be four digits or “Undated”.');
-  const urlFields = kindFor(issue) === 'policy' ? ['Primary source'] : ['Repository', 'Official source'];
+  if (kind === 'timeline') {
+    if (fields['Change type'] && !['New milestone', 'Correction'].includes(fields['Change type'])) problems.push('Change type must be New milestone or Correction.');
+    if (fields['Change type'] === 'Correction' && !fields['Existing milestone']) problems.push('Identify the existing milestone to correct.');
+    if (fields.Year && !/^\d{4}$/.test(fields.Year)) problems.push('Timeline year must be four digits.');
+    if (fields['Related record'] && !timelineRecordReference(fields['Related record'])) problems.push('Related record must link to a GOSDIR project or policy record.');
+  }
+  if (kind === 'policy' && fields.Year && !/^(?:\d{4}|Undated)$/i.test(fields.Year)) problems.push('Year must be four digits or “Undated”.');
+  const urlFields = kind === 'project' ? ['Repository', 'Official source'] : ['Primary source'];
   const invalidUrls = urlFields.filter((field) => fields[field] && !safeUrl(fields[field]));
   if (invalidUrls.length) problems.push(`${invalidUrls.join(' and ')} must use an HTTP(S) URL.`);
   if (fields['Project status'] && !['Active', 'Maintained', 'Reference'].includes(fields['Project status'])) problems.push('Project status is not recognized.');
-  if (kindFor(issue) === 'policy' && fields.Status && !['Current', 'Reference', 'Superseded'].includes(fields.Status)) problems.push('Policy status is not recognized.');
+  if (kind === 'policy' && fields.Status && !['Current', 'Reference', 'Superseded'].includes(fields.Status)) problems.push('Policy status is not recognized.');
   if (fields.Jurisdiction && !['U.S. federal', 'U.S. state', 'International'].includes(fields.Jurisdiction)) problems.push('Jurisdiction is not recognized.');
   return problems;
 }
 
 function recordDraft(issue: GitHubIssue) {
-  const isPolicy = kindFor(issue) === 'policy';
+  const kind = kindFor(issue);
+  if (kind === 'timeline') {
+    const fields = fieldsFor(issue);
+    const related = fields['Related record'] ? timelineRecordReference(fields['Related record']) : {};
+    const proposedEvent = {
+      year: fields.Year,
+      title: fields['Milestone title'],
+      body: fields.Description,
+      sourceUrl: fields['Primary source'],
+      ...related,
+    } satisfies TimelineEvent;
+    if (fields['Change type'] === 'Correction') return {
+      change: 'Correction',
+      existingMilestone: fields['Existing milestone'],
+      proposedEvent,
+      reason: fields['Reason for change'],
+    };
+    return proposedEvent;
+  }
+  const isPolicy = kind === 'policy';
   const policyYearText = fieldValue(issue.body, 'Year');
   if (isPolicy) return {
     id: slugify(fieldValue(issue.body, 'Policy title') || cleanTitle(issue.title)),

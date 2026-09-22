@@ -5,7 +5,7 @@ This directory is the canonical, reviewable source for GOSDIR records. Each reco
 - `agencies.ts` — government and public-body records referenced by software
 - `software/` — one `<id>.ts` file per government-sponsored software record, plus the ordered `index.ts`
 - `policies.ts` — policy, law, standard, strategy, and publication records
-- `timeline.ts` — selected milestones linked to catalog records
+- `timeline.ts` — selected milestones linked to catalog records and optional primary-source URLs
 - `glossary.ts` — public-facing terminology
 - `sources.ts` — official source references used by the methodology view
 - `types.ts` — shared schemas only

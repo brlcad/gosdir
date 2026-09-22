@@ -57,13 +57,13 @@ scripts/             local build tooling
 docs/                product, deployment, and research documentation
 ```
 
-Both route surfaces share components and import the canonical files under `lib/catalog/` directly. Catalogs are organized by record type, not by import-time expansion batches. Software records live one per file under `lib/catalog/software/` and have an explicit order in `index.ts`. Agency records are first-class entries: every software record's `agencyIds` values must exactly match `id` values in `agencies.ts`, and an agency's optional `parentAgencyId` must exactly match another agency `id`. Timeline `projectId` and `policyId` values likewise match their canonical record IDs. If another catalog eventually becomes unwieldy, use the same one-record-per-file structure. Changes to public content should be made in source and followed by `npm run build:apache`; generated route files should not be edited by hand.
+Both route surfaces share components and import the canonical files under `lib/catalog/` directly. Catalogs are organized by record type, not by import-time expansion batches. Software records live one per file under `lib/catalog/software/` and have an explicit order in `index.ts`. Agency records are first-class entries: every software record's `agencyIds` values must exactly match `id` values in `agencies.ts`, and an agency's optional `parentAgencyId` must exactly match another agency `id`. Timeline `projectId` and `policyId` values likewise match their canonical record IDs; new milestones can link a primary source through `sourceUrl`. If another catalog eventually becomes unwieldy, use the same one-record-per-file structure. Changes to public content should be made in source and followed by `npm run build:apache`; generated route files should not be edited by hand.
 
 See [`lib/catalog/README.md`](lib/catalog/README.md) for record locations and contribution rules.
 
 ## Add or review a record
 
-Use [the submission form](https://gosdir.com/contribute/) to prepare a structured GitHub issue. It collects public evidence only and does not publish directly to the directory. Editors can use [the review queue](https://gosdir.com/review/) to inspect open submissions, work through the evidence checklist, and prepare a record for a normal code review and commit.
+Use [the submission form](https://gosdir.com/contribute/) to propose a project, policy, or timeline change as a structured GitHub issue. It collects public evidence only and does not publish directly to the directory. Editors can use [the review queue](https://gosdir.com/review/) to inspect open submissions, work through the evidence checklist, and prepare a record for a normal code review and commit.
 
 For a manual data contribution:
 

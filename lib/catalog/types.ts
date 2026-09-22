@@ -57,6 +57,7 @@ export type TimelineEvent = {
   year: string;
   title: string;
   body: string;
+  sourceUrl?: string;
   projectId?: string;
   policyId?: string;
 };

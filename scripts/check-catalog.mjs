@@ -644,6 +644,9 @@ try {
   validateRequiredStrings(timeline, 'timeline', ['title', 'body']);
   validateTimelineYears(timeline);
   validateTimelineNaturalKeys(timeline);
+  timeline.forEach((event, index) => {
+    validateHttpUrl(event, 'timeline', index, 'sourceUrl', { optional: true });
+  });
 
   validateRequiredStrings(glossary, 'glossary', ['term', 'definition'], {
     reportInvalidEntries: true,

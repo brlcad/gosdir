@@ -1,19 +1,44 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
-import { ArrowUpRight, CheckCircle2, CircleDot, Code2, FileText, LockKeyhole, RotateCcw, ShieldCheck } from 'lucide-react';
+import { FormEvent, useEffect, useState } from 'react';
+import { ArrowUpRight, CalendarDays, CheckCircle2, CircleDot, Code2, FileText, LockKeyhole, RotateCcw, ShieldCheck } from 'lucide-react';
+import { timelineRecordReference } from '@/lib/timeline-reference';
 
 const ISSUE_URL = 'https://github.com/brlcad/gosdir/issues/new';
-type RecordKind = 'project' | 'policy';
+type RecordKind = 'project' | 'policy' | 'timeline';
+type TimelineChangeType = 'New milestone' | 'Correction';
 
-export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'contact' }) {
+export function SubmissionForm({ mode = 'contribute' }: { mode?: 'contribute' | 'contact' }) {
   const [recordKind, setRecordKind] = useState<RecordKind>('project');
+  const [timelineChangeType, setTimelineChangeType] = useState<TimelineChangeType>('New milestone');
   const [packetUrl, setPacketUrl] = useState('');
+
+  useEffect(() => {
+    if (mode !== 'contribute') return;
+    const syncKindFromUrl = () => {
+      const requested = new URLSearchParams(window.location.search).get('kind');
+      if (requested === 'project' || requested === 'policy' || requested === 'timeline') {
+        setRecordKind(requested);
+        setPacketUrl('');
+      }
+    };
+    window.addEventListener('popstate', syncKindFromUrl);
+    queueMicrotask(syncKindFromUrl);
+    return () => window.removeEventListener('popstate', syncKindFromUrl);
+  }, [mode]);
+
+  const selectRecordKind = (kind: RecordKind) => {
+    setRecordKind(kind);
+    setPacketUrl('');
+    const url = new URL(window.location.href);
+    url.searchParams.set('kind', kind);
+    window.history.replaceState(window.history.state, '', url);
+  };
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
-    if (mode === 'project' && recordKind === 'project') {
+    if (mode === 'contribute' && recordKind === 'project') {
       const problem = agencyIdsProblem(value(form, 'agencyIds'));
       const input = event.currentTarget.elements.namedItem('agencyIds');
       if (input instanceof HTMLTextAreaElement) input.setCustomValidity(problem);
@@ -22,7 +47,17 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
         return;
       }
     }
-    const { title, body } = mode === 'contact' ? contactPacket(form) : recordKind === 'policy' ? policyPacket(form) : projectPacket(form);
+    if (mode === 'contribute' && recordKind === 'timeline') {
+      const related = value(form, 'relatedRecord');
+      const input = event.currentTarget.elements.namedItem('relatedRecord');
+      const problem = related && !timelineRecordReference(related) ? 'Use a GOSDIR project or policy record link, or leave this optional field blank.' : '';
+      if (input instanceof HTMLInputElement) input.setCustomValidity(problem);
+      if (problem) {
+        if (input instanceof HTMLInputElement) input.reportValidity();
+        return;
+      }
+    }
+    const { title, body } = mode === 'contact' ? contactPacket(form) : recordKind === 'timeline' ? timelinePacket(form) : recordKind === 'policy' ? policyPacket(form) : projectPacket(form);
     setPacketUrl(`${ISSUE_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`);
   };
 
@@ -36,24 +71,24 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
         <a href={packetUrl} target="_blank" rel="noreferrer" className="button-primary justify-center"><CircleDot className="size-4" /> Continue on GitHub <ArrowUpRight className="size-4" /></a>
         <button type="button" className="button-secondary justify-center" onClick={() => setPacketUrl('')}><RotateCcw className="size-4" /> Edit packet</button>
       </div>
-      {mode === 'project' && <a href="/review/" className="mt-7 inline-flex text-sm font-extrabold text-blue hover:text-ink">See how reviewers process submissions →</a>}
+      {mode === 'contribute' && <a href="/review/" className="mt-7 inline-flex text-sm font-extrabold text-blue hover:text-ink">See how reviewers process submissions →</a>}
     </div>
   ) : null;
 
   return (
     <>
     <form onSubmit={onSubmit} className={`${packetUrl ? 'hidden' : ''} border border-line bg-white p-6 sm:p-8`}>
-      {mode === 'project' ? (
+      {mode === 'contribute' ? (
         <>
+          {recordKind === 'timeline' && <div className="mb-6 border-l-4 border-blue bg-blue/5 p-4"><a href="/timeline/" className="text-sm font-bold text-blue hover:text-ink">← Back to timeline</a><h2 className="mt-2 font-display text-xl font-black text-ink">Suggest a timeline milestone or correction</h2><p className="mt-2 text-sm leading-6 text-slate">Share the proposed year and wording with a public source so editors can review the change.</p></div>}
           <div className="flex flex-col gap-5 border-b border-line pb-6 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-center gap-3"><span className="icon-tile size-10 shadow-none">{recordKind === 'project' ? <Code2 className="size-5" /> : <FileText className="size-5" />}</span><div><p className="text-sm font-extrabold text-ink">Public evidence packet</p><p className="mt-1 text-xs text-slate">Choose the record you want the editors to verify.</p></div></div>
-            <div className="grid grid-cols-2 border border-line bg-paper p-1" aria-label="Record type">
-              <button type="button" aria-pressed={recordKind === 'project'} onClick={() => setRecordKind('project')} className={`px-4 py-2 text-sm font-extrabold ${recordKind === 'project' ? 'bg-ink text-white' : 'text-slate hover:text-ink'}`}>Project</button>
-              <button type="button" aria-pressed={recordKind === 'policy'} onClick={() => setRecordKind('policy')} className={`px-4 py-2 text-sm font-extrabold ${recordKind === 'policy' ? 'bg-ink text-white' : 'text-slate hover:text-ink'}`}>Policy</button>
+            <div className="flex items-center gap-3"><span className="icon-tile size-10 shadow-none">{recordKind === 'project' ? <Code2 className="size-5" /> : recordKind === 'policy' ? <FileText className="size-5" /> : <CalendarDays className="size-5" />}</span><div><p className="text-sm font-extrabold text-ink">Public evidence packet</p><p className="mt-1 text-xs text-slate">Choose the record you want the editors to verify.</p></div></div>
+            <div className="grid grid-cols-3 border border-line bg-paper p-1" aria-label="Record type">
+              {(['project', 'policy', 'timeline'] as RecordKind[]).map((kind) => <button key={kind} type="button" aria-pressed={recordKind === kind} onClick={() => selectRecordKind(kind)} className={`px-3 py-2 text-sm font-extrabold sm:px-4 ${recordKind === kind ? 'bg-ink text-white' : 'text-slate hover:text-ink'}`}>{kind[0].toUpperCase() + kind.slice(1)}</button>)}
             </div>
           </div>
 
-          {recordKind === 'project' ? <ProjectFields /> : <PolicyFields />}
+          {recordKind === 'timeline' ? <TimelineFields changeType={timelineChangeType} setChangeType={setTimelineChangeType} /> : recordKind === 'policy' ? <PolicyFields /> : <ProjectFields />}
 
           <label className="mt-6 flex items-start gap-3 text-xs leading-5 text-slate"><input required type="checkbox" className="mt-1 size-4 accent-blue" /> I used public information, checked the source links, and understand that editorial review comes before directory publication.</label>
           <div className="mt-7 flex flex-col gap-4 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between"><p className="flex max-w-md items-start gap-2 text-xs leading-5 text-slate"><LockKeyhole className="mt-0.5 size-4 shrink-0 text-green" /> Do not enter classified, export-controlled, personal, confidential, or security-sensitive nonpublic information.</p><button type="submit" className="button-primary justify-center"><ShieldCheck className="size-4" /> Prepare GitHub submission</button></div>
@@ -107,6 +142,20 @@ function PolicyFields() {
   </div>;
 }
 
+function TimelineFields({ changeType, setChangeType }: { changeType: TimelineChangeType; setChangeType: (type: TimelineChangeType) => void }) {
+  return <div className="mt-7 grid gap-5 sm:grid-cols-2">
+    <Field label="Change type" wide><select required name="timelineChangeType" value={changeType} onChange={(event) => setChangeType(event.target.value as TimelineChangeType)}><option>New milestone</option><option>Correction</option></select></Field>
+    {changeType === 'Correction' && <Field label="Existing milestone (year and title)" wide><input required maxLength={240} name="existingMilestone" placeholder="2019 — NSA releases Ghidra" /></Field>}
+    <Field label="Proposed year"><input required type="text" pattern="[0-9]{4}" maxLength={4} name="milestoneYear" placeholder="2026" title="Enter a four-digit year" /></Field>
+    <Field label="Milestone title"><input required maxLength={160} name="milestoneTitle" placeholder="What happened?" /></Field>
+    <Field label="Proposed description" wide><textarea required maxLength={1000} name="milestoneDescription" rows={4} placeholder="Explain the event and its relevance to government open source." /></Field>
+    <Field label="Primary source URL" wide><input required type="url" pattern="https?://.*" name="milestoneSource" placeholder="https://official-source.example/milestone" /></Field>
+    <Field label="Related GOSDIR record URL (optional)" wide><input type="url" name="relatedRecord" aria-describedby="related-record-help" onInput={(event) => event.currentTarget.setCustomValidity('')} placeholder="https://gosdir.com/directory/?project=..." /></Field>
+    <p id="related-record-help" className="-mt-3 text-xs leading-5 text-slate sm:col-span-2">Use the link from an existing project or policy record, or leave this blank.</p>
+    <Field label="Reason for this change" wide><textarea required maxLength={1200} name="timelineReason" rows={3} placeholder="Why should this milestone be added or corrected?" /></Field>
+  </div>;
+}
+
 function projectPacket(form: FormData) {
   const name = value(form, 'projectName');
   return {
@@ -145,6 +194,26 @@ function policyPacket(form: FormData) {
       ['Why it belongs', value(form, 'notes')],
       ['Submitter confirmation', 'I checked the official source and will follow it for current policy details.'],
     ]),
+  };
+}
+
+function timelinePacket(form: FormData) {
+  const changeType = value(form, 'timelineChangeType');
+  const title = value(form, 'milestoneTitle');
+  const sections: Array<[string, string]> = [['Change type', changeType]];
+  if (changeType === 'Correction') sections.push(['Existing milestone', value(form, 'existingMilestone')]);
+  sections.push(
+    ['Year', value(form, 'milestoneYear')],
+    ['Milestone title', title],
+    ['Description', value(form, 'milestoneDescription')],
+    ['Primary source', value(form, 'milestoneSource')],
+    ['Related record', value(form, 'relatedRecord')],
+    ['Reason for change', value(form, 'timelineReason')],
+    ['Submitter confirmation', 'I used public information and understand this timeline change requires editorial review before publication.'],
+  );
+  return {
+    title: `[submission: timeline] ${changeType === 'Correction' ? 'Correction: ' : ''}${title}`,
+    body: issueBody(sections),
   };
 }
 
