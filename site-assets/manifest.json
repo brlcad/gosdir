@@ -22,7 +22,7 @@
     ]
   },
   "../app/coverage/page.tsx": {
-    "file": "site-assets/page-my4y3zV4.js",
+    "file": "site-assets/page-B_GYxiBP.js",
     "name": "page",
     "src": "../app/coverage/page.tsx",
     "isDynamicEntry": true,
@@ -78,7 +78,7 @@
     ]
   },
   "../app/page.tsx": {
-    "file": "site-assets/page-htzpCQvA.js",
+    "file": "site-assets/page-mH4B5K4d.js",
     "name": "page",
     "src": "../app/page.tsx",
     "isDynamicEntry": true,
@@ -166,7 +166,7 @@
     ]
   },
   "index.html": {
-    "file": "site-assets/index-BDTYnPoB.js",
+    "file": "site-assets/index-IOgBSuuL.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -189,7 +189,7 @@
       "../app/contact/page.tsx"
     ],
     "css": [
-      "site-assets/index-C7qrzpzS.css"
+      "site-assets/index-D23DmoN2.css"
     ]
   }
 }

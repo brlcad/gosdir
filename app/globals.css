@@ -116,18 +116,6 @@ button, input, textarea, select { font: inherit; }
     linear-gradient(115deg, #f5f2ea 0%, #f5f2ea 62%, #eeece5 100%);
 }
 
-.hero-watermark {
-  position: absolute;
-  right: -0.055em;
-  bottom: -0.24em;
-  z-index: 0;
-  color: rgb(17 27 52 / .035);
-  font: 900 clamp(9rem, 23vw, 24rem) / .8 var(--font-geist-sans);
-  letter-spacing: -.09em;
-  pointer-events: none;
-  user-select: none;
-}
-
 .directory-board::before {
   content: '';
   position: absolute;

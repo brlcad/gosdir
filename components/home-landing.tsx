@@ -1,12 +1,9 @@
 import {
   ArrowRight,
-  CheckCircle2,
-  FileCheck2,
   Globe2,
   Landmark,
   Map,
   Search,
-  ShieldCheck,
   Sparkles,
 } from 'lucide-react';
 import { representedAgencyIds } from '@/lib/catalog/agency-relations';
@@ -46,23 +43,19 @@ export function HomeLanding() {
     <main>
       <section className="home-hero relative overflow-hidden border-b border-line bg-paper">
         <div className="civic-grid absolute inset-0 opacity-70" aria-hidden="true" />
-        <div className="hero-watermark" aria-hidden="true">GOSDIR</div>
-        <div className="page-shell relative grid gap-12 py-12 sm:py-16 lg:min-h-[690px] lg:grid-cols-[1.06fr_.94fr] lg:items-center lg:gap-16 lg:py-16">
+        <div className="page-shell relative grid gap-10 py-10 sm:py-14 lg:min-h-[620px] lg:grid-cols-[1.08fr_.92fr] lg:items-center lg:gap-14 lg:py-14">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-3">
-              <span className="grid size-8 shrink-0 place-items-center bg-blue font-mono text-xs font-black text-white shadow-[3px_3px_0_#111b34]" aria-hidden="true">G</span>
-              <p className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-blue">GOSDIR / Government Open Source Directory</p>
-            </div>
-
-            <h1 className="mt-7 max-w-4xl font-display text-[clamp(2.8rem,14vw,6.65rem)] font-black leading-[.86] tracking-[-0.072em] text-ink">
-              Public code,<br /><span className="text-blue">public value.</span>
+            <h1 className="border-l-[6px] border-blue pl-4 font-display sm:pl-6">
+              <span className="block text-[clamp(3.6rem,10vw,7.2rem)] font-black leading-[.85] tracking-[-0.09em] text-ink break-words">GOSDIR</span>
+              <span className="mt-3 block max-w-[28ch] text-[clamp(1.25rem,2.2vw,1.75rem)] font-extrabold leading-[1.13] tracking-[-0.04em] text-blue">Government Open Source Directory</span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate sm:text-xl">
-              Find government-sponsored open source software—and the evidence behind it. Explore public stewards, open licenses, repositories, and the policies shaping open delivery.
+            <p className="mt-7 font-display text-xl font-bold tracking-[-0.025em] text-ink sm:text-2xl">Public code, public value.</p>
+            <p className="mt-3 max-w-2xl text-base leading-7 text-slate sm:text-lg sm:leading-8">
+              Explore government-sponsored open source software, the agencies behind it, and the policies that help make it public. Follow each record to its source evidence.
             </p>
 
-            <div className="mt-8 max-w-2xl">
+            <div className="mt-7 max-w-2xl">
               <label htmlFor="home-search" className="text-sm font-extrabold text-ink">Search the directory</label>
               <form action="/directory/" method="get" className="search-panel mt-3">
                 <Search className="size-5 shrink-0 text-blue" aria-hidden="true" />
@@ -83,12 +76,6 @@ export function HomeLanding() {
               <a href="/coverage/" className="text-link text-ink">Explore coverage <ArrowRight /></a>
               <a href="/methodology/" className="text-link text-ink">How records qualify <ArrowRight /></a>
             </div>
-
-            <ul className="mt-8 grid gap-3 text-sm font-semibold text-slate sm:grid-cols-3" aria-label="Directory trust signals">
-              <li className="inline-flex items-start gap-2"><CheckCircle2 className="mt-0.5 size-4 shrink-0 text-green" /> Sponsorship evidence linked</li>
-              <li className="inline-flex items-start gap-2"><ShieldCheck className="mt-0.5 size-4 shrink-0 text-green" /> License status reviewed</li>
-              <li className="inline-flex items-start gap-2"><FileCheck2 className="mt-0.5 size-4 shrink-0 text-green" /> Primary policy sources</li>
-            </ul>
           </div>
 
           <aside className="directory-board relative" aria-labelledby="directory-snapshot-title">
@@ -100,8 +87,8 @@ export function HomeLanding() {
                 </span>
               </div>
 
-              <h2 id="directory-snapshot-title" className="mt-6 max-w-md font-display text-3xl font-black leading-[1.02] tracking-[-0.045em] sm:text-4xl">
-                Find precedent. Trace the proof. Follow suit.
+              <h2 id="directory-snapshot-title" className="mt-6 max-w-md font-display text-2xl font-black leading-[1.08] tracking-[-0.04em] sm:text-3xl">
+                A directory built on evidence.
               </h2>
               <p className="mt-4 max-w-lg text-sm leading-6 text-white/65">
                 Each project record connects the software to a public steward, an eligible license or public-domain status, and official evidence.

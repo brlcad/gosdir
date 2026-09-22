@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   title: { default: 'GOSDIR — Government Open Source Directory', template: '%s — GOSDIR' },
   description: 'Explore government-sponsored open source projects, public-sector policy, coverage, and reusable civic technology.',
   openGraph: {
-    title: 'Public code, public value.',
+    title: 'GOSDIR — Government Open Source Directory',
     description: 'Explore government-sponsored open source projects, policy, coverage, and reusable civic technology.',
     type: 'website',
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'GOSDIR — Government Open Source Directory' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Public code, public value.',
-    description: 'Government Open Source Directory',
+    title: 'GOSDIR — Government Open Source Directory',
+    description: 'Source-backed government open source projects and policy.',
     images: ['/og.png'],
   },
 };
