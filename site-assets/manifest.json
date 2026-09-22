@@ -78,7 +78,7 @@
     ]
   },
   "../app/page.tsx": {
-    "file": "site-assets/page-mH4B5K4d.js",
+    "file": "site-assets/page-BDtKn20H.js",
     "name": "page",
     "src": "../app/page.tsx",
     "isDynamicEntry": true,
@@ -166,7 +166,7 @@
     ]
   },
   "index.html": {
-    "file": "site-assets/index-IOgBSuuL.js",
+    "file": "site-assets/index-GwcHOy75.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -189,7 +189,7 @@
       "../app/contact/page.tsx"
     ],
     "css": [
-      "site-assets/index-D23DmoN2.css"
+      "site-assets/index-CekdT4EG.css"
     ]
   }
 }

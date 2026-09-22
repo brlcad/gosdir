@@ -94,10 +94,10 @@ export function HomeLanding() {
                 Each project record connects the software to a public steward, an eligible license or public-domain status, and official evidence.
               </p>
 
-              <dl className="mt-7 grid grid-cols-3 gap-px border border-white/15 bg-white/15">
+              <dl className="mt-7 grid grid-cols-2 gap-px border border-white/15 bg-white/15 sm:grid-cols-3">
                 <SnapshotMetric value={projects.length} label="Project records" />
                 <SnapshotMetric value={policies.length} label="Policy + reference" />
-                <SnapshotMetric value={representedAgencyIds.size} label="Agencies represented" />
+                <SnapshotMetric value={representedAgencyIds.size} label="Agencies represented" className="col-span-2 sm:col-span-1" />
               </dl>
 
               <div className="mt-7">
@@ -107,12 +107,12 @@ export function HomeLanding() {
                 </div>
                 <div className="mt-4 grid gap-4">
                   {coverage.map(({ label, count, icon: Icon }) => (
-                    <div key={label} className="grid grid-cols-[minmax(100px,1fr)_minmax(100px,1.35fr)_24px] items-center gap-3">
-                      <span className="inline-flex items-center gap-2 text-sm font-semibold text-white/75"><Icon className="size-4 text-signal" /> {label}</span>
-                      <span className="h-2 overflow-hidden rounded-full bg-white/10" aria-hidden="true">
+                    <div key={label} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 gap-y-2 sm:grid-cols-[minmax(0,1fr)_minmax(4rem,1fr)_2rem] sm:gap-y-0">
+                      <span className="inline-flex min-w-0 items-center gap-2 text-sm font-semibold text-white/75"><Icon className="size-4 shrink-0 text-signal" /> {label}</span>
+                      <strong className="order-2 text-right font-mono text-sm text-white sm:order-3">{count}</strong>
+                      <span className="order-3 col-span-2 h-2 overflow-hidden rounded-full bg-white/10 sm:order-2 sm:col-span-1" aria-hidden="true">
                         <span className="block h-full rounded-full bg-signal" style={{ width: `${(count / projects.length) * 100}%` }} />
                       </span>
-                      <strong className="text-right font-mono text-sm text-white">{count}</strong>
                     </div>
                   ))}
                 </div>
@@ -202,9 +202,9 @@ export function HomeLanding() {
   );
 }
 
-function SnapshotMetric({ value, label }: { value: number; label: string }) {
+function SnapshotMetric({ value, label, className = '' }: { value: number; label: string; className?: string }) {
   return (
-    <div className="flex flex-col bg-ink px-3 py-4 sm:px-4">
+    <div className={`flex flex-col bg-ink px-3 py-4 sm:px-4 ${className}`}>
       <dt className="order-2 mt-2 text-xs font-bold leading-4 text-white/55">{label}</dt>
       <dd className="order-1 font-mono text-2xl font-black text-signal sm:text-3xl">{value}</dd>
     </div>
