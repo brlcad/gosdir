@@ -31,7 +31,7 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
       <CheckCircle2 className="mx-auto size-11 text-green" />
       <p className="eyebrow mt-5 text-green">Local validation complete</p>
       <h2 className="mt-3 font-display text-3xl font-black tracking-tight">Your {mode === 'contact' ? 'message' : `${recordKind} packet`} is ready.</h2>
-      <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-slate">Nothing has been sent yet. Continue to GitHub, review the public issue one more time, then choose <strong className="text-ink">Submit new issue</strong>. Your GitHub account provides attribution without GOSDIR collecting contact details.</p>
+      <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-slate">Your packet is ready for review on GitHub. Check the public issue, then choose <strong className="text-ink">Submit new issue</strong>. Your GitHub account provides attribution.</p>
       <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
         <a href={packetUrl} target="_blank" rel="noreferrer" className="button-primary justify-center"><CircleDot className="size-4" /> Continue on GitHub <ArrowUpRight className="size-4" /></a>
         <button type="button" className="button-secondary justify-center" onClick={() => setPacketUrl('')}><RotateCcw className="size-4" /> Edit packet</button>
@@ -55,7 +55,7 @@ export function SubmissionForm({ mode = 'project' }: { mode?: 'project' | 'conta
 
           {recordKind === 'project' ? <ProjectFields /> : <PolicyFields />}
 
-          <label className="mt-6 flex items-start gap-3 text-xs leading-5 text-slate"><input required type="checkbox" className="mt-1 size-4 accent-blue" /> I used only public information, checked the source links, and understand that this packet becomes a public GitHub issue but does not automatically enter the directory.</label>
+          <label className="mt-6 flex items-start gap-3 text-xs leading-5 text-slate"><input required type="checkbox" className="mt-1 size-4 accent-blue" /> I used public information, checked the source links, and understand that editorial review comes before directory publication.</label>
           <div className="mt-7 flex flex-col gap-4 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between"><p className="flex max-w-md items-start gap-2 text-xs leading-5 text-slate"><LockKeyhole className="mt-0.5 size-4 shrink-0 text-green" /> Do not enter classified, export-controlled, personal, confidential, or security-sensitive nonpublic information.</p><button type="submit" className="button-primary justify-center"><ShieldCheck className="size-4" /> Prepare GitHub submission</button></div>
         </>
       ) : (
@@ -143,7 +143,7 @@ function policyPacket(form: FormData) {
       ['Primary source', value(form, 'primarySource')],
       ['Summary', value(form, 'summary')],
       ['Why it belongs', value(form, 'notes')],
-      ['Submitter confirmation', 'I checked the official source and understand that GOSDIR summaries are orientation, not legal advice.'],
+      ['Submitter confirmation', 'I checked the official source and will follow it for current policy details.'],
     ]),
   };
 }

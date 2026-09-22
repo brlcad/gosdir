@@ -175,7 +175,7 @@ export function ProjectExplorer() {
                 <a href={selected.officialUrl} target="_blank" rel="noreferrer" className="button-secondary justify-center">Official project page <ArrowUpRight className="size-4" /></a>
                 {selected.evidenceUrl && <a href={selected.evidenceUrl} target="_blank" rel="noreferrer" className="button-secondary justify-center">Provenance evidence <ArrowUpRight className="size-4" /></a>}
               </div>
-              <p className="mt-6 flex items-start gap-2 text-xs leading-5 text-slate"><ShieldCheck className="mt-0.5 size-4 shrink-0 text-green" /> Verified means the review found documented government provenance and an eligible license. It is not a security or procurement endorsement.</p>
+              <p className="mt-6 flex items-start gap-2 text-xs leading-5 text-slate"><ShieldCheck className="mt-0.5 size-4 shrink-0 text-green" /> Verified records connect a government sponsor, public source, and eligible license to supporting evidence.</p>
             </div>
           </article>
         </dialog>

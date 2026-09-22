@@ -231,7 +231,7 @@ function ReviewDetail({ issue, checked, toggleCheck, copyDraft, copied }: { issu
         <button type="button" onClick={() => void copyDraft(issue)} disabled={!canCopy} title={!ready ? 'Complete the editorial checklist first' : problems[0]} className="button-secondary justify-center disabled:cursor-not-allowed disabled:opacity-45"><Clipboard className="size-4" /> {copied ? 'Draft copied' : 'Copy record draft'}</button>
         <span className="sr-only" aria-live="polite">{copied ? 'Record draft copied to the clipboard.' : ''}</span>
       </div>
-      {canCopy && <p className="mt-5 flex items-start gap-2 border-l-4 border-green bg-green/5 p-4 text-sm leading-6 text-slate"><CheckCircle2 className="mt-0.5 size-5 shrink-0 text-green" /><span><strong className="text-ink">Ready for an editor decision.</strong> Record completion here does not approve or publish it; leave the evidence decision on GitHub and ship accepted data through normal review.</span></p>}
+      {canCopy && <p className="mt-5 flex items-start gap-2 border-l-4 border-green bg-green/5 p-4 text-sm leading-6 text-slate"><CheckCircle2 className="mt-0.5 size-5 shrink-0 text-green" /><span><strong className="text-ink">Ready for an editor decision.</strong> Leave the evidence decision on GitHub; accepted records ship through normal code review.</span></p>}
     </div>
   </article>;
 }

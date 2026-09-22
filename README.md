@@ -14,7 +14,7 @@ GOSDIR connects public repositories to the evidence behind them:
 - a selected policy timeline, plain-language glossary, and release guide; and
 - an auditable GitHub-based submission and editorial review queue.
 
-“Verified” means the directory review found documented government creation, commissioning, funding, sponsorship, or stewardship; public source; an eligible license; and primary evidence. Government use alone does not qualify. Verification is not a security certification, maintenance promise, procurement recommendation, or legal opinion.
+“Verified” means the directory review found documented government creation, commissioning, funding, sponsorship, or stewardship; public source; an eligible license; and primary evidence.
 
 ## Run locally
 
@@ -90,4 +90,4 @@ Directory entries link to third-party government publications and software. Thos
 
 ## Status
 
-GOSDIR is an independent research project, not an official government website. Coverage is intentionally transparent but not yet exhaustive: an uncovered place or agency means “no verified record here yet,” not “no open source work exists.”
+GOSDIR is an independent research project. Coverage grows as editors verify public sources and add new records.

@@ -43,7 +43,7 @@ export default function SupportDialogPanel({
           </DialogTitle>
           <DialogDescription className="max-w-lg text-sm leading-6 text-slate">
             If GOSDIR has been useful, you can help cover hosting and ongoing
-            source review. Support never affects which records qualify.
+            source review. Every record follows the same independent evidence review.
           </DialogDescription>
         </DialogHeader>
 

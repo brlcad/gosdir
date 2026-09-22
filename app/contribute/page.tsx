@@ -13,7 +13,7 @@ const steps = [
 export default function ContributePage() {
   return (
     <main>
-      <PageIntro eyebrow="Verified submissions" title="Bring the proof. Help map the work." description="Propose a government-sponsored open source project or a high-value policy source. GOSDIR collects no private contact details and publishes nothing without editorial review." />
+      <PageIntro eyebrow="Verified submissions" title="Bring the proof. Help map the work." description="Propose a government-sponsored open source project or a high-value policy source. Submissions use public GitHub issues and enter the directory after editorial review." />
       <section className="page-shell grid gap-8 py-14 lg:grid-cols-[1fr_320px] lg:py-18">
         <SubmissionForm mode="project" />
         <aside className="h-fit border border-line bg-ink p-6 text-white lg:sticky lg:top-24">

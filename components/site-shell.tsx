@@ -51,7 +51,7 @@ export function SiteFooter() {
         <FooterGroup title="Explore" links={[["/directory", "Project directory"], ["/coverage", "Coverage maps"], ["/policy", "Policy library"], ["/timeline", "Timeline"], ["/guide", "Release guide"]]} />
         <FooterGroup title="Participate" links={[["/contribute", "Submit a record"], ["/review", "Review queue"], ["/methodology", "Methodology"], ["/glossary", "Glossary"], ["/contact", "Contact & corrections"]]} />
       </div>
-      <div className="border-t border-white/10"><div className="page-shell flex flex-col gap-2 py-5 font-mono text-[10px] uppercase tracking-[0.16em] text-white/45 sm:flex-row sm:items-center sm:justify-between"><span>Evidence reviewed 12 Sep 2026</span><span>Coverage means verified records, not absence of work</span></div></div>
+      <div className="border-t border-white/10"><div className="page-shell flex flex-col gap-2 py-5 font-mono text-[10px] uppercase tracking-[0.16em] text-white/45 sm:flex-row sm:items-center sm:justify-between"><span>Evidence reviewed 12 Sep 2026</span><span>Source-backed records, growing with the community</span></div></div>
     </footer>
   );
 }

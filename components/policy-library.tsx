@@ -32,7 +32,7 @@ export function PolicyLibrary() {
         <aside className="h-fit border border-line bg-ink p-6 text-white lg:sticky lg:top-24">
           <FileText className="size-7 text-signal" />
           <p className="eyebrow mt-6 text-signal">Reading the library</p>
-          <p className="mt-3 text-sm leading-6 text-white/65">Summaries are plain-language orientation, not legal advice. Follow the primary-source link for controlling text and current status.</p>
+          <p className="mt-3 text-sm leading-6 text-white/65">Plain-language summaries link to primary sources for controlling text and current status.</p>
           <div className="mt-6 border-t border-white/15 pt-5 font-mono text-[10px] uppercase tracking-[.12em] text-white/45">{filtered.length} of {policies.length} records shown</div>
         </aside>
         <div className="grid gap-4">

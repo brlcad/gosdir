@@ -132,7 +132,7 @@ export function HomeLanding() {
               </div>
 
               <div className="mt-7 flex flex-col gap-4 border-t border-white/15 pt-5 sm:flex-row sm:items-center sm:justify-between">
-                <p className="max-w-sm text-xs leading-5 text-white/50">Editorial verification checks identity, provenance, and license eligibility—not security or procurement fitness.</p>
+                <p className="max-w-sm text-xs leading-5 text-white/60">Every record is checked against primary evidence for government provenance, public source, and an eligible license.</p>
                 <a href="/coverage/" className="inline-flex shrink-0 items-center gap-2 text-sm font-extrabold text-signal hover:text-white">
                   Open the atlas <ArrowRight className="size-4" />
                 </a>
@@ -205,7 +205,7 @@ export function HomeLanding() {
         <div className="page-shell grid gap-10 py-16 md:grid-cols-[1fr_auto] md:items-center">
           <div>
             <p className="eyebrow text-signal">Know a missing project?</p>
-            <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight md:text-5xl">Help close the map.</h2>
+            <h2 className="mt-3 font-display text-4xl font-extrabold tracking-tight md:text-5xl">Help grow the map.</h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-white/75">Prepare a record with sponsor, repository, license, and official-source evidence for editorial review.</p>
           </div>
           <a href="/contribute/" className="button-light">Prepare a project record <ArrowRight className="size-4" /></a>

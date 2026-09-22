@@ -28,8 +28,8 @@ const lenses: Record<Lens, { label: string; heading: string; body: React.ReactNo
   },
   state: {
     label: 'U.S. state / local',
-    heading: 'Do not assume federal public-domain rules apply.',
-    body: <>State and local works are usually governed by state law, contracts, and agency policy. Confirm ownership and release authority with counsel or the designated official. <a href="https://doit.maryland.gov/policies/Websites-and-Data/Pages/Maryland-Open-Source-Policy.aspx" target="_blank" rel="noreferrer">Maryland’s release policy ↗</a> is a useful operational model, but it does not control another jurisdiction.</>,
+    heading: 'Follow state and local rights rules.',
+    body: <>State and local works are usually governed by state law, contracts, and agency policy. Confirm ownership and release authority with counsel or the designated official. <a href="https://doit.maryland.gov/policies/Websites-and-Data/Pages/Maryland-Open-Source-Policy.aspx" target="_blank" rel="noreferrer">Maryland’s release policy ↗</a> is a useful operational model, and shows one approach to state-level release.</>,
   },
   international: {
     label: 'Outside the U.S.',
@@ -158,7 +158,7 @@ export function ReleaseGuide() {
           <p className="eyebrow text-signal">Choose your legal lens</p>
           <div className="mt-5 grid gap-2" aria-label="Jurisdiction lens">{(Object.keys(lenses) as Lens[]).map((key) => <button key={key} type="button" aria-pressed={lens === key} onClick={() => setLens(key)} className={`border px-4 py-3 text-left text-sm font-extrabold ${lens === key ? 'border-signal bg-signal text-ink' : 'border-white/15 text-white/70 hover:border-white/45 hover:text-white'}`}>{lenses[key].label}</button>)}</div>
           <div className="mt-6 border-t border-white/15 pt-6"><h3 className="font-display text-xl font-black tracking-tight">{lenses[lens].heading}</h3><p className="mt-3 text-sm leading-6 text-white/65 [&_a]:font-bold [&_a]:text-signal [&_a]:underline [&_a]:underline-offset-4">{lenses[lens].body}</p></div>
-          <div className="mt-6 flex items-start gap-2 border-l-2 border-signal pl-3 text-xs leading-5 text-white/55"><AlertTriangle className="mt-0.5 size-4 shrink-0 text-signal" /> This guide is orientation, not legal authorization. Follow the controlling law, contract, policy, and designated reviewers for your organization.</div>
+          <div className="mt-6 flex items-start gap-2 border-l-2 border-signal pl-3 text-xs leading-5 text-white/55"><AlertTriangle className="mt-0.5 size-4 shrink-0 text-signal" /> Use this guide to organize the release decision. Follow controlling law, contracts, policy, and designated reviewers for your organization.</div>
         </aside>
 
         <ol className="relative grid gap-5 before:absolute before:bottom-8 before:left-[27px] before:top-8 before:w-px before:bg-line sm:before:left-[35px]">
@@ -170,7 +170,7 @@ export function ReleaseGuide() {
     <section className="border-y border-line bg-white">
       <div className="page-shell py-14 lg:py-20">
         <div className="grid gap-9 lg:grid-cols-[.65fr_1.35fr]">
-          <div><p className="eyebrow text-blue">Working checklist</p><h2 className="section-title">Build the release packet.</h2><p className="mt-5 text-base leading-7 text-slate">Checkmarks stay only for this page visit. They help organize evidence; they are not approvals.</p><div className="mt-7 border border-line bg-paper p-5"><div className="flex items-center justify-between gap-4"><span className="font-display text-3xl font-black text-ink">{percent}%</span><button type="button" onClick={reset} className="text-sm font-extrabold text-blue hover:text-ink">Reset</button></div><div className="mt-4 h-2 overflow-hidden rounded-full bg-line"><div className="h-full bg-blue transition-[width]" style={{ width: `${percent}%` }} /></div><p className="mt-3 font-mono text-[11px] font-bold uppercase tracking-[.1em] text-slate">{complete} of {releaseChecks.length} prepared</p></div></div>
+          <div><p className="eyebrow text-blue">Working checklist</p><h2 className="section-title">Build the release packet.</h2><p className="mt-5 text-base leading-7 text-slate">Checkmarks organize evidence during this page visit. Formal approvals remain with your designated reviewers.</p><div className="mt-7 border border-line bg-paper p-5"><div className="flex items-center justify-between gap-4"><span className="font-display text-3xl font-black text-ink">{percent}%</span><button type="button" onClick={reset} className="text-sm font-extrabold text-blue hover:text-ink">Reset</button></div><div className="mt-4 h-2 overflow-hidden rounded-full bg-line"><div className="h-full bg-blue transition-[width]" style={{ width: `${percent}%` }} /></div><p className="mt-3 font-mono text-[11px] font-bold uppercase tracking-[.1em] text-slate">{complete} of {releaseChecks.length} prepared</p></div></div>
           <div className="grid gap-2">{releaseChecks.map((label, index) => <label key={label} className={`flex cursor-pointer items-start gap-3 border p-4 text-sm font-bold leading-6 text-ink focus-within:ring-2 focus-within:ring-blue focus-within:ring-offset-2 ${checked[index] ? 'border-green/25 bg-green/5' : 'border-line bg-paper hover:border-blue'}`}><input className="sr-only" type="checkbox" checked={checked[index]} onChange={() => setChecked((current) => current.map((value, itemIndex) => itemIndex === index ? !value : value))} /><span className="grid size-6 shrink-0 place-items-center rounded-full border border-green text-green">{checked[index] && <Check className="size-3.5" />}</span><span>{label}</span></label>)}</div>
         </div>
       </div>
