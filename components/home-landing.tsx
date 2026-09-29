@@ -7,8 +7,8 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { representedAgencyIds } from '@/lib/catalog/agency-relations';
+import { listedProjects as projects } from '@/lib/catalog/directory';
 import { policies } from '@/lib/catalog/policies';
-import { projects } from '@/lib/catalog/software';
 
 const featured = projects.filter((project) => project.featured).slice(0, 4);
 

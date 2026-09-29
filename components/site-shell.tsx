@@ -32,13 +32,12 @@ export function SiteHeader() {
         <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Primary navigation">
           {nav.map((item) => <Link key={item.href} href={item.href} className={cn('nav-link', pathname.startsWith(item.href) && 'nav-link-active')}>{item.label}</Link>)}
         </nav>
-        <div className="hidden items-center gap-3 xl:flex">
-          <Link href="/contact" className="text-sm font-bold text-ink hover:text-blue">Contact</Link>
+        <div className="hidden items-center xl:flex">
           <Link href="/contribute" className="button-primary"><Plus className="size-4" /> Submit a record</Link>
         </div>
         <button type="button" className="grid size-11 place-items-center rounded-lg border border-line bg-white xl:hidden" onClick={() => setOpen((value) => !value)} aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open}>{open ? <X className="size-5" /> : <Menu className="size-5" />}</button>
       </div>
-      {open && <nav className="border-t border-line bg-paper px-5 py-4 xl:hidden" aria-label="Mobile navigation"><div className="mx-auto grid max-w-6xl gap-1">{nav.map((item) => <Link key={item.href} href={item.href} className="rounded-lg px-3 py-3 text-base font-bold hover:bg-white" onClick={() => setOpen(false)}>{item.label}</Link>)}<div className="mt-2 grid grid-cols-2 gap-2"><Link href="/contact" className="button-secondary justify-center" onClick={() => setOpen(false)}>Contact</Link><Link href="/contribute" className="button-primary justify-center" onClick={() => setOpen(false)}>Submit</Link></div></div></nav>}
+      {open && <nav className="border-t border-line bg-paper px-5 py-4 xl:hidden" aria-label="Mobile navigation"><div className="mx-auto grid max-w-6xl gap-1">{nav.map((item) => <Link key={item.href} href={item.href} className="rounded-lg px-3 py-3 text-base font-bold hover:bg-white" onClick={() => setOpen(false)}>{item.label}</Link>)}<div className="mt-2"><Link href="/contribute" className="button-primary w-full justify-center" onClick={() => setOpen(false)}>Submit</Link></div></div></nav>}
     </header>
   );
 }

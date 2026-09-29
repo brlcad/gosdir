@@ -1,6 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import {
+  SupportTriggerVisual,
+  supportTriggerClassName,
+} from '@/components/support-trigger-visual';
 
 const importSupportDialogPanel = () =>
   import('@/components/support-dialog-panel');
@@ -23,9 +27,6 @@ type SupportDialogPanelComponent = Awaited<
   ReturnType<typeof loadSupportDialogPanel>
 >['default'];
 type LoadState = 'idle' | 'loading' | 'error';
-
-const triggerClassName =
-  'mt-4 inline-flex cursor-pointer border-0 bg-transparent p-0 text-sm font-bold text-signal hover:text-white aria-disabled:cursor-wait aria-disabled:opacity-70';
 
 export function SupportDialog() {
   const [Panel, setPanel] = useState<SupportDialogPanelComponent | null>(null);
@@ -56,12 +57,13 @@ export function SupportDialog() {
         pending={loadState === 'loading'}
       />
       {loadState === 'loading' && (
-        <output className="sr-only">
-          Opening the support dialog…
-        </output>
+        <output className="sr-only">Opening the support dialog…</output>
       )}
       {loadState === 'error' && (
-        <p className="mt-2 max-w-sm text-xs leading-5 text-white/70" role="alert">
+        <p
+          className="mt-2 max-w-sm text-xs leading-5 text-white/70"
+          role="alert"
+        >
           The support dialog could not load.{' '}
           <a
             href="https://ko-fi.com/gosdir"
@@ -97,9 +99,9 @@ function SupportTrigger({
       onClick={pending ? undefined : onClick}
       onFocus={onFocus}
       onPointerEnter={onPointerEnter}
-      className={triggerClassName}
+      className={supportTriggerClassName}
     >
-      {pending ? 'Opening support…' : 'Support GOSDIR'}
+      <SupportTriggerVisual pending={pending} />
     </button>
   );
 }

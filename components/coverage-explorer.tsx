@@ -7,7 +7,7 @@ import {
   projectHasAgencyGeography,
   projectsByAgencyId,
 } from '@/lib/catalog/agency-relations';
-import { projects } from '@/lib/catalog/software';
+import { listedProjects as projects } from '@/lib/catalog/directory';
 import type { Project } from '@/lib/catalog/types';
 
 const stateTiles = [

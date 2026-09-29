@@ -5,12 +5,13 @@ import { BrandLockup, FooterBrand } from '@/components/brand-lockup';
 import { SupportDialog } from '@/components/support-dialog';
 import './site.css';
 
-type View = 'home' | 'directory' | 'coverage' | 'policy' | 'timeline' | 'guide' | 'glossary' | 'methodology' | 'contribute' | 'review' | 'contact';
+type View = 'home' | 'directory' | 'coverage' | 'coverage-beta' | 'policy' | 'timeline' | 'guide' | 'glossary' | 'methodology' | 'contribute' | 'review' | 'contact';
 
 const routeTitles: Record<View, string> = {
   home: 'GOSDIR — Government Open Source Directory',
   directory: 'Project Directory — GOSDIR',
   coverage: 'Coverage Atlas — GOSDIR',
+  'coverage-beta': 'Federal Coverage Prototype — GOSDIR',
   policy: 'Policy Library — GOSDIR',
   timeline: 'Timeline — GOSDIR',
   guide: 'Open Source Release Guide — GOSDIR',
@@ -25,6 +26,7 @@ const routePages = {
   home: lazy(() => import('@/app/page')),
   directory: lazy(() => import('@/app/directory/page')),
   coverage: lazy(() => import('@/app/coverage/page')),
+  'coverage-beta': lazy(() => import('@/app/coverage-beta/page')),
   policy: lazy(() => import('@/app/policy/page')),
   timeline: lazy(() => import('@/app/timeline/page')),
   guide: lazy(() => import('@/app/guide/page')),
@@ -140,10 +142,10 @@ function StaticHeader({ view }: { view: View }) {
     <div className="page-shell flex h-[74px] items-center justify-between gap-5">
       <a href="/" className="group text-left" aria-label="GOSDIR — Government Open Source Directory home"><BrandLockup /></a>
       <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Primary navigation">{primaryNav.map(([key, label]) => <a key={key} href={`/${key}/`} className={`nav-link ${view === key ? 'nav-link-active' : ''}`} aria-current={view === key ? 'page' : undefined}>{label}</a>)}</nav>
-      <div className="hidden items-center gap-3 xl:flex"><a href="/contact/" className="text-sm font-bold text-ink hover:text-blue">Contact</a><a href="/contribute/" className="button-primary"><Plus className="size-4" /> Submit a record</a></div>
+      <div className="hidden items-center xl:flex"><a href="/contribute/" className="button-primary"><Plus className="size-4" /> Submit a record</a></div>
       <button type="button" className="route-button grid size-11 place-items-center rounded-lg border border-line bg-white xl:hidden" onClick={() => setOpen((value) => !value)} aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open}>{open ? <X className="size-5" /> : <Menu className="size-5" />}</button>
     </div>
-    {open && <nav className="border-t border-line bg-paper px-5 py-4 xl:hidden" aria-label="Mobile navigation"><div className="mx-auto grid max-w-6xl gap-1">{primaryNav.map(([key, label]) => <a key={key} href={`/${key}/`} onClick={() => setOpen(false)} className="rounded-lg px-3 py-3 text-left text-base font-bold hover:bg-white" aria-current={view === key ? 'page' : undefined}>{label}</a>)}<div className="mt-2 grid grid-cols-2 gap-2"><a href="/contact/" onClick={() => setOpen(false)} className="button-secondary justify-center">Contact</a><a href="/contribute/" onClick={() => setOpen(false)} className="button-primary justify-center">Submit</a></div></div></nav>}
+    {open && <nav className="border-t border-line bg-paper px-5 py-4 xl:hidden" aria-label="Mobile navigation"><div className="mx-auto grid max-w-6xl gap-1">{primaryNav.map(([key, label]) => <a key={key} href={`/${key}/`} onClick={() => setOpen(false)} className="rounded-lg px-3 py-3 text-left text-base font-bold hover:bg-white" aria-current={view === key ? 'page' : undefined}>{label}</a>)}<div className="mt-2"><a href="/contribute/" onClick={() => setOpen(false)} className="button-primary w-full justify-center">Submit</a></div></div></nav>}
   </header>;
 }
 
