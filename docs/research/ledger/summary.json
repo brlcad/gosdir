@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T04:46:33.138Z",
+  "generated_at_utc": "2026-09-29T04:47:51.651Z",
   "source_files": [
     "brazil-software-publico.jsonl",
     "brazil-spbgovbr-github.jsonl",
@@ -1513,6 +1513,8 @@
     "luna-max-20260929-priority-001.jsonl",
     "luna-max-20260929-priority-002.jsonl",
     "luna-max-20260929-priority-003.jsonl",
+    "luna-max-20260929-priority-004.jsonl",
+    "luna-max-20260929-priority-005.jsonl",
     "nasa-coordinator-001.jsonl",
     "nasa-coordinator-002.jsonl",
     "nasa-luna-003.jsonl",
@@ -2289,6 +2291,20 @@
       "hold": 0,
       "reject": 0
     },
+    "luna-max-20260929-priority-004": {
+      "assigned": 20,
+      "unreviewed": 20,
+      "publishable": 0,
+      "hold": 0,
+      "reject": 0
+    },
+    "luna-max-20260929-priority-005": {
+      "assigned": 20,
+      "unreviewed": 20,
+      "publishable": 0,
+      "hold": 0,
+      "reject": 0
+    },
     "nasa-coordinator-001": {
       "assigned": 20,
       "unreviewed": 0,
@@ -2631,10 +2647,10 @@
     "hold": 925,
     "reject": 826
   },
-  "assigned_distinct_urls": 2580,
-  "assigned_unreviewed_urls": 165,
-  "unassigned_metadata_candidate_urls": 17506,
+  "assigned_distinct_urls": 2620,
+  "assigned_unreviewed_urls": 205,
+  "unassigned_metadata_candidate_urls": 17466,
   "unassigned_metadata_excluded_urls": 57977,
-  "unassigned_total_urls": 75483,
+  "unassigned_total_urls": 75443,
   "warning": "Metadata candidates and catalog URL matches are not individual four-check reviews."
 }
