@@ -11,6 +11,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Science & engineering',
+  openSourceYear: 2002,
   license: 'BSD-3-Clause',
   repository: 'https://gitlab.kitware.com/paraview/paraview',
   officialUrl: 'https://www.paraview.org/',

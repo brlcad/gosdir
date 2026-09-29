@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Field data',
+  openSourceYear: 2015,
   license: 'Apache-2.0',
   repository: 'https://github.com/ngageoint/MAGE',
   officialUrl: 'https://www.nga.mil/assets/files/2024_MAGE_Fact_Sheet.pdf',

@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Cybersecurity',
+  openSourceYear: 2016,
   license: 'Public domain',
   repository: 'https://github.com/usnistgov/OSCAL',
   officialUrl: 'https://pages.nist.gov/OSCAL/',

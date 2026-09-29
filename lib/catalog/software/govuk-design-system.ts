@@ -10,6 +10,7 @@ export default {
   geography: 'United Kingdom',
   jurisdiction: 'International',
   domain: 'Design systems',
+  openSourceYear: 2016,
   license: 'MIT',
   repository: 'https://github.com/alphagov/govuk-frontend',
   officialUrl: 'https://design-system.service.gov.uk/',

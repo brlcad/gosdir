@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Science & engineering',
+  openSourceYear: 2010,
   license: 'Apache-2.0',
   repository: 'https://github.com/OpenMDAO/OpenMDAO',
   officialUrl: 'https://openmdao.org/',

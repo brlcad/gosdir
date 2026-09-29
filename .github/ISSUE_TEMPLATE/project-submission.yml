@@ -60,7 +60,7 @@ body:
       options:
         - Active
         - Maintained
-        - Reference
+        - Archived
     validations:
       required: true
   - type: input

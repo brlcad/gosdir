@@ -10,6 +10,7 @@ export default {
   geography: 'Massachusetts',
   jurisdiction: 'U.S. state',
   domain: 'Design systems',
+  openSourceYear: 2016,
   license: 'MIT',
   repository: 'https://github.com/massgov/mayflower',
   officialUrl: 'https://mayflower.digital.mass.gov/',

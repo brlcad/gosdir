@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Data integration',
+  openSourceYear: 2014,
   license: 'Apache-2.0',
   repository: 'https://github.com/apache/nifi',
   officialUrl: 'https://nifi.apache.org/',

@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Geospatial',
+  openSourceYear: 2015,
   license: 'GPL-3.0',
   repository: 'https://github.com/ngageoint/hootenanny',
   officialUrl:

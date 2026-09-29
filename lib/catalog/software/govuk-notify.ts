@@ -10,6 +10,7 @@ export default {
   geography: 'United Kingdom',
   jurisdiction: 'International',
   domain: 'Communications',
+  openSourceYear: 2015,
   license: 'MIT',
   repository: 'https://github.com/alphagov/notifications-api',
   officialUrl: 'https://www.notifications.service.gov.uk/',

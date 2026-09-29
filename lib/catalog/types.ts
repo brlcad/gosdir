@@ -7,6 +7,7 @@ export type AgencyKind =
   | 'Office'
   | 'Military service'
   | 'Laboratory'
+  | 'Research center'
   | 'Public body';
 
 export type Agency = {
@@ -30,11 +31,17 @@ export type Project = {
   geography: string;
   jurisdiction: Jurisdiction;
   domain: string;
+  openSourceYear: number;
   license: string;
   repository: string;
   officialUrl: string;
   evidenceUrl?: string;
-  status: 'Active' | 'Maintained' | 'Reference';
+  status: 'Active' | 'Maintained' | 'Archived';
+  directory?: {
+    status: 'disabled';
+    reason: string;
+    reviewed: string;
+  };
   featured?: boolean;
   verified: string;
   tags: string[];
@@ -53,10 +60,17 @@ export type Policy = {
   reviewed: string;
 };
 
+export type TimelineCategory =
+  | 'us-policy'
+  | 'eu-policy'
+  | 'other-policy'
+  | 'software';
+
 export type TimelineEvent = {
   year: string;
   title: string;
   body: string;
+  category: TimelineCategory;
   sourceUrl?: string;
   projectId?: string;
   policyId?: string;

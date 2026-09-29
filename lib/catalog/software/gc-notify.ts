@@ -10,6 +10,7 @@ export default {
   geography: 'Canada',
   jurisdiction: 'International',
   domain: 'Communications',
+  openSourceYear: 2019,
   license: 'MIT',
   repository: 'https://github.com/cds-snc/notification-api',
   officialUrl: 'https://notification.canada.ca/',

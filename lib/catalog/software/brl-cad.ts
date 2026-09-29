@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: '3D modeling',
+  openSourceYear: 2004,
   license:
     'LGPL-2.1 collective work; component-specific BSD/BDL/Public domain/third-party terms',
   repository: 'https://github.com/BRL-CAD/brlcad',

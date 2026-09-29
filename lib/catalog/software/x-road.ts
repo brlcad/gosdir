@@ -10,6 +10,7 @@ export default {
   geography: 'Estonia',
   jurisdiction: 'International',
   domain: 'Data exchange',
+  openSourceYear: 2015,
   license: 'MIT',
   repository: 'https://github.com/nordic-institute/X-Road',
   officialUrl: 'https://x-road.global/',

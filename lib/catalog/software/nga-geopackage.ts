@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Geospatial',
+  openSourceYear: 2015,
   license: 'MIT',
   repository: 'https://github.com/ngageoint/GeoPackage',
   officialUrl: 'https://github.com/ngageoint/GeoPackage',

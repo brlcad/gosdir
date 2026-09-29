@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Design systems',
+  openSourceYear: 2015,
   license: 'Public domain / CC0',
   repository: 'https://github.com/uswds/uswds',
   officialUrl: 'https://designsystem.digital.gov/',

@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Digital identity',
+  openSourceYear: 2016,
   license: 'Public domain / CC0',
   repository: 'https://github.com/18F/identity-idp',
   officialUrl: 'https://www.login.gov/',

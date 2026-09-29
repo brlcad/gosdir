@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Supply chain security',
+  openSourceYear: 2018,
   license: 'Apache-2.0',
   repository: 'https://github.com/nsacyber/paccor',
   officialUrl: 'https://nsacyber.github.io/paccor/',

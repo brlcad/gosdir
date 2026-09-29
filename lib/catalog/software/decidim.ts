@@ -10,6 +10,7 @@ export default {
   geography: 'Spain',
   jurisdiction: 'International',
   domain: 'Civic participation',
+  openSourceYear: 2016,
   license: 'AGPL-3.0',
   repository: 'https://github.com/decidim/decidim',
   officialUrl: 'https://decidim.org/',

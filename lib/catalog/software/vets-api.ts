@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Public benefits',
+  openSourceYear: 2016,
   license: 'CC0-1.0',
   repository: 'https://github.com/department-of-veterans-affairs/vets-api',
   officialUrl: 'https://developer.va.gov/',
