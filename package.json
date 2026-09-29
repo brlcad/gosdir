@@ -1,5 +1,5 @@
 {
-  "name": "sites-project",
+  "name": "gosdir",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -9,12 +9,16 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "build:apache": "node scripts/build-apache.mjs",
-    "start": "wrangler dev --config dist/server/wrangler.json",
+    "start": "vinext start",
     "check:catalog": "node scripts/check-catalog.mjs",
     "lint": "oxlint . --deny-warnings",
     "typecheck": "tsc --noEmit --incremental false",
     "format": "oxfmt --ignore-path=.oxfmtignore .",
-    "check": "npm run check:catalog && npm run lint && npm run typecheck"
+    "test:availability-policy": "node --test scripts/tests/project-availability-policy.test.mjs",
+    "check": "npm run check:catalog && npm run test:availability-policy && npm run lint && npm run typecheck",
+    "review:freshness": "node scripts/review-project-freshness.mjs",
+    "review:availability": "node scripts/review-project-availability.mjs",
+    "report:availability": "node scripts/compare-project-availability.mjs"
   },
   "dependencies": {
     "react": "19.2.6",
@@ -38,9 +42,6 @@
     "tw-animate-css": "1.4.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.37.1",
-    "@cloudflare/workers-types": "4.20260515.1",
-    "@openai/sites-vite-plugin": "0.2.0",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
