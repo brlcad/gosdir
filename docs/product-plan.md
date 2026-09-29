@@ -64,6 +64,15 @@ The first screen should answer three questions without scrolling: what GOSDIR is
 6. Every visible record carries a freshness date. Stale, archived, or disputed records are labeled—not silently removed.
 7. Coverage means “records verified in this directory,” never “no open source exists.” Empty areas are explicit research gaps.
 
+## Curated software intake baseline
+
+The four trust rules remain mandatory. New software records also need a distinct product identity, maturity, current-use evidence, and an editorial reason for inclusion. Apply the measured [freshness and notability baseline](research/2026-09-government-oss-intake-baseline.md) before moving a repository from discovery to drafting:
+
+- Normally require a substantive code change or release in the past 24 months. Quieter source can qualify when an official current product page or service confirms support and the public repository still corresponds to that product. After 48 quiet months without such evidence, publish only as `Archived` when the project is no longer maintained, retained for reference, and its significance is documented.
+- Require a production government service or official supported distribution, documented reuse or research/standards uptake, or a versioned first-party product with user guidance. A `code.json` row, star count, or GitHub topic alone is insufficient.
+- Keep repository age, last code change, release, official-use evidence, archive state, independent adopters, and review date as separate measurements. A repository younger than 90 days needs an established deployment or release to pass maturity review. Stars and forks order investigation; they never decide eligibility.
+- Use the project statuses `Active` — Ongoing development and improvement; `Maintained` — Stable; fixes and updates as needed; and `Archived` — No longer maintained; retained for reference. Review `Active` and `Maintained` records annually and `Archived` records at least every 24 months. Recheck sooner after transfer, archival, license or source changes. Label stale records rather than silently removing them.
+
 ## Secure submission workflow
 
 1. Rate-limit and bot-check submissions at the edge.

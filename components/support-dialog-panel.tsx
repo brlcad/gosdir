@@ -2,6 +2,10 @@
 
 import { useState } from 'react';
 import {
+  SupportTriggerVisual,
+  supportTriggerClassName,
+} from '@/components/support-trigger-visual';
+import {
   Dialog,
   DialogContent,
   DialogDescription,
@@ -27,11 +31,11 @@ export default function SupportDialogPanel({
           <button
             type="button"
             aria-label="Support GOSDIR"
-            className="mt-4 inline-flex cursor-pointer border-0 bg-transparent p-0 text-sm font-bold text-signal hover:text-white"
+            className={supportTriggerClassName}
           />
         }
       >
-        Support GOSDIR
+        <SupportTriggerVisual />
       </DialogTrigger>
       <DialogContent className="max-h-[calc(100dvh-2rem)] gap-0 overflow-y-auto rounded-none border border-line bg-paper p-0 text-ink ring-0 sm:max-w-[600px]">
         <DialogHeader className="border-b border-line px-5 py-5 pr-14 text-left sm:px-6">
@@ -43,7 +47,8 @@ export default function SupportDialogPanel({
           </DialogTitle>
           <DialogDescription className="max-w-lg text-sm leading-6 text-slate">
             If GOSDIR has been useful, you can help cover hosting and ongoing
-            source review. Every record follows the same independent evidence review.
+            source review. Every record follows the same independent evidence
+            review.
           </DialogDescription>
         </DialogHeader>
 

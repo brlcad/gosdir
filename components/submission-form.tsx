@@ -5,6 +5,7 @@ import { ArrowUpRight, CalendarDays, CheckCircle2, CircleDot, Code2, FileText, L
 import { timelineRecordReference } from '@/lib/timeline-reference';
 
 const ISSUE_URL = 'https://github.com/brlcad/gosdir/issues/new';
+const CURRENT_YEAR = new Date().getUTCFullYear();
 type RecordKind = 'project' | 'policy' | 'timeline';
 type TimelineChangeType = 'New milestone' | 'Correction';
 
@@ -44,6 +45,14 @@ export function SubmissionForm({ mode = 'contribute' }: { mode?: 'contribute' | 
       if (input instanceof HTMLTextAreaElement) input.setCustomValidity(problem);
       if (problem) {
         if (input instanceof HTMLTextAreaElement) input.reportValidity();
+        return;
+      }
+      const openSourceYear = Number(value(form, 'openSourceYear'));
+      const yearInput = event.currentTarget.elements.namedItem('openSourceYear');
+      const yearProblem = openSourceYear < 1000 || openSourceYear > CURRENT_YEAR ? `Enter a year from 1000 through ${CURRENT_YEAR}.` : '';
+      if (yearInput instanceof HTMLInputElement) yearInput.setCustomValidity(yearProblem);
+      if (yearProblem) {
+        if (yearInput instanceof HTMLInputElement) yearInput.reportValidity();
         return;
       }
     }
@@ -119,8 +128,10 @@ function ProjectFields() {
     <Field label="Jurisdiction"><select required name="jurisdiction" defaultValue=""><option value="" disabled>Select one</option><option>U.S. federal</option><option>U.S. state</option><option>International</option></select></Field>
     <Field label="Geography"><input required maxLength={120} name="geography" placeholder="Country, state, or territory" /></Field>
     <Field label="Service domain"><input required maxLength={100} name="domain" placeholder="Cybersecurity, design systems…" /></Field>
+    <Field label="Open source year"><input required type="text" inputMode="numeric" pattern="[0-9]{4}" maxLength={4} name="openSourceYear" aria-describedby="open-source-year-help" placeholder="2019" title="Enter the year source code was first released under an open source license or clear public-domain basis" onInput={(event) => event.currentTarget.setCustomValidity('')} /></Field>
+    <p id="open-source-year-help" className="-mt-3 text-xs leading-5 text-slate sm:col-span-2">Use the first year source was publicly available under an OSI-approved license or clear public-domain basis, not the project’s founding or service-launch year.</p>
     <Field label="SPDX license"><input required maxLength={100} name="license" placeholder="MIT, Apache-2.0, GPL-3.0-only…" /></Field>
-    <Field label="Project status"><select required name="projectStatus" defaultValue="Active"><option>Active</option><option>Maintained</option><option>Reference</option></select></Field>
+    <Field label="Project status"><select required name="projectStatus" defaultValue="Active"><option value="Active">Active — Ongoing development and improvement</option><option value="Maintained">Maintained — Stable; fixes and updates as needed</option><option value="Archived">Archived — No longer maintained; retained for reference</option></select></Field>
     <Field label="Repository URL" wide><input required type="url" pattern="https?://.*" name="repository" placeholder="https://github.com/organization/project" /></Field>
     <Field label="Official government source" wide><input required type="url" pattern="https?://.*" name="officialSource" placeholder="https://agency.gov/program-or-publication" /></Field>
     <Field label="Plain-language summary" wide><textarea required maxLength={1200} name="summary" rows={4} placeholder="What does the software do and who can learn from or reuse it?" /></Field>
@@ -147,6 +158,7 @@ function TimelineFields({ changeType, setChangeType }: { changeType: TimelineCha
     <Field label="Change type" wide><select required name="timelineChangeType" value={changeType} onChange={(event) => setChangeType(event.target.value as TimelineChangeType)}><option>New milestone</option><option>Correction</option></select></Field>
     {changeType === 'Correction' && <Field label="Existing milestone (year and title)" wide><input required maxLength={240} name="existingMilestone" placeholder="2019 — NSA releases Ghidra" /></Field>}
     <Field label="Proposed year"><input required type="text" pattern="[0-9]{4}" maxLength={4} name="milestoneYear" placeholder="2026" title="Enter a four-digit year" /></Field>
+    <Field label="Category"><select required name="milestoneCategory" defaultValue=""><option value="" disabled>Select one</option><option value="us-policy">US policies</option><option value="eu-policy">EU policies</option><option value="other-policy">Other policies</option><option value="software">Notable software</option></select></Field>
     <Field label="Milestone title"><input required maxLength={160} name="milestoneTitle" placeholder="What happened?" /></Field>
     <Field label="Proposed description" wide><textarea required maxLength={1000} name="milestoneDescription" rows={4} placeholder="Explain the event and its relevance to government open source." /></Field>
     <Field label="Primary source URL" wide><input required type="url" pattern="https?://.*" name="milestoneSource" placeholder="https://official-source.example/milestone" /></Field>
@@ -167,6 +179,7 @@ function projectPacket(form: FormData) {
       ['Geography', value(form, 'geography')],
       ['Jurisdiction', value(form, 'jurisdiction')],
       ['Service domain', value(form, 'domain')],
+      ['Open source year', value(form, 'openSourceYear')],
       ['Repository', value(form, 'repository')],
       ['Official source', value(form, 'officialSource')],
       ['Project status', value(form, 'projectStatus')],
@@ -204,6 +217,7 @@ function timelinePacket(form: FormData) {
   if (changeType === 'Correction') sections.push(['Existing milestone', value(form, 'existingMilestone')]);
   sections.push(
     ['Year', value(form, 'milestoneYear')],
+    ['Category', value(form, 'milestoneCategory')],
     ['Milestone title', title],
     ['Description', value(form, 'milestoneDescription')],
     ['Primary source', value(form, 'milestoneSource')],

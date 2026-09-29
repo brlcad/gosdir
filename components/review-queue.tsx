@@ -39,7 +39,7 @@ type SavedChecks = Record<string, boolean[]>;
 
 const projectChecks = [
   'Government sponsor and direct role are supported; resolve each canonical agency ID or add its agency record',
-  'Canonical repository is public and matches the project',
+  'Canonical repository and open source year match public project history',
   'License is OSI-approved or public-domain status is clear',
   'Official source supports the sponsorship claim',
   'Duplicate, summary, status, and category checks are complete',
@@ -56,7 +56,7 @@ const policyChecks = [
 const timelineChecks = [
   'Year and title match the primary source',
   'Source supports the proposed milestone description',
-  'Government open source relevance is clear',
+  'Government open source relevance and category are clear',
   'Existing milestone or duplicate has been checked',
   'Related catalog record is correct or no link is needed',
 ];
@@ -277,7 +277,7 @@ function fieldsFor(issue: GitHubIssue) {
   const kind = kindFor(issue);
   const definitions: Array<[string, string[]]> = kind === 'timeline'
     ? [
-      ['Change type', ['Change type']], ['Existing milestone', ['Existing milestone']], ['Year', ['Year']],
+      ['Change type', ['Change type']], ['Existing milestone', ['Existing milestone']], ['Year', ['Year']], ['Category', ['Category']],
       ['Milestone title', ['Milestone title']], ['Description', ['Description']], ['Primary source', ['Primary source']],
       ['Related record', ['Related record']], ['Reason for change', ['Reason for change']],
     ]
@@ -289,7 +289,7 @@ function fieldsFor(issue: GitHubIssue) {
     ]
     : [
       ['Project name', ['Project name']], ['Government sponsor', ['Government sponsor']], ['Canonical agency IDs', ['Canonical agency IDs', 'Agency IDs']], ['Geography', ['Geography']],
-      ['Jurisdiction', ['Jurisdiction']], ['Service domain', ['Service domain']], ['Project status', ['Project status']],
+      ['Jurisdiction', ['Jurisdiction']], ['Service domain', ['Service domain']], ['Open source year', ['Open source year']], ['Project status', ['Project status']],
       ['Repository', ['Repository', 'Canonical repository']], ['Official source', ['Official source']], ['License', ['SPDX license', 'SPDX license or public-domain basis']],
       ['Summary', ['Summary', 'Summary and evidence']], ['Why it belongs', ['Why it belongs']],
     ];
@@ -304,10 +304,10 @@ function validationFor(issue: GitHubIssue) {
   const fields = fieldsFor(issue);
   const kind = kindFor(issue);
   const required = kind === 'timeline'
-    ? ['Change type', 'Year', 'Milestone title', 'Description', 'Primary source', 'Reason for change']
+    ? ['Change type', 'Year', 'Category', 'Milestone title', 'Description', 'Primary source', 'Reason for change']
     : kind === 'policy'
     ? ['Policy title', 'Issuer', 'Geography', 'Year', 'Instrument type', 'Status', 'Primary source', 'Summary']
-    : ['Project name', 'Government sponsor', 'Geography', 'Jurisdiction', 'Service domain', 'Project status', 'Repository', 'Official source', 'License', 'Summary'];
+    : ['Project name', 'Government sponsor', 'Geography', 'Jurisdiction', 'Service domain', 'Open source year', 'Project status', 'Repository', 'Official source', 'License', 'Summary'];
   const missing = required.filter((field) => !fields[field]);
   const problems: string[] = [];
   if (missing.length) problems.push(`Missing ${missing.join(', ')}.`);
@@ -324,13 +324,18 @@ function validationFor(issue: GitHubIssue) {
     if (fields['Change type'] && !['New milestone', 'Correction'].includes(fields['Change type'])) problems.push('Change type must be New milestone or Correction.');
     if (fields['Change type'] === 'Correction' && !fields['Existing milestone']) problems.push('Identify the existing milestone to correct.');
     if (fields.Year && !/^\d{4}$/.test(fields.Year)) problems.push('Timeline year must be four digits.');
+    if (fields.Category && !parseTimelineCategory(fields.Category)) problems.push('Timeline category must be US policies, EU policies, Other policies, or Notable software.');
     if (fields['Related record'] && !timelineRecordReference(fields['Related record'])) problems.push('Related record must link to a GOSDIR project or policy record.');
   }
   if (kind === 'policy' && fields.Year && !/^(?:\d{4}|Undated)$/i.test(fields.Year)) problems.push('Year must be four digits or “Undated”.');
+  if (kind === 'project' && fields['Open source year']) {
+    const openSourceYear = Number(fields['Open source year']);
+    if (!/^\d{4}$/.test(fields['Open source year']) || openSourceYear < 1000 || openSourceYear > new Date().getUTCFullYear()) problems.push('Open source year must be a four-digit year that is not in the future.');
+  }
   const urlFields = kind === 'project' ? ['Repository', 'Official source'] : ['Primary source'];
   const invalidUrls = urlFields.filter((field) => fields[field] && !safeUrl(fields[field]));
   if (invalidUrls.length) problems.push(`${invalidUrls.join(' and ')} must use an HTTP(S) URL.`);
-  if (fields['Project status'] && !['Active', 'Maintained', 'Reference'].includes(fields['Project status'])) problems.push('Project status is not recognized.');
+  if (fields['Project status'] && !['Active', 'Maintained', 'Archived'].includes(fields['Project status'])) problems.push('Project status is not recognized.');
   if (kind === 'policy' && fields.Status && !['Current', 'Reference', 'Superseded'].includes(fields.Status)) problems.push('Policy status is not recognized.');
   if (fields.Jurisdiction && !['U.S. federal', 'U.S. state', 'International'].includes(fields.Jurisdiction)) problems.push('Jurisdiction is not recognized.');
   return problems;
@@ -343,6 +348,7 @@ function recordDraft(issue: GitHubIssue) {
     const related = fields['Related record'] ? timelineRecordReference(fields['Related record']) : {};
     const proposedEvent = {
       year: fields.Year,
+      category: timelineCategory(fields.Category),
       title: fields['Milestone title'],
       body: fields.Description,
       sourceUrl: fields['Primary source'],
@@ -379,6 +385,7 @@ function recordDraft(issue: GitHubIssue) {
     geography: fieldValue(issue.body, 'Geography'),
     jurisdiction: projectJurisdiction(fieldValue(issue.body, 'Jurisdiction')),
     domain: fieldValue(issue.body, 'Service domain'),
+    openSourceYear: projectOpenSourceYear(fieldValue(issue.body, 'Open source year')),
     license: firstField(issue.body, ['SPDX license', 'SPDX license or public-domain basis']),
     repository: firstField(issue.body, ['Repository', 'Canonical repository']),
     officialUrl: fieldValue(issue.body, 'Official source'),
@@ -386,6 +393,16 @@ function recordDraft(issue: GitHubIssue) {
     verified: new Date().toISOString().slice(0, 10),
     tags: [],
   } satisfies Project;
+}
+
+function parseTimelineCategory(value: string): TimelineEvent['category'] | null {
+  if (value === 'us-policy' || value === 'eu-policy' || value === 'other-policy' || value === 'software') return value;
+  return null;
+}
+function timelineCategory(value: string): TimelineEvent['category'] {
+  const category = parseTimelineCategory(value);
+  if (!category) throw new Error(`Invalid timeline category: ${value}`);
+  return category;
 }
 
 function firstField(body: string | null, headings: string[]) {
@@ -403,12 +420,17 @@ function policyStatus(value: string): Policy['status'] {
   if (value === 'Current' || value === 'Reference' || value === 'Superseded') return value;
   throw new Error(`Invalid policy status: ${value}`);
 }
+function projectOpenSourceYear(value: string): Project['openSourceYear'] {
+  const year = Number(value);
+  if (/^\d{4}$/.test(value) && year >= 1000 && year <= new Date().getUTCFullYear()) return year;
+  throw new Error(`Invalid open source year: ${value}`);
+}
 function projectJurisdiction(value: string): Project['jurisdiction'] {
   if (value === 'U.S. federal' || value === 'U.S. state' || value === 'International') return value;
   throw new Error(`Invalid project jurisdiction: ${value}`);
 }
 function projectStatus(value: string): Project['status'] {
-  if (value === 'Active' || value === 'Maintained' || value === 'Reference') return value;
+  if (value === 'Active' || value === 'Maintained' || value === 'Archived') return value;
   throw new Error(`Invalid project status: ${value}`);
 }
 
