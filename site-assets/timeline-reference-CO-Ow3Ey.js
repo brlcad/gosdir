@@ -1,0 +1,1 @@
+var e=/^[a-z0-9]+(?:-[a-z0-9]+)*$/;function t(t){try{let n=new URL(t);if(n.origin!==`https://gosdir.com`)return null;let r=n.pathname.replace(/\/+$/,``);if(r===`/directory`){let t=n.searchParams.get(`project`);return t&&e.test(t)?{projectId:t}:null}if(r===`/policy`){let t=n.searchParams.get(`record`);return t&&e.test(t)?{policyId:t}:null}}catch{}return null}export{t};
