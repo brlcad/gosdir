@@ -10,10 +10,11 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Climate & energy',
+  openSourceYear: 2012,
   license: 'BSD-3-Clause',
-  repository: 'https://github.com/NREL/EnergyPlus',
+  repository: 'https://github.com/NatLabRockies/EnergyPlus',
   officialUrl: 'https://energyplus.net/',
   status: 'Active',
-  verified: '2026-09-03',
+  verified: '2026-09-25',
   tags: ['buildings', 'energy', 'simulation'],
 } satisfies Project;

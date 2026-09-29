@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Data infrastructure',
+  openSourceYear: 2011,
   license: 'Apache-2.0',
   repository: 'https://github.com/apache/accumulo',
   officialUrl: 'https://accumulo.apache.org/',

@@ -10,10 +10,12 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Code inventory',
+  openSourceYear: 2016,
   license: 'Public domain',
   repository: 'https://github.com/GSA/code-gov',
-  officialUrl: 'https://code.gov/',
-  status: 'Reference',
-  verified: '2026-09-03',
+  officialUrl:
+    'https://digital.gov/resources/requirements-for-achieving-efficiency-transparency-and-innovation-through-reusable-and-open-source-software/',
+  status: 'Archived',
+  verified: '2026-09-25',
   tags: ['inventory', 'policy', 'reuse'],
 } satisfies Project;

@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Geospatial',
+  openSourceYear: 2018,
   license: 'MIT',
   repository: 'https://github.com/ngageoint/sarpy',
   officialUrl: 'https://github.com/ngageoint/sarpy',

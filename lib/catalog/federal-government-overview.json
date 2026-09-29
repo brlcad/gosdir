@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 2,
+  "reviewed": "2026-09-28",
+  "source": {
+    "title": "The United States Government Manual",
+    "url": "https://www.usgovernmentmanual.gov/",
+    "edition": "2025-12-31",
+    "editionUrl": "https://www.govinfo.gov/app/details/GOVMAN-2025-12-31"
+  },
+  "manualBodies": [
+    {
+      "id": "congress",
+      "name": "Congress",
+      "shortName": "Congress",
+      "groupId": "legislative",
+      "parentId": null,
+      "description": "The bicameral national legislature, comprising the Senate and House of Representatives.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "officialUrl": "https://www.congress.gov/",
+      "overview": true
+    },
+    {
+      "id": "united-states-senate",
+      "name": "United States Senate",
+      "shortName": "Senate",
+      "groupId": "legislative",
+      "parentId": "congress",
+      "description": "The upper chamber of Congress.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "officialUrl": "https://www.senate.gov/",
+      "overview": false
+    },
+    {
+      "id": "united-states-botanic-garden",
+      "name": "United States Botanic Garden",
+      "shortName": "U.S. Botanic Garden",
+      "groupId": "legislative",
+      "parentId": null,
+      "description": "A legislative-branch institution identified as a principal body in the Government Manual.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "officialUrl": "https://www.usbg.gov/",
+      "overview": true
+    },
+    {
+      "id": "supreme-court",
+      "name": "Supreme Court of the United States",
+      "shortName": "Supreme Court",
+      "groupId": "judicial",
+      "parentId": null,
+      "description": "The highest court in the Federal judiciary.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "officialUrl": "https://www.supremecourt.gov/",
+      "overview": true
+    },
+    {
+      "id": "lower-federal-courts",
+      "name": "Lower Federal Courts",
+      "shortName": "Lower Courts",
+      "groupId": "judicial",
+      "parentId": null,
+      "description": "The courts of appeals and district courts below the Supreme Court.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "officialUrl": "https://www.uscourts.gov/about-federal-courts/court-role-and-structure",
+      "overview": true
+    },
+    {
+      "id": "special-federal-courts",
+      "name": "Special Federal Courts",
+      "shortName": "Special Courts",
+      "groupId": "judicial",
+      "parentId": null,
+      "description": "Federal courts with specialized subject-matter jurisdiction.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "officialUrl": "https://www.uscourts.gov/about-federal-courts/court-role-and-structure",
+      "overview": true
+    },
+    {
+      "id": "federal-judicial-center",
+      "name": "Federal Judicial Center",
+      "shortName": "FJC",
+      "groupId": "judicial",
+      "parentId": null,
+      "description": "The research and education agency of the Federal judicial system.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "officialUrl": "https://www.fjc.gov/",
+      "overview": true
+    }
+  ],
+  "parentOverrides": [
+    {
+      "federalRegisterId": 502,
+      "parent": { "source": "manual-body", "id": "congress" },
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "note": "The House of Representatives is a chamber of Congress."
+    },
+    {
+      "federalRegisterId": 280,
+      "parent": { "source": "federal-register", "id": 538 },
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "note": "The Office of Management and Budget is within the Executive Office of the President."
+    },
+    {
+      "federalRegisterId": 340,
+      "parent": { "source": "federal-register", "id": 538 },
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "note": "The National Economic Council is within the Executive Office of the President."
+    },
+    {
+      "federalRegisterId": 368,
+      "parent": { "source": "federal-register", "id": 538 },
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "note": "The National Security Council is within the Executive Office of the President."
+    },
+    {
+      "federalRegisterId": 391,
+      "parent": { "source": "federal-register", "id": 538 },
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "note": "The Office of Policy Development is within the Executive Office of the President."
+    },
+    {
+      "federalRegisterId": 464,
+      "parent": { "source": "federal-register", "id": 538 },
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "note": "The Office of Science and Technology Policy is within the Executive Office of the President."
+    },
+    {
+      "federalRegisterId": 487,
+      "parent": { "source": "federal-register", "id": 538 },
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "note": "The White House Office is within the Executive Office of the President."
+    },
+    {
+      "federalRegisterId": 491,
+      "parent": { "source": "federal-register", "id": 538 },
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "note": "The Office of the United States Trade Representative is within the Executive Office of the President."
+    }
+  ],
+  "defaultGroupId": "other",
+  "groups": [
+    {
+      "id": "executive",
+      "name": "Executive branch",
+      "shortName": "Executive",
+      "description": "Cabinet departments, the Executive Office of the President, independent agencies, and government corporations.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "principalFederalRegisterIds": [
+        4, 6, 12, 46, 52, 54, 77, 84, 91, 94, 103, 109, 126, 127, 136, 145, 147,
+        151, 154, 161, 164, 165, 174, 176, 178, 179, 180, 188, 189, 192, 210,
+        215, 221, 227, 228, 250, 253, 262, 268, 271, 285, 287, 301, 304, 308,
+        335, 342, 354, 355, 357, 365, 366, 374, 383, 387, 403, 405, 406, 409,
+        410, 438, 444, 466, 467, 468, 470, 473, 476, 481, 486, 490, 492, 497,
+        520, 538, 566, 573, 595, 606, 608
+      ],
+      "assignedFederalRegisterIds": [
+        4, 6, 12, 46, 52, 54, 77, 84, 91, 94, 103, 109, 126, 127, 136, 145, 147,
+        151, 154, 161, 164, 165, 174, 176, 178, 179, 180, 188, 189, 192, 210,
+        215, 221, 227, 228, 250, 253, 262, 268, 271, 280, 285, 287, 301, 304,
+        308, 335, 340, 342, 354, 355, 357, 365, 366, 368, 374, 383, 387, 391,
+        403, 405, 406, 409, 410, 438, 444, 464, 466, 467, 468, 470, 473, 476,
+        481, 486, 487, 490, 491, 492, 497, 520, 538, 566, 573, 595, 606, 608
+      ]
+    },
+    {
+      "id": "legislative",
+      "name": "Legislative branch",
+      "shortName": "Legislative",
+      "description": "Congress and the principal offices and agencies that support the legislative branch.",
+      "sourceUrl": "https://www.usgovernmentmanual.gov/",
+      "principalFederalRegisterIds": [27, 81, 213, 217, 277],
+      "assignedFederalRegisterIds": [
+        24, 27, 43, 61, 69, 79, 81, 128, 195, 213, 217, 267, 277, 284, 307, 321,
+        325, 326, 343, 407, 440, 502, 504, 505, 602, 623
+      ]
+    },
+    {
+      "id": "judicial",
+      "name": "Judicial branch",
+      "shortName": "Judicial",
+      "description": "The Supreme Court, lower and special courts, and the judiciary's principal administrative, research, and policymaking bodies.",
+      "sourceUrl": "https://www.uscourts.gov/administration-policies/judicial-administration",
+      "principalFederalRegisterIds": [3, 515],
+      "assignedFederalRegisterIds": [3, 68, 266, 515]
+    },
+    {
+      "id": "other",
+      "name": "Other federal bodies",
+      "shortName": "Other / historical",
+      "description": "Quasi-official, cross-branch, historical, and other Federal Register publishers not assigned to a current constitutional branch overview.",
+      "sourceUrl": "https://www.federalregister.gov/agencies",
+      "principalFederalRegisterIds": [276, 469, 477, 511],
+      "assignedFederalRegisterIds": [
+        14, 15, 20, 21, 25, 26, 28, 29, 30, 31, 33, 36, 38, 39, 41, 47, 50, 57,
+        65, 67, 70, 71, 72, 74, 75, 86, 95, 99, 112, 113, 129, 130, 148, 156,
+        158, 168, 175, 182, 187, 205, 206, 207, 211, 220, 225, 235, 246, 249,
+        252, 255, 256, 260, 263, 264, 265, 276, 278, 281, 293, 296, 305, 318,
+        320, 330, 331, 334, 336, 341, 348, 358, 363, 364, 370, 375, 377, 379,
+        380, 381, 385, 388, 394, 396, 397, 399, 400, 412, 413, 428, 429, 430,
+        431, 436, 445, 447, 449, 452, 469, 474, 477, 482, 488, 498, 509, 510,
+        511, 518, 519, 528, 529, 539, 542, 543, 557, 564, 565, 578, 579, 582,
+        583, 594, 601, 605, 607, 610, 614, 616, 617, 618, 621, 624
+      ]
+    }
+  ]
+}

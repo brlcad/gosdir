@@ -1,5 +1,5 @@
 import { agencies } from './agencies';
-import { projects } from './software';
+import { listedProjects as projects } from './directory';
 import type { Agency, Project } from './types';
 
 export const agencyById: ReadonlyMap<string, Agency> = new Map(

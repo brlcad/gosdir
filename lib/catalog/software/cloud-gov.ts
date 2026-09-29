@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Cloud platform',
+  openSourceYear: 2015,
   license: 'Public domain / CC0',
   repository: 'https://github.com/cloud-gov',
   officialUrl: 'https://cloud.gov/',

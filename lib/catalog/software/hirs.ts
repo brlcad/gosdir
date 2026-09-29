@@ -10,11 +10,12 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Supply chain security',
+  openSourceYear: 2018,
   license: 'Apache-2.0 / Public domain',
   repository: 'https://github.com/nsacyber/HIRS',
   officialUrl: 'https://github.com/nsacyber/HIRS',
   evidenceUrl: 'https://code.mil/oss-faq.html',
-  status: 'Reference',
+  status: 'Active',
   verified: '2026-09-12',
   tags: ['nsa', 'hardware', 'attestation', 'tpm', 'experimental'],
 } satisfies Project;

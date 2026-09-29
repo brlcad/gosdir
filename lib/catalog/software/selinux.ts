@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Cybersecurity',
+  openSourceYear: 2000,
   license:
     'Mixed, component-specific GPL-2.0/LGPL-2.1/Public domain/FreeBSD/third-party terms',
   repository: 'https://github.com/SELinuxProject/selinux',

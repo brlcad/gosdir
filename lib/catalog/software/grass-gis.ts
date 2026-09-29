@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Geospatial',
+  openSourceYear: 1985,
   license: 'GPL-2.0-or-later',
   repository: 'https://github.com/OSGeo/grass',
   officialUrl: 'https://grass.osgeo.org/about/history/',

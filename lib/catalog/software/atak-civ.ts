@@ -15,6 +15,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Situational awareness',
+  openSourceYear: 2020,
   license: 'GPL-3.0; qualifying U.S. federal portions Public domain',
   repository: 'https://github.com/TAK-Product-Center/atak-civ',
   officialUrl: 'https://tak.gov/pages/our-process',

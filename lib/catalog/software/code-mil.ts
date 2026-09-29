@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Code inventory',
+  openSourceYear: 2017,
   license: 'Public domain / OSI licenses',
   repository: 'https://github.com/Code-dot-mil',
   officialUrl: 'https://code.mil/',

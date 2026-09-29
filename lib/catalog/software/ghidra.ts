@@ -10,6 +10,7 @@ export default {
   geography: 'United States',
   jurisdiction: 'U.S. federal',
   domain: 'Software analysis',
+  openSourceYear: 2019,
   license:
     'Apache-2.0 primary; GPL-3.0 support programs; federal portions Public domain; third-party terms',
   repository: 'https://github.com/NationalSecurityAgency/ghidra',

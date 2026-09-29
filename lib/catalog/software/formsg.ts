@@ -10,6 +10,7 @@ export default {
   geography: 'Singapore',
   jurisdiction: 'International',
   domain: 'Forms & workflows',
+  openSourceYear: 2020,
   license: 'MIT',
   repository: 'https://github.com/opengovsg/FormSG',
   officialUrl: 'https://form.gov.sg/',
