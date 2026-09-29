@@ -1,0 +1,11 @@
+{
+  "source_id": "prior-shortlist",
+  "source_url": "docs/research/2026-09-government-oss-candidate-audit.csv",
+  "retrieved_at_utc": "2026-09-22T00:00:00Z",
+  "raw_entries": 36,
+  "repository_rows": 36,
+  "distinct_normalized_repositories": 36,
+  "metadata_candidates": 36,
+  "metadata_excluded": 0,
+  "note": "Preserved from the prior shortlist; current ledger reviews are recorded separately."
+}

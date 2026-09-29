@@ -1,0 +1,17 @@
+{
+  "source_id": "usgs",
+  "source_url": "https://code.usgs.gov/api/v4/projects?visibility=public",
+  "retrieved_at_utc": "2026-09-28T02:57:59.796Z",
+  "raw_rows": 1042,
+  "repository_rows": 1042,
+  "distinct_normalized_repositories": 1042,
+  "metadata_candidates": 1037,
+  "metadata_excluded": 5,
+  "source_rows_without_repository_url": 0,
+  "source_rows_non_http_or_invalid_repository_url": 0,
+  "non_repository_url_rows": 0,
+  "note": "Metadata triage only. A candidate label is not a four-check decision or GOSDIR acceptance.",
+  "api_archived_rows": 5,
+  "count_note": "Current API totals can differ from the September 22, 2026 survey snapshot.",
+  "activity_note": "GitLab last_activity_at is preserved in metadata but is not treated as code-commit freshness."
+}

@@ -1,0 +1,10 @@
+# Coordinator QA: NIST BPC Monitor
+
+Decision: add the narrowly scoped `bpc-monitor` tool as an actively maintained NIST laboratory-operations project. The individual four-check review is recorded in `nist-006-04.jsonl`.
+
+- Government provenance and identity: the [repository README](https://github.com/usnistgov/bpc-monitor/blob/main/README.md) names the Vision130 back-pressure controller and the liquid-helium recovery system in NIST Building 218. NIST's [Alireza Panna profile](https://www.nist.gov/people/alireza-panna) identifies the responsible Fundamental Electrical Measurements Group in the Physical Measurement Laboratory.
+- Public source and license scope: the [public repository](https://github.com/usnistgov/bpc-monitor) includes the Python application, controller integration, installer/build configuration, and user documentation. The exact [LICENSE.md](https://github.com/usnistgov/bpc-monitor/blob/main/LICENSE.md) is the OSI-approved NIST Software license (NIST-Software) for NIST-authored source. Python dependencies and the Windows runtime have separate licenses and are not represented as covered by that grant.
+- First licensed-source year: the NIST-Software grant appeared on 2023-03-30 in [commit 407bce3](https://github.com/usnistgov/bpc-monitor/commit/407bce3b69400299cf1d3069b43c8c60d4e33444); the first substantive application code followed in [commit 803cb19](https://github.com/usnistgov/bpc-monitor/commit/803cb19b0da44d2065c1b7d19fe00195b3e6eb85). Thus 2023 is the conservative first public licensed-source year.
+- Notability and status: the README provides installation, configuration, command-line options, and operation guidance for the exact NIST helium-recovery controller. The [release history](https://github.com/usnistgov/bpc-monitor/blob/main/RELEASE.md) records v2.4.6 on 2026-09-02, supporting Active status.
+
+The catalog entry covers the application and its NIST-authored source only; it does not broaden the NIST grant to dependencies, bundled runtime, or the underlying controller hardware.

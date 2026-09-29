@@ -1,0 +1,23 @@
+{
+  "source_id": "spain-ctt",
+  "source_url": "https://administracionelectronica.gob.es/ctt/index.jsp",
+  "api_url": "https://api.github.com/orgs/ctt-gob-es/repos?per_page=100&sort=updated",
+  "retrieved_at_utc": "2026-09-28T03:15:37.155Z",
+  "query": {
+    "screen": "all public repositories in the CTT GitHub organization retained as discovery leads",
+    "records": 46,
+    "distinct_repositories": 46,
+    "duplicated_url_groups": 0,
+    "candidate_rows": 46,
+    "candidate_distinct": 46
+  },
+  "raw_entries": 46,
+  "repository_rows": 46,
+  "distinct_normalized_repositories": 46,
+  "metadata_candidates": 46,
+  "metadata_excluded": 0,
+  "distinct_candidate_repositories": 46,
+  "without_repository": 0,
+  "malformed_repository": 0,
+  "note": "CTT organization repositories are a discovery list only. No directory-wide license, government provenance, primary-source, or four-check decision is implied by membership."
+}

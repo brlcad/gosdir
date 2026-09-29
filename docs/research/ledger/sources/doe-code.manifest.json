@@ -1,0 +1,21 @@
+{
+  "source_id": "doe-code",
+  "source_url": "https://www.osti.gov/doecode/",
+  "api_url": "https://www.osti.gov/doecodeapi/services/search",
+  "api_documentation_url": "https://www.osti.gov/doecodeapi/services/docs/search",
+  "retrieved_at_utc": "2026-09-28T02:52:26.492Z",
+  "query": {
+    "project_type": "OS",
+    "rows_per_page": 1000,
+    "start_index": 0
+  },
+  "raw_entries": 6066,
+  "repository_rows": 6066,
+  "distinct_normalized_repositories": 5765,
+  "metadata_candidates": 5203,
+  "metadata_excluded": 863,
+  "distinct_candidate_repositories": 4974,
+  "without_repository": 0,
+  "malformed_repository": 0,
+  "note": "Metadata only. 'candidate' means DOE CODE reports a named license claim; only rows with the sole license label 'Other' are excluded, matching the survey's screen. No four-check decision follows from this manifest."
+}

@@ -1,0 +1,39 @@
+{
+  "source_id": "brazil-software-publico",
+  "source_url": "https://www.gov.br/governodigital/pt-br/plataformas-e-servicos-digitais/software-publico/catalogo/catalogo",
+  "retrieved_at_utc": "2026-09-28T02:59:11.847Z",
+  "repository_rows": 3,
+  "distinct_normalized_repositories": 3,
+  "metadata_candidates": 3,
+  "metadata_excluded": 0,
+  "note": "Metadata screens are discovery only; individual four-check reviews are stored separately.",
+  "current_government_page_visible_products": 4,
+  "current_government_page_git_repositories": 3,
+  "visible_product_without_repository": "App Coronavírus-SUS",
+  "historical_portal_claimed_catalog_size": 81,
+  "historical_portal_url": "https://softwarepublico.gov.br/social/search/software_infos",
+  "historical_portal_access": "The live official search endpoint returned HTTP 403 on 2026-09-28. Arquivo.pt preserves one 2023-03-24 capture of the old catalog search page (15 cards on page 1); exact page-2 query history returned zero captures. This is a partial archive, not an 81-item enumeration.",
+  "archive_research_retrieved_at_utc": "2026-09-28T06:20:00Z",
+  "archive_provider": "Arquivo.pt",
+  "archived_catalog_page_1": "https://arquivo.pt/wayback/20230324140912/https://softwarepublico.gov.br/social/search/software_infos",
+  "archived_catalog_page_1_capture_at": "2023-03-24T14:09:12Z",
+  "archived_catalog_page_1_visible_cards": 15,
+  "archived_catalog_pagination": "The page shows links through page 5; version-history query for the exact page=2 URL returned zero captures, so the archive cannot establish or enumerate all catalog cards.",
+  "live_gitlab_public_projects_access": "The documented https://softwarepublico.gov.br/gitlab/public/projects listing and GitLab API are inaccessible from this runtime (403 via browser fetch; API request timed out via shell).",
+  "archived_gitlab_public_projects": {
+    "documented_entry_route": "https://softwarepublico.gov.br/gitlab/public/projects",
+    "directory_snapshot_pages": [
+      "https://arquivo.pt/wayback/20230324134556/https://softwarepublico.gov.br/gitlab/public/projects",
+      "https://arquivo.pt/wayback/20230324164346/https://softwarepublico.gov.br/gitlab/explore/projects?page=2",
+      "https://arquivo.pt/wayback/20230324164351/https://softwarepublico.gov.br/gitlab/explore/projects?page=3",
+      "https://arquivo.pt/wayback/20230324164355/https://softwarepublico.gov.br/gitlab/explore/projects?page=4",
+      "https://arquivo.pt/wayback/20230324164401/https://softwarepublico.gov.br/gitlab/explore/projects?page=5"
+    ],
+    "project_links_retrieved": 100,
+    "page_5_pagination_advertises_page_9": true,
+    "later_page_captures_found": false,
+    "scope_note": "This is a partial generic public-project explorer, not a source for mapping the historical 81 catalog products. These directory links were not added as individual four-check reviews."
+  },
+  "official_current_github_organization_snapshot": "brazil-spbgovbr-github",
+  "historical_catalog_completeness": "not achieved; do not infer the 81-item set from the partial catalog page capture, generic GitLab directory, or current GitHub organization"
+}

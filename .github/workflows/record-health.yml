@@ -1,0 +1,289 @@
+name: Daily record health
+
+on:
+  workflow_dispatch:
+    inputs:
+      accept_blast_radius:
+        description: Accept more than five verified publication-state changes
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: '23 6 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-record-health
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      AUTOMATION_BRANCH: automation/record-health
+      REPORT_PATH: ${{ runner.temp }}/record-health-report.md
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        id: install
+        run: npm ci
+
+      - name: Read pending automation state
+        id: pending_state
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GOSDIR_AUTOMATION_TOKEN || github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          PENDING_SNAPSHOT_PATH: ${{ runner.temp }}/pending-project-availability.json
+        run: |
+          pr_number="$(gh api --method GET "repos/$GITHUB_REPOSITORY/pulls" \
+            -f state=open \
+            -f head="$GITHUB_REPOSITORY_OWNER:$AUTOMATION_BRANCH" \
+            -f base="$DEFAULT_BRANCH" \
+            -f per_page=1 \
+            --jq '.[0].number // empty')"
+
+          if [[ -z "$pr_number" ]]; then
+            echo 'found=false' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          head_sha="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$pr_number" --jq '.head.sha')"
+          temporary_path="$PENDING_SNAPSHOT_PATH.tmp"
+          gh api \
+            -H 'Accept: application/vnd.github.raw+json' \
+            "repos/$GITHUB_REPOSITORY/contents/lib/catalog/project-availability.json?ref=$head_sha" \
+            > "$temporary_path"
+          mv "$temporary_path" "$PENDING_SNAPSHOT_PATH"
+          echo 'found=true' >> "$GITHUB_OUTPUT"
+          echo "pull_request=$pr_number" >> "$GITHUB_OUTPUT"
+
+      - name: Check every record link and update publication state
+        id: collect
+        continue-on-error: true
+        env:
+          ACCEPT_BLAST_RADIUS: ${{ inputs.accept_blast_radius || false }}
+          PENDING_STATE_FOUND: ${{ steps.pending_state.outputs.found }}
+          PENDING_SNAPSHOT_PATH: ${{ runner.temp }}/pending-project-availability.json
+        run: |
+          arguments=()
+          if [[ "$ACCEPT_BLAST_RADIUS" == 'true' ]]; then
+            arguments+=(--accept-blast-radius)
+          fi
+          if [[ "$PENDING_STATE_FOUND" == 'true' ]]; then
+            arguments+=(--base-snapshot "$PENDING_SNAPSHOT_PATH")
+          fi
+          npm run review:availability -- "${arguments[@]}"
+
+      - name: Write the record-health summary
+        id: report
+        if: always()
+        run: npm run report:availability | tee "$REPORT_PATH" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Explain a collection failure
+        if: steps.collect.outcome == 'failure'
+        run: |
+          {
+            echo '## Automation stopped'
+            echo
+            echo 'The link collector, schema validation, or blast-radius guard failed. No publication state was committed.'
+            echo
+            echo '1. Download the record-health artifact and inspect the report and candidate snapshot.'
+            echo '2. Correct invalid catalog URLs or checker behavior.'
+            echo '3. If every held transition is verified, rerun this workflow with **Accept blast radius** enabled.'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload record-health evidence
+        id: evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: record-health-${{ github.run_id }}
+          path: |
+            lib/catalog/project-availability.json
+            lib/catalog/project-availability.candidate.json
+            ${{ runner.temp }}/record-health-report.md
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Stop after a collection failure
+        if: steps.collect.outcome == 'failure'
+        run: exit 1
+
+      - name: Require current substantive criteria reviews
+        id: criteria_review
+        run: npm run report:availability -- --fail-on-editorial-review > /dev/null
+
+      - name: Run repository checks
+        id: checks
+        run: npm run check
+
+      - name: Build the production application
+        id: app_build
+        run: npm run build
+
+      - name: Build Apache deployment artifacts
+        id: apache_build
+        run: npm run build:apache
+
+      - name: Verify generated changes
+        id: diff_check
+        run: git diff --check
+
+      - name: Detect a publishable update
+        id: changes
+        run: |
+          if [[ -n "$(git status --porcelain=v1)" ]]; then
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create or update the automation pull request
+        id: publish
+        if: steps.changes.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GOSDIR_AUTOMATION_TOKEN || github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          gh auth setup-git
+          remote_oid="$(git ls-remote --heads origin "refs/heads/$AUTOMATION_BRANCH" | awk '{print $1}')"
+          git switch --force-create "$AUTOMATION_BRANCH"
+          git config user.name 'gosdir-record-health[bot]'
+          git config user.email 'gosdir-record-health[bot]@users.noreply.github.com'
+          git add --all
+          git commit -m 'chore: refresh project availability'
+
+          if [[ -n "$remote_oid" ]]; then
+            git push \
+              --force-with-lease="refs/heads/$AUTOMATION_BRANCH:$remote_oid" \
+              origin "HEAD:refs/heads/$AUTOMATION_BRANCH"
+          else
+            git push --set-upstream origin "HEAD:refs/heads/$AUTOMATION_BRANCH"
+          fi
+
+          body_path="$RUNNER_TEMP/record-health-pr.md"
+          {
+            echo 'Daily automated review of public repositories and evidence links.'
+            echo
+            cat "$REPORT_PATH"
+            echo '## Deployment'
+            echo
+            echo 'After merge, fast-forward the production Apache checkout to the tested merge commit or run the configured host deployment hook.'
+          } > "$body_path"
+
+          pr_url="$(gh pr list \
+            --head "$AUTOMATION_BRANCH" \
+            --base "$DEFAULT_BRANCH" \
+            --state open \
+            --json url \
+            --jq '.[0].url')"
+          if [[ -z "$pr_url" ]]; then
+            pr_url="$(gh pr create \
+              --base "$DEFAULT_BRANCH" \
+              --head "$AUTOMATION_BRANCH" \
+              --title 'chore: refresh project availability' \
+              --body-file "$body_path")"
+          else
+            gh pr edit "$pr_url" \
+              --title 'chore: refresh project availability' \
+              --body-file "$body_path"
+          fi
+
+          echo "url=$pr_url" >> "$GITHUB_OUTPUT"
+          gh pr merge "$pr_url" --auto --squash
+
+      - name: Summarize publication handoff
+        if: always()
+        env:
+          AUTOMATION_TOKEN_CONFIGURED: ${{ secrets.GOSDIR_AUTOMATION_TOKEN != '' }}
+          INSTALL_OUTCOME: ${{ steps.install.outcome }}
+          PENDING_STATE_OUTCOME: ${{ steps.pending_state.outcome }}
+          COLLECT_OUTCOME: ${{ steps.collect.outcome }}
+          REPORT_OUTCOME: ${{ steps.report.outcome }}
+          EVIDENCE_OUTCOME: ${{ steps.evidence.outcome }}
+          CRITERIA_REVIEW_OUTCOME: ${{ steps.criteria_review.outcome }}
+          CHECKS_OUTCOME: ${{ steps.checks.outcome }}
+          APP_BUILD_OUTCOME: ${{ steps.app_build.outcome }}
+          APACHE_BUILD_OUTCOME: ${{ steps.apache_build.outcome }}
+          DIFF_CHECK_OUTCOME: ${{ steps.diff_check.outcome }}
+          CHANGES_OUTCOME: ${{ steps.changes.outcome }}
+          CHANGED: ${{ steps.changes.outputs.changed }}
+          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
+          PR_URL: ${{ steps.publish.outputs.url }}
+        run: |
+          {
+            echo '## Publication handoff'
+            echo
+            if [[ "$PENDING_STATE_OUTCOME" == 'failure' ]]; then
+              echo '> Warning: the open automation pull request could not be read, so this run used the canonical availability snapshot. Inspect the **Read pending automation state** step and rerun; otherwise a pending consecutive failure will not advance until the earlier pull request merges.'
+              echo
+            fi
+            if [[ "$INSTALL_OUTCOME" != 'success' ]]; then
+              echo 'Workflow setup failed before record collection completed.'
+              echo
+              echo '1. Inspect the checkout, Node setup, and dependency-install steps for the first error.'
+              echo '2. Correct the workflow, lockfile, or registry availability issue, then rerun the job.'
+            elif [[ "$COLLECT_OUTCOME" != 'success' ]]; then
+              echo 'No update was published because link collection, schema validation, or the blast-radius guard stopped the run.'
+              echo
+              echo 'Follow the **Automation stopped** instructions above and inspect the uploaded candidate snapshot when present.'
+            elif [[ "$REPORT_OUTCOME" != 'success' || "$EVIDENCE_OUTCOME" != 'success' ]]; then
+              echo 'The checks ran, but their report or evidence artifact could not be preserved. No update was published.'
+              echo
+              echo 'Inspect the failed reporting or artifact-upload step, correct it, and rerun the workflow before merging any generated state.'
+            elif [[ "$CRITERIA_REVIEW_OUTCOME" != 'success' ]]; then
+              echo 'At least one enabled record has an overdue substantive criteria review, so unattended publication was stopped.'
+              echo
+              echo 'For every record under **Editorial criteria review due** above, recheck government provenance, public source access, license eligibility, and primary evidence. Then either update `verified` to the actual review date or add a reviewed editorial disable reason, rebuild, and rerun the workflow.'
+            elif [[ "$CHECKS_OUTCOME" == 'failure' || "$APP_BUILD_OUTCOME" == 'failure' || "$APACHE_BUILD_OUTCOME" == 'failure' || "$DIFF_CHECK_OUTCOME" == 'failure' || "$CHANGES_OUTCOME" == 'failure' ]]; then
+              echo 'A generated availability update failed repository verification and was not published.'
+              echo
+              echo "Repository checks: $CHECKS_OUTCOME · application build: $APP_BUILD_OUTCOME · Apache build: $APACHE_BUILD_OUTCOME · diff check: $DIFF_CHECK_OUTCOME · change detection: $CHANGES_OUTCOME"
+              echo
+              echo 'Inspect the first failed verification step, fix the source or generated artifacts, and rerun the workflow.'
+            elif [[ "$CHANGED" != 'true' ]]; then
+              echo 'No tracked availability or site artifact changed; no pull request was needed.'
+            elif [[ "$PUBLISH_OUTCOME" == 'success' ]]; then
+              echo "Pull request: $PR_URL"
+              echo
+              echo 'Auto-merge was requested after this workflow completed the full repository and Apache build checks.'
+              if [[ "$AUTOMATION_TOKEN_CONFIGURED" != 'true' ]]; then
+                echo
+                echo 'The built-in `GITHUB_TOKEN` was used. GitHub may require a maintainer to approve the pull-request CI run; configure `GOSDIR_AUTOMATION_TOKEN` for unattended PR-triggered checks.'
+              fi
+              echo
+              echo 'Production deployment is host-managed: fast-forward `/usr/web/gosdir.com` to the tested merge commit or run the configured deployment hook.'
+            else
+              echo 'The verified update could not be published or queued for auto-merge.'
+              echo
+              echo '1. Allow GitHub Actions to create pull requests, or configure `GOSDIR_AUTOMATION_TOKEN` with Contents: write and Pull requests: write.'
+              echo '2. Enable repository auto-merge with squash merges, or merge the `automation/record-health` pull request manually after CI passes.'
+              echo '3. Fast-forward the production Apache checkout to the tested merge commit.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Require successful pull-request automation
+        if: >-
+          steps.changes.outputs.changed == 'true' &&
+          steps.publish.outcome != 'success'
+        run: exit 1

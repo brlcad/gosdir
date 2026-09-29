@@ -1,0 +1,20 @@
+{
+  "source_id": "colorado-opencdss",
+  "source_url": "https://opencdss.state.co.us/opencdss/",
+  "retrieved_at_utc": "2026-09-28T02:57:59.796Z",
+  "raw_rows": 8,
+  "repository_rows": 6,
+  "distinct_normalized_repositories": 6,
+  "metadata_candidates": 4,
+  "metadata_excluded": 2,
+  "source_rows_without_repository_url": 2,
+  "source_rows_non_http_or_invalid_repository_url": 0,
+  "non_repository_url_rows": 0,
+  "note": "Metadata triage only. A candidate label is not a four-check decision or GOSDIR acceptance.",
+  "products_without_public_repository": 2,
+  "omitted_product_ids_without_repository": [
+    "hydrobase",
+    "statecu-gui"
+  ],
+  "source_counting_note": "Eight OpenCDSS navigation products were inspected; only pages with a direct product repository link produce ledger rows. Test and documentation repositories are not separate product rows."
+}

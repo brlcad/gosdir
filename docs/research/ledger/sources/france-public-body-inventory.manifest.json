@@ -1,0 +1,27 @@
+{
+  "source_id": "france-public-body-inventory",
+  "source_url": "https://www.data.gouv.fr/datasets/inventaire-des-codes-sources-de-logiciels-publies-par-des-organismes-publics",
+  "api_url": "https://code.gouv.fr/data/codegouvfr-repositories.json",
+  "retrieved_at_utc": "2026-09-28T03:15:37.155Z",
+  "query": {
+    "screen": "fork=false, archived=false, template=false, nonempty description and nonempty license other than Other",
+    "publiccode_flag_recorded_separately": true,
+    "records": 32999,
+    "distinct_repositories": 32999,
+    "duplicated_url_groups": 0,
+    "candidate_rows": 5801,
+    "candidate_distinct": 5801,
+    "publiccode_rows": 51,
+    "publiccode_broad_screen_rows": 25,
+    "publiccode_broad_screen_distinct": 25
+  },
+  "raw_entries": 32999,
+  "repository_rows": 32999,
+  "distinct_normalized_repositories": 32999,
+  "metadata_candidates": 5801,
+  "metadata_excluded": 27198,
+  "distinct_candidate_repositories": 5801,
+  "without_repository": 0,
+  "malformed_repository": 0,
+  "note": "Frozen public code inventory dataset snapshot. Exact current metadata screen is recorded per row. The current publiccode=true population and screened count do not reproduce the prior survey tally of 34; do not infer four-check outcomes from inventory membership."
+}
