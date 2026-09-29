@@ -1,0 +1,11 @@
+{
+  "source_id": "govuk-pay-components",
+  "source_url": "https://docs.payments.service.gov.uk/contribute/",
+  "retrieved_at_utc": "2026-09-28T03:05:48.323Z",
+  "repository_rows": 12,
+  "distinct_normalized_repositories": 12,
+  "metadata_candidates": 11,
+  "metadata_excluded": 1,
+  "note": "Collection membership is a discovery lead, not government provenance or an individual four-check review.",
+  "official_named_components": 11
+}

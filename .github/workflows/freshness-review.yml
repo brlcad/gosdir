@@ -1,0 +1,66 @@
+name: Project freshness review
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 3 * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: project-freshness-review
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Require public-repository review credential
+        env:
+          GOSDIR_GITHUB_TOKEN: ${{ secrets.GOSDIR_PUBLIC_GITHUB_READ_TOKEN }}
+        run: test -n "$GOSDIR_GITHUB_TOKEN"
+
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Collect repository activity and link evidence
+        env:
+          GOSDIR_GITHUB_TOKEN: ${{ secrets.GOSDIR_PUBLIC_GITHUB_READ_TOKEN }}
+        run: npm run review:freshness
+
+      - name: Validate snapshot coverage and schema
+        if: success()
+        run: npm run check:catalog
+
+      - name: Write review summary
+        if: always()
+        run: node scripts/compare-project-freshness.mjs | tee freshness-review.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload evidence for editorial review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-freshness-${{ github.run_id }}
+          path: |
+            lib/catalog/project-freshness.json
+            lib/catalog/project-freshness.candidate.json
+            freshness-review.md
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Require publication review
+        if: success()
+        run: node scripts/compare-project-freshness.mjs --fail-on-review --require-publication

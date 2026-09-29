@@ -1,0 +1,25 @@
+{
+  "source_id": "swiss-federal-oss-catalogue",
+  "source_url": "https://www.opensource.admin.ch/en/",
+  "api_url": "https://oss-catalog-api.ocp.cloudscale.puzzle.ch/v1/software?page[size]=10000",
+  "retrieved_at_utc": "2026-09-28T03:15:37.155Z",
+  "query": {
+    "screen": "recognized OSI/CC0 license and at least one short or long description in publiccode metadata",
+    "records": 162,
+    "distinct_repositories": 162,
+    "duplicated_url_groups": 0,
+    "candidate_rows": 153,
+    "candidate_distinct": 153,
+    "priority_standalone_rows": 88,
+    "priority_stable_beta_rows": 80
+  },
+  "raw_entries": 162,
+  "repository_rows": 162,
+  "distinct_normalized_repositories": 162,
+  "metadata_candidates": 153,
+  "metadata_excluded": 9,
+  "distinct_candidate_repositories": 153,
+  "without_repository": 0,
+  "malformed_repository": 0,
+  "note": "Live Swiss federal OSS catalogue snapshot. The API record UUID is preserved as source_row_id; source_record_url is the official catalogue listing because no verified item-page slug is supplied by the API. Candidate status is metadata triage only; four checks remain unreviewed. The current list differs from the 22 Sep survey snapshot."
+}

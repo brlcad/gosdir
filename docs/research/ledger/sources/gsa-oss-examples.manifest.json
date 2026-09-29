@@ -1,0 +1,10 @@
+{
+  "source_id": "gsa-oss-examples",
+  "source_url": "https://open.gsa.gov/oss-examples/",
+  "retrieved_at_utc": "2026-09-28T03:05:48.323Z",
+  "repository_rows": 4,
+  "distinct_normalized_repositories": 4,
+  "metadata_candidates": 2,
+  "metadata_excluded": 2,
+  "note": "Collection membership is a discovery lead, not government provenance or an individual four-check review."
+}

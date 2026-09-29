@@ -20,6 +20,7 @@ const manifestAssetPrefix = 'site-assets/';
 const routes = [
   'directory',
   'coverage',
+  'coverage-beta',
   'policy',
   'timeline',
   'guide',
@@ -29,6 +30,17 @@ const routes = [
   'review',
   'contact',
 ];
+const routeArgument = process.argv.find((argument) =>
+  argument.startsWith('--route='),
+);
+const requestedRoute = routeArgument?.slice('--route='.length);
+if (requestedRoute && !routes.includes(requestedRoute)) {
+  throw new Error(
+    `Unknown Apache route "${requestedRoute}". Expected one of: ${routes.join(', ')}`,
+  );
+}
+const publishedRoutes = requestedRoute ? [requestedRoute] : routes;
+const partialBuild = Boolean(requestedRoute);
 
 function referencedAssets(html) {
   return [...html.matchAll(/\/site-assets\/([^"'?]+)/g)].map(
@@ -40,11 +52,7 @@ function assetsFromManifest(manifest) {
   const assets = new Set();
 
   for (const entry of Object.values(manifest)) {
-    const paths = [
-      entry.file,
-      ...(entry.css ?? []),
-      ...(entry.assets ?? []),
-    ];
+    const paths = [entry.file, ...(entry.css ?? []), ...(entry.assets ?? [])];
 
     for (const asset of paths) {
       if (asset?.startsWith(manifestAssetPrefix)) {
@@ -66,7 +74,9 @@ async function readManifestAssets(manifestPath) {
 }
 
 function sameAssets(left, right) {
-  return left.size === right.size && [...left].every((asset) => right.has(asset));
+  return (
+    left.size === right.size && [...left].every((asset) => right.has(asset))
+  );
 }
 
 async function replaceFile(source, destination) {
@@ -95,7 +105,9 @@ const stagedAssetEntries = await readdir(stagingAssetsPath, {
   withFileTypes: true,
 });
 const stagedAssets = new Set(
-  stagedAssetEntries.filter((entry) => entry.isFile()).map((entry) => entry.name),
+  stagedAssetEntries
+    .filter((entry) => entry.isFile())
+    .map((entry) => entry.name),
 );
 const missingAssets = [...stagedGenerationAssets].filter(
   (asset) => !stagedAssets.has(asset),
@@ -120,9 +132,23 @@ if (generationChanged) {
     if (entry.isFile()) retainedAssets.add(entry.name);
 }
 
-await cp(stagingAssetsPath, assetsPath, {
-  recursive: true,
-});
+if (partialBuild) {
+  // A route-only release must leave the active manifest and every asset used by
+  // existing route HTML untouched. The new route can safely reference the new
+  // fingerprinted files without promoting them as the site's current generation.
+  for (const entry of stagedAssetEntries) {
+    if (entry.isFile() && entry.name !== manifestName) {
+      await copyFile(
+        path.join(stagingAssetsPath, entry.name),
+        path.join(assetsPath, entry.name),
+      );
+    }
+  }
+} else {
+  await cp(stagingAssetsPath, assetsPath, {
+    recursive: true,
+  });
+}
 await copyFile(
   path.join(projectRoot, 'public', 'favicon.svg'),
   path.join(projectRoot, 'favicon.svg'),
@@ -132,17 +158,19 @@ await copyFile(
   path.join(projectRoot, 'og.png'),
 );
 
-for (const route of routes) {
+for (const route of publishedRoutes) {
   const routeDirectory = path.join(projectRoot, route);
   await mkdir(routeDirectory, { recursive: true });
   await replaceFile(stagedIndexPath, path.join(routeDirectory, 'index.html'));
 }
 
-await replaceFile(stagedIndexPath, rootIndexPath);
+if (!partialBuild) await replaceFile(stagedIndexPath, rootIndexPath);
 
-for (const entry of await readdir(assetsPath, { withFileTypes: true })) {
-  if (entry.isFile() && !retainedAssets.has(entry.name)) {
-    await rm(path.join(assetsPath, entry.name), { force: true });
+if (!partialBuild) {
+  for (const entry of await readdir(assetsPath, { withFileTypes: true })) {
+    if (entry.isFile() && !retainedAssets.has(entry.name)) {
+      await rm(path.join(assetsPath, entry.name), { force: true });
+    }
   }
 }
 

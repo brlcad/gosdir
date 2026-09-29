@@ -1,0 +1,13 @@
+{
+  "source_id": "singapore-ogp",
+  "source_url": "https://www.open.gov.sg/for-developers/open-source/",
+  "retrieved_at_utc": "2026-09-28T02:59:11.847Z",
+  "repository_rows": 6,
+  "distinct_normalized_repositories": 6,
+  "metadata_candidates": 6,
+  "metadata_excluded": 0,
+  "note": "Metadata screens are discovery only; individual four-check reviews are stored separately.",
+  "official_product_names": 6,
+  "official_page_exact_repository_links": 5,
+  "official_page_organization_links": 1
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "brazil-spbgovbr-github",
+  "source_url": "https://github.com/orgs/spbgovbr/repositories",
+  "retrieved_at_utc": "2026-09-28T06:14:00Z",
+  "repository_rows": 15,
+  "distinct_normalized_repositories": 15,
+  "metadata_candidates": 15,
+  "metadata_excluded": 0,
+  "note": "Metadata screens are discovery only; individual four-check reviews are stored separately.",
+  "official_organization_name": "Software Público Brasileiro",
+  "official_organization_description": "Repositório do Portal do Software Público Brasileiro",
+  "official_public_repository_count": 15,
+  "scope_caveat": "This is a snapshot of the current public spbgovbr GitHub organization. Official government documentation describes it as a mix of projects from the new portal and PEN modules; it is not a complete or inferable enumeration of the historical catalog said to contain 81 items.",
+  "github_api_snapshot_url": "https://api.github.com/orgs/spbgovbr/repos?per_page=100",
+  "historic_catalog_source": "https://www.gov.br/governodigital/pt-br/plataformas-e-servicos-digitais/software-publico/catalogo/catalogo",
+  "historic_catalog_access": "The official Catálogo Antigo link targets https://softwarepublico.gov.br/social/search/software_infos; it returned HTTP 403 during this investigation. The documented public GitLab project listing and GitLab API were also inaccessible from the runtime."
+}

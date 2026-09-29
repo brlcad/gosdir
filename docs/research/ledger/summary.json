@@ -1,0 +1,2640 @@
+{
+  "generated_at_utc": "2026-09-29T04:09:04.848Z",
+  "source_files": [
+    "brazil-software-publico.jsonl",
+    "brazil-spbgovbr-github.jsonl",
+    "colorado-opencdss.jsonl",
+    "doe-code.jsonl",
+    "epa.jsonl",
+    "france-public-body-inventory.jsonl",
+    "github-government.jsonl",
+    "github-topic-government-api.jsonl",
+    "github-topic-government.jsonl",
+    "github-topic-publiccode.jsonl",
+    "govoss.jsonl",
+    "govuk-pay-components.jsonl",
+    "gsa-oss-examples.jsonl",
+    "gsa.jsonl",
+    "japan-digital-agency.jsonl",
+    "nasa.jsonl",
+    "netherlands-oss-register.jsonl",
+    "nist.jsonl",
+    "prior-shortlist.jsonl",
+    "published-2026-09-26.jsonl",
+    "singapore-ogp.jsonl",
+    "spain-ctt.jsonl",
+    "swiss-federal-oss-catalogue.jsonl",
+    "uk-public-sector-code.jsonl",
+    "usgs.jsonl"
+  ],
+  "review_files": [
+    "brazil-spbgovbr-001.jsonl",
+    "colorado-opencdss-001.jsonl",
+    "coordinator-france-excluded-001.jsonl",
+    "coordinator-govoss-001.jsonl",
+    "coordinator-govoss-002.jsonl",
+    "coordinator-govoss-003.jsonl",
+    "coordinator-govoss-004.jsonl",
+    "coordinator-govoss-005.jsonl",
+    "coordinator-govoss-006.jsonl",
+    "coordinator-govoss-007-01.jsonl",
+    "coordinator-govoss-007-02.jsonl",
+    "coordinator-govoss-007-03.jsonl",
+    "coordinator-govoss-007-04.jsonl",
+    "doe-001.jsonl",
+    "doe-002.jsonl",
+    "doe-003.jsonl",
+    "doe-004.jsonl",
+    "doe-005.jsonl",
+    "doe-006.jsonl",
+    "doe-007.jsonl",
+    "doe-008.jsonl",
+    "doe-009.jsonl",
+    "doe-010.jsonl",
+    "epa-001.jsonl",
+    "epa-002.jsonl",
+    "epa-003.jsonl",
+    "france-inventory-luna-002-01.jsonl",
+    "france-inventory-luna-002-02.jsonl",
+    "france-inventory-luna-002-03.jsonl",
+    "france-publiccode-001.jsonl",
+    "france-publiccode-002.jsonl",
+    "france-publiccode-003.jsonl",
+    "france-publiccode-004.jsonl",
+    "france-publiccode-005.jsonl",
+    "france-publiccode-006-001.jsonl",
+    "france-publiccode-006-002.jsonl",
+    "france-publiccode-006-003.jsonl",
+    "france-publiccode-006-004.jsonl",
+    "france-publiccode-006-005.jsonl",
+    "france-publiccode-006-006.jsonl",
+    "france-publiccode-006-007.jsonl",
+    "france-publiccode-006-008.jsonl",
+    "github-government-001.jsonl",
+    "github-topic-publiccode-001.jsonl",
+    "govoss-europe-001.jsonl",
+    "govoss-luna-002-01.jsonl",
+    "govoss-luna-002-02.jsonl",
+    "govoss-luna-002-03.jsonl",
+    "govoss-luna-002-04.jsonl",
+    "govoss-luna-003.jsonl",
+    "govoss-luna-004-01.jsonl",
+    "govoss-luna-004-02.jsonl",
+    "govoss-luna-004-03.jsonl",
+    "govoss-luna-004-04.jsonl",
+    "govoss-luna-004-05.jsonl",
+    "govoss-luna-004-06.jsonl",
+    "govoss-luna-004-07.jsonl",
+    "govoss-luna-004-08.jsonl",
+    "govoss-luna-005.jsonl",
+    "govoss-luna-006.jsonl",
+    "govoss-luna-007-01.jsonl",
+    "govoss-luna-007-02.jsonl",
+    "govoss-luna-007-03.jsonl",
+    "govoss-luna-007-04.jsonl",
+    "govoss-luna-007-05.jsonl",
+    "govoss-luna-007-06.jsonl",
+    "govoss-luna-007-07.jsonl",
+    "govoss-luna-007-08.jsonl",
+    "govoss-luna-008-01.jsonl",
+    "govoss-luna-008-02.jsonl",
+    "govoss-luna-008-03.jsonl",
+    "gsa-001.jsonl",
+    "gsa-002.jsonl",
+    "gsa-003.jsonl",
+    "gsa-004.jsonl",
+    "gsa-005.jsonl",
+    "gsa-006.jsonl",
+    "gsa-007.jsonl",
+    "gsa-008.jsonl",
+    "gsa-009.jsonl",
+    "gsa-010.jsonl",
+    "gsa-oss-examples-001.jsonl",
+    "japan-001.jsonl",
+    "luna-max-20260929-priority-001-01.jsonl",
+    "luna-max-20260929-priority-001-02.jsonl",
+    "luna-max-20260929-priority-001-03.jsonl",
+    "luna-max-20260929-priority-001-04.jsonl",
+    "luna-max-20260929-priority-002-01.jsonl",
+    "luna-max-20260929-priority-002-02.jsonl",
+    "luna-max-20260929-priority-002-03.jsonl",
+    "luna-max-20260929-priority-002-04.jsonl",
+    "nasa-coordinator-001-01.jsonl",
+    "nasa-coordinator-001-02.jsonl",
+    "nasa-coordinator-001-03.jsonl",
+    "nasa-coordinator-001-04.jsonl",
+    "nasa-coordinator-002-01.jsonl",
+    "nasa-coordinator-002-02.jsonl",
+    "nasa-coordinator-002-03.jsonl",
+    "nasa-coordinator-002-04.jsonl",
+    "nasa-coordinator-002-05.jsonl",
+    "nasa-coordinator-002-06.jsonl",
+    "nasa-coordinator-002-07.jsonl",
+    "nasa-coordinator-002-08.jsonl",
+    "nasa-luna-003-01.jsonl",
+    "nasa-luna-003-02.jsonl",
+    "nasa-luna-003-03.jsonl",
+    "nasa-luna-003-04.jsonl",
+    "nasa-luna-004-01.jsonl",
+    "nasa-luna-004-02.jsonl",
+    "nasa-luna-004-03.jsonl",
+    "nasa-luna-004-04.jsonl",
+    "nasa-luna-004-05.jsonl",
+    "nasa-luna-004-06.jsonl",
+    "nasa-luna-004-07.jsonl",
+    "nasa-luna-004-08.jsonl",
+    "nasa-luna-005-01.jsonl",
+    "nasa-luna-005-02.jsonl",
+    "nasa-luna-005-03.jsonl",
+    "nasa-luna-005-04.jsonl",
+    "nasa-luna-005-05.jsonl",
+    "nasa-luna-005-06.jsonl",
+    "nasa-luna-005-07.jsonl",
+    "nasa-luna-005-08.jsonl",
+    "nasa-luna-006-01.jsonl",
+    "nasa-luna-006-02.jsonl",
+    "nasa-luna-006-03.jsonl",
+    "nasa-luna-006-04.jsonl",
+    "nasa-luna-006-05.jsonl",
+    "nasa-luna-006-06.jsonl",
+    "nasa-luna-006-07.jsonl",
+    "nasa-luna-006-08.jsonl",
+    "netherlands-publiccode-true-001.jsonl",
+    "netherlands-publiccode-true-002.jsonl",
+    "netherlands-publiccode-true-003.jsonl",
+    "netherlands-publiccode-true-004.jsonl",
+    "netherlands-publiccode-true-005.jsonl",
+    "netherlands-signalen-backend-001.jsonl",
+    "nist-001.jsonl",
+    "nist-002.jsonl",
+    "nist-003.jsonl",
+    "nist-004-01.jsonl",
+    "nist-004-02.jsonl",
+    "nist-004-03.jsonl",
+    "nist-004-04.jsonl",
+    "nist-004-05.jsonl",
+    "nist-004-06.jsonl",
+    "nist-004-07.jsonl",
+    "nist-004-08.jsonl",
+    "nist-005-01.jsonl",
+    "nist-005-02.jsonl",
+    "nist-005-03.jsonl",
+    "nist-005-04.jsonl",
+    "nist-005-05.jsonl",
+    "nist-005-06.jsonl",
+    "nist-005-07.jsonl",
+    "nist-005-08.jsonl",
+    "nist-006-01.jsonl",
+    "nist-006-02.jsonl",
+    "nist-006-03.jsonl",
+    "nist-006-04.jsonl",
+    "nist-007-01.jsonl",
+    "nist-007-02.jsonl",
+    "nist-007-03.jsonl",
+    "nist-007-04.jsonl",
+    "nist-007-05.jsonl",
+    "nist-007-06.jsonl",
+    "nist-007-07.jsonl",
+    "nist-007-08.jsonl",
+    "nist-008-01.jsonl",
+    "prior-publication.jsonl",
+    "prior-shortlist-europe.jsonl",
+    "prior-shortlist-us.jsonl",
+    "singapore-ogp-001.jsonl",
+    "spain-ctt-001.jsonl",
+    "spain-ctt-europe-001.jsonl",
+    "spain-ctt-europe-002.jsonl",
+    "swiss-005.jsonl",
+    "swiss-006.jsonl",
+    "swiss-007.jsonl",
+    "swiss-stable-standalone-001.jsonl",
+    "swiss-stable-standalone-002.jsonl",
+    "swiss-stable-standalone-003.jsonl",
+    "swiss-stable-standalone-004.jsonl",
+    "uk-public-sector-001.jsonl",
+    "uk-public-sector-002.jsonl",
+    "uk-public-sector-003.jsonl",
+    "uk-public-sector-004.jsonl",
+    "uk-public-sector-005.jsonl",
+    "uk-public-sector-006.jsonl",
+    "uk-public-sector-007.jsonl",
+    "uk-public-sector-008.jsonl",
+    "uk-public-sector-009.jsonl",
+    "uk-public-sector-010.jsonl",
+    "us-other-001.jsonl",
+    "us-other-002.jsonl",
+    "usgs-001.jsonl",
+    "usgs-002.jsonl"
+  ],
+  "review_file_decision_counts": {
+    "brazil-spbgovbr-001.jsonl": {
+      "publishable": 1,
+      "hold": 8,
+      "reject": 6
+    },
+    "colorado-opencdss-001.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 1
+    },
+    "coordinator-france-excluded-001.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "coordinator-govoss-001.jsonl": {
+      "publishable": 2,
+      "hold": 7,
+      "reject": 11
+    },
+    "coordinator-govoss-002.jsonl": {
+      "publishable": 1,
+      "hold": 4,
+      "reject": 15
+    },
+    "coordinator-govoss-003.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 18
+    },
+    "coordinator-govoss-004.jsonl": {
+      "publishable": 4,
+      "hold": 4,
+      "reject": 12
+    },
+    "coordinator-govoss-005.jsonl": {
+      "publishable": 1,
+      "hold": 7,
+      "reject": 12
+    },
+    "coordinator-govoss-006.jsonl": {
+      "publishable": 8,
+      "hold": 4,
+      "reject": 8
+    },
+    "coordinator-govoss-007-01.jsonl": {
+      "publishable": 1,
+      "hold": 4,
+      "reject": 0
+    },
+    "coordinator-govoss-007-02.jsonl": {
+      "publishable": 0,
+      "hold": 5,
+      "reject": 0
+    },
+    "coordinator-govoss-007-03.jsonl": {
+      "publishable": 0,
+      "hold": 5,
+      "reject": 0
+    },
+    "coordinator-govoss-007-04.jsonl": {
+      "publishable": 0,
+      "hold": 5,
+      "reject": 0
+    },
+    "doe-001.jsonl": {
+      "publishable": 5,
+      "hold": 10,
+      "reject": 5
+    },
+    "doe-002.jsonl": {
+      "publishable": 8,
+      "hold": 5,
+      "reject": 7
+    },
+    "doe-003.jsonl": {
+      "publishable": 8,
+      "hold": 10,
+      "reject": 2
+    },
+    "doe-004.jsonl": {
+      "publishable": 2,
+      "hold": 13,
+      "reject": 5
+    },
+    "doe-005.jsonl": {
+      "publishable": 6,
+      "hold": 14,
+      "reject": 0
+    },
+    "doe-006.jsonl": {
+      "publishable": 1,
+      "hold": 19,
+      "reject": 0
+    },
+    "doe-007.jsonl": {
+      "publishable": 4,
+      "hold": 13,
+      "reject": 3
+    },
+    "doe-008.jsonl": {
+      "publishable": 7,
+      "hold": 10,
+      "reject": 3
+    },
+    "doe-009.jsonl": {
+      "publishable": 6,
+      "hold": 12,
+      "reject": 2
+    },
+    "doe-010.jsonl": {
+      "publishable": 7,
+      "hold": 10,
+      "reject": 3
+    },
+    "epa-001.jsonl": {
+      "publishable": 9,
+      "hold": 19,
+      "reject": 12
+    },
+    "epa-002.jsonl": {
+      "publishable": 7,
+      "hold": 17,
+      "reject": 16
+    },
+    "epa-003.jsonl": {
+      "publishable": 2,
+      "hold": 15,
+      "reject": 23
+    },
+    "france-inventory-luna-002-01.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "france-inventory-luna-002-02.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "france-inventory-luna-002-03.jsonl": {
+      "publishable": 1,
+      "hold": 3,
+      "reject": 1
+    },
+    "france-publiccode-001.jsonl": {
+      "publishable": 13,
+      "hold": 1,
+      "reject": 6
+    },
+    "france-publiccode-002.jsonl": {
+      "publishable": 13,
+      "hold": 6,
+      "reject": 1
+    },
+    "france-publiccode-003.jsonl": {
+      "publishable": 5,
+      "hold": 28,
+      "reject": 7
+    },
+    "france-publiccode-004.jsonl": {
+      "publishable": 2,
+      "hold": 25,
+      "reject": 13
+    },
+    "france-publiccode-005.jsonl": {
+      "publishable": 2,
+      "hold": 8,
+      "reject": 10
+    },
+    "france-publiccode-006-001.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "france-publiccode-006-002.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "france-publiccode-006-003.jsonl": {
+      "publishable": 0,
+      "hold": 4,
+      "reject": 1
+    },
+    "france-publiccode-006-004.jsonl": {
+      "publishable": 3,
+      "hold": 0,
+      "reject": 2
+    },
+    "france-publiccode-006-005.jsonl": {
+      "publishable": 1,
+      "hold": 2,
+      "reject": 2
+    },
+    "france-publiccode-006-006.jsonl": {
+      "publishable": 1,
+      "hold": 2,
+      "reject": 2
+    },
+    "france-publiccode-006-007.jsonl": {
+      "publishable": 1,
+      "hold": 3,
+      "reject": 1
+    },
+    "france-publiccode-006-008.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "github-government-001.jsonl": {
+      "publishable": 3,
+      "hold": 5,
+      "reject": 6
+    },
+    "github-topic-publiccode-001.jsonl": {
+      "publishable": 4,
+      "hold": 2,
+      "reject": 13
+    },
+    "govoss-europe-001.jsonl": {
+      "publishable": 10,
+      "hold": 5,
+      "reject": 5
+    },
+    "govoss-luna-002-01.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "govoss-luna-002-02.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "govoss-luna-002-03.jsonl": {
+      "publishable": 2,
+      "hold": 1,
+      "reject": 2
+    },
+    "govoss-luna-002-04.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "govoss-luna-003.jsonl": {
+      "publishable": 1,
+      "hold": 24,
+      "reject": 15
+    },
+    "govoss-luna-004-01.jsonl": {
+      "publishable": 2,
+      "hold": 2,
+      "reject": 1
+    },
+    "govoss-luna-004-02.jsonl": {
+      "publishable": 1,
+      "hold": 2,
+      "reject": 2
+    },
+    "govoss-luna-004-03.jsonl": {
+      "publishable": 2,
+      "hold": 0,
+      "reject": 3
+    },
+    "govoss-luna-004-04.jsonl": {
+      "publishable": 5,
+      "hold": 0,
+      "reject": 0
+    },
+    "govoss-luna-004-05.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "govoss-luna-004-06.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "govoss-luna-004-07.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "govoss-luna-004-08.jsonl": {
+      "publishable": 2,
+      "hold": 2,
+      "reject": 1
+    },
+    "govoss-luna-005.jsonl": {
+      "publishable": 4,
+      "hold": 20,
+      "reject": 16
+    },
+    "govoss-luna-006.jsonl": {
+      "publishable": 5,
+      "hold": 33,
+      "reject": 2
+    },
+    "govoss-luna-007-01.jsonl": {
+      "publishable": 4,
+      "hold": 1,
+      "reject": 0
+    },
+    "govoss-luna-007-02.jsonl": {
+      "publishable": 2,
+      "hold": 3,
+      "reject": 0
+    },
+    "govoss-luna-007-03.jsonl": {
+      "publishable": 2,
+      "hold": 0,
+      "reject": 3
+    },
+    "govoss-luna-007-04.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "govoss-luna-007-05.jsonl": {
+      "publishable": 0,
+      "hold": 4,
+      "reject": 1
+    },
+    "govoss-luna-007-06.jsonl": {
+      "publishable": 2,
+      "hold": 3,
+      "reject": 0
+    },
+    "govoss-luna-007-07.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "govoss-luna-007-08.jsonl": {
+      "publishable": 2,
+      "hold": 0,
+      "reject": 3
+    },
+    "govoss-luna-008-01.jsonl": {
+      "publishable": 2,
+      "hold": 0,
+      "reject": 3
+    },
+    "govoss-luna-008-02.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "govoss-luna-008-03.jsonl": {
+      "publishable": 3,
+      "hold": 2,
+      "reject": 0
+    },
+    "gsa-001.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 19
+    },
+    "gsa-002.jsonl": {
+      "publishable": 3,
+      "hold": 7,
+      "reject": 30
+    },
+    "gsa-003.jsonl": {
+      "publishable": 1,
+      "hold": 22,
+      "reject": 17
+    },
+    "gsa-004.jsonl": {
+      "publishable": 0,
+      "hold": 9,
+      "reject": 11
+    },
+    "gsa-005.jsonl": {
+      "publishable": 0,
+      "hold": 7,
+      "reject": 13
+    },
+    "gsa-006.jsonl": {
+      "publishable": 0,
+      "hold": 14,
+      "reject": 6
+    },
+    "gsa-007.jsonl": {
+      "publishable": 0,
+      "hold": 13,
+      "reject": 4
+    },
+    "gsa-008.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 18
+    },
+    "gsa-009.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 17
+    },
+    "gsa-010.jsonl": {
+      "publishable": 0,
+      "hold": 29,
+      "reject": 11
+    },
+    "gsa-oss-examples-001.jsonl": {
+      "publishable": 1,
+      "hold": 0,
+      "reject": 2
+    },
+    "japan-001.jsonl": {
+      "publishable": 6,
+      "hold": 4,
+      "reject": 9
+    },
+    "luna-max-20260929-priority-001-01.jsonl": {
+      "publishable": 1,
+      "hold": 0,
+      "reject": 4
+    },
+    "luna-max-20260929-priority-001-02.jsonl": {
+      "publishable": 3,
+      "hold": 2,
+      "reject": 0
+    },
+    "luna-max-20260929-priority-001-03.jsonl": {
+      "publishable": 2,
+      "hold": 1,
+      "reject": 2
+    },
+    "luna-max-20260929-priority-001-04.jsonl": {
+      "publishable": 2,
+      "hold": 3,
+      "reject": 0
+    },
+    "luna-max-20260929-priority-002-01.jsonl": {
+      "publishable": 2,
+      "hold": 1,
+      "reject": 2
+    },
+    "luna-max-20260929-priority-002-02.jsonl": {
+      "publishable": 3,
+      "hold": 2,
+      "reject": 0
+    },
+    "luna-max-20260929-priority-002-03.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "luna-max-20260929-priority-002-04.jsonl": {
+      "publishable": 1,
+      "hold": 0,
+      "reject": 4
+    },
+    "nasa-coordinator-001-01.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "nasa-coordinator-001-02.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "nasa-coordinator-001-03.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nasa-coordinator-001-04.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nasa-coordinator-002-01.jsonl": {
+      "publishable": 0,
+      "hold": 4,
+      "reject": 1
+    },
+    "nasa-coordinator-002-02.jsonl": {
+      "publishable": 0,
+      "hold": 0,
+      "reject": 5
+    },
+    "nasa-coordinator-002-03.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nasa-coordinator-002-04.jsonl": {
+      "publishable": 1,
+      "hold": 3,
+      "reject": 1
+    },
+    "nasa-coordinator-002-05.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "nasa-coordinator-002-06.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "nasa-coordinator-002-07.jsonl": {
+      "publishable": 0,
+      "hold": 0,
+      "reject": 5
+    },
+    "nasa-coordinator-002-08.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nasa-luna-003-01.jsonl": {
+      "publishable": 1,
+      "hold": 4,
+      "reject": 0
+    },
+    "nasa-luna-003-02.jsonl": {
+      "publishable": 2,
+      "hold": 3,
+      "reject": 0
+    },
+    "nasa-luna-003-03.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "nasa-luna-003-04.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "nasa-luna-004-01.jsonl": {
+      "publishable": 1,
+      "hold": 3,
+      "reject": 1
+    },
+    "nasa-luna-004-02.jsonl": {
+      "publishable": 1,
+      "hold": 3,
+      "reject": 1
+    },
+    "nasa-luna-004-03.jsonl": {
+      "publishable": 4,
+      "hold": 1,
+      "reject": 0
+    },
+    "nasa-luna-004-04.jsonl": {
+      "publishable": 3,
+      "hold": 2,
+      "reject": 0
+    },
+    "nasa-luna-004-05.jsonl": {
+      "publishable": 2,
+      "hold": 3,
+      "reject": 0
+    },
+    "nasa-luna-004-06.jsonl": {
+      "publishable": 1,
+      "hold": 4,
+      "reject": 0
+    },
+    "nasa-luna-004-07.jsonl": {
+      "publishable": 2,
+      "hold": 3,
+      "reject": 0
+    },
+    "nasa-luna-004-08.jsonl": {
+      "publishable": 4,
+      "hold": 0,
+      "reject": 1
+    },
+    "nasa-luna-005-01.jsonl": {
+      "publishable": 2,
+      "hold": 1,
+      "reject": 2
+    },
+    "nasa-luna-005-02.jsonl": {
+      "publishable": 3,
+      "hold": 2,
+      "reject": 0
+    },
+    "nasa-luna-005-03.jsonl": {
+      "publishable": 4,
+      "hold": 1,
+      "reject": 0
+    },
+    "nasa-luna-005-04.jsonl": {
+      "publishable": 2,
+      "hold": 3,
+      "reject": 0
+    },
+    "nasa-luna-005-05.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "nasa-luna-005-06.jsonl": {
+      "publishable": 4,
+      "hold": 0,
+      "reject": 1
+    },
+    "nasa-luna-005-07.jsonl": {
+      "publishable": 2,
+      "hold": 1,
+      "reject": 2
+    },
+    "nasa-luna-005-08.jsonl": {
+      "publishable": 1,
+      "hold": 4,
+      "reject": 0
+    },
+    "nasa-luna-006-01.jsonl": {
+      "publishable": 2,
+      "hold": 3,
+      "reject": 0
+    },
+    "nasa-luna-006-02.jsonl": {
+      "publishable": 3,
+      "hold": 1,
+      "reject": 1
+    },
+    "nasa-luna-006-03.jsonl": {
+      "publishable": 3,
+      "hold": 2,
+      "reject": 0
+    },
+    "nasa-luna-006-04.jsonl": {
+      "publishable": 4,
+      "hold": 1,
+      "reject": 0
+    },
+    "nasa-luna-006-05.jsonl": {
+      "publishable": 0,
+      "hold": 5,
+      "reject": 0
+    },
+    "nasa-luna-006-06.jsonl": {
+      "publishable": 4,
+      "hold": 1,
+      "reject": 0
+    },
+    "nasa-luna-006-07.jsonl": {
+      "publishable": 5,
+      "hold": 0,
+      "reject": 0
+    },
+    "nasa-luna-006-08.jsonl": {
+      "publishable": 2,
+      "hold": 2,
+      "reject": 1
+    },
+    "netherlands-publiccode-true-001.jsonl": {
+      "publishable": 12,
+      "hold": 6,
+      "reject": 2
+    },
+    "netherlands-publiccode-true-002.jsonl": {
+      "publishable": 3,
+      "hold": 8,
+      "reject": 9
+    },
+    "netherlands-publiccode-true-003.jsonl": {
+      "publishable": 4,
+      "hold": 7,
+      "reject": 9
+    },
+    "netherlands-publiccode-true-004.jsonl": {
+      "publishable": 4,
+      "hold": 7,
+      "reject": 9
+    },
+    "netherlands-publiccode-true-005.jsonl": {
+      "publishable": 3,
+      "hold": 3,
+      "reject": 3
+    },
+    "netherlands-signalen-backend-001.jsonl": {
+      "publishable": 1,
+      "hold": 0,
+      "reject": 0
+    },
+    "nist-001.jsonl": {
+      "publishable": 0,
+      "hold": 4,
+      "reject": 16
+    },
+    "nist-002.jsonl": {
+      "publishable": 1,
+      "hold": 3,
+      "reject": 36
+    },
+    "nist-003.jsonl": {
+      "publishable": 0,
+      "hold": 24,
+      "reject": 16
+    },
+    "nist-004-01.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "nist-004-02.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nist-004-03.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "nist-004-04.jsonl": {
+      "publishable": 0,
+      "hold": 4,
+      "reject": 1
+    },
+    "nist-004-05.jsonl": {
+      "publishable": 0,
+      "hold": 4,
+      "reject": 1
+    },
+    "nist-004-06.jsonl": {
+      "publishable": 0,
+      "hold": 4,
+      "reject": 1
+    },
+    "nist-004-07.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nist-004-08.jsonl": {
+      "publishable": 0,
+      "hold": 0,
+      "reject": 5
+    },
+    "nist-005-01.jsonl": {
+      "publishable": 0,
+      "hold": 4,
+      "reject": 1
+    },
+    "nist-005-02.jsonl": {
+      "publishable": 0,
+      "hold": 5,
+      "reject": 0
+    },
+    "nist-005-03.jsonl": {
+      "publishable": 2,
+      "hold": 2,
+      "reject": 1
+    },
+    "nist-005-04.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "nist-005-05.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nist-005-06.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "nist-005-07.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nist-005-08.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "nist-006-01.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nist-006-02.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "nist-006-03.jsonl": {
+      "publishable": 0,
+      "hold": 0,
+      "reject": 5
+    },
+    "nist-006-04.jsonl": {
+      "publishable": 1,
+      "hold": 3,
+      "reject": 1
+    },
+    "nist-007-01.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "nist-007-02.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 4
+    },
+    "nist-007-03.jsonl": {
+      "publishable": 0,
+      "hold": 5,
+      "reject": 0
+    },
+    "nist-007-04.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nist-007-05.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nist-007-06.jsonl": {
+      "publishable": 1,
+      "hold": 3,
+      "reject": 1
+    },
+    "nist-007-07.jsonl": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 3
+    },
+    "nist-007-08.jsonl": {
+      "publishable": 1,
+      "hold": 1,
+      "reject": 3
+    },
+    "nist-008-01.jsonl": {
+      "publishable": 1,
+      "hold": 2,
+      "reject": 2
+    },
+    "prior-publication.jsonl": {
+      "publishable": 25,
+      "hold": 0,
+      "reject": 0
+    },
+    "prior-shortlist-europe.jsonl": {
+      "publishable": 11,
+      "hold": 2,
+      "reject": 0
+    },
+    "prior-shortlist-us.jsonl": {
+      "publishable": 9,
+      "hold": 4,
+      "reject": 0
+    },
+    "singapore-ogp-001.jsonl": {
+      "publishable": 2,
+      "hold": 2,
+      "reject": 0
+    },
+    "spain-ctt-001.jsonl": {
+      "publishable": 2,
+      "hold": 5,
+      "reject": 13
+    },
+    "spain-ctt-europe-001.jsonl": {
+      "publishable": 1,
+      "hold": 11,
+      "reject": 8
+    },
+    "spain-ctt-europe-002.jsonl": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 1
+    },
+    "swiss-005.jsonl": {
+      "publishable": 31,
+      "hold": 8,
+      "reject": 1
+    },
+    "swiss-006.jsonl": {
+      "publishable": 12,
+      "hold": 5,
+      "reject": 8
+    },
+    "swiss-007.jsonl": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 0
+    },
+    "swiss-stable-standalone-001.jsonl": {
+      "publishable": 6,
+      "hold": 12,
+      "reject": 2
+    },
+    "swiss-stable-standalone-002.jsonl": {
+      "publishable": 0,
+      "hold": 0,
+      "reject": 20
+    },
+    "swiss-stable-standalone-003.jsonl": {
+      "publishable": 12,
+      "hold": 4,
+      "reject": 4
+    },
+    "swiss-stable-standalone-004.jsonl": {
+      "publishable": 10,
+      "hold": 4,
+      "reject": 2
+    },
+    "uk-public-sector-001.jsonl": {
+      "publishable": 5,
+      "hold": 13,
+      "reject": 2
+    },
+    "uk-public-sector-002.jsonl": {
+      "publishable": 5,
+      "hold": 9,
+      "reject": 6
+    },
+    "uk-public-sector-003.jsonl": {
+      "publishable": 3,
+      "hold": 4,
+      "reject": 13
+    },
+    "uk-public-sector-004.jsonl": {
+      "publishable": 3,
+      "hold": 2,
+      "reject": 15
+    },
+    "uk-public-sector-005.jsonl": {
+      "publishable": 8,
+      "hold": 21,
+      "reject": 11
+    },
+    "uk-public-sector-006.jsonl": {
+      "publishable": 22,
+      "hold": 7,
+      "reject": 11
+    },
+    "uk-public-sector-007.jsonl": {
+      "publishable": 24,
+      "hold": 13,
+      "reject": 3
+    },
+    "uk-public-sector-008.jsonl": {
+      "publishable": 30,
+      "hold": 4,
+      "reject": 6
+    },
+    "uk-public-sector-009.jsonl": {
+      "publishable": 10,
+      "hold": 23,
+      "reject": 7
+    },
+    "uk-public-sector-010.jsonl": {
+      "publishable": 6,
+      "hold": 8,
+      "reject": 6
+    },
+    "us-other-001.jsonl": {
+      "publishable": 2,
+      "hold": 10,
+      "reject": 8
+    },
+    "us-other-002.jsonl": {
+      "publishable": 1,
+      "hold": 6,
+      "reject": 13
+    },
+    "usgs-001.jsonl": {
+      "publishable": 6,
+      "hold": 10,
+      "reject": 4
+    },
+    "usgs-002.jsonl": {
+      "publishable": 10,
+      "hold": 10,
+      "reject": 0
+    }
+  },
+  "reviewer_decision_counts": {
+    "Brazil Software Público source review": {
+      "publishable": 1,
+      "hold": 8,
+      "reject": 6
+    },
+    "Colorado OpenCDSS inventory review": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 1
+    },
+    "Government repository reviewer": {
+      "publishable": 24,
+      "hold": 93,
+      "reject": 48
+    },
+    "coordinator source review": {
+      "publishable": 3,
+      "hold": 11,
+      "reject": 26
+    },
+    "coordinator Luna/max": {
+      "publishable": 15,
+      "hold": 30,
+      "reject": 50
+    },
+    "coordinator": {
+      "publishable": 1,
+      "hold": 30,
+      "reject": 34
+    },
+    "DOE individual source review": {
+      "publishable": 13,
+      "hold": 15,
+      "reject": 12
+    },
+    "DOE CODE individual source review": {
+      "publishable": 41,
+      "hold": 101,
+      "reject": 18
+    },
+    "EPA inventory source review": {
+      "publishable": 18,
+      "hold": 51,
+      "reject": 51
+    },
+    "Luna": {
+      "publishable": 1,
+      "hold": 6,
+      "reject": 8
+    },
+    "European source review": {
+      "publishable": 162,
+      "hold": 169,
+      "reject": 138
+    },
+    "GitHub Government batch review": {
+      "publishable": 3,
+      "hold": 5,
+      "reject": 6
+    },
+    "GitHub publiccode-topic batch review": {
+      "publishable": 4,
+      "hold": 2,
+      "reject": 13
+    },
+    "govoss-luna-002 individual source review": {
+      "publishable": 4,
+      "hold": 5,
+      "reject": 11
+    },
+    "govoss-luna-004 individual source review": {
+      "publishable": 13,
+      "hold": 9,
+      "reject": 18
+    },
+    "govoss-luna-008 individual source review": {
+      "publishable": 5,
+      "hold": 4,
+      "reject": 6
+    },
+    "U.S. government source review": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 19
+    },
+    "GSA-002 review": {
+      "publishable": 3,
+      "hold": 7,
+      "reject": 30
+    },
+    "GSA-003 review": {
+      "publishable": 1,
+      "hold": 22,
+      "reject": 17
+    },
+    "GSA-004 review": {
+      "publishable": 0,
+      "hold": 9,
+      "reject": 11
+    },
+    "GSA-005 review": {
+      "publishable": 0,
+      "hold": 7,
+      "reject": 13
+    },
+    "GSA-006 review": {
+      "publishable": 0,
+      "hold": 14,
+      "reject": 6
+    },
+    "GSA-007 review": {
+      "publishable": 0,
+      "hold": 13,
+      "reject": 4
+    },
+    "GSA-008 review": {
+      "publishable": 0,
+      "hold": 2,
+      "reject": 18
+    },
+    "GSA-009 review": {
+      "publishable": 0,
+      "hold": 3,
+      "reject": 17
+    },
+    "GSA-010 review": {
+      "publishable": 0,
+      "hold": 29,
+      "reject": 11
+    },
+    "GSA OSS examples batch review": {
+      "publishable": 1,
+      "hold": 0,
+      "reject": 2
+    },
+    "Japan Digital Agency source review": {
+      "publishable": 6,
+      "hold": 4,
+      "reject": 9
+    },
+    "luna-max-20260929-priority-001": {
+      "publishable": 8,
+      "hold": 6,
+      "reject": 6
+    },
+    "luna-max-20260929-priority-002": {
+      "publishable": 7,
+      "hold": 4,
+      "reject": 9
+    },
+    "NASA-LUNA-003 review": {
+      "publishable": 5,
+      "hold": 9,
+      "reject": 6
+    },
+    "NASA-LUNA-004 review": {
+      "publishable": 18,
+      "hold": 19,
+      "reject": 3
+    },
+    "NASA-LUNA-005 review": {
+      "publishable": 18,
+      "hold": 12,
+      "reject": 9
+    },
+    "NASA-LUNA-005 review; coordinator QA correction": {
+      "publishable": 0,
+      "hold": 1,
+      "reject": 0
+    },
+    "NASA-LUNA-006 review": {
+      "publishable": 12,
+      "hold": 7,
+      "reject": 1
+    },
+    "NASA-LUNA-006 individual review": {
+      "publishable": 11,
+      "hold": 8,
+      "reject": 1
+    },
+    "NIST code.json source review": {
+      "publishable": 1,
+      "hold": 31,
+      "reject": 68
+    },
+    "NIST-004 review": {
+      "publishable": 0,
+      "hold": 22,
+      "reject": 18
+    },
+    "NIST-005 review": {
+      "publishable": 2,
+      "hold": 20,
+      "reject": 18
+    },
+    "NIST-006 review": {
+      "publishable": 1,
+      "hold": 6,
+      "reject": 13
+    },
+    "NIST-007 review": {
+      "publishable": 2,
+      "hold": 19,
+      "reject": 19
+    },
+    "NIST-008 review": {
+      "publishable": 1,
+      "hold": 2,
+      "reject": 2
+    },
+    "Prior multi-agent publication audit": {
+      "publishable": 25,
+      "hold": 0,
+      "reject": 0
+    },
+    "U.S. non-DOE source review": {
+      "publishable": 12,
+      "hold": 20,
+      "reject": 21
+    },
+    "Coordinator Singapore OGP source review": {
+      "publishable": 2,
+      "hold": 2,
+      "reject": 0
+    },
+    "Spain CTT source review": {
+      "publishable": 2,
+      "hold": 5,
+      "reject": 13
+    },
+    "UK public-sector source individual review": {
+      "publishable": 116,
+      "hold": 104,
+      "reject": 80
+    },
+    "USGS GitLab source review": {
+      "publishable": 16,
+      "hold": 20,
+      "reject": 4
+    }
+  },
+  "batch_files": [
+    "brazil-spbgovbr-001.jsonl",
+    "colorado-opencdss-001.jsonl",
+    "coordinator-france-excluded-001.jsonl",
+    "coordinator-govoss-001.jsonl",
+    "coordinator-govoss-002.jsonl",
+    "coordinator-govoss-003.jsonl",
+    "coordinator-govoss-004.jsonl",
+    "coordinator-govoss-005.jsonl",
+    "coordinator-govoss-006.jsonl",
+    "coordinator-govoss-007.jsonl",
+    "doe-001.jsonl",
+    "doe-002.jsonl",
+    "doe-003.jsonl",
+    "doe-004.jsonl",
+    "doe-005.jsonl",
+    "doe-006.jsonl",
+    "doe-007.jsonl",
+    "doe-008.jsonl",
+    "doe-009.jsonl",
+    "doe-010.jsonl",
+    "epa-001.jsonl",
+    "epa-002.jsonl",
+    "epa-003.jsonl",
+    "france-inventory-luna-001.jsonl",
+    "france-inventory-luna-002.jsonl",
+    "france-publiccode-001.jsonl",
+    "france-publiccode-002.jsonl",
+    "france-publiccode-003.jsonl",
+    "france-publiccode-004.jsonl",
+    "france-publiccode-005.jsonl",
+    "france-publiccode-006.jsonl",
+    "github-government-001.jsonl",
+    "github-topic-publiccode-001.jsonl",
+    "govoss-europe-001.jsonl",
+    "govoss-luna-002.jsonl",
+    "govoss-luna-003.jsonl",
+    "govoss-luna-004.jsonl",
+    "govoss-luna-005.jsonl",
+    "govoss-luna-006.jsonl",
+    "govoss-luna-007.jsonl",
+    "govoss-luna-008.jsonl",
+    "govoss-luna-009.jsonl",
+    "gsa-001.jsonl",
+    "gsa-002.jsonl",
+    "gsa-003.jsonl",
+    "gsa-004.jsonl",
+    "gsa-005.jsonl",
+    "gsa-006.jsonl",
+    "gsa-007.jsonl",
+    "gsa-008.jsonl",
+    "gsa-009.jsonl",
+    "gsa-010.jsonl",
+    "gsa-oss-examples-001.jsonl",
+    "japan-001.jsonl",
+    "luna-max-20260929-priority-001.jsonl",
+    "luna-max-20260929-priority-002.jsonl",
+    "luna-max-20260929-priority-003.jsonl",
+    "nasa-coordinator-001.jsonl",
+    "nasa-coordinator-002.jsonl",
+    "nasa-luna-003.jsonl",
+    "nasa-luna-004.jsonl",
+    "nasa-luna-005.jsonl",
+    "nasa-luna-006.jsonl",
+    "netherlands-publiccode-true-001.jsonl",
+    "netherlands-publiccode-true-002.jsonl",
+    "netherlands-publiccode-true-003.jsonl",
+    "netherlands-publiccode-true-004.jsonl",
+    "netherlands-publiccode-true-005.jsonl",
+    "netherlands-signalen-backend-001.jsonl",
+    "nist-001.jsonl",
+    "nist-002.jsonl",
+    "nist-003.jsonl",
+    "nist-004.jsonl",
+    "nist-005.jsonl",
+    "nist-006.jsonl",
+    "nist-007.jsonl",
+    "nist-008.jsonl",
+    "prior-shortlist-01.jsonl",
+    "singapore-ogp-001.jsonl",
+    "spain-ctt-001.jsonl",
+    "spain-ctt-europe-001.jsonl",
+    "spain-ctt-europe-002.jsonl",
+    "swiss-005.jsonl",
+    "swiss-006.jsonl",
+    "swiss-007.jsonl",
+    "swiss-stable-standalone-001.jsonl",
+    "swiss-stable-standalone-002.jsonl",
+    "swiss-stable-standalone-003.jsonl",
+    "swiss-stable-standalone-004.jsonl",
+    "uk-public-sector-001.jsonl",
+    "uk-public-sector-002.jsonl",
+    "uk-public-sector-003.jsonl",
+    "uk-public-sector-004.jsonl",
+    "uk-public-sector-005.jsonl",
+    "uk-public-sector-006.jsonl",
+    "uk-public-sector-007.jsonl",
+    "uk-public-sector-008.jsonl",
+    "uk-public-sector-009.jsonl",
+    "uk-public-sector-010.jsonl",
+    "us-other-001.jsonl",
+    "us-other-002.jsonl",
+    "usgs-001.jsonl",
+    "usgs-002.jsonl"
+  ],
+  "source_counts": {
+    "brazil-software-publico": {
+      "rows": 3,
+      "candidate_rows": 3,
+      "excluded_rows": 0,
+      "distinct_urls": 3
+    },
+    "brazil-spbgovbr-github": {
+      "rows": 15,
+      "candidate_rows": 15,
+      "excluded_rows": 0,
+      "distinct_urls": 15
+    },
+    "colorado-opencdss": {
+      "rows": 6,
+      "candidate_rows": 4,
+      "excluded_rows": 2,
+      "distinct_urls": 6
+    },
+    "doe-code": {
+      "rows": 6066,
+      "candidate_rows": 5203,
+      "excluded_rows": 863,
+      "distinct_urls": 5765
+    },
+    "epa": {
+      "rows": 677,
+      "candidate_rows": 677,
+      "excluded_rows": 0,
+      "distinct_urls": 677
+    },
+    "france-public-body-inventory": {
+      "rows": 32999,
+      "candidate_rows": 5801,
+      "excluded_rows": 27198,
+      "distinct_urls": 32999
+    },
+    "github-government": {
+      "rows": 20,
+      "candidate_rows": 20,
+      "excluded_rows": 0,
+      "distinct_urls": 20
+    },
+    "github-topic-government-api": {
+      "rows": 2018,
+      "candidate_rows": 0,
+      "excluded_rows": 2018,
+      "distinct_urls": 2018
+    },
+    "github-topic-government": {
+      "rows": 800,
+      "candidate_rows": 0,
+      "excluded_rows": 800,
+      "distinct_urls": 800
+    },
+    "github-topic-publiccode": {
+      "rows": 20,
+      "candidate_rows": 0,
+      "excluded_rows": 20,
+      "distinct_urls": 20
+    },
+    "govoss": {
+      "rows": 3574,
+      "candidate_rows": 2255,
+      "excluded_rows": 1319,
+      "distinct_urls": 3569
+    },
+    "govuk-pay-components": {
+      "rows": 12,
+      "candidate_rows": 11,
+      "excluded_rows": 1,
+      "distinct_urls": 12
+    },
+    "gsa-oss-examples": {
+      "rows": 4,
+      "candidate_rows": 2,
+      "excluded_rows": 2,
+      "distinct_urls": 4
+    },
+    "gsa": {
+      "rows": 1275,
+      "candidate_rows": 176,
+      "excluded_rows": 1099,
+      "distinct_urls": 1275
+    },
+    "japan-digital-agency": {
+      "rows": 19,
+      "candidate_rows": 12,
+      "excluded_rows": 7,
+      "distinct_urls": 19
+    },
+    "nasa": {
+      "rows": 598,
+      "candidate_rows": 594,
+      "excluded_rows": 4,
+      "distinct_urls": 572
+    },
+    "netherlands-oss-register": {
+      "rows": 3208,
+      "candidate_rows": 91,
+      "excluded_rows": 3117,
+      "distinct_urls": 3208
+    },
+    "nist": {
+      "rows": 1377,
+      "candidate_rows": 1377,
+      "excluded_rows": 0,
+      "distinct_urls": 1377
+    },
+    "prior-shortlist": {
+      "rows": 36,
+      "candidate_rows": 36,
+      "excluded_rows": 0,
+      "distinct_urls": 36
+    },
+    "published-2026-09-26": {
+      "rows": 25,
+      "candidate_rows": 25,
+      "excluded_rows": 0,
+      "distinct_urls": 25
+    },
+    "singapore-ogp": {
+      "rows": 6,
+      "candidate_rows": 6,
+      "excluded_rows": 0,
+      "distinct_urls": 6
+    },
+    "spain-ctt": {
+      "rows": 46,
+      "candidate_rows": 46,
+      "excluded_rows": 0,
+      "distinct_urls": 46
+    },
+    "swiss-federal-oss-catalogue": {
+      "rows": 162,
+      "candidate_rows": 153,
+      "excluded_rows": 9,
+      "distinct_urls": 162
+    },
+    "uk-public-sector-code": {
+      "rows": 25623,
+      "candidate_rows": 2971,
+      "excluded_rows": 22652,
+      "distinct_urls": 25553
+    },
+    "usgs": {
+      "rows": 1042,
+      "candidate_rows": 1037,
+      "excluded_rows": 5,
+      "distinct_urls": 1042
+    }
+  },
+  "source_review_progress": {
+    "brazil-software-publico": {
+      "distinct_urls": 3,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 1,
+      "reject": 1
+    },
+    "brazil-spbgovbr-github": {
+      "distinct_urls": 15,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 8,
+      "reject": 6
+    },
+    "colorado-opencdss": {
+      "distinct_urls": 6,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 1,
+      "reject": 1
+    },
+    "doe-code": {
+      "distinct_urls": 5765,
+      "unreviewed": 5563,
+      "publishable": 56,
+      "hold": 116,
+      "reject": 30
+    },
+    "epa": {
+      "distinct_urls": 677,
+      "unreviewed": 554,
+      "publishable": 21,
+      "hold": 51,
+      "reject": 51
+    },
+    "france-public-body-inventory": {
+      "distinct_urls": 32999,
+      "unreviewed": 32793,
+      "publishable": 49,
+      "hold": 92,
+      "reject": 65
+    },
+    "github-government": {
+      "distinct_urls": 20,
+      "unreviewed": 0,
+      "publishable": 8,
+      "hold": 6,
+      "reject": 6
+    },
+    "github-topic-government-api": {
+      "distinct_urls": 2018,
+      "unreviewed": 1967,
+      "publishable": 13,
+      "hold": 16,
+      "reject": 22
+    },
+    "github-topic-government": {
+      "distinct_urls": 800,
+      "unreviewed": 752,
+      "publishable": 13,
+      "hold": 16,
+      "reject": 19
+    },
+    "github-topic-publiccode": {
+      "distinct_urls": 20,
+      "unreviewed": 0,
+      "publishable": 5,
+      "hold": 2,
+      "reject": 13
+    },
+    "govoss": {
+      "distinct_urls": 3569,
+      "unreviewed": 2996,
+      "publishable": 185,
+      "hold": 185,
+      "reject": 203
+    },
+    "govuk-pay-components": {
+      "distinct_urls": 12,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 10,
+      "reject": 1
+    },
+    "gsa-oss-examples": {
+      "distinct_urls": 4,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 0,
+      "reject": 2
+    },
+    "gsa": {
+      "distinct_urls": 1275,
+      "unreviewed": 1017,
+      "publishable": 4,
+      "hold": 107,
+      "reject": 147
+    },
+    "japan-digital-agency": {
+      "distinct_urls": 19,
+      "unreviewed": 0,
+      "publishable": 6,
+      "hold": 4,
+      "reject": 9
+    },
+    "nasa": {
+      "distinct_urls": 572,
+      "unreviewed": 330,
+      "publishable": 70,
+      "hold": 97,
+      "reject": 75
+    },
+    "netherlands-oss-register": {
+      "distinct_urls": 3208,
+      "unreviewed": 3116,
+      "publishable": 29,
+      "hold": 31,
+      "reject": 32
+    },
+    "nist": {
+      "distinct_urls": 1377,
+      "unreviewed": 1131,
+      "publishable": 7,
+      "hold": 101,
+      "reject": 138
+    },
+    "prior-shortlist": {
+      "distinct_urls": 36,
+      "unreviewed": 0,
+      "publishable": 30,
+      "hold": 6,
+      "reject": 0
+    },
+    "published-2026-09-26": {
+      "distinct_urls": 25,
+      "unreviewed": 0,
+      "publishable": 25,
+      "hold": 0,
+      "reject": 0
+    },
+    "singapore-ogp": {
+      "distinct_urls": 6,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 2,
+      "reject": 0
+    },
+    "spain-ctt": {
+      "distinct_urls": 46,
+      "unreviewed": 0,
+      "publishable": 5,
+      "hold": 19,
+      "reject": 22
+    },
+    "swiss-federal-oss-catalogue": {
+      "distinct_urls": 162,
+      "unreviewed": 0,
+      "publishable": 80,
+      "hold": 40,
+      "reject": 42
+    },
+    "uk-public-sector-code": {
+      "distinct_urls": 25553,
+      "unreviewed": 25247,
+      "publishable": 121,
+      "hold": 105,
+      "reject": 80
+    },
+    "usgs": {
+      "distinct_urls": 1042,
+      "unreviewed": 942,
+      "publishable": 32,
+      "hold": 49,
+      "reject": 19
+    }
+  },
+  "batch_progress": {
+    "brazil-spbgovbr-001": {
+      "assigned": 15,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 8,
+      "reject": 6
+    },
+    "colorado-opencdss-001": {
+      "assigned": 2,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 1,
+      "reject": 1
+    },
+    "coordinator-france-excluded-001": {
+      "assigned": 5,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 3,
+      "reject": 2
+    },
+    "coordinator-govoss-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 7,
+      "reject": 11
+    },
+    "coordinator-govoss-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 4,
+      "reject": 15
+    },
+    "coordinator-govoss-003": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 1,
+      "reject": 18
+    },
+    "coordinator-govoss-004": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 4,
+      "reject": 12
+    },
+    "coordinator-govoss-005": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 7,
+      "reject": 12
+    },
+    "coordinator-govoss-006": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 8,
+      "hold": 4,
+      "reject": 8
+    },
+    "coordinator-govoss-007": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 19,
+      "reject": 0
+    },
+    "doe-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 5,
+      "hold": 10,
+      "reject": 5
+    },
+    "doe-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 8,
+      "hold": 5,
+      "reject": 7
+    },
+    "doe-003": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 8,
+      "hold": 10,
+      "reject": 2
+    },
+    "doe-004": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 13,
+      "reject": 5
+    },
+    "doe-005": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 6,
+      "hold": 14,
+      "reject": 0
+    },
+    "doe-006": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 19,
+      "reject": 0
+    },
+    "doe-007": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 13,
+      "reject": 3
+    },
+    "doe-008": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 7,
+      "hold": 10,
+      "reject": 3
+    },
+    "doe-009": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 6,
+      "hold": 12,
+      "reject": 2
+    },
+    "doe-010": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 7,
+      "hold": 10,
+      "reject": 3
+    },
+    "epa-001": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 9,
+      "hold": 19,
+      "reject": 12
+    },
+    "epa-002": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 7,
+      "hold": 17,
+      "reject": 16
+    },
+    "epa-003": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 15,
+      "reject": 23
+    },
+    "france-inventory-luna-001": {
+      "assigned": 40,
+      "unreviewed": 40,
+      "publishable": 0,
+      "hold": 0,
+      "reject": 0
+    },
+    "france-inventory-luna-002": {
+      "assigned": 20,
+      "unreviewed": 5,
+      "publishable": 1,
+      "hold": 6,
+      "reject": 8
+    },
+    "france-publiccode-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 13,
+      "hold": 1,
+      "reject": 6
+    },
+    "france-publiccode-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 13,
+      "hold": 6,
+      "reject": 1
+    },
+    "france-publiccode-003": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 5,
+      "hold": 28,
+      "reject": 7
+    },
+    "france-publiccode-004": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 25,
+      "reject": 13
+    },
+    "france-publiccode-005": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 8,
+      "reject": 10
+    },
+    "france-publiccode-006": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 7,
+      "hold": 15,
+      "reject": 18
+    },
+    "github-government-001": {
+      "assigned": 14,
+      "unreviewed": 0,
+      "publishable": 3,
+      "hold": 5,
+      "reject": 6
+    },
+    "github-topic-publiccode-001": {
+      "assigned": 19,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 2,
+      "reject": 13
+    },
+    "govoss-europe-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 10,
+      "hold": 5,
+      "reject": 5
+    },
+    "govoss-luna-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 5,
+      "reject": 11
+    },
+    "govoss-luna-003": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 24,
+      "reject": 15
+    },
+    "govoss-luna-004": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 13,
+      "hold": 9,
+      "reject": 18
+    },
+    "govoss-luna-005": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 20,
+      "reject": 16
+    },
+    "govoss-luna-006": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 5,
+      "hold": 33,
+      "reject": 2
+    },
+    "govoss-luna-007": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 14,
+      "hold": 13,
+      "reject": 13
+    },
+    "govoss-luna-008": {
+      "assigned": 40,
+      "unreviewed": 25,
+      "publishable": 5,
+      "hold": 4,
+      "reject": 6
+    },
+    "govoss-luna-009": {
+      "assigned": 40,
+      "unreviewed": 40,
+      "publishable": 0,
+      "hold": 0,
+      "reject": 0
+    },
+    "gsa-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 1,
+      "reject": 19
+    },
+    "gsa-002": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 3,
+      "hold": 7,
+      "reject": 30
+    },
+    "gsa-003": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 22,
+      "reject": 17
+    },
+    "gsa-004": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 9,
+      "reject": 11
+    },
+    "gsa-005": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 7,
+      "reject": 13
+    },
+    "gsa-006": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 14,
+      "reject": 6
+    },
+    "gsa-007": {
+      "assigned": 17,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 13,
+      "reject": 4
+    },
+    "gsa-008": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 2,
+      "reject": 18
+    },
+    "gsa-009": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 3,
+      "reject": 17
+    },
+    "gsa-010": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 29,
+      "reject": 11
+    },
+    "gsa-oss-examples-001": {
+      "assigned": 3,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 0,
+      "reject": 2
+    },
+    "japan-001": {
+      "assigned": 19,
+      "unreviewed": 0,
+      "publishable": 6,
+      "hold": 4,
+      "reject": 9
+    },
+    "luna-max-20260929-priority-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 8,
+      "hold": 6,
+      "reject": 6
+    },
+    "luna-max-20260929-priority-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 7,
+      "hold": 4,
+      "reject": 9
+    },
+    "luna-max-20260929-priority-003": {
+      "assigned": 20,
+      "unreviewed": 20,
+      "publishable": 0,
+      "hold": 0,
+      "reject": 0
+    },
+    "nasa-coordinator-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 10,
+      "reject": 10
+    },
+    "nasa-coordinator-002": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 15,
+      "reject": 24
+    },
+    "nasa-luna-003": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 5,
+      "hold": 9,
+      "reject": 6
+    },
+    "nasa-luna-004": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 18,
+      "hold": 19,
+      "reject": 3
+    },
+    "nasa-luna-005": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 18,
+      "hold": 13,
+      "reject": 9
+    },
+    "nasa-luna-006": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 23,
+      "hold": 15,
+      "reject": 2
+    },
+    "netherlands-publiccode-true-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 12,
+      "hold": 6,
+      "reject": 2
+    },
+    "netherlands-publiccode-true-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 3,
+      "hold": 8,
+      "reject": 9
+    },
+    "netherlands-publiccode-true-003": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 7,
+      "reject": 9
+    },
+    "netherlands-publiccode-true-004": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 4,
+      "hold": 7,
+      "reject": 9
+    },
+    "netherlands-publiccode-true-005": {
+      "assigned": 9,
+      "unreviewed": 0,
+      "publishable": 3,
+      "hold": 3,
+      "reject": 3
+    },
+    "netherlands-signalen-backend-001": {
+      "assigned": 1,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 0,
+      "reject": 0
+    },
+    "nist-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 4,
+      "reject": 16
+    },
+    "nist-002": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 3,
+      "reject": 36
+    },
+    "nist-003": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 24,
+      "reject": 16
+    },
+    "nist-004": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 22,
+      "reject": 18
+    },
+    "nist-005": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 20,
+      "reject": 18
+    },
+    "nist-006": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 6,
+      "reject": 13
+    },
+    "nist-007": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 19,
+      "reject": 19
+    },
+    "nist-008": {
+      "assigned": 40,
+      "unreviewed": 35,
+      "publishable": 1,
+      "hold": 2,
+      "reject": 2
+    },
+    "prior-shortlist-01": {
+      "assigned": 26,
+      "unreviewed": 0,
+      "publishable": 20,
+      "hold": 6,
+      "reject": 0
+    },
+    "singapore-ogp-001": {
+      "assigned": 4,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 2,
+      "reject": 0
+    },
+    "spain-ctt-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 5,
+      "reject": 13
+    },
+    "spain-ctt-europe-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 11,
+      "reject": 8
+    },
+    "spain-ctt-europe-002": {
+      "assigned": 4,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 3,
+      "reject": 1
+    },
+    "swiss-005": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 31,
+      "hold": 8,
+      "reject": 1
+    },
+    "swiss-006": {
+      "assigned": 25,
+      "unreviewed": 0,
+      "publishable": 12,
+      "hold": 5,
+      "reject": 8
+    },
+    "swiss-007": {
+      "assigned": 1,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 1,
+      "reject": 0
+    },
+    "swiss-stable-standalone-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 6,
+      "hold": 12,
+      "reject": 2
+    },
+    "swiss-stable-standalone-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 0,
+      "hold": 0,
+      "reject": 20
+    },
+    "swiss-stable-standalone-003": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 12,
+      "hold": 4,
+      "reject": 4
+    },
+    "swiss-stable-standalone-004": {
+      "assigned": 16,
+      "unreviewed": 0,
+      "publishable": 10,
+      "hold": 4,
+      "reject": 2
+    },
+    "uk-public-sector-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 5,
+      "hold": 13,
+      "reject": 2
+    },
+    "uk-public-sector-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 5,
+      "hold": 9,
+      "reject": 6
+    },
+    "uk-public-sector-003": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 3,
+      "hold": 4,
+      "reject": 13
+    },
+    "uk-public-sector-004": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 3,
+      "hold": 2,
+      "reject": 15
+    },
+    "uk-public-sector-005": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 8,
+      "hold": 21,
+      "reject": 11
+    },
+    "uk-public-sector-006": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 22,
+      "hold": 7,
+      "reject": 11
+    },
+    "uk-public-sector-007": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 24,
+      "hold": 13,
+      "reject": 3
+    },
+    "uk-public-sector-008": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 30,
+      "hold": 4,
+      "reject": 6
+    },
+    "uk-public-sector-009": {
+      "assigned": 40,
+      "unreviewed": 0,
+      "publishable": 10,
+      "hold": 23,
+      "reject": 7
+    },
+    "uk-public-sector-010": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 6,
+      "hold": 8,
+      "reject": 6
+    },
+    "us-other-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 2,
+      "hold": 10,
+      "reject": 8
+    },
+    "us-other-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 1,
+      "hold": 6,
+      "reject": 13
+    },
+    "usgs-001": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 6,
+      "hold": 10,
+      "reject": 4
+    },
+    "usgs-002": {
+      "assigned": 20,
+      "unreviewed": 0,
+      "publishable": 10,
+      "hold": 10,
+      "reject": 0
+    }
+  },
+  "total_source_rows": 79631,
+  "distinct_repository_urls": 78088,
+  "metadata_candidates": 19994,
+  "metadata_excluded_only": 58094,
+  "catalog_url_matches": 345,
+  "catalog_direct_url_matches": 315,
+  "catalog_reviewed_alias_matches": 30,
+  "review_decisions": {
+    "unreviewed": 75648,
+    "publishable": 578,
+    "hold": 968,
+    "reject": 894
+  },
+  "metadata_candidate_review_decisions": {
+    "unreviewed": 17671,
+    "publishable": 572,
+    "hold": 925,
+    "reject": 826
+  },
+  "assigned_distinct_urls": 2580,
+  "assigned_unreviewed_urls": 165,
+  "unassigned_metadata_candidate_urls": 17506,
+  "unassigned_metadata_excluded_urls": 57977,
+  "unassigned_total_urls": 75483,
+  "warning": "Metadata candidates and catalog URL matches are not individual four-check reviews."
+}

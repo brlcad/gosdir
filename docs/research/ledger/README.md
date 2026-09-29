@@ -1,0 +1,32 @@
+# Government OSS candidate ledger
+
+This ledger tracks the repository leads in the [collection survey](../2026-09-government-oss-collections.md). It exists because the survey's thousands of URLs were **not individually reviewed**. A row in an official inventory, a named catalog license, a recent push, or a govoss recommendation is discovery evidence only.
+
+## Files and states
+
+- `sources/<source-id>.jsonl` is a dated source snapshot. It preserves one row per source record with a repository URL, including rows that fail the survey's metadata screen. `sources/<source-id>.manifest.json` records counts, endpoint, and retrieval time.
+- `candidates.jsonl` is generated from all source snapshots. It has one row per normalized repository URL. Its `source_rows` array preserves every contributing source record, so overlaps are visible. A repository URL is not automatically one product.
+- `reviews/*.jsonl` contains individual editorial decisions with primary evidence for all four checks, product identity, agency, geography, license, release year, and notability. Only these files can change `review_status` from `unreviewed`.
+- `summary.json` is generated from the source snapshots and review records. Counts from different retrieval dates are not a single historical snapshot.
+
+`metadata_candidate` means at least one source row passed that source's inexpensive metadata screen. It does **not** mean the four checks passed. `metadata_excluded` means all observed source rows failed their metadata screens; this is not an editorial rejection. Every canonical row starts `unreviewed` until an individual review is recorded. An existing catalog match is recorded separately as `catalog_project_id`; it is not counted as a review performed by this ledger. `catalog_match_basis` distinguishes a direct observed-URL match from a match through an individually reviewed canonical-source alias.
+
+URL normalization drops ordinary query parameters, case-only host/path differences, trailing slashes, and `.git` suffixes, but preserves Gitweb's `?p=<repository>.git` parameter because it identifies a distinct repository. Query-based search pages remain leads to resolve, not proven repositories. Every source row has a unique `source_row_id` within its snapshot; repeated or cross-forge names are disambiguated by the original repository URL or an occurrence number. A branch URL, mirror, or moved repository remains an observed lead; its review should also record `canonical_repository_url` when the actual source is elsewhere.
+
+## Individual review contract
+
+Each review record must name its `normalized_repository_url`, `reviewed_at_utc`, `reviewer`, `decision` (`publishable`, `hold`, or `reject`), and four `checks` named `government_provenance`, `public_source`, `eligible_license`, and `primary_evidence`. Each check needs `result` (`pass`, `fail`, or `unresolved`), a direct `evidence_url` when available, and a short factual `note`. Record `product_identity`, `agency`, `geography`, `open_source_year`, `license`, `official_url`, `notability_evidence_url`, and `decision_reason` where relevant. A `publishable` decision requires all four checks to pass, a defensible first public licensed year, and the [notability baseline](../2026-09-government-oss-intake-baseline.md). A rejected or held record states the decisive fact or missing evidence. Review outcomes never copy a catalog's license or sponsor claim without checking its primary source.
+
+Agents take disjoint batches of `unreviewed` rows and write separate review files. A coordinator validates the four-check evidence, resolves competing source identities and duplicate product families, and only then adds catalog records. `scripts/build-government-oss-ledger.mjs` validates and atomically rebuilds the canonical ledger after any source or review file changes. The generated ledger is a progress record, not a claim that every listed URL has been researched.
+
+The [agent playbook](agent-playbook.md) defines batch assignment, the Luna/max review brief for this run, and the acceptance gate. `summary.json` includes per-source, per-batch, and per-reviewer decision counts; it also shows how many metadata candidates remain unassigned. Reviewer names are editorial attribution, not runtime-model introspection; the [run record](run-2026-09-28.md) distinguishes earlier imports, Luna/max assignments, and coordinator reviews. The coordinator should rebuild after every finished tranche and inspect the source links and decision evidence, not only the JSON schema.
+
+The [28 September run record](run-2026-09-28.md) identifies the Luna/max batch assignments and separates this run from the 25 earlier imported publication decisions.
+
+## Current source scope
+
+The [collection coverage map](coverage.md) names every surveyed feed and important link directory, its current source snapshot, and outstanding access/enumeration gaps. Collection sites that expose names but no canonical repository URL must record those unresolved entries or counts in the source manifest; they cannot silently disappear from coverage. Source feeds can change after the 22 September 2026 survey, so every refreshed inventory carries its own retrieval timestamp and count.
+
+Do not use an older count in the survey as the current review denominator. [summary.json](summary.json) is rebuilt from the snapshots and review files and distinguishes source rows, normalized URL leads, metadata candidates, assigned batches, and actual individual decisions. The [coverage map](coverage.md) records current Dutch-catalogue counts, Brazil's inaccessible historical portal, GitHub topic pagination limits, and other enumeration gaps. None of those gaps is silently counted as a completed review.
+
+For the requested full audit, the metadata-candidate queue is a prioritization order, not the finish line. The 28 September captured inventory contains 78,088 distinct repository URLs: 19,994 metadata-prioritized leads and 58,094 metadata-excluded-only leads. After the priority queue is exhausted, continue assigning every remaining distinct URL with `--metadata-screen excluded` (or `all` for a mixed queue), record an individual decision for each, and resolve every named collection-enumeration gap in [coverage.md](coverage.md). Do not describe the audit as complete while any captured URL is unreviewed or any source-enumeration gap is unresolved; update these counts from `summary.json` as snapshots are refreshed.

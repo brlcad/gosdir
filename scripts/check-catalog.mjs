@@ -17,10 +17,13 @@ const counts = {
   timeline: null,
   glossary: null,
   officialSources: null,
+  freshnessProjects: null,
+  availabilityProjects: null,
 };
 
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const datePattern = /^(\d{4})-(\d{2})-(\d{2})$/;
+const availabilityFailureThreshold = 2;
 const catalogModules = {
   agencies: '/lib/catalog/agencies.ts',
   projects: '/lib/catalog/software/index.ts',
@@ -183,6 +186,62 @@ function validateTimelineNaturalKeys(entries) {
     } else {
       firstByIdentity.set(identity, { entry, index });
     }
+  });
+}
+
+function validateProjectOpenSourceYears(entries) {
+  const currentYear = new Date().getUTCFullYear();
+  entries.forEach((project, index) => {
+    if (!isRecord(project)) return;
+
+    const { openSourceYear } = project;
+    if (
+      !Number.isInteger(openSourceYear) ||
+      openSourceYear < 1000 ||
+      openSourceYear > currentYear
+    ) {
+      errors.push(
+        `${entryLabel('projects', project, index)}.openSourceYear must be an integer from 1000 through ${currentYear}; got ${describe(openSourceYear)}`,
+      );
+    }
+  });
+}
+
+function validateProjectDirectoryHolds(entries) {
+  entries.forEach((project, index) => {
+    if (!isRecord(project) || project.directory === undefined) return;
+
+    const label = `${entryLabel('projects', project, index)}.directory`;
+    const directory = project.directory;
+    if (!isRecord(directory)) {
+      errors.push(
+        `${label} must be an object when provided; got ${describe(directory)}`,
+      );
+      return;
+    }
+
+    const allowedFields = new Set(['status', 'reason', 'reviewed']);
+    for (const field of Object.keys(directory)) {
+      if (!allowedFields.has(field))
+        errors.push(`${label}.${field} is not a supported directory field`);
+    }
+
+    if (directory.status !== 'disabled')
+      errors.push(
+        `${label}.status must be "disabled"; got ${describe(directory.status)}`,
+      );
+    if (typeof directory.reason !== 'string' || !directory.reason.trim())
+      errors.push(
+        `${label}.reason must be a nonempty string; got ${describe(directory.reason)}`,
+      );
+    if (!isCalendarDate(directory.reviewed))
+      errors.push(
+        `${label}.reviewed must be a real date in YYYY-MM-DD format; got ${describe(directory.reviewed)}`,
+      );
+    else if (directory.reviewed > new Date().toISOString().slice(0, 10))
+      errors.push(
+        `${label}.reviewed cannot be in the future; got ${describe(directory.reviewed)}`,
+      );
   });
 }
 
@@ -379,6 +438,8 @@ function validateDate(entry, collectionName, index, field) {
     errors.push(
       `${label} must be a real calendar date in YYYY-MM-DD format; got ${describe(value)}`,
     );
+  } else if (value > new Date().toISOString().slice(0, 10)) {
+    errors.push(`${label} cannot be in the future; got ${describe(value)}`);
   }
 }
 
@@ -517,11 +578,496 @@ function validateTimelineReferences(entries, projectIds, policyIds) {
   });
 }
 
+function validateProjectFreshness(snapshot, projects) {
+  const label = 'lib/catalog/project-freshness.json';
+  if (!isRecord(snapshot)) {
+    errors.push(
+      `${label} must contain an object snapshot; got ${describe(snapshot)}`,
+    );
+    return;
+  }
+
+  const generatedAt = snapshot.generatedAt;
+  if (!isCalendarDate(generatedAt)) {
+    errors.push(
+      `${label}.generatedAt must be a real date in YYYY-MM-DD format; got ${describe(generatedAt)}`,
+    );
+  } else {
+    const ageDays = Math.floor(
+      (Date.now() - Date.parse(`${generatedAt}T00:00:00Z`)) / 86_400_000,
+    );
+    if (ageDays < -1)
+      errors.push(
+        `${label}.generatedAt cannot be in the future; got ${describe(generatedAt)}`,
+      );
+    if (ageDays > 45)
+      errors.push(
+        `${label} is ${ageDays} days old; run npm run review:freshness before publishing`,
+      );
+  }
+
+  const expectedYears = isCalendarDate(generatedAt)
+    ? Array.from(
+        { length: 5 },
+        (_, index) => Number(generatedAt.slice(0, 4)) - 4 + index,
+      )
+    : [];
+  if (
+    !Array.isArray(snapshot.years) ||
+    snapshot.years.length !== 5 ||
+    snapshot.years.some((year, index) => year !== expectedYears[index])
+  ) {
+    errors.push(
+      `${label}.years must contain the five consecutive years ending in the snapshot year; got ${describe(snapshot.years)}`,
+    );
+  }
+
+  if (!isRecord(snapshot.projects)) {
+    errors.push(
+      `${label}.projects must be an object keyed by project ID; got ${describe(snapshot.projects)}`,
+    );
+    return;
+  }
+  counts.freshnessProjects = Object.keys(snapshot.projects).length;
+
+  const projectById = new Map(
+    projects.filter(isRecord).map((project) => [project.id, project]),
+  );
+  for (const id of projectById.keys()) {
+    if (!(id in snapshot.projects))
+      errors.push(
+        `${label}.projects is missing catalog project ${describe(id)}`,
+      );
+  }
+  for (const id of Object.keys(snapshot.projects)) {
+    if (!projectById.has(id))
+      errors.push(`${label}.projects contains unknown project ${describe(id)}`);
+  }
+
+  const statuses = new Set([
+    'fresh',
+    'current',
+    'quiet',
+    'historical',
+    'unknown',
+  ]);
+  const collectionStatuses = new Set(['measured', 'unavailable']);
+  const linkStatuses = new Set([
+    'ok',
+    'redirected',
+    'auth-required',
+    'rate-limited',
+    'not-found',
+    'transient',
+    'unavailable',
+    'error',
+  ]);
+
+  for (const [id, record] of Object.entries(snapshot.projects)) {
+    const project = projectById.get(id);
+    const recordLabel = `${label}.projects[${JSON.stringify(id)}]`;
+    if (!isRecord(record)) {
+      errors.push(`${recordLabel} must be an object; got ${describe(record)}`);
+      continue;
+    }
+
+    for (const field of [
+      'activitySource',
+      'activitySourceLabel',
+      'activityBasis',
+    ]) {
+      if (typeof record[field] !== 'string' || !record[field].trim())
+        errors.push(
+          `${recordLabel}.${field} must be a nonempty string; got ${describe(record[field])}`,
+        );
+    }
+    if (!normalizedHttpUrlIdentity(record.activitySource))
+      errors.push(
+        `${recordLabel}.activitySource must be an HTTP(S) URL; got ${describe(record.activitySource)}`,
+      );
+    if (!statuses.has(record.status))
+      errors.push(
+        `${recordLabel}.status is invalid; got ${describe(record.status)}`,
+      );
+    if (!collectionStatuses.has(record.collectionStatus))
+      errors.push(
+        `${recordLabel}.collectionStatus is invalid; got ${describe(record.collectionStatus)}`,
+      );
+    if (![true, false, null].includes(record.archived))
+      errors.push(
+        `${recordLabel}.archived must be true, false, or null; got ${describe(record.archived)}`,
+      );
+    if (
+      record.headOid !== null &&
+      (typeof record.headOid !== 'string' ||
+        !/^[0-9a-f]{40,64}$/i.test(record.headOid))
+    ) {
+      errors.push(
+        `${recordLabel}.headOid must be null or a 40- to 64-character hexadecimal object ID; got ${describe(record.headOid)}`,
+      );
+    }
+    if (record.collectionStatus === 'unavailable' && record.headOid !== null) {
+      errors.push(
+        `${recordLabel} marks activity unavailable but includes a head OID`,
+      );
+    }
+    if (
+      record.lastChangeAt !== null &&
+      (!isCalendarDate(record.lastChangeAt) ||
+        (isCalendarDate(generatedAt) && record.lastChangeAt > generatedAt))
+    ) {
+      errors.push(
+        `${recordLabel}.lastChangeAt must be null or a real date no later than generatedAt; got ${describe(record.lastChangeAt)}`,
+      );
+    }
+    if (
+      isCalendarDate(generatedAt) &&
+      record.status !==
+        expectedFreshnessStatus(
+          record.lastChangeAt,
+          record.archived,
+          generatedAt,
+        )
+    ) {
+      errors.push(
+        `${recordLabel}.status is inconsistent with lastChangeAt, archived, and the freshness thresholds`,
+      );
+    }
+
+    if (
+      !Array.isArray(record.annualCommits) ||
+      record.annualCommits.length !== expectedYears.length
+    ) {
+      errors.push(
+        `${recordLabel}.annualCommits must contain one bucket per snapshot year; got ${describe(record.annualCommits)}`,
+      );
+    } else {
+      record.annualCommits.forEach((bucket, index) => {
+        const bucketLabel = `${recordLabel}.annualCommits[${index}]`;
+        if (
+          !isRecord(bucket) ||
+          bucket.year !== expectedYears[index] ||
+          (bucket.commits !== null &&
+            (!Number.isSafeInteger(bucket.commits) || bucket.commits < 0))
+        ) {
+          errors.push(
+            `${bucketLabel} must contain the matching year and a nonnegative integer or null commit count; got ${describe(bucket)}`,
+          );
+        }
+      });
+      const missingCounts = record.annualCommits.some(
+        (bucket) => bucket?.commits === null,
+      );
+      if (record.collectionStatus === 'measured' && missingCounts)
+        errors.push(
+          `${recordLabel} marks activity measured but has missing commit counts`,
+        );
+      if (
+        record.collectionStatus === 'unavailable' &&
+        !record.annualCommits.every((bucket) => bucket?.commits === null)
+      )
+        errors.push(
+          `${recordLabel} marks activity unavailable but includes commit counts`,
+        );
+    }
+
+    if (!isRecord(record.links)) {
+      errors.push(
+        `${recordLabel}.links must be an object; got ${describe(record.links)}`,
+      );
+      continue;
+    }
+    if (project) {
+      const expectedLinks = {
+        repository: project.repository,
+        official: project.officialUrl,
+        ...(project.evidenceUrl ? { provenance: project.evidenceUrl } : {}),
+      };
+      const actualRoles = Object.keys(record.links).sort();
+      const expectedRoles = Object.keys(expectedLinks).sort();
+      if (JSON.stringify(actualRoles) !== JSON.stringify(expectedRoles))
+        errors.push(
+          `${recordLabel}.links must exactly cover ${expectedRoles.join(', ')}`,
+        );
+      for (const [role, expectedUrl] of Object.entries(expectedLinks)) {
+        const link = record.links[role];
+        const linkLabel = `${recordLabel}.links.${role}`;
+        if (!isRecord(link)) {
+          errors.push(`${linkLabel} must be an object; got ${describe(link)}`);
+          continue;
+        }
+        if (link.url !== expectedUrl)
+          errors.push(
+            `${linkLabel}.url must match the catalog URL ${describe(expectedUrl)}; got ${describe(link.url)}`,
+          );
+        if (!linkStatuses.has(link.status))
+          errors.push(
+            `${linkLabel}.status is invalid; got ${describe(link.status)}`,
+          );
+        if (
+          link.httpStatus !== undefined &&
+          (!Number.isInteger(link.httpStatus) ||
+            link.httpStatus < 100 ||
+            link.httpStatus > 599)
+        )
+          errors.push(
+            `${linkLabel}.httpStatus must be an HTTP status code when present; got ${describe(link.httpStatus)}`,
+          );
+        if (
+          link.finalUrl !== undefined &&
+          !normalizedHttpUrlIdentity(link.finalUrl)
+        )
+          errors.push(
+            `${linkLabel}.finalUrl must be an HTTP(S) URL when present; got ${describe(link.finalUrl)}`,
+          );
+        if (
+          link.errorCode !== undefined &&
+          (typeof link.errorCode !== 'string' || !link.errorCode)
+        )
+          errors.push(
+            `${linkLabel}.errorCode must be a nonempty string when present; got ${describe(link.errorCode)}`,
+          );
+      }
+    }
+  }
+}
+
+function validateProjectAvailability(snapshot, projects) {
+  const label = 'lib/catalog/project-availability.json';
+  if (!isRecord(snapshot)) {
+    errors.push(
+      `${label} must contain an object snapshot; got ${describe(snapshot)}`,
+    );
+    return;
+  }
+
+  const generatedAt = snapshot.generatedAt;
+  if (!isCalendarDate(generatedAt)) {
+    errors.push(
+      `${label}.generatedAt must be a real date in YYYY-MM-DD format; got ${describe(generatedAt)}`,
+    );
+  } else if (generatedAt > new Date().toISOString().slice(0, 10)) {
+    errors.push(
+      `${label}.generatedAt cannot be in the future; got ${describe(generatedAt)}`,
+    );
+  }
+
+  if (!isRecord(snapshot.projects)) {
+    errors.push(
+      `${label}.projects must be an object keyed by project ID; got ${describe(snapshot.projects)}`,
+    );
+    return;
+  }
+  counts.availabilityProjects = Object.keys(snapshot.projects).length;
+
+  const projectById = new Map(
+    projects.filter(isRecord).map((project) => [project.id, project]),
+  );
+  for (const id of projectById.keys()) {
+    if (!(id in snapshot.projects))
+      errors.push(
+        `${label}.projects is missing catalog project ${describe(id)}`,
+      );
+  }
+  for (const id of Object.keys(snapshot.projects)) {
+    if (!projectById.has(id))
+      errors.push(`${label}.projects contains unknown project ${describe(id)}`);
+  }
+
+  const statuses = new Set(['enabled', 'disabled']);
+  const reasonCodes = new Set([
+    'repository-unreachable',
+    'public-evidence-unreachable',
+  ]);
+  const linkStatuses = new Set([
+    'ok',
+    'redirected',
+    'auth-required',
+    'rate-limited',
+    'not-found',
+    'transient',
+    'unavailable',
+    'error',
+  ]);
+  const linkFields = new Set([
+    'url',
+    'status',
+    'httpStatus',
+    'finalUrl',
+    'errorCode',
+  ]);
+
+  for (const [id, record] of Object.entries(snapshot.projects)) {
+    const project = projectById.get(id);
+    const recordLabel = `${label}.projects[${JSON.stringify(id)}]`;
+    if (!isRecord(record)) {
+      errors.push(`${recordLabel} must be an object; got ${describe(record)}`);
+      continue;
+    }
+
+    if (!statuses.has(record.status))
+      errors.push(
+        `${recordLabel}.status must be "enabled" or "disabled"; got ${describe(record.status)}`,
+      );
+    if (!isCalendarDate(record.statusChangedAt))
+      errors.push(
+        `${recordLabel}.statusChangedAt must be a real date in YYYY-MM-DD format; got ${describe(record.statusChangedAt)}`,
+      );
+    else if (
+      isCalendarDate(generatedAt) &&
+      record.statusChangedAt > generatedAt
+    )
+      errors.push(
+        `${recordLabel}.statusChangedAt cannot be later than generatedAt; got ${describe(record.statusChangedAt)}`,
+      );
+
+    if (!Number.isSafeInteger(record.failureStreak) || record.failureStreak < 0)
+      errors.push(
+        `${recordLabel}.failureStreak must be a nonnegative safe integer; got ${describe(record.failureStreak)}`,
+      );
+
+    if (!Array.isArray(record.reasonCodes)) {
+      errors.push(
+        `${recordLabel}.reasonCodes must be an array; got ${describe(record.reasonCodes)}`,
+      );
+    } else {
+      const seen = new Set();
+      record.reasonCodes.forEach((reasonCode, index) => {
+        if (!reasonCodes.has(reasonCode))
+          errors.push(
+            `${recordLabel}.reasonCodes[${index}] is invalid; got ${describe(reasonCode)}`,
+          );
+        if (seen.has(reasonCode))
+          errors.push(
+            `${recordLabel}.reasonCodes[${index}] duplicates ${describe(reasonCode)}`,
+          );
+        seen.add(reasonCode);
+      });
+
+      if (record.status === 'disabled' && record.reasonCodes.length === 0)
+        errors.push(
+          `${recordLabel} is disabled but has no availability reason code`,
+        );
+      if (
+        record.status === 'enabled' &&
+        Number.isSafeInteger(record.failureStreak) &&
+        record.failureStreak >= availabilityFailureThreshold
+      )
+        errors.push(
+          `${recordLabel} is enabled with failureStreak ${record.failureStreak}; records must disable at the ${availabilityFailureThreshold}-check threshold`,
+        );
+      if (
+        record.status === 'enabled' &&
+        record.reasonCodes.length > 0 &&
+        record.failureStreak === 0
+      )
+        errors.push(
+          `${recordLabel} is enabled with availability reason codes but no current failure streak`,
+        );
+    }
+
+    if (!isRecord(record.links)) {
+      errors.push(
+        `${recordLabel}.links must be an object; got ${describe(record.links)}`,
+      );
+      continue;
+    }
+    if (!project) continue;
+
+    const expectedLinks = {
+      repository: project.repository,
+      official: project.officialUrl,
+      ...(project.evidenceUrl ? { provenance: project.evidenceUrl } : {}),
+    };
+    const actualRoles = Object.keys(record.links).sort();
+    const expectedRoles = Object.keys(expectedLinks).sort();
+    if (JSON.stringify(actualRoles) !== JSON.stringify(expectedRoles))
+      errors.push(
+        `${recordLabel}.links must exactly cover ${expectedRoles.join(', ')}`,
+      );
+
+    for (const [role, expectedUrl] of Object.entries(expectedLinks)) {
+      const link = record.links[role];
+      const linkLabel = `${recordLabel}.links.${role}`;
+      if (!isRecord(link)) {
+        errors.push(`${linkLabel} must be an object; got ${describe(link)}`);
+        continue;
+      }
+      for (const field of Object.keys(link)) {
+        if (!linkFields.has(field))
+          errors.push(`${linkLabel}.${field} is not a supported link field`);
+      }
+      if (link.url !== expectedUrl)
+        errors.push(
+          `${linkLabel}.url must match the catalog URL ${describe(expectedUrl)}; got ${describe(link.url)}`,
+        );
+      if (!linkStatuses.has(link.status))
+        errors.push(
+          `${linkLabel}.status is invalid; got ${describe(link.status)}`,
+        );
+      if (
+        link.httpStatus !== undefined &&
+        (!Number.isInteger(link.httpStatus) ||
+          link.httpStatus < 100 ||
+          link.httpStatus > 599)
+      )
+        errors.push(
+          `${linkLabel}.httpStatus must be an HTTP status code when present; got ${describe(link.httpStatus)}`,
+        );
+      if (
+        link.finalUrl !== undefined &&
+        !normalizedHttpUrlIdentity(link.finalUrl)
+      )
+        errors.push(
+          `${linkLabel}.finalUrl must be an HTTP(S) URL when present; got ${describe(link.finalUrl)}`,
+        );
+      if (
+        link.errorCode !== undefined &&
+        (typeof link.errorCode !== 'string' || !link.errorCode.trim())
+      )
+        errors.push(
+          `${linkLabel}.errorCode must be a nonempty string when present; got ${describe(link.errorCode)}`,
+        );
+    }
+  }
+}
+
+function isCalendarDate(value) {
+  if (typeof value !== 'string' || !datePattern.test(value)) return false;
+  const timestamp = Date.parse(`${value}T00:00:00Z`);
+  return (
+    Number.isFinite(timestamp) &&
+    new Date(timestamp).toISOString().slice(0, 10) === value
+  );
+}
+
+function expectedFreshnessStatus(lastChangeAt, archived, generatedAt) {
+  if (archived) return 'historical';
+  if (!isCalendarDate(lastChangeAt) || lastChangeAt > generatedAt)
+    return 'unknown';
+  if (lastChangeAt >= calendarMonthsBefore(generatedAt, 6)) return 'fresh';
+  if (lastChangeAt >= calendarMonthsBefore(generatedAt, 24)) return 'current';
+  if (lastChangeAt >= calendarMonthsBefore(generatedAt, 48)) return 'quiet';
+  return 'historical';
+}
+
+function calendarMonthsBefore(date, months) {
+  const value = new Date(`${date}T00:00:00Z`);
+  const sourceDay = value.getUTCDate();
+  value.setUTCDate(1);
+  value.setUTCMonth(value.getUTCMonth() - months);
+  const lastTargetDay = new Date(
+    Date.UTC(value.getUTCFullYear(), value.getUTCMonth() + 1, 0),
+  ).getUTCDate();
+  value.setUTCDate(Math.min(sourceDay, lastTargetDay));
+  return value.toISOString().slice(0, 10);
+}
+
 function reportCounts() {
   const count = (name) =>
     counts[name] === null ? 'missing' : counts[name].toLocaleString('en-US');
   console.log(
-    `Catalog entries: ${count('agencies')} agencies, ${count('projects')} projects, ${count('policies')} policies, ${count('timeline')} timeline events, ${count('glossary')} glossary terms, ${count('officialSources')} official sources.`,
+    `Catalog entries: ${count('agencies')} agencies, ${count('projects')} projects, ${count('policies')} policies, ${count('timeline')} timeline events, ${count('glossary')} glossary terms, ${count('officialSources')} official sources, ${count('freshnessProjects')} freshness observations, ${count('availabilityProjects')} availability observations.`,
   );
 }
 
@@ -548,21 +1094,25 @@ try {
     .map((entry) => entry.name)
     .sort();
 
-  const [catalogEntries, softwareRecords] = await Promise.all([
-    Promise.all(
-      Object.entries(catalogModules).map(async ([exportName, modulePath]) => [
-        exportName,
-        (await vite.ssrLoadModule(modulePath))[exportName],
-      ]),
-    ),
-    Promise.all(
-      softwareRecordFilenames.map(async (filename) => ({
-        filename,
-        project: (await vite.ssrLoadModule(`/lib/catalog/software/${filename}`))
-          .default,
-      })),
-    ),
-  ]);
+  const [catalogEntries, softwareRecords, freshnessModule, availabilityModule] =
+    await Promise.all([
+      Promise.all(
+        Object.entries(catalogModules).map(async ([exportName, modulePath]) => [
+          exportName,
+          (await vite.ssrLoadModule(modulePath))[exportName],
+        ]),
+      ),
+      Promise.all(
+        softwareRecordFilenames.map(async (filename) => ({
+          filename,
+          project: (
+            await vite.ssrLoadModule(`/lib/catalog/software/${filename}`)
+          ).default,
+        })),
+      ),
+      vite.ssrLoadModule('/lib/catalog/freshness.ts'),
+      vite.ssrLoadModule('/lib/catalog/availability.ts'),
+    ]);
   const catalog = Object.fromEntries(catalogEntries);
   const agencies = requireArray(catalog, 'agencies');
   const projects = requireArray(catalog, 'projects');
@@ -578,6 +1128,13 @@ try {
   validateAgencyHierarchy(agencies, agencyIds);
   validateSoftwareRecordFiles(softwareRecords, projects);
   validateProjectAgencyReferences(projects, agencyIds);
+  validateProjectOpenSourceYears(projects);
+  validateProjectDirectoryHolds(projects);
+  validateProjectFreshness(freshnessModule.freshnessSnapshot, projects);
+  validateProjectAvailability(
+    availabilityModule.availabilitySnapshot,
+    projects,
+  );
 
   validateRequiredStrings(agencies, 'agencies', [
     'geography',

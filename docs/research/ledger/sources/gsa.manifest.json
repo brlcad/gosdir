@@ -1,0 +1,18 @@
+{
+  "source_id": "gsa",
+  "source_url": "https://open.gsa.gov/code.json",
+  "retrieved_at_utc": "2026-09-28T02:57:59.796Z",
+  "raw_rows": 1275,
+  "repository_rows": 1275,
+  "distinct_normalized_repositories": 1275,
+  "metadata_candidates": 176,
+  "metadata_excluded": 1099,
+  "source_rows_without_repository_url": 0,
+  "source_rows_non_http_or_invalid_repository_url": 0,
+  "non_repository_url_rows": 0,
+  "note": "Metadata triage only. A candidate label is not a four-check decision or GOSDIR acceptance.",
+  "source_usage_type_counts": {
+    "openSource": 1001,
+    "governmentWideReuse": 274
+  }
+}

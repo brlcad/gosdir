@@ -1,0 +1,14 @@
+{
+  "source_id": "epa",
+  "source_url": "https://raw.githubusercontent.com/USEPA/code-json-generator/output/code.json",
+  "retrieved_at_utc": "2026-09-28T02:57:59.796Z",
+  "raw_rows": 677,
+  "repository_rows": 677,
+  "distinct_normalized_repositories": 677,
+  "metadata_candidates": 677,
+  "metadata_excluded": 0,
+  "source_rows_without_repository_url": 0,
+  "source_rows_non_http_or_invalid_repository_url": 0,
+  "non_repository_url_rows": 0,
+  "note": "Metadata triage only. A candidate label is not a four-check decision or GOSDIR acceptance."
+}

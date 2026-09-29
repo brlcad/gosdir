@@ -1,0 +1,13 @@
+{
+  "source_id": "govoss",
+  "source_url": "https://govoss.cat/entries.json",
+  "retrieved_at_utc": "2026-09-28T04:01:45.240Z",
+  "raw_entries": 3841,
+  "repository_rows": 3574,
+  "distinct_normalized_repositories": 3569,
+  "metadata_candidates": 2255,
+  "metadata_excluded": 1319,
+  "without_repository": 265,
+  "malformed_repository": 2,
+  "note": "Metadata screens only. No four-check decision follows from this manifest."
+}

@@ -1,0 +1,15 @@
+{
+  "source_id": "github-topic-publiccode",
+  "source_url": "https://github.com/topics/publiccode",
+  "retrieved_at_utc": "2026-09-28T03:25:23.734Z",
+  "raw_topic_public_repositories_claim": 20,
+  "fetched_html_pages": 1,
+  "html_pagination_cap_pages": 50,
+  "stopped_http_status": null,
+  "repository_rows": 20,
+  "distinct_normalized_repositories": 20,
+  "metadata_candidates": 0,
+  "metadata_excluded": 20,
+  "unenumerated_due_to_rate_or_page_limit_at_least": 0,
+  "note": "Topic tags are discovery only. GitHub topic HTML returns 404 after page 50 here, and may rate-limit earlier; this is a capped partial snapshot, not necessarily the complete topic. Counts can drift while pages are fetched."
+}

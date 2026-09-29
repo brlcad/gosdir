@@ -1,0 +1,16 @@
+{
+  "source_id": "nasa",
+  "source_url": "https://raw.githubusercontent.com/nasa/Open-Source-Catalog/master/catalog.json",
+  "retrieved_at_utc": "2026-09-28T02:57:59.796Z",
+  "raw_rows": 601,
+  "repository_rows": 598,
+  "distinct_normalized_repositories": 572,
+  "metadata_candidates": 594,
+  "metadata_excluded": 4,
+  "source_rows_without_repository_url": 0,
+  "source_rows_non_http_or_invalid_repository_url": 3,
+  "non_repository_url_rows": 3,
+  "note": "Metadata triage only. A candidate label is not a four-check decision or GOSDIR acceptance.",
+  "source_rows_without_external_record_page": 43,
+  "source_counting_note": "Three FTP distribution/archive links are omitted from JSONL because they are not HTTP(S) repositories; the raw rows are counted here. Duplicate HTTP(S) links remain separate source rows."
+}

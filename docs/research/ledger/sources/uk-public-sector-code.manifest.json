@@ -1,0 +1,27 @@
+{
+  "source_id": "uk-public-sector-code",
+  "source_url": "https://publicsectorcodebyorg.co.uk/data/",
+  "api_url": "https://chrishylanduk.github.io/xgov-opensource-repo-scraper/repos.json",
+  "retrieved_at_utc": "2026-09-28T03:15:37.155Z",
+  "query": {
+    "mapping_url": "https://raw.githubusercontent.com/chrishylanduk/uk-public-sector-code-by-org/main/public/data/org-mapping.json",
+    "screen": "isFork=false, archived=false, nonempty description, detected SPDX other than NOASSERTION, pushed within 180 days of retrieval date",
+    "records": 25623,
+    "distinct_repositories": 25553,
+    "duplicated_url_groups": 70,
+    "candidate_rows": 2971,
+    "candidate_distinct": 2968,
+    "cutoff": "2026-03-31T00:00:00Z",
+    "mapped_candidates": 2866,
+    "unmapped_candidates": 105
+  },
+  "raw_entries": 25623,
+  "repository_rows": 25623,
+  "distinct_normalized_repositories": 25553,
+  "metadata_candidates": 2971,
+  "metadata_excluded": 22652,
+  "distinct_candidate_repositories": 2968,
+  "without_repository": 0,
+  "malformed_repository": 0,
+  "note": "Community-maintained UK public-sector mapping and repository metadata are discovery leads, not proof of government provenance. Duplicate source rows are retained; canonical ledger performs cross-source and URL deduplication. Candidate count is metadata screening only."
+}
