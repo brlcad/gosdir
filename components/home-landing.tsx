@@ -48,7 +48,7 @@ export function HomeLanding() {
           <div className="max-w-3xl">
             <h1 className="border-l-[6px] border-blue pl-4 font-display sm:pl-6">
               <span className="block text-[clamp(3.6rem,10vw,7.2rem)] font-black leading-[.85] tracking-[-0.09em] text-ink break-words"><BrandWordmark /></span>
-              <span className="mt-3 block max-w-[28ch] text-[clamp(1.25rem,2.2vw,1.75rem)] font-extrabold leading-[1.13] tracking-[-0.04em] text-blue">Government Open Source Directory</span>
+              <span className="mt-3 block max-w-[28ch] text-[clamp(1.25rem,2.2vw,1.75rem)] font-extrabold leading-[1.13] tracking-[-0.04em] text-brand-green">Government Open Source Directory</span>
             </h1>
 
             <p className="mt-7 font-display text-xl font-bold tracking-[-0.025em] text-ink sm:text-2xl">Public code, public value.</p>
