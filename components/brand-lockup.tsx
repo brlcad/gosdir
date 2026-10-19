@@ -22,10 +22,10 @@ export function BrandLockup() {
         <span className="block text-[29px] font-black uppercase tracking-[-0.048em] text-ink">
           <BrandWordmark />
         </span>
-        <span className="mt-1 block font-mono text-xs font-semibold uppercase tracking-[0.06em] text-slate sm:hidden">
+        <span className="mt-1 block font-mono text-xs font-semibold uppercase tracking-[0.06em] text-brand-green sm:hidden">
           Open source directory
         </span>
-        <span className="mt-1 hidden font-mono text-xs font-semibold uppercase tracking-[0.06em] text-slate sm:block">
+        <span className="mt-1 hidden font-mono text-xs font-semibold uppercase tracking-[0.06em] text-brand-green sm:block">
           Government Open Source Directory
         </span>
       </span>
