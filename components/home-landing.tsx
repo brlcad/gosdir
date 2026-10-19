@@ -6,6 +6,7 @@ import {
   Search,
   Sparkles,
 } from 'lucide-react';
+import { BrandWordmark } from '@/components/brand-lockup';
 import { representedAgencyIds } from '@/lib/catalog/agency-relations';
 import { listedProjects as projects } from '@/lib/catalog/directory';
 import { policies } from '@/lib/catalog/policies';
@@ -46,7 +47,7 @@ export function HomeLanding() {
         <div className="page-shell relative grid gap-10 py-10 sm:py-14 lg:min-h-[620px] lg:grid-cols-[1.08fr_.92fr] lg:items-center lg:gap-14 lg:py-14">
           <div className="max-w-3xl">
             <h1 className="border-l-[6px] border-blue pl-4 font-display sm:pl-6">
-              <span className="block text-[clamp(3.6rem,10vw,7.2rem)] font-black leading-[.85] tracking-[-0.09em] text-ink break-words">GOSDIR</span>
+              <span className="block text-[clamp(3.6rem,10vw,7.2rem)] font-black leading-[.85] tracking-[-0.09em] text-ink break-words"><BrandWordmark /></span>
               <span className="mt-3 block max-w-[28ch] text-[clamp(1.25rem,2.2vw,1.75rem)] font-extrabold leading-[1.13] tracking-[-0.04em] text-blue">Government Open Source Directory</span>
             </h1>
 
