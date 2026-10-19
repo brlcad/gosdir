@@ -157,6 +157,10 @@ await copyFile(
   path.join(projectRoot, 'public', 'og.png'),
   path.join(projectRoot, 'og.png'),
 );
+await copyFile(
+  path.join(projectRoot, 'public', 'robots.txt'),
+  path.join(projectRoot, 'robots.txt'),
+);
 
 for (const route of publishedRoutes) {
   const routeDirectory = path.join(projectRoot, route);

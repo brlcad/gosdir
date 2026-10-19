@@ -162,3 +162,86 @@ sudo service apache24 reload
 ```
 
 Only reload after the configuration test reports `Syntax OK`.
+
+## Private administration
+
+The unlinked portal is at `/admin/`. It has no public navigation entry and is
+excluded by `robots.txt`, an HTML robots meta tag, and `X-Robots-Tag` headers.
+Those exclusions are separate from access control: the API requires an authenticated
+session, and every administrative mutation requires the configured Origin and a session CSRF
+token. Sessions use Secure, HttpOnly, SameSite=Strict cookies, expire after eight
+hours, and are invalidated when the service restarts. Sign-in attempts are rate
+limited. The service binds only to `127.0.0.1:9137`; Apache proxies `/admin/`
+over the existing HTTPS virtual host. No external hosting is involved.
+
+On the FreeBSD production host, run these as the checkout owner:
+
+```sh
+npm run build:apache
+npm run admin:install
+npm run admin:setup-link
+```
+
+`admin:install` adds one identified `@reboot` entry to the current user's crontab,
+preserving existing entries, and starts a FreeBSD `daemon` supervisor that
+restarts the service after failure. `admin:start`, `admin:stop`, and `admin:status`
+manage it without changing the crontab. Logs, password hashes, initial setup
+tokens, link observations, publication state, and job history live in ignored
+`.admin-state/`, accessible only to the owner. Back up that directory privately;
+never commit it. The root Apache allowlist denies direct HTTP access to it and
+to `admin-src/`. Keep loopback port 9137 unavailable from external interfaces.
+
+For Google sign-in, follow [the account enrollment and OAuth client guide](admin-google-sign-in.md).
+Google mode restricts access to one verified account, binds its permanent account
+ID after initial enrollment, and disables the password endpoints. Its client
+configuration, account restriction, and enrollment secret remain private in
+`.admin-state/`. Initial enrollment requires both the private link and the
+authorized Google account. The portal provides a public admin privacy notice
+at `/admin/privacy` for the Google consent configuration.
+
+In password mode, the setup link carries a single-use token in its URL fragment. Open it, choose
+a password of at least 14 characters, and keep that password in a password
+manager. The browser removes the fragment immediately; setup disables itself
+after use. To recover access, stop the service, run
+`node scripts/admin-service.mjs reset-password`, start it, and generate a new
+setup link. Google recovery follows the separate enrollment guide. Recovery
+requires shell access as the checkout owner.
+
+### Jobs and record visibility
+
+Only predefined jobs can run; the portal accepts no shell commands or arbitrary
+URLs. Link scans reuse the public-destination checker (including DNS and redirect
+checks), run eight requests at a time, and save observations privately. They do
+not change visibility or advance a record's substantive `verified` date.
+403s, rate limits, timeouts, and other inconclusive results are shown separately
+from definitive failures. The dashboard initially shows the canonical availability
+snapshot and replaces observations with completed portal scan results.
+
+Confirmed moderation jobs write `lib/catalog/administration.json` and run catalog
+validation followed by `npm run build:apache`:
+
+- **Suspend** removes a record from listings but keeps its direct record page
+  with the public reason.
+- **Hide** also removes the direct record view.
+- **Delete** removes the same public views and retains a tombstone and canonical
+  archive for recovery and audit. It deliberately does not physically erase
+  catalog source files, historical evidence, or the checker coverage.
+- **Reinstate** requires healthy links matching the canonical URLs, checked
+  within 24 hours. It removes the portal hold and can clear an automated
+  availability hold using those observations. A canonical editorial `directory`
+  hold must first be resolved through substantive source review. Healthy HTTP
+  responses alone never clear an editorial hold or advance `verified`.
+
+The portal permits at most 100 records per moderation job, requires a reason
+and confirmation, and requires typing DELETE for deletion. Job history records
+the action, record IDs, reason, progress, output, and result. One job runs at a
+time. A restart marks unfinished jobs interrupted instead of retrying mutations.
+Failed publication remains explicitly pending; use **Validate & publish current
+state** after resolving the reported failure. The job history and publication
+banner distinguish saved intent from a successfully completed Apache build.
+
+Portal changes are working-tree changes on the production checkout. Review and
+commit `administration.json`, any availability changes, and generated Apache
+output through the usual repository workflow before pulling another revision.
+Do not run external builds or other catalog writers concurrently with portal
+publication. Existing automation does not clear administrative holds.

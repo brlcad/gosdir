@@ -47,3 +47,6 @@ next-env.d.ts
 /outputs/
 /work/
 *.tsbuildinfo
+
+# Private administrative credentials, observations, audit history, and process state
+/.admin-state/
