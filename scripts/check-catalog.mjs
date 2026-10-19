@@ -1,4 +1,4 @@
-import { readdir } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -1124,6 +1124,34 @@ try {
   const agencyIds = validateIds(agencies, 'agencies');
   const projectIds = validateIds(projects, 'projects');
   const policyIds = validateIds(policies, 'policies');
+
+  const administration = JSON.parse(
+    await readFile(
+      path.join(repositoryRoot, 'lib/catalog/administration.json'),
+      'utf8',
+    ),
+  );
+  if (!isRecord(administration.records))
+    errors.push('administration.json must contain a records object.');
+  else
+    for (const [id, hold] of Object.entries(administration.records)) {
+      const label = `administration.json.records[${JSON.stringify(id)}]`;
+      if (!projectIds.has(id))
+        errors.push(`${label} refers to an unknown project.`);
+      if (
+        !isRecord(hold) ||
+        !['suspended', 'hidden', 'deleted'].includes(hold.status) ||
+        typeof hold.reason !== 'string' ||
+        hold.reason.trim().length < 8 ||
+        hold.reason.length > 500 ||
+        typeof hold.updatedAt !== 'string' ||
+        !Number.isFinite(Date.parse(hold.updatedAt))
+      ) {
+        errors.push(
+          `${label} must have a valid status, reason (8–500 characters), and update timestamp.`,
+        );
+      }
+    }
 
   validateAgencyHierarchy(agencies, agencyIds);
   validateSoftwareRecordFiles(softwareRecords, projects);

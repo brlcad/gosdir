@@ -13,6 +13,8 @@ This directory is the canonical, reviewable source for GOSDIR records. Each reco
 - `freshness.ts` — typed access to the generated observation snapshot
 - `project-availability.json` — generated directory-availability state for every software record; do not hand-edit
 - `availability.ts` — typed access, labels, and selectors for availability state
+- `administration.json` — reviewed portal holds and deletion tombstones; independent of automated availability
+- `administration.ts` — typed access to portal moderation state
 
 Application code imports the record type it needs directly from its canonical file. Do not create a second catalog barrel or expansion file.
 

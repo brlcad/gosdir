@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Administration · GOSDIR</title>
+    <link rel="stylesheet" href="/admin/admin.css" />
+    <script src="/admin/admin.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="brand"
+        >GOS<span>DIR</span><small>GOVERNMENT OPEN SOURCE DIRECTORY</small></a
+      >
+      <div class="access">
+        PRIVATE ADMINISTRATION <button id="logout" hidden>Sign out</button>
+      </div>
+    </header>
+    <main>
+      <div id="message" role="status" aria-live="polite" hidden></div>
+      <section id="login" class="login panel" hidden>
+        <p class="eyebrow">RESTRICTED ACCESS</p>
+        <h1 id="login-title">Administration</h1>
+        <p id="login-description">
+          Sign in to review the directory and run maintenance jobs.
+        </p>
+        <div id="google-login" hidden>
+          <div id="google-button" aria-live="polite"></div>
+          <p id="google-signin-status" class="muted" role="status"></p>
+        </div>
+        <div id="google-setup" hidden>
+          <details id="google-instructions" open>
+            <summary>Create your Google OAuth client</summary>
+            <ol>
+              <li>
+                Open
+                <a
+                  href="https://console.cloud.google.com/auth/overview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Google Auth Platform</a
+                >
+                and create or select a project.
+              </li>
+              <li>
+                Under <strong>Branding</strong>, use
+                <strong>GOSDIR Admin</strong> and your email for support and
+                developer contact.
+              </li>
+              <li>
+                Choose an <strong>External</strong> audience. Keep it in
+                <strong>Testing</strong> and add your account as a test user.
+              </li>
+              <li>
+                Use only the basic
+                <strong>openid, email, profile</strong> identity scopes.
+              </li>
+              <li>
+                Under <strong>Clients</strong>, create a
+                <strong>Web application</strong> named
+                <strong>GOSDIR Admin Web</strong>.
+              </li>
+              <li>
+                Set its authorized JavaScript origin to
+                <code>https://gosdir.com</code>. Leave redirect URIs empty: this
+                integration uses a JavaScript callback.
+              </li>
+              <li>
+                Copy the client ID below, then continue with your Google
+                account.
+              </li>
+            </ol>
+            <p class="muted">
+              If requested: homepage <code>https://gosdir.com/</code>,
+              authorized domain <code>gosdir.com</code>, privacy policy
+              <a href="/admin/privacy" target="_blank" rel="noopener"
+                >https://gosdir.com/admin/privacy</a
+              >.
+            </p>
+          </details>
+          <form id="google-config-form">
+            <label for="google-client-id">Google OAuth client ID</label>
+            <input
+              id="google-client-id"
+              required
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="123456789-example.apps.googleusercontent.com"
+            />
+            <button type="submit" class="primary" id="google-config-submit">
+              Save client ID
+            </button>
+          </form>
+          <p class="muted">
+            The client ID is public. This integration does not use a client
+            secret. Your private enrollment link is consumed after your first
+            successful Google sign-in.
+          </p>
+        </div>
+        <form id="login-form">
+          <label for="password">Admin password</label
+          ><input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            required
+            maxlength="256"
+          /><button type="submit" class="primary" id="login-submit">
+            Sign in
+          </button>
+        </form>
+        <p class="muted">
+          This area is private and excluded from search indexing.
+          <a href="/admin/privacy">Admin privacy</a>
+        </p>
+      </section>
+      <div id="dashboard" hidden>
+        <div class="intro">
+          <div>
+            <p class="eyebrow">DIRECTORY OPERATIONS</p>
+            <h1>A clear view.<br />A healthier directory.</h1>
+            <p>
+              Review record health, manage visibility, and run the routine work.
+            </p>
+          </div>
+          <div class="sync">
+            <span class="dot"></span
+            ><strong id="service-status">Service online</strong
+            ><span id="snapshot-date"></span
+            ><button id="refresh">Refresh status ↻</button>
+          </div>
+        </div>
+        <div id="publication" class="notice" hidden></div>
+        <div id="metrics" class="metrics" aria-label="Directory status"></div>
+        <section class="section">
+          <div class="section-top">
+            <div>
+              <p class="eyebrow">PREDEFINED JOBS</p>
+              <h2>Maintenance desk</h2>
+            </div>
+            <span class="muted"
+              >One job runs at a time. Scans keep visibility unchanged.</span
+            >
+          </div>
+          <div class="job-cards">
+            <article class="panel">
+              <span class="job-icon">↗</span>
+              <h3>Find dead links</h3>
+              <p>
+                Check repository, official, and evidence links for every
+                retained record. Review definitive failures separately from
+                uncertain responses.
+              </p>
+              <button data-job="scan-all">
+                Scan all records <span>→</span>
+              </button>
+            </article>
+            <article class="panel">
+              <span class="job-icon">↻</span>
+              <h3>Recheck withheld records</h3>
+              <p>
+                Check suspended and hidden records for recovery. Recovered links
+                are ready for review before reinstatement.
+              </p>
+              <button data-job="scan-suspended">
+                Recheck suspended &amp; hidden <span>→</span>
+              </button>
+            </article>
+            <article class="panel">
+              <span class="job-icon">✓</span>
+              <h3>Validate the catalog</h3>
+              <p>
+                Run catalog integrity checks, availability policy tests, lint,
+                and type checks. Inspect the result in the job history below.
+              </p>
+              <button data-job="validate">Run validation <span>→</span></button>
+            </article>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-top">
+            <div>
+              <p class="eyebrow">RECORD MANAGEMENT</p>
+              <h2>Review &amp; resolve</h2>
+            </div>
+            <span id="record-count" class="muted"></span>
+          </div>
+          <div class="panel records-panel">
+            <div class="filters">
+              <label class="search-label" for="search"
+                ><span class="sr-only">Search records</span
+                ><input
+                  id="search"
+                  type="search"
+                  placeholder="Search name, sponsor, or record ID…" /></label
+              ><label
+                ><span class="sr-only">Filter records</span
+                ><select id="filter">
+                  <option value="all">All records</option>
+                  <option value="dead">With dead links</option>
+                  <option value="uncertain">Uncertain link results</option>
+                  <option value="suspended">Suspended</option>
+                  <option value="hidden">Hidden</option>
+                  <option value="deleted">Deleted</option>
+                  <option value="recovered">Ready to reinstate</option>
+                  <option value="overdue">Editorial review overdue</option>
+                  <option value="published">Published</option>
+                </select></label
+              >
+            </div>
+            <div class="bulk">
+              <strong id="selection-count">0 selected</strong
+              ><button id="clear-selection">Clear</button>
+              <div class="bulk-actions">
+                <button data-action="scan-selected">Recheck</button
+                ><button data-action="suspend">Suspend</button
+                ><button data-action="hide">Hide</button
+                ><button data-action="reinstate">Reinstate</button
+                ><button data-action="delete" class="danger">Delete</button>
+              </div>
+            </div>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      <input
+                        id="select-page"
+                        type="checkbox"
+                        aria-label="Select records on this page"
+                      />
+                    </th>
+                    <th>Record / sponsor</th>
+                    <th>Visibility</th>
+                    <th>Link health</th>
+                    <th>Last checked</th>
+                    <th><span class="sr-only">Details</span></th>
+                  </tr>
+                </thead>
+                <tbody id="records"></tbody>
+              </table>
+            </div>
+            <div class="pagination">
+              <span id="range" class="muted"></span>
+              <div>
+                <button id="previous">← Previous</button
+                ><span id="page-label"></span><button id="next">Next →</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-top">
+            <div>
+              <p class="eyebrow">AUDIT TRAIL</p>
+              <h2>Job history</h2>
+            </div>
+            <button id="publish">Validate &amp; publish current state</button>
+          </div>
+          <div id="jobs" class="panel"></div>
+        </section>
+        <footer>
+          Suspended records keep a direct page with a public reason. Hidden and
+          deleted records are removed from public views. Deleted records remain
+          in the archive for recovery and audit. Password sessions expire after
+          eight hours.
+        </footer>
+      </div>
+    </main>
+    <dialog id="action-dialog">
+      <form id="action-form">
+        <p class="eyebrow">CONFIRM RECORD CHANGE</p>
+        <h2 id="action-title"></h2>
+        <p id="action-description"></p>
+        <ul id="action-records"></ul>
+        <label for="reason"
+          >Reason
+          <span class="muted">(suspension reasons are public)</span></label
+        ><textarea
+          id="reason"
+          rows="3"
+          required
+          minlength="8"
+          maxlength="500"
+          placeholder="Explain why this change is needed…"
+        ></textarea>
+        <div id="delete-confirm" hidden>
+          <label for="delete-word">Type DELETE to confirm</label
+          ><input id="delete-word" autocomplete="off" />
+        </div>
+        <div class="dialog-buttons">
+          <button type="button" id="cancel-action">Cancel</button
+          ><button type="submit" id="confirm-action" class="primary">
+            Confirm &amp; publish
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="detail-dialog">
+      <div class="detail-top">
+        <p class="eyebrow">RECORD HEALTH</p>
+        <button id="close-detail">Close ✕</button>
+      </div>
+      <div id="detail-content"></div>
+    </dialog>
+  </body>
+</html>

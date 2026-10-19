@@ -6,6 +6,7 @@ import {
 } from './availability';
 import { projects } from './software';
 import type { Project } from './types';
+import { administrationRecords } from './administration';
 
 export type ProjectDirectoryReason = {
   code: string;
@@ -22,7 +23,14 @@ export type ProjectDirectoryState = {
 };
 
 export const projectById: ReadonlyMap<string, Project> = new Map(
-  projects.map((project) => [project.id, project]),
+  projects
+    .filter(
+      (project) =>
+        !['hidden', 'deleted'].includes(
+          administrationRecords[project.id]?.status ?? '',
+        ),
+    )
+    .map((project) => [project.id, project]),
 );
 
 export function getProjectDirectoryState(
@@ -49,6 +57,22 @@ export function getProjectDirectoryState(
   }
 
   const availability = getProjectAvailability(project.id);
+  const administration = administrationRecords[project.id];
+  if (administration) {
+    return {
+      status: 'disabled',
+      listed: false,
+      source: 'editorial',
+      statusChangedAt: administration.updatedAt.slice(0, 10),
+      reasons: [
+        {
+          code: `admin-${administration.status}`,
+          message: administration.reason,
+        },
+      ],
+      availability,
+    };
+  }
   const automatedReasons = availability?.reasonCodes.map((code) => ({
     code,
     message: availabilityReasonLabels[code],
@@ -95,16 +119,15 @@ export function getProjectDirectoryState(
       listed: false,
       source: 'automated',
       statusChangedAt: availability.statusChangedAt,
-      reasons:
-        automatedReasons?.length
-          ? automatedReasons
-          : [
-              {
-                code: 'automated-check',
-                message:
-                  'Automated checks determined that this record no longer meets the directory publication requirements.',
-              },
-            ],
+      reasons: automatedReasons?.length
+        ? automatedReasons
+        : [
+            {
+              code: 'automated-check',
+              message:
+                'Automated checks determined that this record no longer meets the directory publication requirements.',
+            },
+          ],
       availability,
     };
   }
