@@ -93,7 +93,7 @@
     ]
   },
   "../app/page.tsx": {
-    "file": "site-assets/page-C3hR2nXh.js",
+    "file": "site-assets/page-CY5WwoTI.js",
     "name": "page",
     "src": "../app/page.tsx",
     "isDynamicEntry": true,
@@ -141,7 +141,7 @@
     ]
   },
   "../components/support-dialog-panel.tsx": {
-    "file": "site-assets/support-dialog-panel-BDFwHOX9.js",
+    "file": "site-assets/support-dialog-panel-DCEqtaAJ.js",
     "name": "support-dialog-panel",
     "src": "../components/support-dialog-panel.tsx",
     "isDynamicEntry": true,
@@ -202,7 +202,7 @@
     ]
   },
   "index.html": {
-    "file": "site-assets/index-Jj8epsue.js",
+    "file": "site-assets/index-TnG62mCn.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -226,7 +226,7 @@
       "../app/contact/page.tsx"
     ],
     "css": [
-      "site-assets/index-e9rxaZG6.css"
+      "site-assets/index-COeOE4__.css"
     ]
   }
 }
