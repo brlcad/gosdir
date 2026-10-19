@@ -1,3 +1,11 @@
+export function BrandWordmark() {
+  return (
+    <>
+      GOS<span className="text-blue">DIR</span>
+    </>
+  );
+}
+
 export function BrandLockup() {
   return (
     <span className="flex items-center gap-3">
@@ -11,7 +19,9 @@ export function BrandLockup() {
         <span className="rounded-[2px] bg-white" />
       </span>
       <span className="leading-none">
-        <span className="block text-lg font-black uppercase tracking-[-0.035em] text-ink">GOSDIR</span>
+        <span className="block text-[29px] font-black uppercase tracking-[-0.048em] text-ink">
+          <BrandWordmark />
+        </span>
         <span className="mt-1 block font-mono text-xs font-semibold uppercase tracking-[0.06em] text-slate sm:hidden">
           Open source directory
         </span>
@@ -26,8 +36,12 @@ export function BrandLockup() {
 export function FooterBrand() {
   return (
     <div>
-      <p className="font-display text-3xl font-black tracking-[-0.05em] text-white">GOSDIR</p>
-      <p className="mt-1 text-sm font-bold text-signal">Government Open Source Directory</p>
+      <p className="font-display text-3xl font-black tracking-[-0.05em] text-white">
+        <BrandWordmark />
+      </p>
+      <p className="mt-1 text-sm font-bold text-signal">
+        Government Open Source Directory
+      </p>
     </div>
   );
 }
