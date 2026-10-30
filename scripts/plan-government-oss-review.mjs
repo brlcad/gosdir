@@ -20,6 +20,7 @@ const stateDirectory = process.env.GOSDIR_LEDGER_STATE_DIR
   ? path.resolve(process.env.GOSDIR_LEDGER_STATE_DIR)
   : path.join(root, '.ledger-state');
 const candidateProjectionPath = path.join(stateDirectory, 'candidates.jsonl');
+const sourceDirectory = path.join(ledger, 'sources');
 const option = (name) => {
   const index = process.argv.indexOf(name);
   return index < 0 ? null : process.argv[index + 1];
@@ -103,6 +104,30 @@ try {
     .split(/\r?\n/)
     .filter(Boolean)
     .map(JSON.parse);
+  const sourceRowsByReference = new Map();
+  const sourceFiles = (await readdir(sourceDirectory))
+    .filter((name) => name.endsWith('.jsonl'))
+    .sort();
+  for (const filename of sourceFiles) {
+    const sourceId = filename.slice(0, -'.jsonl'.length);
+    const rows = (await readFile(path.join(sourceDirectory, filename), 'utf8'))
+      .split(/\r?\n/)
+      .filter(Boolean)
+      .map(JSON.parse);
+    for (const row of rows) {
+      const sourceRowId = String(row.source_row_id);
+      sourceRowsByReference.set(`${sourceId}\0${sourceRowId}`, {
+        source_id: sourceId,
+        source_row_id: sourceRowId,
+        source_record_url: row.source_record_url ?? null,
+        metadata_screen: row.metadata_screen,
+        metadata_screen_reason: row.metadata_screen_reason ?? null,
+        metadata_license: row.metadata_license ?? null,
+        metadata_owner: row.metadata_owner ?? null,
+        retrieved_at_utc: row.retrieved_at_utc ?? null,
+      });
+    }
+  }
   let flaggedSourceUrls = null;
   if (sourceMetadataFlag) {
     const sourceFile = path.join(ledger, 'sources', `${sourceId}.jsonl`);
@@ -142,7 +167,17 @@ try {
     normalized_repository_url: candidate.normalized_repository_url,
     titles: candidate.titles,
     catalog_project_id: candidate.catalog_project_id,
-    source_rows: candidate.source_rows,
+    source_rows: candidate.source_rows.map((reference) => {
+      const sourceRow = sourceRowsByReference.get(
+        `${reference.source_id}\0${reference.source_row_id}`,
+      );
+      if (!sourceRow) {
+        throw new Error(
+          `Missing source row ${reference.source_id}/${reference.source_row_id} for ${candidate.normalized_repository_url}; rebuild the ledger projection`,
+        );
+      }
+      return sourceRow;
+    }),
   }));
   if (exactUrl && batch.length !== 1) {
     throw new Error(

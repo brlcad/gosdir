@@ -395,6 +395,24 @@ const output = [...candidates.values()]
     a.normalized_repository_url.localeCompare(b.normalized_repository_url),
   );
 
+const candidateProjection = output.map((candidate) => ({
+  normalized_repository_url: candidate.normalized_repository_url,
+  titles: candidate.titles,
+  source_rows: candidate.source_rows.map(({ source_id, source_row_id }) => ({
+    source_id,
+    source_row_id,
+  })),
+  metadata_candidate: candidate.metadata_candidate,
+  catalog_project_id: candidate.catalog_project_id,
+  catalog_match_basis: candidate.catalog_match_basis,
+  reviewed_canonical_repository_url:
+    candidate.reviewed_canonical_repository_url,
+  review_status: candidate.review_status,
+  review_file: candidate.review_file,
+  first_observed_at_utc: candidate.first_observed_at_utc,
+  latest_observed_at_utc: candidate.latest_observed_at_utc,
+}));
+
 const decisionCounts = { unreviewed: 0, publishable: 0, hold: 0, reject: 0 };
 for (const candidate of output) decisionCounts[candidate.review_status] += 1;
 const metadataCandidateDecisionCounts = {
@@ -550,7 +568,7 @@ async function writeAtomic(target, contents) {
 
 await writeAtomic(
   candidateProjectionPath,
-  output.map((item) => JSON.stringify(item)).join('\n') + '\n',
+  candidateProjection.map((item) => JSON.stringify(item)).join('\n') + '\n',
 );
 await writeAtomic(
   path.join(ledgerDirectory, 'summary.json'),
