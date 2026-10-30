@@ -502,6 +502,32 @@ import ornlPicasso from './ornl-picasso';
 import ornlRovidh from './ornl-rovidh';
 import ornlRuscal from './ornl-ruscal';
 
+import epaMarineEmissionsTools from './epa-marine-emissions-tools';
+import epaMcsimmod from './epa-mcsimmod';
+import epaMountainlakes from './epa-mountainlakes';
+import epaWntr from './epa-wntr';
+import epaUseeioWidgets from './epa-useeio-widgets';
+import epaUseeior from './epa-useeior';
+import epaVcpy from './epa-vcpy';
+import epaWasteLogisticsTool from './epa-waste-logistics-tool';
+import epaWasteStagingTool from './epa-waste-staging-tool';
+import epaWatersGeoviewer from './epa-waters-geoviewer';
+import epaWebcms from './epa-webcms';
+import epaWmost from './epa-wmost';
+import epaSpmodel from './epa-spmodel';
+import epaSpsurvey from './epa-spsurvey';
+import epaSsn2 from './epa-ssn2';
+import epaStewi from './epa-stewi';
+import epaStateior from './epa-stateior';
+import epaStreamcattools from './epa-streamcattools';
+import epaSupplyChainFactors from './epa-supply-chain-factors';
+import epaTadashiny from './epa-tadashiny';
+import epaTelss from './epa-telss';
+import epaTheManifestGame from './epa-the-manifest-game';
+import epaToxvaldbDcapPrep from './epa-toxvaldb-dcap-prep';
+import epaTots from './epa-tots';
+import epaTreecomparer from './epa-treecomparer';
+
 export const projects: Project[] = [
   uswds,
   loginGov,
@@ -1002,4 +1028,29 @@ export const projects: Project[] = [
   ornlPicasso,
   ornlRovidh,
   ornlRuscal,
+  epaMarineEmissionsTools,
+  epaMcsimmod,
+  epaMountainlakes,
+  epaWntr,
+  epaUseeioWidgets,
+  epaUseeior,
+  epaVcpy,
+  epaWasteLogisticsTool,
+  epaWasteStagingTool,
+  epaWatersGeoviewer,
+  epaWebcms,
+  epaWmost,
+  epaSpmodel,
+  epaSpsurvey,
+  epaSsn2,
+  epaStewi,
+  epaStateior,
+  epaStreamcattools,
+  epaSupplyChainFactors,
+  epaTadashiny,
+  epaTelss,
+  epaTheManifestGame,
+  epaToxvaldbDcapPrep,
+  epaTots,
+  epaTreecomparer,
 ];

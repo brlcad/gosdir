@@ -2050,4 +2050,37 @@ export const agencies: Agency[] = [
     officialUrl: 'https://www.fema.gov/',
     parentAgencyId: 'us-dhs',
   },
+  {
+    id: 'us-epa-ceser',
+    name: 'Center for Environmental Solutions and Emergency Response',
+    abbreviation: 'CESER',
+    geography: 'United States',
+    jurisdiction: 'U.S. federal',
+    type: 'Research center',
+    officialUrl:
+      'https://www.epa.gov/emergency-response-research/equitable-resilience-builder',
+    parentAgencyId: 'us-epa-ord',
+  },
+  {
+    id: 'us-epa-office-water',
+    name: 'Office of Water',
+    abbreviation: 'OW',
+    aliases: ['EPA Office of Water'],
+    geography: 'United States',
+    jurisdiction: 'U.S. federal',
+    type: 'Office',
+    officialUrl: 'https://www.epa.gov/aboutepa/about-office-water',
+    parentAgencyId: 'us-epa',
+  },
+  {
+    id: 'us-epa-ccte',
+    name: 'Center for Computational Toxicology and Exposure',
+    abbreviation: 'CCTE',
+    geography: 'United States',
+    jurisdiction: 'U.S. federal',
+    type: 'Research center',
+    officialUrl:
+      'https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis-clients',
+    parentAgencyId: 'us-epa-ord',
+  },
 ];

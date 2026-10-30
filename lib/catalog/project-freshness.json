@@ -24390,6 +24390,1234 @@
           "httpStatus": 403
         }
       }
+    },
+    "epa-marine-emissions-tools": {
+      "activitySource": "https://github.com/USEPA/Marine_Emissions_Tools",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2022-04-27 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2022-04-27",
+      "status": "historical",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/Marine_Emissions_Tools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/moves/emissions-models-and-other-methods-produce-emission-inventories",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/moves/emissions-models-and-other-methods-produce-emission-inventories",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-mcsimmod": {
+      "activitySource": "https://github.com/USEPA/MCSimMod",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-01-22 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-01-22",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/MCSimMod",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://assessments.epa.gov/risk/document/&deid=364239",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://assessments.epa.gov/risk/document/&deid=364239",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-mountainlakes": {
+      "activitySource": "https://github.com/USEPA/MountainLakes",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2025-04-11 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2025-04-11",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/MountainLakes",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/water-research/national-aquatic-resource-surveys-nars-research",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1016/j.ecolind.2025.113402",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S1470160X25003322"
+        }
+      }
+    },
+    "epa-wntr": {
+      "activitySource": "https://github.com/USEPA/WNTR",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/WNTR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/WNTR/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/1454682",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-useeio-widgets": {
+      "activitySource": "https://github.com/USEPA/useeio-widgets",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-03-27",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/useeio-widgets",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-useeior": {
+      "activitySource": "https://github.com/USEPA/useeior",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-07-28",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/useeior",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-vcpy": {
+      "activitySource": "https://github.com/USEPA/VCPy",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-08-16",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/VCPy",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/cmaq/understanding-emissions-and-criteria-pollutant-formation-volatile-chemical-products-vcps",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://gaftp.epa.gov/Air/nei/2023/doc/TSD/solvents-references.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-waste-logistics-tool": {
+      "activitySource": "https://github.com/USEPA/Waste_Logistics_Tool",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2023-02-17",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/Waste_Logistics_Tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/disaster-debris/tools-and-resources-material-and-waste-management-disasters",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1010UZZ.txt",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-waste-staging-tool": {
+      "activitySource": "https://github.com/USEPA/Waste_Staging_Tool",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-01-30",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/Waste_Staging_Tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/emergency-response-research/biological-response-tools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/emergency-response-research/biological-response-tools",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-waters-geoviewer": {
+      "activitySource": "https://github.com/USEPA/WATERSGeoViewer",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-01-08",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/WATERSGeoViewer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/waterdata/waters-geoviewer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/waterdata/waters-geoviewer",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-webcms": {
+      "activitySource": "https://github.com/USEPA/webcms",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-18",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/webcms",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101FUQK.TXT",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/web-policies-and-procedures/procedure-epa-public-web-snapshots",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-wmost": {
+      "activitySource": "https://github.com/USEPA/WMOST",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-04",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/WMOST",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/hydrowq/wmost",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/hydrowq/wmost",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-spmodel": {
+      "activitySource": "https://github.com/USEPA/spmodel",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-10",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/spmodel",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/spmodel/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/water-research/national-aquatic-resource-surveys-nars-research",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-spsurvey": {
+      "activitySource": "https://github.com/USEPA/spsurvey",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-28",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/spsurvey",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/spsurvey/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/water-research/national-aquatic-resource-surveys-nars-research",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-ssn2": {
+      "activitySource": "https://github.com/USEPA/SSN2",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-11-13",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/SSN2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/SSN2/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://assessments.epa.gov/risk/document/%26deid%3D359460",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-stewi": {
+      "activitySource": "https://github.com/USEPA/standardizedinventories",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-10-20",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/standardizedinventories",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-stateior": {
+      "activitySource": "https://github.com/USEPA/stateior",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-04-21",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/stateior",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/USEPA/stateior",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-streamcattools": {
+      "activitySource": "https://github.com/USEPA/StreamCatTools",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-05",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/StreamCatTools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/StreamCatTools/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://assessments.epa.gov/risk/document/%26deid%3D365281",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-supply-chain-factors": {
+      "activitySource": "https://github.com/USEPA/supply-chain-factors",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-07-15",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/supply-chain-factors",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://doi.org/10.23719/1531143",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-3-by-naics-6"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-tadashiny": {
+      "activitySource": "https://github.com/USEPA/TADAShiny",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/TADAShiny",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://rconnect-public.epa.gov/TADAShiny/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/waterdata/TADA",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-telss": {
+      "activitySource": "https://github.com/USEPA/TELSS",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-10-30",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/TELSS",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/emergency-response-research/drinking-water-tools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://catalog.data.gov/dataset/theoretical-equilibrium-lead-solubility-revisited-open-source-code-and-practical-relations",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-the-manifest-game": {
+      "activitySource": "https://github.com/USEPA/the-manifest-game",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-08-18",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/the-manifest-game",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/the-manifest-game/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/USEPA/the-manifest-game/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-toxvaldb-dcap-prep": {
+      "activitySource": "https://github.com/USEPA/toxvaldb_dcap_prep",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-08-11",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/toxvaldb_dcap_prep",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/USEPA/toxvaldb_dcap_prep",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/USEPA/toxvaldb_dcap_prep/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-tots": {
+      "activitySource": "https://github.com/USEPA/Trade-off_Tool_for_Sampling",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-12-17",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/Trade-off_Tool_for_Sampling",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://tots.epa.gov/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/emergency-response-research/sample-collection",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-treecomparer": {
+      "activitySource": "https://github.com/USEPA/treecompareR",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-04-16",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/treecompareR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/USEPA/treecompareR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.fcsm.gov/assets/files/docs/GASP-2023-program-with-abstracts-2023-06-13.pdf",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://statspolicy.gov/FCSM/"
+        }
+      }
     }
   },
   "carriedForwardProjectIds": [
@@ -24891,6 +26119,31 @@
     "ornl-tdcsophiread",
     "ornl-picasso",
     "ornl-rovidh",
-    "ornl-ruscal"
+    "ornl-ruscal",
+    "epa-marine-emissions-tools",
+    "epa-mcsimmod",
+    "epa-mountainlakes",
+    "epa-wntr",
+    "epa-useeio-widgets",
+    "epa-useeior",
+    "epa-vcpy",
+    "epa-waste-logistics-tool",
+    "epa-waste-staging-tool",
+    "epa-waters-geoviewer",
+    "epa-webcms",
+    "epa-wmost",
+    "epa-spmodel",
+    "epa-spsurvey",
+    "epa-ssn2",
+    "epa-stewi",
+    "epa-stateior",
+    "epa-streamcattools",
+    "epa-supply-chain-factors",
+    "epa-tadashiny",
+    "epa-telss",
+    "epa-the-manifest-game",
+    "epa-toxvaldb-dcap-prep",
+    "epa-tots",
+    "epa-treecomparer"
   ]
 }

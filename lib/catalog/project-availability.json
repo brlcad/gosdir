@@ -11411,6 +11411,598 @@
           "httpStatus": 403
         }
       }
+    },
+    "epa-marine-emissions-tools": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 1,
+      "reasonCodes": [
+        "public-evidence-unreachable"
+      ],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/Marine_Emissions_Tools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/moves/emissions-models-and-other-methods-produce-emission-inventories",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/moves/emissions-models-and-other-methods-produce-emission-inventories",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-mcsimmod": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/MCSimMod",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://assessments.epa.gov/risk/document/&deid=364239",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://assessments.epa.gov/risk/document/&deid=364239",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-mountainlakes": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/MountainLakes",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/water-research/national-aquatic-resource-surveys-nars-research",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1016/j.ecolind.2025.113402",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S1470160X25003322"
+        }
+      }
+    },
+    "epa-wntr": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/WNTR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/WNTR/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/1454682",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-useeio-widgets": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 1,
+      "reasonCodes": [
+        "public-evidence-unreachable"
+      ],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/useeio-widgets",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-useeior": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 1,
+      "reasonCodes": [
+        "public-evidence-unreachable"
+      ],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/useeior",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-vcpy": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/VCPy",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/cmaq/understanding-emissions-and-criteria-pollutant-formation-volatile-chemical-products-vcps",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://gaftp.epa.gov/Air/nei/2023/doc/TSD/solvents-references.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-waste-logistics-tool": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/Waste_Logistics_Tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/disaster-debris/tools-and-resources-material-and-waste-management-disasters",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1010UZZ.txt",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-waste-staging-tool": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 1,
+      "reasonCodes": [
+        "public-evidence-unreachable"
+      ],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/Waste_Staging_Tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/emergency-response-research/biological-response-tools",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/emergency-response-research/biological-response-tools",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-waters-geoviewer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 1,
+      "reasonCodes": [
+        "public-evidence-unreachable"
+      ],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/WATERSGeoViewer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/waterdata/waters-geoviewer",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/waterdata/waters-geoviewer",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-webcms": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/webcms",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101FUQK.TXT",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/web-policies-and-procedures/procedure-epa-public-web-snapshots",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-wmost": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 1,
+      "reasonCodes": [
+        "public-evidence-unreachable"
+      ],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/WMOST",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/hydrowq/wmost",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/hydrowq/wmost",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-spmodel": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/spmodel",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/spmodel/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/water-research/national-aquatic-resource-surveys-nars-research",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-spsurvey": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/spsurvey",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/spsurvey/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/water-research/national-aquatic-resource-surveys-nars-research",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-ssn2": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/SSN2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/SSN2/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://assessments.epa.gov/risk/document/%26deid%3D359460",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-stewi": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 1,
+      "reasonCodes": [
+        "public-evidence-unreachable"
+      ],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/standardizedinventories",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-stateior": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/stateior",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/USEPA/stateior",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-streamcattools": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/StreamCatTools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/StreamCatTools/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://assessments.epa.gov/risk/document/%26deid%3D365281",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-supply-chain-factors": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/supply-chain-factors",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://doi.org/10.23719/1531143",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-3-by-naics-6"
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/land-research/tools-industrial-ecology-modeling-tiem",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-tadashiny": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/TADAShiny",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://rconnect-public.epa.gov/TADAShiny/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/waterdata/TADA",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-telss": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/TELSS",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/emergency-response-research/drinking-water-tools",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://catalog.data.gov/dataset/theoretical-equilibrium-lead-solubility-revisited-open-source-code-and-practical-relations",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-the-manifest-game": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/the-manifest-game",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://usepa.github.io/the-manifest-game/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/USEPA/the-manifest-game/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-toxvaldb-dcap-prep": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/toxvaldb_dcap_prep",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/USEPA/toxvaldb_dcap_prep",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/USEPA/toxvaldb_dcap_prep/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "epa-tots": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/Trade-off_Tool_for_Sampling",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://tots.epa.gov/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.epa.gov/emergency-response-research/sample-collection",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "epa-treecomparer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/treecompareR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/USEPA/treecompareR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.fcsm.gov/assets/files/docs/GASP-2023-program-with-abstracts-2023-06-13.pdf",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://statspolicy.gov/FCSM/"
+        }
+      }
     }
   },
   "carriedForwardProjectIds": [
@@ -11912,6 +12504,31 @@
     "ornl-tdcsophiread",
     "ornl-picasso",
     "ornl-rovidh",
-    "ornl-ruscal"
+    "ornl-ruscal",
+    "epa-marine-emissions-tools",
+    "epa-mcsimmod",
+    "epa-mountainlakes",
+    "epa-wntr",
+    "epa-useeio-widgets",
+    "epa-useeior",
+    "epa-vcpy",
+    "epa-waste-logistics-tool",
+    "epa-waste-staging-tool",
+    "epa-waters-geoviewer",
+    "epa-webcms",
+    "epa-wmost",
+    "epa-spmodel",
+    "epa-spsurvey",
+    "epa-ssn2",
+    "epa-stewi",
+    "epa-stateior",
+    "epa-streamcattools",
+    "epa-supply-chain-factors",
+    "epa-tadashiny",
+    "epa-telss",
+    "epa-the-manifest-game",
+    "epa-toxvaldb-dcap-prep",
+    "epa-tots",
+    "epa-treecomparer"
   ]
 }
