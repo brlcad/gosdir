@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-10-30",
   "years": [
     2022,
     2023,
@@ -4853,7 +4853,7 @@
       "activityBasis": "commits reachable from the current default branch",
       "headOid": "e17a23e337c4e7242534e39e29373470119ffded",
       "lastChangeAt": "2024-10-04",
-      "status": "current",
+      "status": "quiet",
       "annualCommits": [
         {
           "year": 2022,
@@ -5687,7 +5687,7 @@
       "activityBasis": "commits reachable from the current default branch",
       "headOid": "f4a5882c2333af396887e8c2eaac77f3d0436821",
       "lastChangeAt": "2026-04-28",
-      "status": "fresh",
+      "status": "current",
       "annualCommits": [
         {
           "year": 2022,
@@ -7501,7 +7501,7 @@
       "activityBasis": "commits reachable from the current default branch",
       "headOid": "68388ce80d0d3b0285815d1738dfc1f960ad58ba",
       "lastChangeAt": "2024-10-22",
-      "status": "current",
+      "status": "quiet",
       "annualCommits": [
         {
           "year": 2022,
@@ -8188,7 +8188,7 @@
       "activityBasis": "commits reachable from the current default branch",
       "headOid": "3d0db276d2a382c283a96e0dc316d9b50118b919",
       "lastChangeAt": "2026-04-10",
-      "status": "fresh",
+      "status": "current",
       "annualCommits": [
         {
           "year": 2022,
@@ -9811,7 +9811,7 @@
       "activityBasis": "commits reachable from the current default branch",
       "headOid": "10fe5ecaf5e776182c7dc14f7b269fde7029bce6",
       "lastChangeAt": "2026-04-29",
-      "status": "fresh",
+      "status": "current",
       "annualCommits": [
         {
           "year": 2022,
@@ -12364,7 +12364,7 @@
       "activityBasis": "commits reachable from the current default branch",
       "headOid": "3c7d6724cddee38dfb6a06debca732c33a227ed6",
       "lastChangeAt": "2022-10-03",
-      "status": "quiet",
+      "status": "historical",
       "annualCommits": [
         {
           "year": 2022,
@@ -15551,7 +15551,7 @@
       "activityBasis": "commits reachable from the current default branch",
       "headOid": "dd2650d43e1936b15e43923b83981f8cee5ece3b",
       "lastChangeAt": "2026-04-29",
-      "status": "fresh",
+      "status": "current",
       "annualCommits": [
         {
           "year": 2022,
@@ -16433,7 +16433,7 @@
       "activityBasis": "commits reachable from the current default branch",
       "headOid": "a3e9b5a7e69fa992acaf70c659fc975dea542366",
       "lastChangeAt": "2026-04-23",
-      "status": "fresh",
+      "status": "current",
       "annualCommits": [
         {
           "year": 2022,
@@ -17506,6 +17506,4885 @@
           "httpStatus": 200
         }
       }
+    },
+    "lanl-spade": {
+      "activitySource": "https://github.com/lanl-aea/spade",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-29",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-aea/spade",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/161390",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl-aea/spade/blob/main/README.rst",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-tardigrade-examples": {
+      "activitySource": "https://github.com/lanl-aea/tardigrade-examples",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2025-10-20",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-aea/tardigrade-examples",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/150025",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lanl-aea.github.io/Tardigrade-examples/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-turbo-turtle": {
+      "activitySource": "https://github.com/lanl-aea/turbo-turtle",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-aea/turbo-turtle",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/146561",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lanl-aea.github.io/turbo-turtle/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-bling": {
+      "activitySource": "https://github.com/lanl-ansi/BLING",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-24",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-ansi/BLING",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/180559",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/html/2605.21620",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-mathprogincidence": {
+      "activitySource": "https://github.com/lanl-ansi/MathProgIncidence.jl",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-03-06",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-ansi/MathProgIncidence.jl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/105530",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl-ansi/MathProgIncidence.jl/releases/tag/v0.3.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-mathoptai": {
+      "activitySource": "https://github.com/lanl-ansi/MathOptAI.jl",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-27",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-ansi/MathOptAI.jl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/148816",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl-ansi/MathOptAI.jl",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-quantum-applications": {
+      "activitySource": "https://github.com/lanl-ansi/qc-applications",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2025-07-21",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-ansi/qc-applications",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/113774",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/html/2506.08182v2#S1",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-edge-bioinformatics": {
+      "activitySource": "https://github.com/LANL-Bioinformatics/EDGE",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-01",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/LANL-Bioinformatics/EDGE",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/5344",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1093/nar/gkw1027",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkw1027"
+        }
+      }
+    },
+    "lanl-allium": {
+      "activitySource": "https://github.com/lanl/allium",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-01",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/allium",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/180550",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/allium/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ampsuite": {
+      "activitySource": "https://github.com/lanl/AmpSuite",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2025-04-03",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/AmpSuite",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/152503",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://conferences.ctbto.org/event/30/contributions/5766/attachments/3034/5879/O3.1-256_Gammans.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-annomate-microsentryai": {
+      "activitySource": "https://github.com/lanl/annomate-microsentryai-workflow",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/annomate-microsentryai-workflow",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/177118",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://science.osti.gov/-/media/About/pdf/scac/meetings/2026/lab-contributions-to-GM-03-24-2026v2.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-architector": {
+      "activitySource": "https://github.com/lanl/Architector",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2024-02-28",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Architector",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/98303",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1038/s41467-023-38169-2",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nature.com/articles/s41467-023-38169-2?error=cookies_not_supported&code=a3f2774a-971d-442a-8947-84a2783e1580"
+        }
+      }
+    },
+    "lanl-arcs": {
+      "activitySource": "https://github.com/lanl/arcs",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-29",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/arcs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/180510",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2504.20434",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ariadne": {
+      "activitySource": "https://github.com/lanl/ARIADNE",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-17",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ARIADNE",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/187140",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/biblio/1489949",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-arianna-ppl": {
+      "activitySource": "https://github.com/lanl/arianna-ppl",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/arianna-ppl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/154416",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/arianna-ppl/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-artemis-astro": {
+      "activitySource": "https://github.com/lanl/artemis",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-01",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/artemis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/artemis/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1016/j.jcp.2026.115126",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S002199912600478X"
+        }
+      }
+    },
+    "lanl-atccfinder": {
+      "activitySource": "https://github.com/lanl/atccfinder",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2025-12-09",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/atccfinder",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/140100",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://peerj.com/articles/19832/",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-augselfies": {
+      "activitySource": "https://github.com/lanl/augselfies",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-21",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/augselfies",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/173949",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/augselfies/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-binding-prediction": {
+      "activitySource": "https://github.com/lanl/binding_prediction",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2025-10-29",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/binding_prediction",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/161722",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12780130/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-biorad": {
+      "activitySource": "https://github.com/lanl/biorad",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2024-12-20",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/biorad",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/150016",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12462375/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-bngsim": {
+      "activitySource": "https://github.com/lanl/bngsim",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/bngsim",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://bngsim.readthedocs.io/en/latest/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/bngsim/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-bohydra": {
+      "activitySource": "https://github.com/lanl/bohydra",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date returned by the public GitHub REST API during the API-only check; archive flag and five-year commit totals unavailable because of anonymous API limits. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2025-11-06",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/bohydra",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/173993",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/bohydra/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-hippynn": {
+      "activitySource": "https://github.com/lanl/hippynn",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-22",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/hippynn",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/67698",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/hippynn/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-hsi-nerfstudio": {
+      "activitySource": "https://github.com/lanl/hsi-nerfstudio",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-03-10",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/hsi-nerfstudio",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/177032",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2603.05473",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ibex-ribbonseparation": {
+      "activitySource": "https://github.com/lanl/ibex_ribbonseparation",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-09-23",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ibex_ribbonseparation",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/114853",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2302.03089",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-impala": {
+      "activitySource": "https://github.com/lanl/impala",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/impala",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/70106",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/impala-calib/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-infera": {
+      "activitySource": "https://github.com/lanl/infera",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-11-18",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/infera",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/161447",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1145/3731599.3767342",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://dl.acm.org/doi/10.1145/3731599.3767342"
+        }
+      }
+    },
+    "lanl-inverse-cnf": {
+      "activitySource": "https://github.com/lanl/inverse-cnf",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-01-19",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/inverse-cnf",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/174088",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1145/3731599.3767343",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://dl.acm.org/doi/10.1145/3731599.3767343"
+        }
+      }
+    },
+    "lanl-j3d": {
+      "activitySource": "https://github.com/lanl/j3d",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-12-24",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/j3d",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/163112",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://internationalmeshingroundtable.com/imr33/program/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lost-ocr": {
+      "activitySource": "https://github.com/lanl/lost-ocr",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-08-27",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lost-ocr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/171746",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2505.05666",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lunus": {
+      "activitySource": "https://github.com/lanl/lunus",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lunus",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/74945",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5562295/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lvportdriver": {
+      "activitySource": "https://github.com/lanl/lvportdriver",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2023-11-30",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lvportdriver",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/59459",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://indico.in2p3.fr/event/37441/contributions/171992/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-matar": {
+      "activitySource": "https://github.com/lanl/matar",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-24",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/matar",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/MATAR/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/1807845",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-metconsin": {
+      "activitySource": "https://github.com/lanl/metconsin",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-06-25",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/metconsin",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://regionalbiomassresourcehub.inl.gov/capability/metconsin/",
+          "status": "auth-required",
+          "httpStatus": 403
+        },
+        "provenance": {
+          "url": "https://regionalbiomassresourcehub.inl.gov/capability/metconsin/",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-mf-lbm": {
+      "activitySource": "https://github.com/lanl/mf-lbm",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2023-07-25",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/mf-lbm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/60482",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025JB031392",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-milk": {
+      "activitySource": "https://github.com/lanl/milk",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-10-14",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/milk",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/121113",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://journals.iucr.org/j/issues/2023/04/00/nb5355/nb5355.pdf",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-minervachem": {
+      "activitySource": "https://github.com/lanl/minervachem",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-27",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/minervachem",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/126230",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pubs.rsc.org/en/content/articlehtml/2024/dd/d4dd00089g",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-kessel": {
+      "activitySource": "https://github.com/lanl/kessel",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-30",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/kessel",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/kessel",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://appliedcomputerscienceseries.lanl.gov/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lafa": {
+      "activitySource": "https://github.com/lanl/lafa",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-01-21",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lafa",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/lafa",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/lafa/releases/tag/v1.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lambast": {
+      "activitySource": "https://github.com/lanl/lambast",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lambast",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/lambast",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/lambast/releases/tag/0.1.3",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-latte-traveltime": {
+      "activitySource": "https://github.com/lanl/latte_traveltime",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-30",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/latte_traveltime",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/latte_traveltime",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://academic.oup.com/gji/article/241/2/1275/8046728",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-ldrd-virus-work": {
+      "activitySource": "https://github.com/lanl/ldrd_virus_work",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-30",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ldrd_virus_work",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/183664",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/ldrd_virus_work/releases/tag/v0.1.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-libquo": {
+      "activitySource": "https://github.com/lanl/libquo",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-28",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/libquo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/libquo/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lanl.github.io/libquo/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-nomad": {
+      "activitySource": "https://github.com/lanl/nomad",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-29",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/nomad",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/nomad/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/nomad/releases/tag/v0.2.1",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-nubhlight": {
+      "activitySource": "https://github.com/lanl/nubhlight",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-10",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/nubhlight",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/nubhlight",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://academic.oup.com/mnras/article/541/4/3184/8203294",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-openfwi": {
+      "activitySource": "https://github.com/lanl/OpenFWI",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-04-07",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/OpenFWI",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://openfwi-lanl.github.io/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/27d3ef263c7cb8d542c4f9815a49b69b-Supplemental-Datasets_and_Benchmarks.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-owl": {
+      "activitySource": "https://github.com/lanl/owl",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-12",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/owl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/owl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/owl/releases/tag/v1.4.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-panhandle": {
+      "activitySource": "https://github.com/lanl/panhandle",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-09",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/panhandle",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/panhandle",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/panhandle/releases/tag/v1.0.23",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pas": {
+      "activitySource": "https://github.com/lanl/pas",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-02-25",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pas",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/pas",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hoang_PAS_Prelim_Attention_Score_for_Detecting_Object_Hallucinations_in_Large_CVPR_2026_paper.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pfdd-v2": {
+      "activitySource": "https://github.com/lanl/phase-field-dislocation-dynamics-pfdd-2.x",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/phase-field-dislocation-dynamics-pfdd-2.x",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://doi.org/10.11578/dc.20231117.5",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.osti.gov/doecode/biblio/116110"
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/116110",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pleiades": {
+      "activitySource": "https://github.com/lanl/pleiades",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-31",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pleiades",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pleiades-sammy.readthedocs.io/en/latest/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.nature.com/articles/s41598-025-96789-8",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nature.com/articles/s41598-025-96789-8?error=cookies_not_supported&code=0754e5f5-508f-48c5-84b1-f8a568ee9f69"
+        }
+      }
+    },
+    "lanl-osmosis": {
+      "activitySource": "https://github.com/lanl/pressure-osmosis",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-11-24",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pressure-osmosis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/pressure-osmosis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1088/1361-6501/ad7486",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/?ssa=4fde9b29-da6a-4181-a340-ba0c00678d05&ssb=29916270927&ssc=https%3A%2F%2Fiopscience.iop.org%2Farticle%2F10.1088%2F1361-6501%2Fad7486&ssi=9463bc5a-cnvj-482b-b465-80aa8529a4e3&ssk=botmanager_support@radware.com&ssm=09893534773804115107528121162382&ssn=cc737da385de36510e5acc92963ecd5515e639500b46-f451-4894-99eeab&sso=cd993b56-46ac4b980f6ecfccddc845a7f9db641b0df926acfa0c697f&ssp=18027210511792126560179217679083178&ssq=80872474406706345573544067635943254585812&ssr=MjA0LjEwOS41OC4xNjI=&sst=GOSDIR-evidence-reviewer/1.0%20(+https://gosdir.com/methodology/)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzOTUwMGI0Ni1mNDUxLTQ4OTQtOWI1Ni00NmFjNGI5ODBmNmUxLTE3OTIxNDQwNjcyODEwLTAwNTA5N2MwNThlMGRiYzQ1YmMxMCIsInJkIjoiaW9wLm9yZyIsInV6bXgiOiI3ZmMwMDA3OTFiNjQ1OS02ZDgzLTQ0ZTYtODkyOC1jZjhlZWUyOWE4OWIxLTE3OTIxNDQwNjcyODEwLTAwOWU2ZjUyNTVjODcxNTA0Y2IxMCJ9"
+        }
+      }
+    },
+    "lanl-pybnf": {
+      "activitySource": "https://github.com/lanl/PyBNF",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403 during the API-only freshness check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/PyBNF",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/PyBNF/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10060707/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pycp-apr": {
+      "activitySource": "https://github.com/lanl/pyCP_APR",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403 during the API-only freshness check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pyCP_APR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/pyCP_APR/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://tensors.lanl.gov/software/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pydnmfk": {
+      "activitySource": "https://github.com/lanl/pyDNMFk",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403 during the API-only freshness check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pyDNMFk",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://tensors.lanl.gov/software/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1007/s11227-023-05587-4",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://link.springer.com/article/10.1007/s11227-023-05587-4?error=cookies_not_supported&code=f90db306-5e9e-488a-a179-cb9310155660"
+        }
+      }
+    },
+    "lanl-pydntnk": {
+      "activitySource": "https://github.com/lanl/pyDNTNK",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403 during the API-only freshness check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pyDNTNK",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://tensors.lanl.gov/software/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.5281/zenodo.5004490",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://zenodo.org/records/5004490"
+        }
+      }
+    },
+    "lanl-pymplot": {
+      "activitySource": "https://github.com/lanl/pymplot",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-18",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pymplot",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/pymplot",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://academic.oup.com/gji/article/241/2/1275/8046728",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-pyptkinetics": {
+      "activitySource": "https://github.com/lanl/PyPTkinetics",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-11",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/PyPTkinetics",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/PyPTkinetics",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0749641925003377",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-pyseqm": {
+      "activitySource": "https://github.com/lanl/PYSEQM",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-12",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/PYSEQM",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/PYSEQM/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1021/acs.jctc.5c00980",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://pubs.acs.org/doi/10.1021/acs.jctc.5c00980"
+        }
+      }
+    },
+    "lanl-pysimfrac": {
+      "activitySource": "https://github.com/lanl/pySimFrac",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-31",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pySimFrac",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/pySimFrac/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1016/j.cageo.2024.105665",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S0098300424001481"
+        }
+      }
+    },
+    "lanl-qmd-progress": {
+      "activitySource": "https://github.com/lanl/qmd-progress",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-27",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/qmd-progress",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://qmd-progress.readthedocs.io/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://qmd-progress.readthedocs.io/en/latest/"
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/qmd-progress/releases/tag/v1.3.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-quantum-volume-in-practice": {
+      "activitySource": "https://github.com/lanl/Quantum-Volume-in-Practice",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-03-18",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Quantum-Volume-in-Practice",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Quantum-Volume-in-Practice",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1109/TQE.2022.3184764",
+          "status": "redirected",
+          "httpStatus": 202,
+          "finalUrl": "https://ieeexplore.ieee.org/document/9805433/"
+        }
+      }
+    },
+    "lanl-rgm": {
+      "activitySource": "https://github.com/lanl/rgm",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/rgm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/rgm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0098300426000300",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-ring-pull-strain-analysis": {
+      "activitySource": "https://github.com/lanl/RingPullStrainAnalysis",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-03-21",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/RingPullStrainAnalysis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/RingPullStrainAnalysis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/2998228",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-sedacs": {
+      "activitySource": "https://github.com/lanl/sedacs",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-30",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/sedacs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/sedacs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2606.03140",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-seer": {
+      "activitySource": "https://github.com/lanl/Seer",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2021-11-23",
+      "status": "historical",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Seer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Seer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://laro.lanl.gov/esploro/outputs/conferenceProceeding/Lightweight-Interface-for-In-Situ-Analysis/9916458605003761",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-singularity-eos": {
+      "activitySource": "https://github.com/lanl/singularity-eos",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/singularity-eos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/singularity-eos/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://joss.theoj.org/papers/10.21105/joss.06805",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-singularity-opac": {
+      "activitySource": "https://github.com/lanl/singularity-opac",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-28",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/singularity-opac",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/singularity-opac",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/parthenon-hpc-lab/phoebus/blob/main/.gitmodules",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-sources4d": {
+      "activitySource": "https://github.com/lanl/SOURCES4D",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-06-25",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/SOURCES4D",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/SOURCES4D",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/2342042",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-sparse-bias": {
+      "activitySource": "https://github.com/lanl/sparse_bias",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-20",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/sparse_bias",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/167453",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://conferences.lbl.gov/event/1816/contributions/10066/attachments/5514/5499/WANDA_AIACHNE_LA-UR-25-21304.pdf",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-spiking-backprop": {
+      "activitySource": "https://github.com/lanl/spikingBackprop",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-11-14",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/spikingBackprop",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/74250",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.nature.com/articles/s41467-024-53827-9",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nature.com/articles/s41467-024-53827-9?error=cookies_not_supported&code=19fa96ce-edf7-4b7e-8691-1b2f87cf9cb3"
+        }
+      }
+    },
+    "lanl-splitml": {
+      "activitySource": "https://github.com/lanl/SplitML",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-11-13",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/SplitML",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/76068",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.5281/zenodo.7195633",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://zenodo.org/records/7195634"
+        }
+      }
+    },
+    "lanl-spus": {
+      "activitySource": "https://github.com/lanl/SPUS-Small-PDE-U-net-Solver",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-28",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/SPUS-Small-PDE-U-net-Solver",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/180606",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://huggingface.co/siddik-lanl/spus-pde-unet-36m",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ssys": {
+      "activitySource": "https://github.com/lanl/ssys",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-17",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ssys",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/186708",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2607.05607",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-supernu": {
+      "activitySource": "https://github.com/lanl/SuperNu",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-11-20",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/SuperNu",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/121098",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2604.04362",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-t-elf": {
+      "activitySource": "https://github.com/lanl/T-ELF",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-10-08",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/T-ELF",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/127327",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lanl.github.io/T-ELF/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-tda-adversarial-detection": {
+      "activitySource": "https://github.com/lanl/tda-adversarial-detection",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-12-01",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/tda-adversarial-detection",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/171703",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2501.18006",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-thunderboltz": {
+      "activitySource": "https://github.com/lanl/ThunderBoltz",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-24",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ThunderBoltz",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://thunderboltz.readthedocs.io/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://thunderboltz.readthedocs.io/en/latest/"
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1088/1361-6595/ad6fcc",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/?ssa=f9ebf0eb-e2fa-4b1b-b703-78fc13901f08&ssb=82285224084&ssc=https%3A%2F%2Fiopscience.iop.org%2Farticle%2F10.1088%2F1361-6595%2Fad6fcc&ssi=f363f470-cnvj-41b5-a4b7-242f42f40acb&ssk=botmanager_support@radware.com&ssm=70157740752619605106984184238518&ssn=a1beeaa58c99fd2dda7227057931c4508a2a5e2044da-15d0-407e-b0c434&sso=18c8c13d-4dc24ff72ddaa6800e32c319edfdc63cb5d3f67c19bc27b0&ssp=56476825781792160477179218320877132&ssq=02766984767070875471747670996133730873576&ssr=MjA0LjEwOS41OC4xNjI=&sst=GOSDIR-evidence-reviewer/1.0%20(+https://gosdir.com/methodology/)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwNzVlOWVjNmItYjliZi00N2I5LWIxY2ItZjcyNDAxY2EzM2QyMS0xNzkyMTQ3NjcwNDMzMC0wMDlkNTQxMjMwMWY3NDE3MzQ2MTAiLCJyZCI6ImlvcC5vcmciLCJfX3V6bWYiOiI3ZjkwMDA1ZTIwNDRkYS0xNWQwLTQwN2UtYjEzZC00ZGMyNGZmNzJkZGExLTE3OTIxNDc2NzA0MzMwLTAwNWE2NThjZGZiNmNkNzhkNzYxMCJ9"
+        }
+      }
+    },
+    "lanl-tires": {
+      "activitySource": "https://github.com/lanl/tires",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-10",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/tires",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/tires/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/tires/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-transform-your-world": {
+      "activitySource": "https://github.com/lanl/Transform-Your-World",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-09",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Transform-Your-World",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Transform-Your-World",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/Transform-Your-World/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-trees": {
+      "activitySource": "https://github.com/lanl/Trees",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Trees",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Trees",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/georgewoolsey/cloud2trees/blob/main/README.Rmd",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ursa": {
+      "activitySource": "https://github.com/lanl/ursa",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ursa",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/ursa/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2506.22653",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-vpic-kokkos": {
+      "activitySource": "https://github.com/lanl/vpic-kokkos",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/vpic-kokkos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/vpic-kokkos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2102.13133",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-waves": {
+      "activitySource": "https://github.com/lanl-aea/waves",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-03-11",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-aea/waves",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl-aea/waves",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/2999887",
+          "status": "rate-limited",
+          "httpStatus": 429
+        }
+      }
+    },
+    "lanl-yoke": {
+      "activitySource": "https://github.com/lanl/Yoke",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-21",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Yoke",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Yoke",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/Yoke/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-zmodel-kokkos": {
+      "activitySource": "https://github.com/lanl/zmodel-kokkos",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-05-01",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/zmodel-kokkos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/156182",
+          "status": "error",
+          "errorCode": "request-timeout"
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/156182",
+          "status": "error",
+          "errorCode": "request-timeout"
+        }
+      }
+    },
+    "lanl-pselib": {
+      "activitySource": "https://github.com/Robbybp/pselib",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-04",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/Robbybp/pselib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/Robbybp/pselib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/127379",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-cov2-genomicgraphtheory-pca": {
+      "activitySource": "https://github.com/ruianke/CoV2-GenomicGraphTheory-PCA",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ruianke/CoV2-GenomicGraphTheory-PCA",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ruianke/CoV2-GenomicGraphTheory-PCA",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1101/2025.02.07.25321892",
+          "status": "error",
+          "errorCode": "invalid-public-url"
+        }
+      }
+    },
+    "lanl-covtransformer": {
+      "activitySource": "https://github.com/ruianke/CoVTransformer",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-01-31",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ruianke/CoVTransformer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ruianke/CoVTransformer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11631054/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-bionetgen": {
+      "activitySource": "https://github.com/RuleWorld/bionetgen",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-22",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/RuleWorld/bionetgen",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://bionetgen.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27402907/",
+          "status": "ok",
+          "httpStatus": 203
+        }
+      }
     }
-  }
+  },
+  "carriedForwardProjectIds": [
+    "uswds",
+    "login-gov",
+    "cloud-gov",
+    "code-gov",
+    "oscal",
+    "openmdao",
+    "energyplus",
+    "helix",
+    "accert",
+    "wec-grid",
+    "wmpy-power",
+    "vets-api",
+    "code-mil",
+    "ca-design-system",
+    "mayflower",
+    "govuk-design-system",
+    "govuk-notify",
+    "x-road",
+    "formsg",
+    "openfisca",
+    "chatmd",
+    "ganttproject",
+    "webmapp-venezia",
+    "decidim",
+    "gc-notify",
+    "brl-cad",
+    "ghidra",
+    "selinux",
+    "atak-civ",
+    "hirs",
+    "paccor",
+    "hootenanny",
+    "mage",
+    "sarpy",
+    "nga-geopackage",
+    "apache-accumulo",
+    "apache-nifi",
+    "grass-gis",
+    "paraview",
+    "open-mct",
+    "f-prime",
+    "moose",
+    "openvsp",
+    "cfs",
+    "fire-dynamics-simulator",
+    "epa-swmm",
+    "cmaq",
+    "modflow-6",
+    "federal-audit-clearinghouse",
+    "federal-website-index",
+    "go-gov-sg",
+    "mockpass",
+    "web-experience-toolkit",
+    "assemblyline",
+    "taipei-city-dashboard",
+    "leos",
+    "digital-signature-service",
+    "govuk-prototype-kit",
+    "kadas-albireo",
+    "la-suite-docs",
+    "cliente-afirma",
+    "cyberchef",
+    "onyxia",
+    "nl-wallet",
+    "quality-time",
+    "cset",
+    "scubagear",
+    "openlegislation",
+    "statecu",
+    "statedmi",
+    "statemod",
+    "tstool",
+    "ctx-hazard-api",
+    "digital-analytics-program",
+    "react-dsfr",
+    "i14y",
+    "vitam",
+    "dashlord",
+    "swiyu-issuer",
+    "accessible-autocomplete",
+    "demarches-simplifiees",
+    "register-trainee-teachers",
+    "sites-conformes",
+    "ons-design-system",
+    "checkv",
+    "hardware-control",
+    "swiss-federal-map-viewer",
+    "swiss-geodata-stac-api",
+    "agridata",
+    "fire",
+    "gftl",
+    "scales",
+    "upcxx",
+    "shine",
+    "warp",
+    "oereb-viewer",
+    "java-pathfinder",
+    "hgdl",
+    "swiss-oss-catalog",
+    "kann-ich-bohren",
+    "kssolv",
+    "oco2-retrieval",
+    "trustbroker-swiss",
+    "swissgeol-assets",
+    "klartextzh",
+    "amsterdam-design-system",
+    "dutch-api-register-api",
+    "dutch-oss-register-api",
+    "abacus-kiesraad",
+    "autoct",
+    "invulhulpen",
+    "logboek-dataverwerkingen-jvm",
+    "gpcam",
+    "fvgp",
+    "abr-geocoder",
+    "dads-design-tokens",
+    "pflotran",
+    "signalen",
+    "jp-name-matching-model",
+    "harunobu",
+    "don-checker",
+    "mojxml2geojson",
+    "oas-generator",
+    "repo-docs-generator",
+    "img-annotation-pipeline",
+    "django-magicauth",
+    "recommandations-collaboratives",
+    "catala",
+    "esup-pod",
+    "jgi-genesearch",
+    "synbioqc-pbj",
+    "mbin-docker",
+    "checkfirst",
+    "postman-sg",
+    "publicodes",
+    "archifiltre-docs",
+    "shinygouv",
+    "genespace",
+    "bigslice",
+    "spacerextractor",
+    "gepnet",
+    "inrae-dev-cas",
+    "inrae-indicators",
+    "inrae-sava",
+    "rdv-service-public",
+    "opr-paas",
+    "omgevingsbeleid-frontend",
+    "decoupage-administratif",
+    "dfir-orc",
+    "acoustic-impulse-counter",
+    "powersheds",
+    "grna-seqret",
+    "hp-flex-mpc",
+    "alaska-landbird-trends",
+    "la-suite-drive",
+    "codes-postaux",
+    "mes-adresses",
+    "genomeface",
+    "brant-age-ratio-model",
+    "climextremes",
+    "walrus-haulout-cartography",
+    "eelgrass-biomass-model",
+    "geochemical-database-tools",
+    "pygarden",
+    "asyncvol",
+    "etabli",
+    "cdata",
+    "comparia",
+    "nppsd-viz",
+    "boreal-bird-density",
+    "schema-data-gouv",
+    "esup-sgc",
+    "esup-signature",
+    "opengatellm",
+    "qfasar",
+    "sea-otter-survey-viz",
+    "origen-library-manager",
+    "slice",
+    "drtsans",
+    "sentinel-imagery-downloader",
+    "track-segmentation",
+    "point-count-phenology-simulation",
+    "eelgrass-power-analysis",
+    "space-time-point-process-models",
+    "thinned-point-process-models",
+    "geotrek-admin",
+    "xan",
+    "sdgital2030-output",
+    "whitehall-publisher",
+    "gmic-core",
+    "gov-scot-publishing",
+    "publiccode-editor",
+    "publiccode-validator-api",
+    "developers-italia-api",
+    "publiccode-crawler",
+    "publiccode-parser-go",
+    "pat",
+    "rndt-metadata-catalogue",
+    "rndt-geodcat-ap-api",
+    "rndt-geoviewer",
+    "rndt-metadata-converter",
+    "altinn-studio",
+    "accessmonitor",
+    "accessmonitor-extension",
+    "govuk-pay",
+    "digirhythm",
+    "ate-api",
+    "ate-frontend",
+    "5gnrad",
+    "triact",
+    "update-your-capital-schemes",
+    "munich-ataf",
+    "munich-zms",
+    "tea-platform",
+    "jeap-archrepo",
+    "jeap-audit",
+    "jeap-business-process-test",
+    "autoemulate",
+    "clevercsv",
+    "cycless-dataset-code",
+    "oaw-tracker",
+    "deepsensor",
+    "graph-attention-replanner",
+    "fridge",
+    "aalm-v3",
+    "air-sensor-data-unifier",
+    "air-sensor-network-analysis-tool",
+    "swissgeol-boreholes",
+    "swissgeol-ocr",
+    "swissgeol-viewer",
+    "aquamet-bio",
+    "aquamet-nwca",
+    "sar-vessel-detection-fpga",
+    "scivision",
+    "tea-techniques",
+    "swiyu-did-resolver",
+    "swiyu-did-toolbox",
+    "swiyu-sandbox-wallet",
+    "swiyu-verifier",
+    "visualize",
+    "loom-swiss-armed-forces",
+    "attila2",
+    "avert",
+    "bis",
+    "synthetic-population-catalyst",
+    "jeap-cli",
+    "jeap-crypto",
+    "jeap-db-schema-publisher",
+    "jeap-deploymentlog-service",
+    "jeap-error-handling",
+    "e-petitions",
+    "bmds",
+    "gds-api-adapters",
+    "gds-sso",
+    "epa-eia-power-sector-crosswalk",
+    "campd-facility-map",
+    "govspeak",
+    "govspeak-preview",
+    "govuk-chat",
+    "hmrc-manuals-api",
+    "manuals-publisher",
+    "link-checker-api",
+    "govuk-notify-dotnet-client",
+    "govuk-notify-java-client",
+    "govuk-notify-node-client",
+    "govuk-notify-php-client",
+    "cgem",
+    "chlorine-breakpoint-curve-simulator",
+    "govuk-docker",
+    "plausi",
+    "govuk-mirror",
+    "govuk-knowledge-graph",
+    "oblique",
+    "swiss-federal-design-system",
+    "chvote-offline-administration-v1",
+    "govuk-notify-python-client",
+    "govuk-notify-ruby-client",
+    "optic14n",
+    "paste-html-to-govspeak",
+    "places-manager",
+    "plek",
+    "public-asset-checker",
+    "govuk-publisher",
+    "publishing-api",
+    "rack-logstasher",
+    "rails-translation-manager",
+    "govuk-release",
+    "govuk-router",
+    "rubocop-govuk",
+    "govuk-search-admin",
+    "govuk-search-api",
+    "audiominer",
+    "opendesk",
+    "masterportal",
+    "vecto",
+    "koha",
+    "localgov-drupal",
+    "open-government-community-builder",
+    "postgresql",
+    "auto-nse",
+    "auto-refl",
+    "bpc-monitor",
+    "savetree",
+    "skyglow-estimation-toolbox",
+    "vocal-calipso",
+    "onearth",
+    "worldview",
+    "flightview",
+    "accessmonitor-rulesets",
+    "autenticacao-gov",
+    "ntrtsim",
+    "abaverify",
+    "apod-api",
+    "aprilnav",
+    "bingo",
+    "atom-archives",
+    "ccdd",
+    "cfe",
+    "cfs-cfdp",
+    "my-monitor",
+    "pt-accessibility-observatory",
+    "cfl3d",
+    "nasa-channel-emulator",
+    "cmr-opensearch",
+    "ats-milano-ppc",
+    "docsuite-pa",
+    "nasa-cmr",
+    "nasa-davetools",
+    "nasa-delta",
+    "nasa-cfs-file-manager",
+    "nasa-cfs-limit-checker",
+    "nasa-kodiak",
+    "nasa-lager",
+    "nasa-legacy-mars-gcm",
+    "nasa-guam",
+    "nasa-cloud-browse",
+    "nasa-fcx",
+    "nasa-pylot",
+    "nasa-giant",
+    "nasa-gunns",
+    "nasa-kepler-dr25-robovetter",
+    "nasa-keplerports",
+    "nasa-knife",
+    "nasa-earthdata-search",
+    "nasa-earthdata-varinfo",
+    "nasa-edsc-echoforms",
+    "nasa-edsc-timeline",
+    "it-montesilvano-govpay-interaction-layer",
+    "it-montesilvano-valori-venali",
+    "it-bari-sgvp",
+    "it-bari-sit",
+    "it-genova-emergenze-pcge",
+    "it-genova-fascicolo-del-cittadino",
+    "it-genova-nova",
+    "camicroscope",
+    "cboard",
+    "ceph",
+    "compdam-dgd",
+    "cloudcompare",
+    "lanl-spade",
+    "lanl-tardigrade-examples",
+    "lanl-turbo-turtle",
+    "lanl-bling",
+    "lanl-mathprogincidence",
+    "lanl-mathoptai",
+    "lanl-quantum-applications",
+    "lanl-edge-bioinformatics",
+    "lanl-allium",
+    "lanl-ampsuite",
+    "lanl-annomate-microsentryai",
+    "lanl-architector",
+    "lanl-arcs",
+    "lanl-ariadne",
+    "lanl-arianna-ppl",
+    "lanl-artemis-astro",
+    "lanl-atccfinder",
+    "lanl-augselfies",
+    "lanl-binding-prediction",
+    "lanl-biorad",
+    "lanl-bngsim",
+    "lanl-bohydra",
+    "lanl-hippynn",
+    "lanl-hsi-nerfstudio",
+    "lanl-ibex-ribbonseparation",
+    "lanl-impala",
+    "lanl-infera",
+    "lanl-inverse-cnf",
+    "lanl-j3d",
+    "lanl-lost-ocr",
+    "lanl-lunus",
+    "lanl-lvportdriver",
+    "lanl-matar",
+    "lanl-metconsin",
+    "lanl-mf-lbm",
+    "lanl-milk",
+    "lanl-minervachem",
+    "lanl-kessel",
+    "lanl-lafa",
+    "lanl-lambast",
+    "lanl-latte-traveltime",
+    "lanl-ldrd-virus-work",
+    "lanl-libquo",
+    "lanl-nomad",
+    "lanl-nubhlight",
+    "lanl-openfwi",
+    "lanl-owl",
+    "lanl-panhandle",
+    "lanl-pas",
+    "lanl-pfdd-v2",
+    "lanl-pleiades",
+    "lanl-osmosis",
+    "lanl-pybnf",
+    "lanl-pycp-apr",
+    "lanl-pydnmfk",
+    "lanl-pydntnk",
+    "lanl-pymplot",
+    "lanl-pyptkinetics",
+    "lanl-pyseqm",
+    "lanl-pysimfrac",
+    "lanl-qmd-progress",
+    "lanl-quantum-volume-in-practice",
+    "lanl-rgm",
+    "lanl-ring-pull-strain-analysis",
+    "lanl-sedacs",
+    "lanl-seer",
+    "lanl-singularity-eos",
+    "lanl-singularity-opac",
+    "lanl-sources4d",
+    "lanl-sparse-bias",
+    "lanl-spiking-backprop",
+    "lanl-splitml",
+    "lanl-spus",
+    "lanl-ssys",
+    "lanl-supernu",
+    "lanl-t-elf",
+    "lanl-tda-adversarial-detection",
+    "lanl-thunderboltz",
+    "lanl-tires",
+    "lanl-transform-your-world",
+    "lanl-trees",
+    "lanl-ursa",
+    "lanl-vpic-kokkos",
+    "lanl-waves",
+    "lanl-yoke",
+    "lanl-zmodel-kokkos",
+    "lanl-pselib",
+    "lanl-cov2-genomicgraphtheory-pca",
+    "lanl-covtransformer",
+    "lanl-bionetgen"
+  ]
 }

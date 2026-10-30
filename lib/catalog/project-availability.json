@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-10-30",
   "projects": {
     "uswds": {
       "status": "enabled",
@@ -8167,6 +8167,2545 @@
           "httpStatus": 200
         }
       }
+    },
+    "lanl-spade": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-aea/spade",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/161390",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl-aea/spade/blob/main/README.rst",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-tardigrade-examples": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-aea/tardigrade-examples",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/150025",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lanl-aea.github.io/Tardigrade-examples/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-turbo-turtle": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-aea/turbo-turtle",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/146561",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lanl-aea.github.io/turbo-turtle/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-bling": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-ansi/BLING",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/180559",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/html/2605.21620",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-mathprogincidence": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-ansi/MathProgIncidence.jl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/105530",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl-ansi/MathProgIncidence.jl/releases/tag/v0.3.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-mathoptai": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-ansi/MathOptAI.jl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/148816",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl-ansi/MathOptAI.jl",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-quantum-applications": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-ansi/qc-applications",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/113774",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/html/2506.08182v2#S1",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-edge-bioinformatics": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/LANL-Bioinformatics/EDGE",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/5344",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1093/nar/gkw1027",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkw1027"
+        }
+      }
+    },
+    "lanl-allium": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/allium",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/180550",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/allium/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ampsuite": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/AmpSuite",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/152503",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://conferences.ctbto.org/event/30/contributions/5766/attachments/3034/5879/O3.1-256_Gammans.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-annomate-microsentryai": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/annomate-microsentryai-workflow",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/177118",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://science.osti.gov/-/media/About/pdf/scac/meetings/2026/lab-contributions-to-GM-03-24-2026v2.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-architector": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Architector",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/98303",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1038/s41467-023-38169-2",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nature.com/articles/s41467-023-38169-2?error=cookies_not_supported&code=c236c32b-0e3e-422f-b261-3813338e35b9"
+        }
+      }
+    },
+    "lanl-arcs": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/arcs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/180510",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2504.20434",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ariadne": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ARIADNE",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/187140",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/biblio/1489949",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-arianna-ppl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/arianna-ppl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/154416",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/arianna-ppl/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-artemis-astro": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/artemis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/artemis/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1016/j.jcp.2026.115126",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S002199912600478X"
+        }
+      }
+    },
+    "lanl-atccfinder": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/atccfinder",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/140100",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://peerj.com/articles/19832/",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-augselfies": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/augselfies",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/173949",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/augselfies/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-binding-prediction": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/binding_prediction",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/161722",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12780130/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-biorad": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/biorad",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/150016",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12462375/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-bngsim": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/bngsim",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://bngsim.readthedocs.io/en/latest/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/bngsim/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-bohydra": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/bohydra",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/173993",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/bohydra/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-hippynn": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/hippynn",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/67698",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/hippynn/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-hsi-nerfstudio": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/hsi-nerfstudio",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/177032",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2603.05473",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ibex-ribbonseparation": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ibex_ribbonseparation",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/114853",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2302.03089",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-impala": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/impala",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/70106",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/impala-calib/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-infera": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/infera",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/161447",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1145/3731599.3767342",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://dl.acm.org/doi/10.1145/3731599.3767342"
+        }
+      }
+    },
+    "lanl-inverse-cnf": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/inverse-cnf",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/174088",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1145/3731599.3767343",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://dl.acm.org/doi/10.1145/3731599.3767343"
+        }
+      }
+    },
+    "lanl-j3d": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/j3d",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/163112",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://internationalmeshingroundtable.com/imr33/program/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lost-ocr": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lost-ocr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/171746",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2505.05666",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lunus": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lunus",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/74945",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5562295/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lvportdriver": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lvportdriver",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/59459",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://indico.in2p3.fr/event/37441/contributions/171992/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-matar": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/matar",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/MATAR/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/1807845",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-metconsin": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/metconsin",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://regionalbiomassresourcehub.inl.gov/capability/metconsin/",
+          "status": "auth-required",
+          "httpStatus": 403
+        },
+        "provenance": {
+          "url": "https://regionalbiomassresourcehub.inl.gov/capability/metconsin/",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-mf-lbm": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/mf-lbm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/60482",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025JB031392",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-milk": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/milk",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/121113",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://journals.iucr.org/j/issues/2023/04/00/nb5355/nb5355.pdf",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-minervachem": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/minervachem",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/126230",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pubs.rsc.org/en/content/articlehtml/2024/dd/d4dd00089g",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-kessel": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/kessel",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/kessel",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://appliedcomputerscienceseries.lanl.gov/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lafa": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lafa",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/lafa",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/lafa/releases/tag/v1.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-lambast": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/lambast",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/lambast",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/lambast/releases/tag/0.1.3",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-latte-traveltime": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/latte_traveltime",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/latte_traveltime",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://academic.oup.com/gji/article/241/2/1275/8046728",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-ldrd-virus-work": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ldrd_virus_work",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/183664",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/ldrd_virus_work/releases/tag/v0.1.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-libquo": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/libquo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/libquo/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lanl.github.io/libquo/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-nomad": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/nomad",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/nomad/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/nomad/releases/tag/v0.2.1",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-nubhlight": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/nubhlight",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/nubhlight",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://academic.oup.com/mnras/article/541/4/3184/8203294",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-openfwi": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/OpenFWI",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://openfwi-lanl.github.io/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/27d3ef263c7cb8d542c4f9815a49b69b-Supplemental-Datasets_and_Benchmarks.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-owl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/owl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/owl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/owl/releases/tag/v1.4.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-panhandle": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/panhandle",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/panhandle",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/panhandle/releases/tag/v1.0.23",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pas": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pas",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/pas",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hoang_PAS_Prelim_Attention_Score_for_Detecting_Object_Hallucinations_in_Large_CVPR_2026_paper.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pfdd-v2": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/phase-field-dislocation-dynamics-pfdd-2.x",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://doi.org/10.11578/dc.20231117.5",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.osti.gov/doecode/biblio/116110"
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/116110",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pleiades": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pleiades",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pleiades-sammy.readthedocs.io/en/latest/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.nature.com/articles/s41598-025-96789-8",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nature.com/articles/s41598-025-96789-8?error=cookies_not_supported&code=6128ac9e-de42-4947-a63b-8ece29552970"
+        }
+      }
+    },
+    "lanl-osmosis": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pressure-osmosis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/pressure-osmosis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1088/1361-6501/ad7486",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://iopscience.iop.org/article/10.1088/1361-6501/ad7486"
+        }
+      }
+    },
+    "lanl-pybnf": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/PyBNF",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/PyBNF/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10060707/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pycp-apr": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pyCP_APR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/pyCP_APR/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://tensors.lanl.gov/software/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pydnmfk": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pyDNMFk",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://tensors.lanl.gov/software/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1007/s11227-023-05587-4",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://link.springer.com/article/10.1007/s11227-023-05587-4?error=cookies_not_supported&code=2de23837-f411-4e24-930b-9c9ce3c5202b"
+        }
+      }
+    },
+    "lanl-pydntnk": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pyDNTNK",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://tensors.lanl.gov/software/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.5281/zenodo.5004490",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://zenodo.org/records/5004490"
+        }
+      }
+    },
+    "lanl-pymplot": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pymplot",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/pymplot",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://academic.oup.com/gji/article/241/2/1275/8046728",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-pyptkinetics": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/PyPTkinetics",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/PyPTkinetics",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0749641925003377",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-pyseqm": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/PYSEQM",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/PYSEQM/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1021/acs.jctc.5c00980",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://pubs.acs.org/doi/10.1021/acs.jctc.5c00980"
+        }
+      }
+    },
+    "lanl-pysimfrac": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/pySimFrac",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/pySimFrac/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1016/j.cageo.2024.105665",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S0098300424001481"
+        }
+      }
+    },
+    "lanl-qmd-progress": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/qmd-progress",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://qmd-progress.readthedocs.io/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://qmd-progress.readthedocs.io/en/latest/"
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/qmd-progress/releases/tag/v1.3.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-quantum-volume-in-practice": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Quantum-Volume-in-Practice",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Quantum-Volume-in-Practice",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1109/TQE.2022.3184764",
+          "status": "redirected",
+          "httpStatus": 202,
+          "finalUrl": "https://ieeexplore.ieee.org/document/9805433/"
+        }
+      }
+    },
+    "lanl-rgm": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/rgm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/rgm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0098300426000300",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-ring-pull-strain-analysis": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/RingPullStrainAnalysis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/RingPullStrainAnalysis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/2998228",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-sedacs": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/sedacs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/sedacs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2606.03140",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-seer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Seer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Seer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://laro.lanl.gov/esploro/outputs/conferenceProceeding/Lightweight-Interface-for-In-Situ-Analysis/9916458605003761",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-singularity-eos": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/singularity-eos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/singularity-eos/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://joss.theoj.org/papers/10.21105/joss.06805",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-singularity-opac": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/singularity-opac",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/singularity-opac",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/parthenon-hpc-lab/phoebus/blob/main/.gitmodules",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-sources4d": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/SOURCES4D",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/SOURCES4D",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/2342042",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-sparse-bias": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/sparse_bias",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/167453",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://conferences.lbl.gov/event/1816/contributions/10066/attachments/5514/5499/WANDA_AIACHNE_LA-UR-25-21304.pdf",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "lanl-spiking-backprop": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/spikingBackprop",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/74250",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.nature.com/articles/s41467-024-53827-9",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nature.com/articles/s41467-024-53827-9?error=cookies_not_supported&code=c8fed5b5-b17c-4edd-bc09-2eb2ea52314a"
+        }
+      }
+    },
+    "lanl-splitml": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/SplitML",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/76068",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.5281/zenodo.7195633",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://zenodo.org/records/7195634"
+        }
+      }
+    },
+    "lanl-spus": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/SPUS-Small-PDE-U-net-Solver",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/180606",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://huggingface.co/siddik-lanl/spus-pde-unet-36m",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ssys": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ssys",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/186708",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2607.05607",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-supernu": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/SuperNu",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/121098",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2604.04362",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-t-elf": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/T-ELF",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/127327",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lanl.github.io/T-ELF/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-tda-adversarial-detection": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/tda-adversarial-detection",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/171703",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2501.18006",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-thunderboltz": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ThunderBoltz",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://thunderboltz.readthedocs.io/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://thunderboltz.readthedocs.io/en/latest/"
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1088/1361-6595/ad6fcc",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/?ssa=d5284eab-2e01-42f5-86c9-0f30eeb16cd4&ssb=63524201662&ssc=https%3A%2F%2Fiopscience.iop.org%2Farticle%2F10.1088%2F1361-6595%2Fad6fcc&ssi=e5b92470-cnvj-44ee-a254-3ea18b7c7ac6&ssk=botmanager_support@radware.com&ssm=81564310696300903100792306518215&ssn=47e15ca24852b43392dcd33731201582233fdf43bf9f-d952-4c28-be1075&sso=732d42c7-9d31faabaf999f424c93c6f161c1e973be6af648190380ad&ssp=80087605241792526472179252040091028&ssq=97690720466969268628504669419584220074865&ssr=MjA0LjEwOS41OC4xNjI=&sst=GOSDIR-record-health/1.0%20(+https://gosdir.com/methodology/)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMmM0NDFjNzUtYzlmOC00MzFmLWJkY2MtZWYzOTM4YWIxOTA2MS0xNzkyNTA0NjY5NDQ4MC0wMGFhZDhjM2Q3MTdlMDJkYjBlMTAiLCJfX3V6bWYiOiI3ZjkwMDBkZjQzYmY5Zi1kOTUyLTRjMjgtYjJjNy05ZDMxZmFhYmFmOTkxLTE3OTI1MDQ2Njk0NDgwLTAwNTYxNGI0ZTg0ZWEzYTQ5ODMxMCIsInJkIjoiaW9wLm9yZyJ9"
+        }
+      }
+    },
+    "lanl-tires": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/tires",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/tires/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/tires/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-transform-your-world": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Transform-Your-World",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Transform-Your-World",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/Transform-Your-World/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-trees": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Trees",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Trees",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/georgewoolsey/cloud2trees/blob/main/README.Rmd",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-ursa": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/ursa",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://lanl.github.io/ursa/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2506.22653",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-vpic-kokkos": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/vpic-kokkos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/vpic-kokkos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2102.13133",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-waves": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl-aea/waves",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl-aea/waves",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/2999887",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-yoke": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/Yoke",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/lanl/Yoke",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/lanl/Yoke/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-zmodel-kokkos": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/zmodel-kokkos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/156182",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/156182",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-pselib": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/Robbybp/pselib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/Robbybp/pselib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/127379",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-cov2-genomicgraphtheory-pca": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ruianke/CoV2-GenomicGraphTheory-PCA",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ruianke/CoV2-GenomicGraphTheory-PCA",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1101/2025.02.07.25321892",
+          "status": "error",
+          "errorCode": "invalid-public-url"
+        }
+      }
+    },
+    "lanl-covtransformer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ruianke/CoVTransformer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ruianke/CoVTransformer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11631054/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "lanl-bionetgen": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/RuleWorld/bionetgen",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://bionetgen.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27402907/",
+          "status": "ok",
+          "httpStatus": 203
+        }
+      }
     }
-  }
+  },
+  "carriedForwardProjectIds": [
+    "uswds",
+    "login-gov",
+    "cloud-gov",
+    "code-gov",
+    "oscal",
+    "openmdao",
+    "energyplus",
+    "helix",
+    "accert",
+    "wec-grid",
+    "wmpy-power",
+    "vets-api",
+    "code-mil",
+    "ca-design-system",
+    "mayflower",
+    "govuk-design-system",
+    "govuk-notify",
+    "x-road",
+    "formsg",
+    "openfisca",
+    "chatmd",
+    "ganttproject",
+    "webmapp-venezia",
+    "decidim",
+    "gc-notify",
+    "brl-cad",
+    "ghidra",
+    "selinux",
+    "atak-civ",
+    "hirs",
+    "paccor",
+    "hootenanny",
+    "mage",
+    "sarpy",
+    "nga-geopackage",
+    "apache-accumulo",
+    "apache-nifi",
+    "grass-gis",
+    "paraview",
+    "open-mct",
+    "f-prime",
+    "moose",
+    "openvsp",
+    "cfs",
+    "fire-dynamics-simulator",
+    "epa-swmm",
+    "cmaq",
+    "modflow-6",
+    "federal-audit-clearinghouse",
+    "federal-website-index",
+    "go-gov-sg",
+    "mockpass",
+    "web-experience-toolkit",
+    "assemblyline",
+    "taipei-city-dashboard",
+    "leos",
+    "digital-signature-service",
+    "govuk-prototype-kit",
+    "kadas-albireo",
+    "la-suite-docs",
+    "cliente-afirma",
+    "cyberchef",
+    "onyxia",
+    "nl-wallet",
+    "quality-time",
+    "cset",
+    "scubagear",
+    "openlegislation",
+    "statecu",
+    "statedmi",
+    "statemod",
+    "tstool",
+    "ctx-hazard-api",
+    "digital-analytics-program",
+    "react-dsfr",
+    "i14y",
+    "vitam",
+    "dashlord",
+    "swiyu-issuer",
+    "accessible-autocomplete",
+    "demarches-simplifiees",
+    "register-trainee-teachers",
+    "sites-conformes",
+    "ons-design-system",
+    "checkv",
+    "hardware-control",
+    "swiss-federal-map-viewer",
+    "swiss-geodata-stac-api",
+    "agridata",
+    "fire",
+    "gftl",
+    "scales",
+    "upcxx",
+    "shine",
+    "warp",
+    "oereb-viewer",
+    "java-pathfinder",
+    "hgdl",
+    "swiss-oss-catalog",
+    "kann-ich-bohren",
+    "kssolv",
+    "oco2-retrieval",
+    "trustbroker-swiss",
+    "swissgeol-assets",
+    "klartextzh",
+    "amsterdam-design-system",
+    "dutch-api-register-api",
+    "dutch-oss-register-api",
+    "abacus-kiesraad",
+    "autoct",
+    "invulhulpen",
+    "logboek-dataverwerkingen-jvm",
+    "gpcam",
+    "fvgp",
+    "abr-geocoder",
+    "dads-design-tokens",
+    "pflotran",
+    "signalen",
+    "jp-name-matching-model",
+    "harunobu",
+    "don-checker",
+    "mojxml2geojson",
+    "oas-generator",
+    "repo-docs-generator",
+    "img-annotation-pipeline",
+    "django-magicauth",
+    "recommandations-collaboratives",
+    "catala",
+    "esup-pod",
+    "jgi-genesearch",
+    "synbioqc-pbj",
+    "mbin-docker",
+    "checkfirst",
+    "postman-sg",
+    "publicodes",
+    "archifiltre-docs",
+    "shinygouv",
+    "genespace",
+    "bigslice",
+    "spacerextractor",
+    "gepnet",
+    "inrae-dev-cas",
+    "inrae-indicators",
+    "inrae-sava",
+    "rdv-service-public",
+    "opr-paas",
+    "omgevingsbeleid-frontend",
+    "decoupage-administratif",
+    "dfir-orc",
+    "acoustic-impulse-counter",
+    "powersheds",
+    "grna-seqret",
+    "hp-flex-mpc",
+    "alaska-landbird-trends",
+    "la-suite-drive",
+    "codes-postaux",
+    "mes-adresses",
+    "genomeface",
+    "brant-age-ratio-model",
+    "climextremes",
+    "walrus-haulout-cartography",
+    "eelgrass-biomass-model",
+    "geochemical-database-tools",
+    "pygarden",
+    "asyncvol",
+    "etabli",
+    "cdata",
+    "comparia",
+    "nppsd-viz",
+    "boreal-bird-density",
+    "schema-data-gouv",
+    "esup-sgc",
+    "esup-signature",
+    "opengatellm",
+    "qfasar",
+    "sea-otter-survey-viz",
+    "origen-library-manager",
+    "slice",
+    "drtsans",
+    "sentinel-imagery-downloader",
+    "track-segmentation",
+    "point-count-phenology-simulation",
+    "eelgrass-power-analysis",
+    "space-time-point-process-models",
+    "thinned-point-process-models",
+    "geotrek-admin",
+    "xan",
+    "sdgital2030-output",
+    "whitehall-publisher",
+    "gmic-core",
+    "gov-scot-publishing",
+    "publiccode-editor",
+    "publiccode-validator-api",
+    "developers-italia-api",
+    "publiccode-crawler",
+    "publiccode-parser-go",
+    "pat",
+    "rndt-metadata-catalogue",
+    "rndt-geodcat-ap-api",
+    "rndt-geoviewer",
+    "rndt-metadata-converter",
+    "altinn-studio",
+    "accessmonitor",
+    "accessmonitor-extension",
+    "govuk-pay",
+    "digirhythm",
+    "ate-api",
+    "ate-frontend",
+    "5gnrad",
+    "triact",
+    "update-your-capital-schemes",
+    "munich-ataf",
+    "munich-zms",
+    "tea-platform",
+    "jeap-archrepo",
+    "jeap-audit",
+    "jeap-business-process-test",
+    "autoemulate",
+    "clevercsv",
+    "cycless-dataset-code",
+    "oaw-tracker",
+    "deepsensor",
+    "graph-attention-replanner",
+    "fridge",
+    "aalm-v3",
+    "air-sensor-data-unifier",
+    "air-sensor-network-analysis-tool",
+    "swissgeol-boreholes",
+    "swissgeol-ocr",
+    "swissgeol-viewer",
+    "aquamet-bio",
+    "aquamet-nwca",
+    "sar-vessel-detection-fpga",
+    "scivision",
+    "tea-techniques",
+    "swiyu-did-resolver",
+    "swiyu-did-toolbox",
+    "swiyu-sandbox-wallet",
+    "swiyu-verifier",
+    "visualize",
+    "loom-swiss-armed-forces",
+    "attila2",
+    "avert",
+    "bis",
+    "synthetic-population-catalyst",
+    "jeap-cli",
+    "jeap-crypto",
+    "jeap-db-schema-publisher",
+    "jeap-deploymentlog-service",
+    "jeap-error-handling",
+    "e-petitions",
+    "bmds",
+    "gds-api-adapters",
+    "gds-sso",
+    "epa-eia-power-sector-crosswalk",
+    "campd-facility-map",
+    "govspeak",
+    "govspeak-preview",
+    "govuk-chat",
+    "hmrc-manuals-api",
+    "manuals-publisher",
+    "link-checker-api",
+    "govuk-notify-dotnet-client",
+    "govuk-notify-java-client",
+    "govuk-notify-node-client",
+    "govuk-notify-php-client",
+    "cgem",
+    "chlorine-breakpoint-curve-simulator",
+    "govuk-docker",
+    "plausi",
+    "govuk-mirror",
+    "govuk-knowledge-graph",
+    "oblique",
+    "swiss-federal-design-system",
+    "chvote-offline-administration-v1",
+    "govuk-notify-python-client",
+    "govuk-notify-ruby-client",
+    "optic14n",
+    "paste-html-to-govspeak",
+    "places-manager",
+    "plek",
+    "public-asset-checker",
+    "govuk-publisher",
+    "publishing-api",
+    "rack-logstasher",
+    "rails-translation-manager",
+    "govuk-release",
+    "govuk-router",
+    "rubocop-govuk",
+    "govuk-search-admin",
+    "govuk-search-api",
+    "audiominer",
+    "opendesk",
+    "masterportal",
+    "vecto",
+    "koha",
+    "localgov-drupal",
+    "open-government-community-builder",
+    "postgresql",
+    "auto-nse",
+    "auto-refl",
+    "bpc-monitor",
+    "savetree",
+    "skyglow-estimation-toolbox",
+    "vocal-calipso",
+    "onearth",
+    "worldview",
+    "flightview",
+    "accessmonitor-rulesets",
+    "autenticacao-gov",
+    "ntrtsim",
+    "abaverify",
+    "apod-api",
+    "aprilnav",
+    "bingo",
+    "atom-archives",
+    "ccdd",
+    "cfe",
+    "cfs-cfdp",
+    "my-monitor",
+    "pt-accessibility-observatory",
+    "cfl3d",
+    "nasa-channel-emulator",
+    "cmr-opensearch",
+    "ats-milano-ppc",
+    "docsuite-pa",
+    "nasa-cmr",
+    "nasa-davetools",
+    "nasa-delta",
+    "nasa-cfs-file-manager",
+    "nasa-cfs-limit-checker",
+    "nasa-kodiak",
+    "nasa-lager",
+    "nasa-legacy-mars-gcm",
+    "nasa-guam",
+    "nasa-cloud-browse",
+    "nasa-fcx",
+    "nasa-pylot",
+    "nasa-giant",
+    "nasa-gunns",
+    "nasa-kepler-dr25-robovetter",
+    "nasa-keplerports",
+    "nasa-knife",
+    "nasa-earthdata-search",
+    "nasa-earthdata-varinfo",
+    "nasa-edsc-echoforms",
+    "nasa-edsc-timeline",
+    "it-montesilvano-govpay-interaction-layer",
+    "it-montesilvano-valori-venali",
+    "it-bari-sgvp",
+    "it-bari-sit",
+    "it-genova-emergenze-pcge",
+    "it-genova-fascicolo-del-cittadino",
+    "it-genova-nova",
+    "camicroscope",
+    "cboard",
+    "ceph",
+    "compdam-dgd",
+    "cloudcompare",
+    "lanl-spade",
+    "lanl-tardigrade-examples",
+    "lanl-turbo-turtle",
+    "lanl-bling",
+    "lanl-mathprogincidence",
+    "lanl-mathoptai",
+    "lanl-quantum-applications",
+    "lanl-edge-bioinformatics",
+    "lanl-allium",
+    "lanl-ampsuite",
+    "lanl-annomate-microsentryai",
+    "lanl-architector",
+    "lanl-arcs",
+    "lanl-ariadne",
+    "lanl-arianna-ppl",
+    "lanl-artemis-astro",
+    "lanl-atccfinder",
+    "lanl-augselfies",
+    "lanl-binding-prediction",
+    "lanl-biorad",
+    "lanl-bngsim",
+    "lanl-bohydra",
+    "lanl-hippynn",
+    "lanl-hsi-nerfstudio",
+    "lanl-ibex-ribbonseparation",
+    "lanl-impala",
+    "lanl-infera",
+    "lanl-inverse-cnf",
+    "lanl-j3d",
+    "lanl-lost-ocr",
+    "lanl-lunus",
+    "lanl-lvportdriver",
+    "lanl-matar",
+    "lanl-metconsin",
+    "lanl-mf-lbm",
+    "lanl-milk",
+    "lanl-minervachem",
+    "lanl-kessel",
+    "lanl-lafa",
+    "lanl-lambast",
+    "lanl-latte-traveltime",
+    "lanl-ldrd-virus-work",
+    "lanl-libquo",
+    "lanl-nomad",
+    "lanl-nubhlight",
+    "lanl-openfwi",
+    "lanl-owl",
+    "lanl-panhandle",
+    "lanl-pas",
+    "lanl-pfdd-v2",
+    "lanl-pleiades",
+    "lanl-osmosis",
+    "lanl-pybnf",
+    "lanl-pycp-apr",
+    "lanl-pydnmfk",
+    "lanl-pydntnk",
+    "lanl-pymplot",
+    "lanl-pyptkinetics",
+    "lanl-pyseqm",
+    "lanl-pysimfrac",
+    "lanl-qmd-progress",
+    "lanl-quantum-volume-in-practice",
+    "lanl-rgm",
+    "lanl-ring-pull-strain-analysis",
+    "lanl-sedacs",
+    "lanl-seer",
+    "lanl-singularity-eos",
+    "lanl-singularity-opac",
+    "lanl-sources4d",
+    "lanl-sparse-bias",
+    "lanl-spiking-backprop",
+    "lanl-splitml",
+    "lanl-spus",
+    "lanl-ssys",
+    "lanl-supernu",
+    "lanl-t-elf",
+    "lanl-tda-adversarial-detection",
+    "lanl-thunderboltz",
+    "lanl-tires",
+    "lanl-transform-your-world",
+    "lanl-trees",
+    "lanl-ursa",
+    "lanl-vpic-kokkos",
+    "lanl-waves",
+    "lanl-yoke",
+    "lanl-zmodel-kokkos",
+    "lanl-pselib",
+    "lanl-cov2-genomicgraphtheory-pca",
+    "lanl-covtransformer",
+    "lanl-bionetgen"
+  ]
 }

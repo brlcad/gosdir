@@ -360,6 +360,97 @@ import cboard from './cboard';
 import ceph from './ceph';
 import compDamDgd from './compdam-dgd';
 
+import lanlSpade from './lanl-spade';
+import lanlTardigradeExamples from './lanl-tardigrade-examples';
+import lanlTurboTurtle from './lanl-turbo-turtle';
+import lanlBling from './lanl-bling';
+import lanlMathProgIncidence from './lanl-mathprogincidence';
+import lanlMathOptAi from './lanl-mathoptai';
+import lanlQuantumApplications from './lanl-quantum-applications';
+import lanlEdgeBioinformatics from './lanl-edge-bioinformatics';
+import lanlAllium from './lanl-allium';
+import lanlAmpSuite from './lanl-ampsuite';
+import lanlAnnoMateMicroSentryAi from './lanl-annomate-microsentryai';
+import lanlArchitector from './lanl-architector';
+import lanlArcs from './lanl-arcs';
+import lanlAriadne from './lanl-ariadne';
+import lanlAriannaPpl from './lanl-arianna-ppl';
+import lanlArtemisAstro from './lanl-artemis-astro';
+import lanlAtccFinder from './lanl-atccfinder';
+import lanlAugselfies from './lanl-augselfies';
+import lanlBindingPrediction from './lanl-binding-prediction';
+import lanlBiorad from './lanl-biorad';
+import lanlBngsim from './lanl-bngsim';
+import lanlBohydra from './lanl-bohydra';
+import lanlHippynn from './lanl-hippynn';
+import lanlHsiNerfstudio from './lanl-hsi-nerfstudio';
+import lanlIbexRibbonseparation from './lanl-ibex-ribbonseparation';
+import lanlImpala from './lanl-impala';
+import lanlInfera from './lanl-infera';
+import lanlInverseCnf from './lanl-inverse-cnf';
+import lanlJ3d from './lanl-j3d';
+import lanlLostOcr from './lanl-lost-ocr';
+import lanlLunus from './lanl-lunus';
+import lanlLvportdriver from './lanl-lvportdriver';
+import lanlMatar from './lanl-matar';
+import lanlMetconsin from './lanl-metconsin';
+import lanlMfLbm from './lanl-mf-lbm';
+import lanlMilk from './lanl-milk';
+import lanlMinervachem from './lanl-minervachem';
+import lanlKessel from './lanl-kessel';
+import lanlLafa from './lanl-lafa';
+import lanlLambast from './lanl-lambast';
+import lanlLatteTraveltime from './lanl-latte-traveltime';
+import lanlLdrdVirusWork from './lanl-ldrd-virus-work';
+import lanlLibquo from './lanl-libquo';
+import lanlNomad from './lanl-nomad';
+import lanlNubhlight from './lanl-nubhlight';
+import lanlOpenfwi from './lanl-openfwi';
+import lanlOwl from './lanl-owl';
+import lanlPanhandle from './lanl-panhandle';
+import lanlPas from './lanl-pas';
+import lanlPfddV2 from './lanl-pfdd-v2';
+import lanlPleiades from './lanl-pleiades';
+import lanlOsmosis from './lanl-osmosis';
+import lanlPybnf from './lanl-pybnf';
+import lanlPycpApr from './lanl-pycp-apr';
+import lanlPydnmfk from './lanl-pydnmfk';
+import lanlPydntnk from './lanl-pydntnk';
+import lanlPymplot from './lanl-pymplot';
+import lanlPyptkinetics from './lanl-pyptkinetics';
+import lanlPyseqm from './lanl-pyseqm';
+import lanlPysimfrac from './lanl-pysimfrac';
+import lanlQmdProgress from './lanl-qmd-progress';
+import lanlQuantumVolumeInPractice from './lanl-quantum-volume-in-practice';
+import lanlRgm from './lanl-rgm';
+import lanlRingPullStrainAnalysis from './lanl-ring-pull-strain-analysis';
+import lanlSedacs from './lanl-sedacs';
+import lanlSeer from './lanl-seer';
+import lanlSingularityEos from './lanl-singularity-eos';
+import lanlSingularityOpac from './lanl-singularity-opac';
+import lanlSources4d from './lanl-sources4d';
+import lanlSparseBias from './lanl-sparse-bias';
+import lanlSpikingBackprop from './lanl-spiking-backprop';
+import lanlSplitml from './lanl-splitml';
+import lanlSpus from './lanl-spus';
+import lanlSsys from './lanl-ssys';
+import lanlSupernu from './lanl-supernu';
+import lanlTElf from './lanl-t-elf';
+import lanlTdaAdversarialDetection from './lanl-tda-adversarial-detection';
+import lanlThunderboltz from './lanl-thunderboltz';
+import lanlTires from './lanl-tires';
+import lanlTransformYourWorld from './lanl-transform-your-world';
+import lanlTrees from './lanl-trees';
+import lanlUrsa from './lanl-ursa';
+import lanlVpicKokkos from './lanl-vpic-kokkos';
+import lanlWaves from './lanl-waves';
+import lanlYoke from './lanl-yoke';
+import lanlZmodelKokkos from './lanl-zmodel-kokkos';
+import lanlPselib from './lanl-pselib';
+import lanlCov2GenomicgraphtheoryPca from './lanl-cov2-genomicgraphtheory-pca';
+import lanlCovtransformer from './lanl-covtransformer';
+import lanlBionetgen from './lanl-bionetgen';
+
 export const projects: Project[] = [
   uswds,
   loginGov,
@@ -720,4 +811,94 @@ export const projects: Project[] = [
   ceph,
   compDamDgd,
   cloudCompare,
+  lanlSpade,
+  lanlTardigradeExamples,
+  lanlTurboTurtle,
+  lanlBling,
+  lanlMathProgIncidence,
+  lanlMathOptAi,
+  lanlQuantumApplications,
+  lanlEdgeBioinformatics,
+  lanlAllium,
+  lanlAmpSuite,
+  lanlAnnoMateMicroSentryAi,
+  lanlArchitector,
+  lanlArcs,
+  lanlAriadne,
+  lanlAriannaPpl,
+  lanlArtemisAstro,
+  lanlAtccFinder,
+  lanlAugselfies,
+  lanlBindingPrediction,
+  lanlBiorad,
+  lanlBngsim,
+  lanlBohydra,
+  lanlHippynn,
+  lanlHsiNerfstudio,
+  lanlIbexRibbonseparation,
+  lanlImpala,
+  lanlInfera,
+  lanlInverseCnf,
+  lanlJ3d,
+  lanlLostOcr,
+  lanlLunus,
+  lanlLvportdriver,
+  lanlMatar,
+  lanlMetconsin,
+  lanlMfLbm,
+  lanlMilk,
+  lanlMinervachem,
+  lanlKessel,
+  lanlLafa,
+  lanlLambast,
+  lanlLatteTraveltime,
+  lanlLdrdVirusWork,
+  lanlLibquo,
+  lanlNomad,
+  lanlNubhlight,
+  lanlOpenfwi,
+  lanlOwl,
+  lanlPanhandle,
+  lanlPas,
+  lanlPfddV2,
+  lanlPleiades,
+  lanlOsmosis,
+  lanlPybnf,
+  lanlPycpApr,
+  lanlPydnmfk,
+  lanlPydntnk,
+  lanlPymplot,
+  lanlPyptkinetics,
+  lanlPyseqm,
+  lanlPysimfrac,
+  lanlQmdProgress,
+  lanlQuantumVolumeInPractice,
+  lanlRgm,
+  lanlRingPullStrainAnalysis,
+  lanlSedacs,
+  lanlSeer,
+  lanlSingularityEos,
+  lanlSingularityOpac,
+  lanlSources4d,
+  lanlSparseBias,
+  lanlSpikingBackprop,
+  lanlSplitml,
+  lanlSpus,
+  lanlSsys,
+  lanlSupernu,
+  lanlTElf,
+  lanlTdaAdversarialDetection,
+  lanlThunderboltz,
+  lanlTires,
+  lanlTransformYourWorld,
+  lanlTrees,
+  lanlUrsa,
+  lanlVpicKokkos,
+  lanlWaves,
+  lanlYoke,
+  lanlZmodelKokkos,
+  lanlPselib,
+  lanlCov2GenomicgraphtheoryPca,
+  lanlCovtransformer,
+  lanlBionetgen,
 ];
