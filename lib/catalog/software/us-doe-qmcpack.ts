@@ -4,7 +4,7 @@ export default {
   id: 'us-doe-qmcpack',
   name: 'QMCPACK',
   summary:
-    'Production-level many-body ab initio Quantum Monte Carlo software for electronic-structure calculations in atoms, molecules, and solids.',
+    'Many-body ab initio Quantum Monte Carlo software for electronic-structure calculations in atoms, molecules, and solids.',
   sponsor:
     'U.S. Department of Energy Office of Science; development contributors include Oak Ridge, Lawrence Livermore, Sandia, and Argonne national laboratories. QMCPACK originated at the University of Illinois Urbana-Champaign.',
   agencyIds: [

@@ -4,7 +4,7 @@ export default {
   id: 'uk-ukef-digital-trade-finance-service',
   name: 'Digital Trade Finance Service (DTFS)',
   summary:
-    "Digital Trade Finance Service (DTFS), UKEF's trade-finance service source repository, including its service applications and casework components.",
+    'An application suite for UK Export Finance trade-finance services and casework.',
   sponsor:
     'UK Export Finance (UKEF), UK government department and export credit agency',
   agencyIds: ['uk-export-finance'],

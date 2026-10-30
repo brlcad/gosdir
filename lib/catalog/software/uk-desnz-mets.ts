@@ -4,7 +4,7 @@ export default {
   id: 'uk-desnz-mets',
   name: 'Manage Your UK ETS Reporting (METS)',
   summary:
-    'Manage Your UK ETS Reporting (METS/PMRV), the UK Emissions Trading Scheme reporting-service application monorepository.',
+    'The Manage Your UK ETS Reporting application suite for the UK Emissions Trading Scheme.',
   sponsor:
     'UK ETS Authority (UK Government and devolved administrations; DESNZ leads), with Environment Agency and devolved regulators administering the scheme',
   agencyIds: [

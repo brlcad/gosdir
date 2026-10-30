@@ -4,7 +4,7 @@ export default {
   id: 'uk-ukhsa-gpha-mscape-nf-strep-pneumo',
   name: 'mSCAPE Streptococcus pneumoniae pipeline',
   summary:
-    'UKHSA Nextflow pipeline for characterizing Streptococcus pneumoniae in metagenomic samples, with containerized execution and documented analysis/output steps.',
+    'A Nextflow pipeline for characterizing Streptococcus pneumoniae in metagenomic samples.',
   sponsor: 'UK Health Security Agency (UKHSA)',
   agencyIds: ['uk-health-security-agency'],
   geography: 'United Kingdom',

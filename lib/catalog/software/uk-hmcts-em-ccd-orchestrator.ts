@@ -4,7 +4,7 @@ export default {
   id: 'uk-hmcts-em-ccd-orchestrator',
   name: 'Evidence Management CCD Orchestrator',
   summary:
-    'HMCTS production backend service coordinating interactions between Core Case Data, Evidence Management Stitching and a calling service.',
+    'A backend service coordinating interactions between HMCTS Core Case Data, Evidence Management Stitching, and a calling application.',
   sponsor: 'HM Courts & Tribunals Service (HMCTS), Ministry of Justice',
   agencyIds: ['uk-hm-courts-and-tribunals-service'],
   geography:

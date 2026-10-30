@@ -4,7 +4,7 @@ export default {
   id: 'uk-hmcts-draft-store',
   name: 'Draft Store',
   summary:
-    'HMCTS production API service for saving and resuming drafts in Reform applications.',
+    'An API service for saving and resuming drafts in HMCTS Reform applications.',
   sponsor: 'HM Courts & Tribunals Service (HMCTS), Ministry of Justice',
   agencyIds: ['uk-hm-courts-and-tribunals-service'],
   geography:

@@ -863,6 +863,94 @@ import ukAisiIsambardContainers from './uk-aisi-isambard-containers';
 import ukAisiLieDetectors from './uk-aisi-lie-detectors';
 import ukDesnzMets from './uk-desnz-mets';
 
+import deHamburgXplanbox from './de-hamburg-xplanbox';
+import deDresdenEnergielotse from './de-dresden-energielotse';
+import deEvbItDigital from './de-evb-it-digital';
+import deFitkoFep from './de-fitko-fep';
+import dePvogXzufiKonverter from './de-pvog-xzufi-konverter';
+import dePvogXzufiKonverterBackend from './de-pvog-xzufi-konverter-backend';
+import dePvogXzufiValidatorBackend from './de-pvog-xzufi-validator-backend';
+import llnlCardiacElectricalImaging from './llnl-cardiac-electrical-imaging';
+import mlqm from './mlqm';
+import molsieve from './molsieve';
+import moriZwanzigModalDecomposition from './mori-zwanzig-modal-decomposition';
+import morph from './morph';
+import mtre from './mtre';
+import multipemToolbox from './multipem-toolbox';
+import nautilus from './nautilus';
+import nchoosek from './nchoosek';
+import neoniso from './neoniso';
+import lasy from './lasy';
+import becquerel from './becquerel';
+import ascribeXr from './ascribe-xr';
+import berteley from './berteley';
+import mtecs3d from './mtecs3d';
+import rhizonet from './rhizonet';
+import tsuchinoko from './tsuchinoko';
+import alphaSaxsMetfish from './alphasaxs-metfish';
+import olcfS3mCli from './olcf-s3m-cli';
+import olcfVelocity from './olcf-velocity';
+import openDataAccessTools from './open-data-access-tools';
+import acdc from './acdc';
+import openFast from './openfast';
+import openFusionToolkit from './openfusiontoolkit';
+import openmc from './openmc';
+import pydda from './pydda';
+import optimas from './optimas';
+import dataTransferKit from './datatransferkit';
+import thermochimica from './thermochimica';
+import dbwr from './dbwr';
+import pvws from './pvws';
+import ae3d from './ae3d';
+import stellgap from './stellgap';
+import myna from './myna';
+import raptor from './raptor';
+import qirEe from './qir-ee';
+import realTwin from './real-twin';
+import nessusVisualization from './nessus-visualization';
+import pcircle from './pcircle';
+import additivefoam from './additivefoam';
+import cabanaPd from './cabanapd';
+import cabanaPf from './cabanapf';
+import certified from './certified';
+import cfdverify from './cfdverify';
+import doeGbbs from './doe-gbbs';
+import ieOgcioGovieDs from './ie-ogcio-govie-ds';
+import passCultureInstitutional from './pass-culture-institutional';
+import passCultureMain from './pass-culture-main';
+import passCultureTerraformProvider from './pass-culture-terraform-provider';
+import pcmLavoroAgile from './pcm-lavoro-agile';
+import startuphafen from './startuphafen';
+import phare from './phare';
+import phobosStorage from './phobos-storage';
+import aiTaxonomist from './ai-taxonomist';
+import aiTaxonomistWebcomponent from './ai-taxonomist-webcomponent';
+import geoplant from './geoplant';
+import malpolon from './malpolon';
+import plantnet300k from './plantnet-300k';
+import plasmaLearningPlatform from './plasma-learning-platform';
+import tljhRepo2docker from './tljh-repo2docker';
+import geoconstats from './geoconstats';
+import patrimoineBati from './patrimoine-bati';
+import rgalt from './rgalt';
+import glifo from './glifo';
+import icefCore from './icef-core';
+import patTraduzioneAutomaticaSitoWeb from './traduzione-automatica-sito-web';
+import wgtFrontend from './wgt-frontend';
+import geoNatureAtlas from './geonature-atlas';
+import geoNatureCitizen from './geonature-citizen';
+import geoNatureGis from './geonature-gis';
+import geoNatureZhAtlas from './geonature-zh-atlas';
+import geoPaysages from './geopaysages';
+import occtaxMobile from './occtax-mobile';
+import bilanStationnelFlore from './bilan-stationnel-flore';
+import lbnlGalatic from './lbnl-galatic';
+import llnlChimesAlDriver from './llnl-chimes-al-driver';
+import llnlChimesCalculator from './llnl-chimes-calculator';
+import sandiaVeesa from './sandia-veesa';
+import sandiaVorLap from './sandia-vorlap';
+import sandiaWecAsMultiport from './sandia-wec-as-multiport';
+
 export const projects: Project[] = [
   uswds,
   loginGov,
@@ -1719,4 +1807,91 @@ export const projects: Project[] = [
   ukAisiIsambardContainers,
   ukAisiLieDetectors,
   ukDesnzMets,
+  deHamburgXplanbox,
+  deDresdenEnergielotse,
+  deEvbItDigital,
+  deFitkoFep,
+  dePvogXzufiKonverter,
+  dePvogXzufiKonverterBackend,
+  dePvogXzufiValidatorBackend,
+  llnlCardiacElectricalImaging,
+  mlqm,
+  molsieve,
+  moriZwanzigModalDecomposition,
+  morph,
+  mtre,
+  multipemToolbox,
+  nautilus,
+  nchoosek,
+  neoniso,
+  lasy,
+  becquerel,
+  ascribeXr,
+  berteley,
+  mtecs3d,
+  rhizonet,
+  tsuchinoko,
+  alphaSaxsMetfish,
+  olcfS3mCli,
+  olcfVelocity,
+  openDataAccessTools,
+  acdc,
+  openFast,
+  openFusionToolkit,
+  openmc,
+  pydda,
+  optimas,
+  dataTransferKit,
+  thermochimica,
+  dbwr,
+  pvws,
+  ae3d,
+  stellgap,
+  myna,
+  raptor,
+  qirEe,
+  realTwin,
+  nessusVisualization,
+  pcircle,
+  additivefoam,
+  cabanaPd,
+  cabanaPf,
+  certified,
+  cfdverify,
+  doeGbbs,
+  ieOgcioGovieDs,
+  passCultureInstitutional,
+  passCultureMain,
+  passCultureTerraformProvider,
+  pcmLavoroAgile,
+  startuphafen,
+  phare,
+  phobosStorage,
+  aiTaxonomist,
+  aiTaxonomistWebcomponent,
+  geoplant,
+  malpolon,
+  plantnet300k,
+  plasmaLearningPlatform,
+  tljhRepo2docker,
+  geoconstats,
+  patrimoineBati,
+  rgalt,
+  glifo,
+  icefCore,
+  patTraduzioneAutomaticaSitoWeb,
+  wgtFrontend,
+  geoNatureAtlas,
+  geoNatureCitizen,
+  geoNatureGis,
+  geoNatureZhAtlas,
+  geoPaysages,
+  occtaxMobile,
+  bilanStationnelFlore,
+  lbnlGalatic,
+  llnlChimesAlDriver,
+  llnlChimesCalculator,
+  sandiaVeesa,
+  sandiaVorLap,
+  sandiaWecAsMultiport,
 ];

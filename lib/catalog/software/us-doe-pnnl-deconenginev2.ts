@@ -4,7 +4,7 @@ export default {
   id: 'us-doe-pnnl-deconenginev2',
   name: 'DeconEngineV2',
   summary:
-    'PNNL mass-spectrometry deconvolution engine and library, with the current C# DeconMSn implementation in the same repository.',
+    'A mass-spectrometry deconvolution engine and library, including the C# DeconMSn implementation.',
   sponsor:
     'U.S. Department of Energy, through Pacific Northwest National Laboratory (PNNL).',
   agencyIds: ['us-doe-pnnl'],

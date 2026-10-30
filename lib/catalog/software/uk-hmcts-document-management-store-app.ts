@@ -3,8 +3,7 @@ import type { Project } from '../types';
 export default {
   id: 'uk-hmcts-document-management-store-app',
   name: 'Document Management Store',
-  summary:
-    'HMCTS production backend service for storing and retrieving case documents.',
+  summary: 'A backend service for storing and retrieving case documents.',
   sponsor: 'HM Courts & Tribunals Service (HMCTS), Ministry of Justice',
   agencyIds: ['uk-hm-courts-and-tribunals-service'],
   geography:
