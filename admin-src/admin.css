@@ -155,6 +155,15 @@ h3 {
 .sync button {
   margin-top: 4px;
 }
+.sync .refresh-feedback {
+  min-height: 1.4em;
+}
+.sync .refresh-feedback[data-state='success'] {
+  color: #067251;
+}
+.sync .refresh-feedback[data-state='error'] {
+  color: #b32626;
+}
 .metrics {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

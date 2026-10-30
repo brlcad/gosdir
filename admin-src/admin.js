@@ -170,9 +170,17 @@ async function renderGoogleButton() {
     $('google-signin-status').textContent = error.message;
   }
 }
-async function refresh() {
+async function refresh({ manual = false } = {}) {
   if (!csrf || refreshing) return;
   refreshing = true;
+  $('refresh').disabled = true;
+  $('refresh').textContent = 'Refreshing…';
+  $('refresh').setAttribute('aria-busy', 'true');
+  if (manual) {
+    message('');
+    $('refresh-feedback').dataset.state = 'loading';
+    $('refresh-feedback').textContent = 'Fetching the latest status…';
+  }
   try {
     snapshot = await api('status');
     $('login').hidden = true;
@@ -195,10 +203,22 @@ async function refresh() {
         node.disabled =
           snapshot.working || (node.dataset.action && selected.size === 0);
       });
+    if (manual) {
+      $('refresh-feedback').dataset.state = 'success';
+      $('refresh-feedback').textContent =
+        `Status refreshed at ${new Intl.DateTimeFormat(undefined, { timeStyle: 'medium' }).format(new Date())}.`;
+    }
   } catch (error) {
     message(error.message, true);
+    if (manual) {
+      $('refresh-feedback').dataset.state = 'error';
+      $('refresh-feedback').textContent = 'Refresh failed. Please try again.';
+    }
   } finally {
     refreshing = false;
+    $('refresh').disabled = false;
+    $('refresh').textContent = 'Refresh status ↻';
+    $('refresh').setAttribute('aria-busy', 'false');
   }
 }
 function renderMetrics() {
@@ -533,7 +553,7 @@ $('logout').addEventListener('click', async () => {
   }
 });
 $('refresh').addEventListener('click', () => {
-  void refresh();
+  void refresh({ manual: true });
 });
 $('search').addEventListener('input', () => {
   page = 1;
