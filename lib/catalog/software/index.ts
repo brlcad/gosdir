@@ -451,6 +451,57 @@ import lanlCov2GenomicgraphtheoryPca from './lanl-cov2-genomicgraphtheory-pca';
 import lanlCovtransformer from './lanl-covtransformer';
 import lanlBionetgen from './lanl-bionetgen';
 
+import ornlMuMatScale from './ornl-mumatscale';
+import ornlChathpc from './ornl-chathpc';
+import ornlCurifactory from './ornl-curifactory';
+import ornlCyberwheel from './ornl-cyberwheel';
+import ornlDaspStacker from './ornl-dasp-stacker';
+import ornlDdstore from './ornl-ddstore';
+import ornlDedfoam from './ornl-dedfoam';
+import ornlEquilipy from './ornl-equilipy';
+import ornlGauntlet from './ornl-gauntlet';
+import ornlHydragnn from './ornl-hydragnn';
+import ornlHydragnnGfmFineTuning4Materials from './ornl-hydragnn-gfm-finetuning4materials';
+import ornlIcat from './ornl-icat';
+import ornlIpyoverlay from './ornl-ipyoverlay';
+import ornlIris from './ornl-iris';
+import ornlMatey from './ornl-matey';
+import ornlMatris from './ornl-matris';
+import ornlMatsimAgents from './ornl-matsim-agents';
+import ornlMlmc from './ornl-mlmc';
+import ornlNeurocorex from './ornl-neurocorex';
+import ornlOpensampl from './ornl-opensampl';
+import ornlOrmatex from './ornl-ormatex';
+import ornlPdmatlab2d from './ornl-pdmatlab2d';
+import ornlPdnetwork from './ornl-pdnetwork';
+import ornlPetina from './ornl-petina';
+import ornlPickerxl from './ornl-pickerxl';
+import ornlPresto from './ornl-presto';
+import ornlQuilt from './ornl-quilt';
+import ornlReno from './ornl-reno';
+import ornlSagesim from './ornl-sagesim';
+import ornlAscends from './ornl-ascends';
+import ornlNereids from './ornl-nereids';
+import ornlNeunorm from './ornl-neunorm';
+import ornlRustpix from './ornl-rustpix';
+import ornlSlicer from './ornl-slicer';
+import ornlStork from './ornl-stork';
+import ornlSuperneuroabm from './ornl-superneuroabm';
+import ornlSuperneuromat from './ornl-superneuromat';
+import ornlThermo4pfm from './ornl-thermo4pfm';
+import ornlToucan from './ornl-toucan';
+import ornlTx2 from './ornl-tx2';
+import ornlWaveDenoiser from './ornl-wave-denoiser';
+import ornlWaveDp from './ornl-wave-dp';
+import ornlAdios2 from './ornl-adios2';
+import ornlBm3dornl from './ornl-bm3dornl';
+import ornlBraggedgemodeling from './ornl-braggedgemodeling';
+import ornlIbeatles from './ornl-ibeatles';
+import ornlTdcsophiread from './ornl-tdcsophiread';
+import ornlPicasso from './ornl-picasso';
+import ornlRovidh from './ornl-rovidh';
+import ornlRuscal from './ornl-ruscal';
+
 export const projects: Project[] = [
   uswds,
   loginGov,
@@ -901,4 +952,54 @@ export const projects: Project[] = [
   lanlCov2GenomicgraphtheoryPca,
   lanlCovtransformer,
   lanlBionetgen,
+  ornlMuMatScale,
+  ornlChathpc,
+  ornlCurifactory,
+  ornlCyberwheel,
+  ornlDaspStacker,
+  ornlDdstore,
+  ornlDedfoam,
+  ornlEquilipy,
+  ornlGauntlet,
+  ornlHydragnn,
+  ornlHydragnnGfmFineTuning4Materials,
+  ornlIcat,
+  ornlIpyoverlay,
+  ornlIris,
+  ornlMatey,
+  ornlMatris,
+  ornlMatsimAgents,
+  ornlMlmc,
+  ornlNeurocorex,
+  ornlOpensampl,
+  ornlOrmatex,
+  ornlPdmatlab2d,
+  ornlPdnetwork,
+  ornlPetina,
+  ornlPickerxl,
+  ornlPresto,
+  ornlQuilt,
+  ornlReno,
+  ornlSagesim,
+  ornlAscends,
+  ornlNereids,
+  ornlNeunorm,
+  ornlRustpix,
+  ornlSlicer,
+  ornlStork,
+  ornlSuperneuroabm,
+  ornlSuperneuromat,
+  ornlThermo4pfm,
+  ornlToucan,
+  ornlTx2,
+  ornlWaveDenoiser,
+  ornlWaveDp,
+  ornlAdios2,
+  ornlBm3dornl,
+  ornlBraggedgemodeling,
+  ornlIbeatles,
+  ornlTdcsophiread,
+  ornlPicasso,
+  ornlRovidh,
+  ornlRuscal,
 ];

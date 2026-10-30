@@ -10255,6 +10255,1162 @@
           "httpStatus": 203
         }
       }
+    },
+    "ornl-mumatscale": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-16",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lang-yuan/muMatScale",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/117471",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1016/j.addma.2024.104401",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S2214860424004470"
+        }
+      }
+    },
+    "ornl-chathpc": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/chathpc-app",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://chathpc-app.readthedocs.io/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://chathpc-app.readthedocs.io/en/latest/"
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/160289",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-curifactory": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/curifactory",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/curifactory/stable/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/70025",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-cyberwheel": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/cyberwheel",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/Cyberwheel",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/134699",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-dasp-stacker": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/dasp-stacker",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/DASP-Stacker",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/117463",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-ddstore": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/ddstore",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/DDStore/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/121881",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-dedfoam": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/dedfoam",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/DEDFOAM",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/186894",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-equilipy": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/equilipy",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/Equilipy/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/124191",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-gauntlet": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/gauntlet",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/Gauntlet",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/157761",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-hydragnn": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/hydragnn",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/HydraGNN",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://impact.ornl.gov/en/publications/user-manual-hydragnn-v50-distributed-implementation-of-multi-task",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://impact.ornl.gov/en/publications/user-manual-hydragnn-v50-distributed-implementation-of-multi-task/"
+        }
+      }
+    },
+    "ornl-hydragnn-gfm-finetuning4materials": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/hydragnn_gfm_finetuning4materials",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/HydraGNN_GFM_FineTuning4Materials/tree/v1.0",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/181647",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-icat": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/icat",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/icat/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/105653",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-ipyoverlay": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/ipyoverlay",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/ipyoverlay/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/127817",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-iris": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/iris",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://iris-programming.github.io/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://impact.ornl.gov/en/prizes/2024-rampd-100-award-for-iris-sdk-intelligent-runtime-system-for-/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-matey": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/matey",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/matey",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/173753",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-matris": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/matris",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/matris",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.ornl.gov/publication/matris-multi-level-math-library-abstraction-heterogeneity-and-performance-portability",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.ornl.gov/publications/matris-multi-level-math-library-abstraction-for-heterogeneity-and-performance-portability-using-iris-runtime/"
+        }
+      }
+    },
+    "ornl-matsim-agents": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/matsim-agents",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/matsim-agents",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/181158",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-mlmc": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/mlmc",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/MLMC",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.ornl.gov/publication/multi-level-monte-carlo-methods-chemical-applications-lennard-jones-potentials-and-other",
+          "status": "not-found",
+          "httpStatus": 404
+        }
+      }
+    },
+    "ornl-neurocorex": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/neurocorex",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/NeuroCoreX",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://impact.ornl.gov/en/publications/neurocorex-an-open-source-fpga-based-spiking-neural-network-emula/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-opensampl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/opensampl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://cast.ornl.gov/news/stories/OpenSAMPL.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cast.ornl.gov/news/stories/OpenSAMPL.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-ormatex": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/ormatex",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/ORMATEX",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/150070",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-pdmatlab2d": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/pdmatlab2d",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/PDMATLAB2D",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/97241",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-pdnetwork": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/pdnetwork",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/PDnetwork/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/145360",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-petina": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/petina",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/PETINA",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://raw.githubusercontent.com/ORNL/PETINA/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-pickerxl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/picker-xl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/picker-xl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/150453",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-presto": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/presto",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/ornl-presto/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.ornl.gov/news/ornl-wins-20-rd-100-awards",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://www.ornl.gov/news/ornl-wins-20-rd-100-awards/"
+        }
+      }
+    },
+    "ornl-quilt": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/quilt",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/Quilt",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.olcf.ornl.gov/2019/03/12/supercomputers-to-help-supercharge-ceramic-matrix-composite-manufacturing/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-reno": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/reno",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/reno/stable/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/166929",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-sagesim": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/sagesim",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/SAGESim",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/125496",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-ascends": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornlpmcp/ascends",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ornlpmcp/ASCENDS",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/48766",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-nereids": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornlneutronimaging/NEREIDS",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornlneutronimaging.github.io/NEREIDS/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/185399",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-neunorm": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornlneutronimaging/NeuNorm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://neutronimaging.ornl.gov/software/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/185854",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-rustpix": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornlneutronimaging/rustpix",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornlneutronimaging.github.io/rustpix/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/185477",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-slicer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNLSlicer/ORNLSlicer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNLSlicer/ORNLSlicer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/97742",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-stork": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/Stork",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/Stork/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/192615",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-superneuroabm": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/superneuroabm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/superneuroabm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/103323",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-superneuromat": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/superneuromat",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/superneuromat/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/103290",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-thermo4pfm": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/Thermo4PFM",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/Thermo4PFM",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/67580",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-toucan": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/Toucan",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/Toucan/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/192934",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-tx2": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/tx2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornl.github.io/tx2/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/50372",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-wave-denoiser": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/wave-denoiser",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/wave-denoiser",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/164114",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-wave-dp": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ORNL/wave-dp",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ORNL/wave-dp",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/176312",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-adios2": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornladios/ADIOS2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ornladios/ADIOS2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/75331",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-bm3dornl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornlneutronimaging/bm3dornl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://bm3dornl.readthedocs.io/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://bm3dornl.readthedocs.io/en/latest/"
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/185410",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-braggedgemodeling": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornlneutronimaging/braggedgemodeling",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ornlneutronimaging.github.io/braggedgemodeling/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/185961",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-ibeatles": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornlneutronimaging/ibeatles",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ornlneutronimaging/ibeatles",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/148423",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-tdcsophiread": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ornlneutronimaging/mcpevent2hist",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ornlneutronimaging/mcpevent2hist",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/117311",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-picasso": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/picassodev/picasso",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/picassodev/picasso",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/50993",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-rovidh": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/rovi-org/rovidh",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://rovidoc.ornl.gov/",
+          "status": "error",
+          "errorCode": "request-timeout"
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/rovidh/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "ornl-ruscal": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/RUS-ORNL/RUScal",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/RUS-ORNL/RUScal",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pubs.acs.org/doi/abs/10.1021/acs.chemmater.5c02867",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
     }
   },
   "carriedForwardProjectIds": [
@@ -10706,6 +11862,56 @@
     "lanl-pselib",
     "lanl-cov2-genomicgraphtheory-pca",
     "lanl-covtransformer",
-    "lanl-bionetgen"
+    "lanl-bionetgen",
+    "ornl-mumatscale",
+    "ornl-chathpc",
+    "ornl-curifactory",
+    "ornl-cyberwheel",
+    "ornl-dasp-stacker",
+    "ornl-ddstore",
+    "ornl-dedfoam",
+    "ornl-equilipy",
+    "ornl-gauntlet",
+    "ornl-hydragnn",
+    "ornl-hydragnn-gfm-finetuning4materials",
+    "ornl-icat",
+    "ornl-ipyoverlay",
+    "ornl-iris",
+    "ornl-matey",
+    "ornl-matris",
+    "ornl-matsim-agents",
+    "ornl-mlmc",
+    "ornl-neurocorex",
+    "ornl-opensampl",
+    "ornl-ormatex",
+    "ornl-pdmatlab2d",
+    "ornl-pdnetwork",
+    "ornl-petina",
+    "ornl-pickerxl",
+    "ornl-presto",
+    "ornl-quilt",
+    "ornl-reno",
+    "ornl-sagesim",
+    "ornl-ascends",
+    "ornl-nereids",
+    "ornl-neunorm",
+    "ornl-rustpix",
+    "ornl-slicer",
+    "ornl-stork",
+    "ornl-superneuroabm",
+    "ornl-superneuromat",
+    "ornl-thermo4pfm",
+    "ornl-toucan",
+    "ornl-tx2",
+    "ornl-wave-denoiser",
+    "ornl-wave-dp",
+    "ornl-adios2",
+    "ornl-bm3dornl",
+    "ornl-braggedgemodeling",
+    "ornl-ibeatles",
+    "ornl-tdcsophiread",
+    "ornl-picasso",
+    "ornl-rovidh",
+    "ornl-ruscal"
   ]
 }

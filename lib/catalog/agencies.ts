@@ -2039,4 +2039,15 @@ export const agencies: Agency[] = [
     officialUrl: 'https://www.med.navy.mil/Naval-Medical-Research-Command/',
     parentAgencyId: 'us-dod',
   },
+  {
+    id: 'us-dhs-fema',
+    name: 'Federal Emergency Management Agency',
+    abbreviation: 'FEMA',
+    aliases: ['FEMA'],
+    geography: 'United States',
+    jurisdiction: 'U.S. federal',
+    type: 'Agency',
+    officialUrl: 'https://www.fema.gov/',
+    parentAgencyId: 'us-dhs',
+  },
 ];
