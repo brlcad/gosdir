@@ -46,6 +46,8 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+/.ledger-state/
+/docs/research/ledger/candidates.jsonl
 *.tsbuildinfo
 
 # Private administrative credentials, observations, audit history, and process state

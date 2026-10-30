@@ -16,6 +16,10 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ledger = path.join(root, 'docs/research/ledger');
 const batchDirectory = path.join(ledger, 'batches');
+const stateDirectory = process.env.GOSDIR_LEDGER_STATE_DIR
+  ? path.resolve(process.env.GOSDIR_LEDGER_STATE_DIR)
+  : path.join(root, '.ledger-state');
+const candidateProjectionPath = path.join(stateDirectory, 'candidates.jsonl');
 const option = (name) => {
   const index = process.argv.indexOf(name);
   return index < 0 ? null : process.argv[index + 1];
@@ -87,7 +91,14 @@ try {
       assigned.add(JSON.parse(line).normalized_repository_url);
   }
   const candidates = (
-    await readFile(path.join(ledger, 'candidates.jsonl'), 'utf8')
+    await readFile(candidateProjectionPath, 'utf8').catch((error) => {
+      if (error?.code === 'ENOENT') {
+        throw new Error(
+          `Missing local ledger projection at ${candidateProjectionPath}; run node scripts/build-government-oss-ledger.mjs first`,
+        );
+      }
+      throw error;
+    })
   )
     .split(/\r?\n/)
     .filter(Boolean)

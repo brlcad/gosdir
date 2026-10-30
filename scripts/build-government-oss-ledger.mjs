@@ -8,6 +8,7 @@ import {
   unlink,
   writeFile,
 } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
 import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,6 +20,10 @@ const ledgerDirectory = path.join(root, 'docs/research/ledger');
 const sourceDirectory = path.join(ledgerDirectory, 'sources');
 const reviewDirectory = path.join(ledgerDirectory, 'reviews');
 const batchDirectory = path.join(ledgerDirectory, 'batches');
+const stateDirectory = process.env.GOSDIR_LEDGER_STATE_DIR
+  ? path.resolve(process.env.GOSDIR_LEDGER_STATE_DIR)
+  : path.join(root, '.ledger-state');
+const candidateProjectionPath = path.join(stateDirectory, 'candidates.jsonl');
 const checks = [
   'government_provenance',
   'public_source',
@@ -111,6 +116,7 @@ async function loadCatalog() {
 
 await mkdir(reviewDirectory, { recursive: true });
 await mkdir(batchDirectory, { recursive: true });
+await mkdir(stateDirectory, { recursive: true });
 const sourceFiles = (await readdir(sourceDirectory))
   .filter((name) => name.endsWith('.jsonl'))
   .sort();
@@ -470,6 +476,16 @@ const summary = {
   assigned_unreviewed_urls: [...assignments].filter(
     (url) => byUrl.get(url).review_status === 'unreviewed',
   ).length,
+  assigned_metadata_candidate_unreviewed_urls: [...assignments].filter(
+    (url) =>
+      byUrl.get(url).metadata_candidate &&
+      byUrl.get(url).review_status === 'unreviewed',
+  ).length,
+  assigned_metadata_excluded_unreviewed_urls: [...assignments].filter(
+    (url) =>
+      !byUrl.get(url).metadata_candidate &&
+      byUrl.get(url).review_status === 'unreviewed',
+  ).length,
   unassigned_metadata_candidate_urls: output.filter(
     (candidate) =>
       candidate.metadata_candidate &&
@@ -490,8 +506,39 @@ const summary = {
   warning:
     'Metadata candidates and catalog URL matches are not individual four-check reviews.',
 };
-async function writeAtomic(filename, contents) {
-  const target = path.join(ledgerDirectory, filename);
+
+const reviewedPriorityUrls =
+  summary.metadata_candidate_review_decisions.publishable +
+  summary.metadata_candidate_review_decisions.hold +
+  summary.metadata_candidate_review_decisions.reject;
+const reviewedAllUrls =
+  summary.review_decisions.publishable +
+  summary.review_decisions.hold +
+  summary.review_decisions.reject;
+const percent = (reviewed, total) =>
+  total ? Math.round((reviewed / total) * 1000) / 10 : 0;
+const siteProgress = {
+  generated_at_utc: summary.generated_at_utc,
+  priority: {
+    reviewed: reviewedPriorityUrls,
+    total: summary.metadata_candidates,
+    remaining: summary.metadata_candidate_review_decisions.unreviewed,
+    in_review: summary.assigned_metadata_candidate_unreviewed_urls,
+    awaiting_assignment: summary.unassigned_metadata_candidate_urls,
+    percent: percent(reviewedPriorityUrls, summary.metadata_candidates),
+    decisions: summary.metadata_candidate_review_decisions,
+  },
+  all: {
+    reviewed: reviewedAllUrls,
+    total: summary.distinct_repository_urls,
+    remaining: summary.review_decisions.unreviewed,
+    in_review: summary.assigned_unreviewed_urls,
+    awaiting_assignment: summary.unassigned_total_urls,
+    percent: percent(reviewedAllUrls, summary.distinct_repository_urls),
+    decisions: summary.review_decisions,
+  },
+};
+async function writeAtomic(target, contents) {
   const temporary = `${target}.${randomUUID()}.tmp`;
   try {
     await writeFile(temporary, contents);
@@ -502,8 +549,19 @@ async function writeAtomic(filename, contents) {
 }
 
 await writeAtomic(
-  'candidates.jsonl',
+  candidateProjectionPath,
   output.map((item) => JSON.stringify(item)).join('\n') + '\n',
 );
-await writeAtomic('summary.json', JSON.stringify(summary, null, 2) + '\n');
+await writeAtomic(
+  path.join(ledgerDirectory, 'summary.json'),
+  JSON.stringify(summary, null, 2) + '\n',
+);
+await writeAtomic(
+  path.join(ledgerDirectory, 'site-progress.json'),
+  JSON.stringify(siteProgress, null, 2) + '\n',
+);
+execFileSync('npm', ['run', 'build:apache'], {
+  cwd: root,
+  stdio: 'inherit',
+});
 console.log(JSON.stringify(summary, null, 2));
