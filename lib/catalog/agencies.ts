@@ -2414,4 +2414,27 @@ export const agencies: Agency[] = [
     officialUrl: 'https://u-paris.fr/',
     parentAgencyId: 'fr-government',
   },
+  {
+    id: 'uk-hm-courts-and-tribunals-service',
+    name: 'HM Courts & Tribunals Service',
+    abbreviation: 'HMCTS',
+    aliases: ['HM Courts and Tribunals Service'],
+    geography: 'United Kingdom',
+    jurisdiction: 'International',
+    type: 'Agency',
+    officialUrl:
+      'https://www.gov.uk/government/organisations/hm-courts-and-tribunals-service/about',
+    parentAgencyId: 'uk-ministry-of-justice',
+  },
+  {
+    id: 'uk-ministry-of-justice',
+    name: 'Ministry of Justice',
+    abbreviation: 'MoJ',
+    geography: 'United Kingdom',
+    jurisdiction: 'International',
+    type: 'Department',
+    officialUrl:
+      'https://www.gov.uk/government/organisations/ministry-of-justice/about',
+    parentAgencyId: 'uk-government',
+  },
 ];

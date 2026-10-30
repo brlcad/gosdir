@@ -686,6 +686,76 @@ import frRiateStatsbreaks from './fr-riate-statsbreaks';
 import frRiateTricolore from './fr-riate-tricolore';
 import frRiateValh from './fr-riate-valh';
 
+import ukHmctsApiCrimeTemplate from './uk-hmcts-api-crime-template';
+import ukHmctsArtefactVersionAction from './uk-hmcts-artefact-version-action';
+import ukHmctsBeftaFw from './uk-hmcts-befta-fw';
+import ukHmctsCcdDataStoreApi from './uk-hmcts-ccd-data-store-api';
+import ukHmctsChartBlobstorage from './uk-hmcts-chart-blobstorage';
+import ukHmctsChartCcd from './uk-hmcts-chart-ccd';
+import ukHmctsChartJava from './uk-hmcts-chart-java';
+import ukHmctsChartJob from './uk-hmcts-chart-job';
+import ukHmctsChartNeuvector from './uk-hmcts-chart-neuvector';
+import ukHmctsChartNodejs from './uk-hmcts-chart-nodejs';
+import ukHmctsChartPactBroker from './uk-hmcts-chart-pact-broker';
+import ukHmctsChartPostgresql from './uk-hmcts-chart-postgresql';
+import ukHmctsChartPython from './uk-hmcts-chart-python';
+import ukHmctsChartServicebus from './uk-hmcts-chart-servicebus';
+import ukHmctsCivilCitizenUi from './uk-hmcts-civil-citizen-ui';
+import ukHmctsCmcCitizenFrontend from './uk-hmcts-cmc-citizen-frontend';
+import ukHmctsCmcPdfServiceClient from './uk-hmcts-cmc-pdf-service-client';
+import ukHmctsCnpApiDocs from './uk-hmcts-cnp-api-docs';
+import ukHmctsCnpJenkinsLibrary from './uk-hmcts-cnp-jenkins-library';
+import ukHmctsCnpGithubactionsLibrary from './uk-hmcts-cnp-githubactions-library';
+import ukHmctsCnpNodeBase from './uk-hmcts-cnp-node-base';
+import ukHmctsCookieManager from './uk-hmcts-cookie-manager';
+import ukHmctsCpAuditSpringbootAnnotations from './uk-hmcts-cp-audit-springboot-annotations';
+import ukHmctsCpAuthRulesFilter from './uk-hmcts-cp-auth-rules-filter';
+import ukHmctsCppModuleTerraformAzurermKeyVault from './uk-hmcts-cpp-module-terraform-azurerm-key-vault';
+import ukHmctsDivIdamExpressMiddleware from './uk-hmcts-div-idam-express-middleware';
+import ukHmctsDocumentManagementStoreApp from './uk-hmcts-document-management-store-app';
+import ukHmctsDraftStore from './uk-hmcts-draft-store';
+import ukHmctsDtspoDailyMonitoring from './uk-hmcts-dtspo-daily-monitoring';
+import ukHmctsDynatraceAvailabilityDashboards from './uk-hmcts-dynatrace-availability-dashboards';
+import ukHmctsEmCcdOrchestrator from './uk-hmcts-em-ccd-orchestrator';
+import ukHmctsEmHrsApi from './uk-hmcts-em-hrs-api';
+import ukHmctsEmHrsIngestor from './uk-hmcts-em-hrs-ingestor';
+import ukHmctsEtExporterGem from './uk-hmcts-et-exporter-gem';
+import ukHmctsEtFakeAcasServer from './uk-hmcts-et-fake-acas-server';
+import ukHmctsEtGdsDesignSystem from './uk-hmcts-et-gds-design-system';
+import ukHmctsEtTestHelpers from './uk-hmcts-et-test-helpers';
+import ukHmctsEtSyaFrontend from './uk-hmcts-et-sya-frontend';
+import ukHmctsEtSyrFrontend from './uk-hmcts-et-syr-frontend';
+import ukHmctsFactFrontend from './uk-hmcts-fact-frontend';
+import ukHmctsIdamLegacyAuthSupport from './uk-hmcts-idam-legacy-auth-support';
+import ukHmctsIdamOidcAuthSupport from './uk-hmcts-idam-oidc-auth-support';
+import ukHmctsIdamUserManagementApiClient from './uk-hmcts-idam-user-management-api-client';
+import ukHmctsJavaLogging from './uk-hmcts-java-logging';
+import ukHmctsJenkinsPacker from './uk-hmcts-jenkins-packer';
+import ukHmctsJurorPublic from './uk-hmcts-juror-public';
+import ukHmctsK8sEnvInjector from './uk-hmcts-k8s-env-injector';
+import ukHmctsKnowledgeStoreBuilder from './uk-hmcts-knowledge-store-builder';
+import ukHmctsLaunchdarklyTerraform from './uk-hmcts-launchdarkly-terraform';
+import ukHmctsLifeEventsClient from './uk-hmcts-life-events-client';
+import ukHmctsMiAdfIntegrationRuntime from './uk-hmcts-mi-adf-integration-runtime';
+import ukHmctsModuleTerraformAzurermBackupVault from './uk-hmcts-module-terraform-azurerm-backup-vault';
+import ukHmctsNodejsInfoProvider from './uk-hmcts-nodejs-info-provider';
+import ukHmctsPaymentsJavaClient from './uk-hmcts-payments-java-client';
+import ukHmctsRpePdfService from './uk-hmcts-rpe-pdf-service';
+import ukHmctsRpxXuiCommonLib from './uk-hmcts-rpx-xui-common-lib';
+import ukHmctsRpxXuiManageOrganisations from './uk-hmcts-rpx-xui-manage-organisations';
+import ukHmctsRpxXuiMediaViewer from './uk-hmcts-rpx-xui-media-viewer';
+import ukHmctsRpxXuiNodeLib from './uk-hmcts-rpx-xui-node-lib';
+import ukHmctsRpxXuiWebapp from './uk-hmcts-rpx-xui-webapp';
+import ukHmctsRseCftLib from './uk-hmcts-rse-cft-lib';
+import ukHmctsRseIdamSimulator from './uk-hmcts-rse-idam-simulator';
+import ukHmctsSecretsScanner from './uk-hmcts-secrets-scanner';
+import ukHmctsServiceAuthProviderApp from './uk-hmcts-service-auth-provider-app';
+import ukHmctsServiceHmctsCrimeSpringbootTemplate from './uk-hmcts-service-hmcts-crime-springboot-template';
+import ukHmctsSptribsFrontend from './uk-hmcts-sptribs-frontend';
+import ukHmctsTriggerAdoPipeline from './uk-hmcts-trigger-ado-pipeline';
+import ukHmctsVersionReporterServices from './uk-hmcts-version-reporter-services';
+import ukHmctsWaChart from './uk-hmcts-wa-chart';
+
 export const projects: Project[] = [
   uswds,
   loginGov,
@@ -1367,4 +1437,73 @@ export const projects: Project[] = [
   frRiateStatsbreaks,
   frRiateTricolore,
   frRiateValh,
+  ukHmctsApiCrimeTemplate,
+  ukHmctsArtefactVersionAction,
+  ukHmctsBeftaFw,
+  ukHmctsCcdDataStoreApi,
+  ukHmctsChartBlobstorage,
+  ukHmctsChartCcd,
+  ukHmctsChartJava,
+  ukHmctsChartJob,
+  ukHmctsChartNeuvector,
+  ukHmctsChartNodejs,
+  ukHmctsChartPactBroker,
+  ukHmctsChartPostgresql,
+  ukHmctsChartPython,
+  ukHmctsChartServicebus,
+  ukHmctsCivilCitizenUi,
+  ukHmctsCmcCitizenFrontend,
+  ukHmctsCmcPdfServiceClient,
+  ukHmctsCnpApiDocs,
+  ukHmctsCnpJenkinsLibrary,
+  ukHmctsCnpGithubactionsLibrary,
+  ukHmctsCnpNodeBase,
+  ukHmctsCookieManager,
+  ukHmctsCpAuditSpringbootAnnotations,
+  ukHmctsCpAuthRulesFilter,
+  ukHmctsCppModuleTerraformAzurermKeyVault,
+  ukHmctsDivIdamExpressMiddleware,
+  ukHmctsDocumentManagementStoreApp,
+  ukHmctsDraftStore,
+  ukHmctsDtspoDailyMonitoring,
+  ukHmctsDynatraceAvailabilityDashboards,
+  ukHmctsEmCcdOrchestrator,
+  ukHmctsEmHrsApi,
+  ukHmctsEmHrsIngestor,
+  ukHmctsEtExporterGem,
+  ukHmctsEtFakeAcasServer,
+  ukHmctsEtGdsDesignSystem,
+  ukHmctsEtTestHelpers,
+  ukHmctsEtSyaFrontend,
+  ukHmctsEtSyrFrontend,
+  ukHmctsFactFrontend,
+  ukHmctsIdamLegacyAuthSupport,
+  ukHmctsIdamOidcAuthSupport,
+  ukHmctsIdamUserManagementApiClient,
+  ukHmctsJavaLogging,
+  ukHmctsJenkinsPacker,
+  ukHmctsJurorPublic,
+  ukHmctsK8sEnvInjector,
+  ukHmctsKnowledgeStoreBuilder,
+  ukHmctsLaunchdarklyTerraform,
+  ukHmctsLifeEventsClient,
+  ukHmctsMiAdfIntegrationRuntime,
+  ukHmctsModuleTerraformAzurermBackupVault,
+  ukHmctsNodejsInfoProvider,
+  ukHmctsPaymentsJavaClient,
+  ukHmctsRpePdfService,
+  ukHmctsRpxXuiCommonLib,
+  ukHmctsRpxXuiManageOrganisations,
+  ukHmctsRpxXuiMediaViewer,
+  ukHmctsRpxXuiNodeLib,
+  ukHmctsRpxXuiWebapp,
+  ukHmctsRseCftLib,
+  ukHmctsRseIdamSimulator,
+  ukHmctsSecretsScanner,
+  ukHmctsServiceAuthProviderApp,
+  ukHmctsServiceHmctsCrimeSpringbootTemplate,
+  ukHmctsSptribsFrontend,
+  ukHmctsTriggerAdoPipeline,
+  ukHmctsVersionReporterServices,
+  ukHmctsWaChart,
 ];

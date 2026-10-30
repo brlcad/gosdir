@@ -33269,6 +33269,3387 @@
           "httpStatus": 200
         }
       }
+    },
+    "uk-hmcts-api-crime-template": {
+      "activitySource": "https://github.com/hmcts/api-hmcts-crime-template",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-29",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/api-hmcts-crime-template",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/claude/blob/61f849fff4f171819154874d75f895ced720e939/.claude/skills/springboot-api-from-template/SKILL.md",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/api-hmcts-crime-template/blob/251df75d187719dde7ba7d758965dace287f6db3/LICENSE",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-artefact-version-action": {
+      "activitySource": "https://github.com/hmcts/artefact-version-action",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/artefact-version-action",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/artefact-version-action",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/artefact-version-action/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-befta-fw": {
+      "activitySource": "https://github.com/hmcts/befta-fw",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/befta-fw",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/befta-fw",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/befta-fw/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-ccd-data-store-api": {
+      "activitySource": "https://github.com/hmcts/ccd-data-store-api",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/ccd-data-store-api",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hmcts.github.io/ccd-data-store-api/api/latest/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/ccd-data-store-api/blob/master/catalog-info.yaml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-blobstorage": {
+      "activitySource": "https://github.com/hmcts/chart-blobstorage",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-blobstorage",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-blobstorage",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-blobstorage/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-ccd": {
+      "activitySource": "https://github.com/hmcts/chart-ccd",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-02",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-ccd",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-ccd",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-ccd/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-java": {
+      "activitySource": "https://github.com/hmcts/chart-java",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-java",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-java",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-java/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-job": {
+      "activitySource": "https://github.com/hmcts/chart-job",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-job",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-job",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-job/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-neuvector": {
+      "activitySource": "https://github.com/hmcts/chart-neuvector",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-neuvector",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-neuvector",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-neuvector/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-nodejs": {
+      "activitySource": "https://github.com/hmcts/chart-nodejs",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-nodejs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-nodejs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-nodejs/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-pact-broker": {
+      "activitySource": "https://github.com/hmcts/chart-pact-broker",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-01",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-pact-broker",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-pact-broker",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-pact-broker/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-postgresql": {
+      "activitySource": "https://github.com/hmcts/chart-postgresql",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-postgresql",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-postgresql",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-postgresql/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-python": {
+      "activitySource": "https://github.com/hmcts/chart-python",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-python",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-python",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-python/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-chart-servicebus": {
+      "activitySource": "https://github.com/hmcts/chart-servicebus",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/chart-servicebus",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/chart-servicebus",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/chart-servicebus/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-civil-citizen-ui": {
+      "activitySource": "https://github.com/hmcts/civil-citizen-ui",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/civil-citizen-ui",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/civil-citizen-ui",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/civil-citizen-ui/blob/master/catalog-info.yaml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cmc-citizen-frontend": {
+      "activitySource": "https://github.com/hmcts/cmc-citizen-frontend",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cmc-citizen-frontend",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/make-court-claim-for-money",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cmc-citizen-frontend/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cmc-pdf-service-client": {
+      "activitySource": "https://github.com/hmcts/cmc-pdf-service-client",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-12",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cmc-pdf-service-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/cmc-pdf-service-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cmc-pdf-service-client/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cnp-api-docs": {
+      "activitySource": "https://github.com/hmcts/cnp-api-docs",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cnp-api-docs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hmcts.github.io/cnp-api-docs/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cnp-api-docs/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cnp-jenkins-library": {
+      "activitySource": "https://github.com/hmcts/cnp-jenkins-library",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cnp-jenkins-library",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/cnp-jenkins-library",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cnp-jenkins-library/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cnp-githubactions-library": {
+      "activitySource": "https://github.com/hmcts/cnp-githubactions-library",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-09",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cnp-githubactions-library",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/cnp-githubactions-library",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/hmcts.github.io/blob/a4e82c6c15e9f8fdd66d23eeaca2490cbea7262a/source/cloud-native-platform/shared-libraries/github-actions-library.html.md.erb",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cnp-node-base": {
+      "activitySource": "https://github.com/hmcts/cnp-node-base",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-01-23",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cnp-node-base",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/cnp-node-base",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cnp-node-base/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cookie-manager": {
+      "activitySource": "https://github.com/hmcts/cookie-manager",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-05",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cookie-manager",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hmcts.github.io/cookie-manager/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cookie-manager/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cp-audit-springboot-annotations": {
+      "activitySource": "https://github.com/hmcts/cp-audit-springboot-annotations",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cp-audit-springboot-annotations",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/cp-audit-springboot-annotations",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cp-audit-springboot-annotations/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cp-auth-rules-filter": {
+      "activitySource": "https://github.com/hmcts/cp-auth-rules-filter",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-21",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cp-auth-rules-filter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/cp-auth-rules-filter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cp-auth-rules-filter/blob/v1.0.10/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-cpp-module-terraform-azurerm-key-vault": {
+      "activitySource": "https://github.com/hmcts/cpp-module-terraform-azurerm-key-vault",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/cpp-module-terraform-azurerm-key-vault",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/cpp-module-terraform-azurerm-key-vault",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cpp-module-terraform-azurerm-key-vault/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-div-idam-express-middleware": {
+      "activitySource": "https://github.com/hmcts/div-idam-express-middleware",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-18",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/div-idam-express-middleware",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/div-idam-express-middleware",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/div-idam-express-middleware/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-document-management-store-app": {
+      "activitySource": "https://github.com/hmcts/document-management-store-app",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/document-management-store-app",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hmcts.github.io/cnp-api-docs/swagger.html?url=https://hmcts.github.io/cnp-api-docs/specs/document-management-store-app.json",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/document-management-store-app/blob/master/catalog-info.yaml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-draft-store": {
+      "activitySource": "https://github.com/hmcts/draft-store",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-09",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/draft-store",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/draft-store",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/draft-store/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-dtspo-daily-monitoring": {
+      "activitySource": "https://github.com/hmcts/dtspo-daily-monitoring",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-01",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/dtspo-daily-monitoring",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/dtspo-daily-monitoring",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/dtspo-daily-monitoring/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-dynatrace-availability-dashboards": {
+      "activitySource": "https://github.com/hmcts/dynatrace-availability-dashboards",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-05",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/dynatrace-availability-dashboards",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/dynatrace-availability-dashboards",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/dynatrace-availability-dashboards/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-em-ccd-orchestrator": {
+      "activitySource": "https://github.com/hmcts/em-ccd-orchestrator",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/em-ccd-orchestrator",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hmcts.github.io/cnp-api-docs/swagger.html?url=https://hmcts.github.io/cnp-api-docs/specs/em-ccd-orchestrator.json",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/em-ccd-orchestrator/blob/master/catalog-info.yaml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-em-hrs-api": {
+      "activitySource": "https://github.com/hmcts/em-hrs-api",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/em-hrs-api",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/em-hrs-api",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/em-hrs-api/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-em-hrs-ingestor": {
+      "activitySource": "https://github.com/hmcts/em-hrs-ingestor",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/em-hrs-ingestor",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/em-hrs-ingestor",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/em-hrs-ingestor/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-et-exporter-gem": {
+      "activitySource": "https://github.com/hmcts/et_exporter_gem",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-18",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/et_exporter_gem",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/et_exporter_gem",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/et-pet-api/blob/master/Gemfile",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-et-fake-acas-server": {
+      "activitySource": "https://github.com/hmcts/et_fake_acas_server",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-18",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/et_fake_acas_server",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/et_fake_acas_server",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/et_fake_acas_server/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-et-gds-design-system": {
+      "activitySource": "https://github.com/hmcts/et_gds_design_system",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-07",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/et_gds_design_system",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/et_gds_design_system",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/et-pet-et1/blob/master/Gemfile",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-et-test-helpers": {
+      "activitySource": "https://github.com/hmcts/et_test_helpers",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-03-02",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/et_test_helpers",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/et_test_helpers",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/et-pet-et3/blob/master/Gemfile",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-et-sya-frontend": {
+      "activitySource": "https://github.com/hmcts/et-sya-frontend",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/et-sya-frontend",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.claim-employment-tribunals.service.gov.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.claim-employment-tribunals.service.gov.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-et-syr-frontend": {
+      "activitySource": "https://github.com/hmcts/et-syr-frontend",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/et-syr-frontend",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.respond-employment-tribunals.service.gov.uk/?lng=en",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.respond-employment-tribunals.service.gov.uk/?lng=en",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-fact-frontend": {
+      "activitySource": "https://github.com/hmcts/fact-frontend",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the public GitHub REST List commits endpoint; repository archived flag checked through Get repository. Five-year commit counts unavailable; no repository data was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-20",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/fact-frontend",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.find-court-tribunal.service.gov.uk/?lng=en",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.find-court-tribunal.service.gov.uk/?lng=en",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-idam-legacy-auth-support": {
+      "activitySource": "https://github.com/hmcts/idam-legacy-auth-support",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/idam-legacy-auth-support",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/idam-legacy-auth-support",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pkgs.dev.azure.com/hmcts/Artifacts/_packaging/hmcts-lib/maven/v1/com/github/hmcts/idam-legacy-auth-support/maven-metadata.xml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-idam-oidc-auth-support": {
+      "activitySource": "https://github.com/hmcts/idam-oidc-auth-support",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/idam-oidc-auth-support",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/idam-oidc-auth-support",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pkgs.dev.azure.com/hmcts/Artifacts/_packaging/hmcts-lib/maven/v1/com/github/hmcts/idam-oidc-auth-support/maven-metadata.xml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-idam-user-management-api-client": {
+      "activitySource": "https://github.com/hmcts/idam-user-management-api-client",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/idam-user-management-api-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/idam-user-management-api-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pkgs.dev.azure.com/hmcts/Artifacts/_packaging/hmcts-lib/maven/v1/com/github/hmcts/idam-user-management-api-client/maven-metadata.xml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-java-logging": {
+      "activitySource": "https://github.com/hmcts/java-logging",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/java-logging",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/java-logging",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pkgs.dev.azure.com/hmcts/Artifacts/_packaging/hmcts-lib/maven/v1/com/github/hmcts/java-logging/logging/maven-metadata.xml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-jenkins-packer": {
+      "activitySource": "https://github.com/hmcts/jenkins-packer",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/jenkins-packer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/jenkins-packer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/jenkins-packer/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-juror-public": {
+      "activitySource": "https://github.com/hmcts/juror-public",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/juror-public",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/reply-jury-summons",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/service-standard-reports/juror-summons-beta-assessment",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-k8s-env-injector": {
+      "activitySource": "https://github.com/hmcts/k8s-env-injector",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-01-07",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/k8s-env-injector",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/k8s-env-injector",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/k8s-env-injector/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-knowledge-store-builder": {
+      "activitySource": "https://github.com/hmcts/knowledge-store-builder",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/knowledge-store-builder",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/knowledge-store-builder",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/knowledge-store-builder/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-launchdarkly-terraform": {
+      "activitySource": "https://github.com/hmcts/launchdarkly-terraform",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-10",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/launchdarkly-terraform",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hmcts.github.io/cloud-native-platform/new-component/feature-flags.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hmcts.github.io/ops-runbooks/Services/launchdarkly.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-life-events-client": {
+      "activitySource": "https://github.com/hmcts/life-events-client",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/life-events-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/life-events-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/life-events-client/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-mi-adf-integration-runtime": {
+      "activitySource": "https://github.com/hmcts/mi-adf-integration-runtime",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-17",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/mi-adf-integration-runtime",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/mi-adf-integration-runtime",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/sds-flux-config/blob/master/apps/mi/mi-adf-shir/prod.yaml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-module-terraform-azurerm-backup-vault": {
+      "activitySource": "https://github.com/hmcts/module-terraform-azurerm-backup-vault",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-02-16",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/module-terraform-azurerm-backup-vault",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/module-terraform-azurerm-backup-vault",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/azure-backup-vault/blob/master/components/cnp/main.tf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-nodejs-info-provider": {
+      "activitySource": "https://github.com/hmcts/nodejs-info-provider",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/nodejs-info-provider",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/nodejs-info-provider",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/nodejs-info-provider/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-payments-java-client": {
+      "activitySource": "https://github.com/hmcts/payments-java-client",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/payments-java-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/payments-java-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/payments-java-client/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-rpe-pdf-service": {
+      "activitySource": "https://github.com/hmcts/rpe-pdf-service",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-11",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/rpe-pdf-service",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/rpe-pdf-service",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cnp-flux-config/blob/master/apps/rpe/pdf-service/pdf-service.yaml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-rpx-xui-common-lib": {
+      "activitySource": "https://github.com/hmcts/rpx-xui-common-lib",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/rpx-xui-common-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/rpx-xui-common-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/rpx-xui-webapp/blob/master/package.json",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-rpx-xui-manage-organisations": {
+      "activitySource": "https://github.com/hmcts/rpx-xui-manage-organisations",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/rpx-xui-manage-organisations",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/government/publications/myhmcts-how-to-manage-user-accounts/add-or-update-a-myhmcts-user-account",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cnp-jenkins-config/blob/9227d5801714695c303e8eb674f885f99e408733/deployment-controls.yml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-rpx-xui-media-viewer": {
+      "activitySource": "https://github.com/hmcts/rpx-xui-media-viewer",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/rpx-xui-media-viewer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/rpx-xui-media-viewer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/rpx-xui-webapp/blob/master/package.json",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-rpx-xui-node-lib": {
+      "activitySource": "https://github.com/hmcts/rpx-xui-node-lib",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-07",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/rpx-xui-node-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/rpx-xui-node-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/rpx-xui-webapp/blob/master/package.json",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-rpx-xui-webapp": {
+      "activitySource": "https://github.com/hmcts/rpx-xui-webapp",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/rpx-xui-webapp",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/guidance/submit-or-respond-to-an-application-with-myhmcts",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/cnp-jenkins-config/blob/9227d5801714695c303e8eb674f885f99e408733/deployment-controls.yml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-rse-cft-lib": {
+      "activitySource": "https://github.com/hmcts/rse-cft-lib",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/rse-cft-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/rse-cft-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/fpl-ccd-configuration/blob/f5528042a0436c306ab67a6dded9f6030e7063ab/service/build.gradle",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-rse-idam-simulator": {
+      "activitySource": "https://github.com/hmcts/rse-idam-simulator",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date and archived flag checked through the connected public GitHub REST endpoints; annual commit counts unavailable. No repository data or archive was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": false,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/rse-idam-simulator",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/rse-idam-simulator",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/ccd-docker/blob/d29edd5ea3094ac515ba9830ccf5e789c5aa131a/compose/idam-sim.yml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-secrets-scanner": {
+      "activitySource": "https://github.com/hmcts/secrets-scanner",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-12",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/secrets-scanner",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/secrets-scanner/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/secrets-scanner/releases/tag/v1.3.1",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-service-auth-provider-app": {
+      "activitySource": "https://github.com/hmcts/service-auth-provider-app",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/service-auth-provider-app",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/service-auth-provider-app/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/service-auth-provider-app/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-service-hmcts-crime-springboot-template": {
+      "activitySource": "https://github.com/hmcts/service-hmcts-crime-springboot-template",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-12",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/service-hmcts-crime-springboot-template",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/service-hmcts-crime-springboot-template/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/service-hmcts-crime-springboot-template/tree/v2.0.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-sptribs-frontend": {
+      "activitySource": "https://github.com/hmcts/sptribs-frontend",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/sptribs-frontend",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/criminal-injuries-compensation-tribunal/appeal-to-tribunal",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/sptribs-frontend/blob/a3b452a75bb69095aff1148a840a9a7030e79963/src/main/steps/accessibility-statement/content.ts",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-trigger-ado-pipeline": {
+      "activitySource": "https://github.com/hmcts/trigger-ado-pipeline",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-28",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/trigger-ado-pipeline",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/trigger-ado-pipeline",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/trigger-ado-pipeline/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-version-reporter-services": {
+      "activitySource": "https://github.com/hmcts/version-reporter-services",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/version-reporter-services",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/version-reporter-services",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/version-reporter-services/blob/master/azure-pipelines.yaml",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmcts-wa-chart": {
+      "activitySource": "https://github.com/hmcts/wa-chart",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-29",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/hmcts/wa-chart",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/hmcts/wa-chart",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/hmcts/wa-chart/releases/tag/1.1.2",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
     }
   },
   "carriedForwardProjectIds": [
@@ -33951,6 +37332,75 @@
     "fr-riate-mapsf",
     "fr-riate-statsbreaks",
     "fr-riate-tricolore",
-    "fr-riate-valh"
+    "fr-riate-valh",
+    "uk-hmcts-api-crime-template",
+    "uk-hmcts-artefact-version-action",
+    "uk-hmcts-befta-fw",
+    "uk-hmcts-ccd-data-store-api",
+    "uk-hmcts-chart-blobstorage",
+    "uk-hmcts-chart-ccd",
+    "uk-hmcts-chart-java",
+    "uk-hmcts-chart-job",
+    "uk-hmcts-chart-neuvector",
+    "uk-hmcts-chart-nodejs",
+    "uk-hmcts-chart-pact-broker",
+    "uk-hmcts-chart-postgresql",
+    "uk-hmcts-chart-python",
+    "uk-hmcts-chart-servicebus",
+    "uk-hmcts-civil-citizen-ui",
+    "uk-hmcts-cmc-citizen-frontend",
+    "uk-hmcts-cmc-pdf-service-client",
+    "uk-hmcts-cnp-api-docs",
+    "uk-hmcts-cnp-jenkins-library",
+    "uk-hmcts-cnp-githubactions-library",
+    "uk-hmcts-cnp-node-base",
+    "uk-hmcts-cookie-manager",
+    "uk-hmcts-cp-audit-springboot-annotations",
+    "uk-hmcts-cp-auth-rules-filter",
+    "uk-hmcts-cpp-module-terraform-azurerm-key-vault",
+    "uk-hmcts-div-idam-express-middleware",
+    "uk-hmcts-document-management-store-app",
+    "uk-hmcts-draft-store",
+    "uk-hmcts-dtspo-daily-monitoring",
+    "uk-hmcts-dynatrace-availability-dashboards",
+    "uk-hmcts-em-ccd-orchestrator",
+    "uk-hmcts-em-hrs-api",
+    "uk-hmcts-em-hrs-ingestor",
+    "uk-hmcts-et-exporter-gem",
+    "uk-hmcts-et-fake-acas-server",
+    "uk-hmcts-et-gds-design-system",
+    "uk-hmcts-et-test-helpers",
+    "uk-hmcts-et-sya-frontend",
+    "uk-hmcts-et-syr-frontend",
+    "uk-hmcts-fact-frontend",
+    "uk-hmcts-idam-legacy-auth-support",
+    "uk-hmcts-idam-oidc-auth-support",
+    "uk-hmcts-idam-user-management-api-client",
+    "uk-hmcts-java-logging",
+    "uk-hmcts-jenkins-packer",
+    "uk-hmcts-juror-public",
+    "uk-hmcts-k8s-env-injector",
+    "uk-hmcts-knowledge-store-builder",
+    "uk-hmcts-launchdarkly-terraform",
+    "uk-hmcts-life-events-client",
+    "uk-hmcts-mi-adf-integration-runtime",
+    "uk-hmcts-module-terraform-azurerm-backup-vault",
+    "uk-hmcts-nodejs-info-provider",
+    "uk-hmcts-payments-java-client",
+    "uk-hmcts-rpe-pdf-service",
+    "uk-hmcts-rpx-xui-common-lib",
+    "uk-hmcts-rpx-xui-manage-organisations",
+    "uk-hmcts-rpx-xui-media-viewer",
+    "uk-hmcts-rpx-xui-node-lib",
+    "uk-hmcts-rpx-xui-webapp",
+    "uk-hmcts-rse-cft-lib",
+    "uk-hmcts-rse-idam-simulator",
+    "uk-hmcts-secrets-scanner",
+    "uk-hmcts-service-auth-provider-app",
+    "uk-hmcts-service-hmcts-crime-springboot-template",
+    "uk-hmcts-sptribs-frontend",
+    "uk-hmcts-trigger-ado-pipeline",
+    "uk-hmcts-version-reporter-services",
+    "uk-hmcts-wa-chart"
   ]
 }
