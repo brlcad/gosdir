@@ -528,6 +528,94 @@ import epaToxvaldbDcapPrep from './epa-toxvaldb-dcap-prep';
 import epaTots from './epa-tots';
 import epaTreecomparer from './epa-treecomparer';
 
+import usNistPymdss from './us-nist-pymdss';
+import usDoeParmoo from './us-doe-parmoo';
+import usDoeParsl from './us-doe-parsl';
+import usDoeSalsython from './us-doe-salsython';
+import usDoeParflow from './us-doe-parflow';
+import usDoeNuFastLbl from './us-doe-nufast-lbl';
+import usDoePyLeem from './us-doe-pyleem';
+import usDoeMofa from './us-doe-mofa';
+import usDoeTlAsdi from './us-doe-tlasdi';
+import usDoeYaksa from './us-doe-yaksa';
+import usDoePnnlCimGraph from './us-doe-pnnl-cim-graph';
+import usDoePnnlDbSchemaExportTool from './us-doe-pnnl-db-schema-export-tool';
+import usDoePnnlDeconEngineV2 from './us-doe-pnnl-deconenginev2';
+import usDoePnnlDeconTools from './us-doe-pnnl-decontools';
+import usDoePnnlLiquid from './us-doe-pnnl-liquid';
+import usDoePnnlMage from './us-doe-pnnl-mage';
+import usDoePnnlMasic from './us-doe-pnnl-masic';
+import usDoePnnlMolecularWeightCalculatorDll from './us-doe-pnnl-molecular-weight-calculator-dll';
+import usDoePnnlMsFileInfoScanner from './us-doe-pnnl-ms-file-info-scanner';
+import usDoePnnlMzidToTsvConverter from './us-doe-pnnl-mzid-to-tsv-converter';
+import usDoePnnlOboDataConverter from './us-doe-pnnl-obo-data-converter';
+import usDoePnnlPhrp from './us-doe-pnnl-phrp';
+import usDoePnnlProteinCoverageSummarizer from './us-doe-pnnl-protein-coverage-summarizer';
+import usDoePnnlProteinDigestionSimulator from './us-doe-pnnl-protein-digestion-simulator';
+import usDoePnnlSmaqc from './us-doe-pnnl-smaqc';
+import usDoePnnlUniprotDatFileParser from './us-doe-pnnl-uniprot-dat-file-parser';
+import usDoePnnlBmdrc from './us-doe-pnnl-bmdrc';
+import usDoePnnlCoderdata from './us-doe-pnnl-coderdata';
+import usDoePnnlSnekmer from './us-doe-pnnl-snekmer';
+import usDoePnnlSrpAnalytics from './us-doe-pnnl-srp-analytics';
+import usDoePnnlIsomatchms from './us-doe-pnnl-isomatchms';
+import usDoePnnlProteoMeter from './us-doe-pnnl-proteometer';
+import usDoePnnlAptviz from './us-doe-pnnl-aptviz';
+import usDoePnnlAtlas from './us-doe-pnnl-atlas';
+import usDoePnnlBim2rdf from './us-doe-pnnl-bim2rdf';
+import usDoePnnlBrainOhsu from './us-doe-pnnl-brain-ohsu';
+import usDoePnnlBsplineMutualInformation from './us-doe-pnnl-bspline-mutual-information';
+import usDoePnnlCactus from './us-doe-pnnl-cactus';
+import usDoePnnlChemreasoner from './us-doe-pnnl-chemreasoner';
+import usDoePnnlComet from './us-doe-pnnl-comet';
+import usDoePnnlCopper from './us-doe-pnnl-copper';
+import usDoePnnlDancepartner from './us-doe-pnnl-dancepartner';
+import usDoePnnlDatalife from './us-doe-pnnl-datalife';
+import usDoePnnlLipidimea from './us-doe-pnnl-lipidimea';
+import usDoePnnlLipidoz from './us-doe-pnnl-lipidoz';
+import usDoePnnlMetabolomicsEnsembleScore from './us-doe-pnnl-metabolomics-ensemble-score';
+import usDoePnnlMzapy from './us-doe-pnnl-mzapy';
+import usDoePnnlQcgnoms from './us-doe-pnnl-qcgnoms';
+import usDoePnnlRatlle from './us-doe-pnnl-ratlle';
+import usDoePnnlMcor from './us-doe-pnnl-mcor';
+import usDoePnnlMcrasta from './us-doe-pnnl-mcrasta';
+import usDoePnnlMemgaze from './us-doe-pnnl-memgaze';
+import usDoePnnlMints from './us-doe-pnnl-mints';
+import usDoePnnlNeuralmie from './us-doe-pnnl-neuralmie';
+import usDoePnnlPvmlFaultSignatureDetection from './us-doe-pnnl-pvml-fault-signature-detection';
+import usDoePnnlQualityInstallTool from './us-doe-pnnl-quality-install-tool';
+import usDoePnnlRulesetCheckingTool from './us-doe-pnnl-ruleset-checking-tool';
+import usDoePnnlShad from './us-doe-pnnl-shad';
+import usDoePnnlStompW from './us-doe-pnnl-stomp-w';
+import usDoePnnlTesp from './us-doe-pnnl-tesp';
+import usDoePnnlUqMlip from './us-doe-pnnl-uq-mlip';
+import usDoeStellopt from './us-doe-stellopt';
+import usDoeXicsrt from './us-doe-xicsrt';
+import usDoeAsgard from './us-doe-asgard';
+import usDoePrunersFlit from './us-doe-pruners-flit';
+import usDoeSandiaPyomo from './us-doe-sandia-pyomo';
+import usDoeCabbiHseSequenceFinder from './us-doe-cabbi-hse-sequence-finder';
+import usDoeLlnlMultiStageFno from './us-doe-llnl-multi-stage-fno';
+import usDoeQmcpack from './us-doe-qmcpack';
+import usNistDetectionLimits from './us-nist-detection-limits';
+import usNistSdnistTemporalMap from './us-nist-sdnist-temporal-map';
+import usDoeAmesSigma from './us-doe-ames-sigma';
+import usDoeLbnlQnServer from './us-doe-lbnl-qn-server';
+import usDoeLbnlQuantnetRealTimeControl from './us-doe-lbnl-quantnet-real-time-control';
+import usDoeGenesisCvdvCompiler from './us-doe-genesis-cvdv-compiler';
+import usDoeArgonneBestUseOfBiomass from './us-doe-argonne-best-use-of-biomass';
+import usDoeStor4Build from './us-doe-stor4build';
+import usDoeLanlDiscofluxm from './us-doe-lanl-discofluxm';
+import usDoeCathub from './us-doe-cathub';
+import usDoeLanlGlopw from './us-doe-lanl-glopw';
+import usDoeSunnyJl from './us-doe-sunny-jl';
+import usDoeArgonneSwiftT from './us-doe-argonne-swift-t';
+import usDoeArgonnePszCusz from './us-doe-argonne-psz-cusz';
+import usDoeArgonneTdcosim from './us-doe-argonne-tdcosim';
+import usEpaGifmod from './us-epa-gifmod';
+import usEpaGlobalAqRft from './us-epa-global-aq-rft';
+import usNihScirun from './us-nih-scirun';
+
 export const projects: Project[] = [
   uswds,
   loginGov,
@@ -1053,4 +1141,91 @@ export const projects: Project[] = [
   epaToxvaldbDcapPrep,
   epaTots,
   epaTreecomparer,
+  usNistPymdss,
+  usDoeParmoo,
+  usDoeParsl,
+  usDoeSalsython,
+  usDoeParflow,
+  usDoeNuFastLbl,
+  usDoePyLeem,
+  usDoeMofa,
+  usDoeTlAsdi,
+  usDoeYaksa,
+  usDoePnnlCimGraph,
+  usDoePnnlDbSchemaExportTool,
+  usDoePnnlDeconEngineV2,
+  usDoePnnlDeconTools,
+  usDoePnnlLiquid,
+  usDoePnnlMage,
+  usDoePnnlMasic,
+  usDoePnnlMolecularWeightCalculatorDll,
+  usDoePnnlMsFileInfoScanner,
+  usDoePnnlMzidToTsvConverter,
+  usDoePnnlOboDataConverter,
+  usDoePnnlPhrp,
+  usDoePnnlProteinCoverageSummarizer,
+  usDoePnnlProteinDigestionSimulator,
+  usDoePnnlSmaqc,
+  usDoePnnlUniprotDatFileParser,
+  usDoePnnlBmdrc,
+  usDoePnnlCoderdata,
+  usDoePnnlSnekmer,
+  usDoePnnlSrpAnalytics,
+  usDoePnnlIsomatchms,
+  usDoePnnlProteoMeter,
+  usDoePnnlAptviz,
+  usDoePnnlAtlas,
+  usDoePnnlBim2rdf,
+  usDoePnnlBrainOhsu,
+  usDoePnnlBsplineMutualInformation,
+  usDoePnnlCactus,
+  usDoePnnlChemreasoner,
+  usDoePnnlComet,
+  usDoePnnlCopper,
+  usDoePnnlDancepartner,
+  usDoePnnlDatalife,
+  usDoePnnlLipidimea,
+  usDoePnnlLipidoz,
+  usDoePnnlMetabolomicsEnsembleScore,
+  usDoePnnlMzapy,
+  usDoePnnlQcgnoms,
+  usDoePnnlRatlle,
+  usDoePnnlMcor,
+  usDoePnnlMcrasta,
+  usDoePnnlMemgaze,
+  usDoePnnlMints,
+  usDoePnnlNeuralmie,
+  usDoePnnlPvmlFaultSignatureDetection,
+  usDoePnnlQualityInstallTool,
+  usDoePnnlRulesetCheckingTool,
+  usDoePnnlShad,
+  usDoePnnlStompW,
+  usDoePnnlTesp,
+  usDoePnnlUqMlip,
+  usDoeStellopt,
+  usDoeXicsrt,
+  usDoeAsgard,
+  usDoePrunersFlit,
+  usDoeSandiaPyomo,
+  usDoeCabbiHseSequenceFinder,
+  usDoeLlnlMultiStageFno,
+  usDoeQmcpack,
+  usNistDetectionLimits,
+  usNistSdnistTemporalMap,
+  usDoeAmesSigma,
+  usDoeLbnlQnServer,
+  usDoeLbnlQuantnetRealTimeControl,
+  usDoeGenesisCvdvCompiler,
+  usDoeArgonneBestUseOfBiomass,
+  usDoeStor4Build,
+  usDoeLanlDiscofluxm,
+  usDoeCathub,
+  usDoeLanlGlopw,
+  usDoeSunnyJl,
+  usDoeArgonneSwiftT,
+  usDoeArgonnePszCusz,
+  usDoeArgonneTdcosim,
+  usEpaGifmod,
+  usEpaGlobalAqRft,
+  usNihScirun,
 ];

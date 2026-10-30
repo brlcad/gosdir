@@ -12003,6 +12003,2012 @@
           "finalUrl": "https://statspolicy.gov/FCSM/"
         }
       }
+    },
+    "us-nist-pymdss": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/usnistgov/pymdss",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/usnistgov/pyMDSS",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.nist.gov/people/alireza-panna",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-parmoo": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/parmoo/parmoo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://parmoo.readthedocs.io/en/latest/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/93196",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-parsl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/Parsl/parsl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://parsl-project.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://exaworkssdk.readthedocs.io/en/latest/components.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-salsython": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pbhuvankar/SALSythonV1",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/pbhuvankar/SALSythonV1",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/162005",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-parflow": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/parflow/parflow",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://parflow.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/1139",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-nufast-lbl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PeterDenton/NuFast-LBL",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/PeterDenton/NuFast-LBL",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://lss.fnal.gov/lists/fermilab-reports-code.html",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "us-doe-pyleem": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/peterhys/pyLEEM",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/peterhys/pyLEEM",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/182405",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-mofa": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pietrzyk1/MoFA",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/pietrzyk1/MoFA",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/165260",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-tlasdi": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pjss1223/tLaSDI",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/pjss1223/tLaSDI",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/LLNL/GPLaSDI/blob/main/model-card-lasdi.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-yaksa": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pmodels/yaksa",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.yaksa.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.yaksa.org/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-cim-graph": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-CIM-Tools/CIM-Graph",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-cim-tools.github.io/CIM-Graph/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/127055",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-db-schema-export-tool": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/DB-Schema-Export-Tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/8285",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/DB-Schema-Export-Tool/releases/tag/v2.0.8957",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-deconenginev2": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/DeconEngineV2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/8474",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/DeconEngineV2/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-decontools": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/DeconTools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/8480",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/DeconTools/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-liquid": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/LIQUID",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/available-technologies/lipid-informed-quantification-and-identification-liquid-software",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://data.pnnl.gov/group/nodes/software/33247",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-mage": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/Mage",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/Mage",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-38328.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-masic": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/MASIC",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-comp-mass-spec.github.io/MASIC/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pnnl-comp-mass-spec.github.io/MASIC/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-molecular-weight-calculator-dll": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/Molecular-Weight-Calculator-DLL",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-comp-mass-spec.github.io/Molecular-Weight-Calculator-DLL/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pnnl-comp-mass-spec.github.io/Molecular-Weight-Calculator-DLL/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-ms-file-info-scanner": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/MS-File-Info-Scanner",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-comp-mass-spec.github.io/MS-File-Info-Scanner/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pnnl-comp-mass-spec.github.io/MS-File-Info-Scanner/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-mzid-to-tsv-converter": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/Mzid-To-Tsv-Converter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/8579",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/MoTrPAC/motrpac-proteomics-pipeline/blob/61d8aaa0ad679e59320a98c470e989188387b581/dockerfiles/Dockerfile.mzid2tsv",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-obo-data-converter": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/OBO-Data-Converter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-comp-mass-spec.github.io/OBO-Data-Converter/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pnnl-comp-mass-spec.github.io/OBO-Data-Converter/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-phrp": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/PHRP",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-comp-mass-spec.github.io/PHRP/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pnnl-comp-mass-spec.github.io/PHRP/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-protein-coverage-summarizer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/protein-coverage-summarizer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-comp-mass-spec.github.io/protein-coverage-summarizer/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/protein-coverage-summarizer/releases/tag/v1.3.8143",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-protein-digestion-simulator": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/Protein-Digestion-Simulator",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-comp-mass-spec.github.io/Protein-Digestion-Simulator/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1128/mSystems.00375-25",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://journals.asm.org/doi/10.1128/msystems.00375-25"
+        }
+      }
+    },
+    "us-doe-pnnl-smaqc": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/SMAQC",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/8626",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.pnnl.gov/sites/default/files/media/file/Quality%20Control%20Analysis%20in%20Real-time%20QC-ART%20A%20Tool%20for%20Real-time%20Quality%20Control%20Assessment%20of%20Mass%20Spectrometry-based%20Proteomics%20Data.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-uniprot-dat-file-parser": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/Uniprot-DAT-File-Parser",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/Uniprot-DAT-File-Parser",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/PNNL-Comp-Mass-Spec/Uniprot-DAT-File-Parser/releases/tag/v1.1.5674",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-bmdrc": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-CompBio/bmdrc",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/publications/bmdrc-python-package-quantifying-phenotypes-chemical-exposures-benchmark-dose-modeling",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013337",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-coderdata": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-CompBio/coderdata",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-compbio.github.io/coderdata/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://aacrjournals.org/cancerres/article/85/8_Supplement_1/7426/759414/Abstract-7426-Leveraging-deep-learning-to-enable",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "us-doe-pnnl-snekmer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-CompBio/Snekmer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://science.osti.gov/ber/Highlights/2023/BER-2023-04-b",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://science.osti.gov/ber/Highlights/2023/BER-2023-04-b",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-srp-analytics": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-CompBio/srpAnalytics",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://superfund.oregonstate.edu/support-cores/data-management-and-analysis-core",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://data.pnnl.gov/group/nodes/data-source/13338",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-isomatchms": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-HubMAP-Proteoform-Suite/IsoMatchMS",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/servlets/purl/2202633",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/2202633",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-proteometer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Predictive-Phenomics/ProteoMeter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-predictive-phenomics.github.io/ProteoMeter/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13365959/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-aptviz": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/APTVIZ",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/pnnl/APTVIZ",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://academic.oup.com/mam/article/31/Supplement_1/ozaf048.140/8212609",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "us-doe-pnnl-atlas": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/metagenome-atlas/atlas",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/publications/atlas-automatic-tool-local-assembly-structures-comprehensive-infrastructure-assembly",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7310028/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-bim2rdf": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/BIM2RDF",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/pnnl/BIM2RDF",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/bim2rdf/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-brain-ohsu": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/brain_ohsu",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0293856",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0293856",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-bspline-mutual-information": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Predictive-Phenomics/bspline_mutual_information",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/bspline-mutual-information/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/148868",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-cactus": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/cactus",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/publications/cactus-chemistry-agent-connecting-tool-usage-science",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/127871",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-chemreasoner": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/chemreasoner",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/publications/chemreasoner-heuristic-search-over-large-language-models-knowledge-space-using-quantum",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/120958",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-comet": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/COMET",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/publications/comet-domain-specific-compilation-high-performance-computational-chemistry",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/75178",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-copper": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/copper",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl.github.io/copper/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/77938",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-dancepartner": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-Predictive-Phenomics/DancePartner",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pnnl-predictive-phenomics.github.io/DancePartner/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/156096",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-datalife": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/datalife",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://sc23.conference-program.com/presentation/?id=pap567&sess=sess181",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/113474",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-lipidimea": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-m-q/lipidimea",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/lipidimea/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/153901",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-lipidoz": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-m-q/lipidoz",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/lipidoz/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/105685",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-metabolomics-ensemble-score": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-m-q/metabolomics_ensemble_score",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/servlets/purl/3006378",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/148900",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-mzapy": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-m-q/mzapy",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://mzapy.readthedocs.io/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://mzapy.readthedocs.io/en/latest/"
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/96984",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-qcgnoms": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PNNL-m-q/qcgnoms",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/publications/qc-gn2oms2-graph-neural-net-high-resolution-mass-spectra-prediction",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/106128",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-ratlle": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/LL-risk-assessment",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/pnnl/LL-risk-assessment",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1109/TD48022.2026.11562229",
+          "status": "redirected",
+          "httpStatus": 202,
+          "finalUrl": "https://ieeexplore.ieee.org/document/11562229/"
+        }
+      }
+    },
+    "us-doe-pnnl-mcor": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/MCOR",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/federal-performance-optimization",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/1765370/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-mcrasta": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/MCRASTA",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/150568",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/2427478",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-memgaze": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/memgaze",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/publications/memfriend-understanding-memory-performance-spatial-temporal-affinity",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/80662",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-mints": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/MINTs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://mints.readthedocs.io/en/latest/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/174360",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-neuralmie": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/NEURALMIE",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/publications/neuralmie-v10-aerosol-optics-emulator",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/147379",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-pvml-fault-signature-detection": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/PVML_FaultSignatureDetection",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/173791",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/pnnl/PVML_FaultSignatureDetection",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-quality-install-tool": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/Quality-Install-Tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/projects/quality-install-tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.pnnl.gov/projects/quality-install-tool",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-ruleset-checking-tool": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/ruleset-checking-tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/55742",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.energy.gov/sites/default/files/2024-11/bto-peer-2024-pnnl-performance-ruleset-modeling-standard_0.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-shad": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/SHAD",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/9858",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pnnl.github.io/SHAD/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-stomp-w": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/STOMP-W",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/projects/stomp/get-stomp",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.pnnl.gov/projects/stomp/user-guide",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-tesp": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/tesp",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/5153",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/servlets/purl/1843579",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pnnl-uq-mlip": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/pnnl/UQ-MLIP",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pnnl.gov/news-media/its-time-get-comfortable-uncertainty-ai-model-training",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/153158",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-stellopt": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PrincetonUniversity/STELLOPT",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pppl.gov/research/theory/codes",
+          "status": "auth-required",
+          "httpStatus": 403
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/12551",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-xicsrt": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://bitbucket.org/amicitas/xicsrt",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://xicsrt.readthedocs.io/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://xicsrt.readthedocs.io/en/latest/"
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/55767",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-asgard": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/project-asgard/asgard",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/48752",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/project-asgard/asgard/releases/tag/v0.9.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-pruners-flit": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PRUNERS/FLiT",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/15827",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/1811.05618",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-sandia-pyomo": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/Pyomo/pyomo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pyomo.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sandia.gov/ccr/ccr-software/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-cabbi-hse-sequence-finder": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/qiandemoni/HSE_sequence_finder",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/qiandemoni/HSE_sequence_finder",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12708596/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-llnl-multi-stage-fno": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/qingkaikong/multi-stage_FNO-SeismicSimulations",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/157565",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/157565",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-qmcpack": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/QMCPACK/qmcpack",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://qmcpack.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://qmcpack.readthedocs.io/en/develop/introduction.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-nist-detection-limits": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/usnistgov/detection_limits",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pages.nist.gov/detection_limits/web/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.nist.gov/publications/relating-human-and-ai-based-detection-limits-sem-dimensional-metrology",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-nist-sdnist-temporal-map": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/usnistgov/differential-privacy-temporal-map-challenge-assets",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.nist.gov/ctl/pscr/open-innovation-prize-challenges/past-prize-challenges/2020-differential-privacy-temporal",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/usnistgov/SDNist",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-ames-sigma": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/QCUncertainty/sigma",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://qcuncertainty.github.io/sigma/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.ameslab.gov/work-us/open-source-software",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-lbnl-qn-server": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/quant-net/qn-server",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://quantnet.lbl.gov/software",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://quant-net.github.io/qn-docs/latest/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-lbnl-quantnet-real-time-control": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/quant-net/real-time-control",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://quantnet.lbl.gov/research/quant-net-design-and-implementation",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://vips.pnnl.gov/search?taxonomy=physics.quantum+mechanics.quantum+information+theory",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-genesis-cvdv-compiler": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ruadapt/Genesis-CVDV-Compiler",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ruadapt/Genesis-CVDV-Compiler",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/182349",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-argonne-best-use-of-biomass": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/Saurajyoti/BestBiomassUse",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/Saurajyoti/BestBiomassUse",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.osti.gov/doecode/biblio/160429",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-stor4build": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/Stor4Build/stor4build",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.energy.gov/cmei/buildings/stor4build",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://impact.ornl.gov/en/publications/stor4build/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-lanl-discofluxm": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/lanl/DiscoFluxM",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/127424",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/idaholab/moose/discussions/33299",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-cathub": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/SUNCAT-Center/CatHub",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://suncat.stanford.edu/facilities/software",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6538633/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-lanl-glopw": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/SungjunNoh/GloPW",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025EA004633",
+          "status": "auth-required",
+          "httpStatus": 403
+        },
+        "provenance": {
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025EA004633",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "us-doe-sunny-jl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/SunnySuite/Sunny.jl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://joss.theoj.org/papers/10.21105/joss.08138",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://joss.theoj.org/papers/10.21105/joss.08138",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-doe-argonne-swift-t": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/swift-lang/swift-t",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://swift-lang.github.io/swift-t/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.alcf.anl.gov/news/argonne-technologies-receive-2018-rd-100-awards",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "us-doe-argonne-psz-cusz": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/szcompressor/cuSZ",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.osti.gov/doecode/biblio/62650",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://doi.org/10.1145/3410463.3414624",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://dl.acm.org/doi/10.1145/3410463.3414624"
+        }
+      }
+    },
+    "us-doe-argonne-tdcosim": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/tdcosim/TDcoSim",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.energy.gov/documents/microgrids-rd-strategic-plan-topic-6-integrated-models-and-tools-microgrid-planning-and",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://documents.pserc.wisc.edu/documents/publications/reports/2024_reports/S_108G_Final_Report.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-epa-gifmod": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/GIFMod",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.epa.gov/water-research/green-infrastructure-modeling-toolkit",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7286434/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "us-epa-global-aq-rft": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/USEPA/globalAQ_rft",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/USEPA/globalAQ_rft",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pubs.acs.org/doi/10.1021/acs.est.5c14713",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "us-nih-scirun": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/SCIInstitute/SCIRun",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://sci.utah.edu/scirun5/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://reporter.nih.gov/project-details/11240986",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
     }
   },
   "carriedForwardProjectIds": [
@@ -12529,6 +14535,93 @@
     "epa-the-manifest-game",
     "epa-toxvaldb-dcap-prep",
     "epa-tots",
-    "epa-treecomparer"
+    "epa-treecomparer",
+    "us-nist-pymdss",
+    "us-doe-parmoo",
+    "us-doe-parsl",
+    "us-doe-salsython",
+    "us-doe-parflow",
+    "us-doe-nufast-lbl",
+    "us-doe-pyleem",
+    "us-doe-mofa",
+    "us-doe-tlasdi",
+    "us-doe-yaksa",
+    "us-doe-pnnl-cim-graph",
+    "us-doe-pnnl-db-schema-export-tool",
+    "us-doe-pnnl-deconenginev2",
+    "us-doe-pnnl-decontools",
+    "us-doe-pnnl-liquid",
+    "us-doe-pnnl-mage",
+    "us-doe-pnnl-masic",
+    "us-doe-pnnl-molecular-weight-calculator-dll",
+    "us-doe-pnnl-ms-file-info-scanner",
+    "us-doe-pnnl-mzid-to-tsv-converter",
+    "us-doe-pnnl-obo-data-converter",
+    "us-doe-pnnl-phrp",
+    "us-doe-pnnl-protein-coverage-summarizer",
+    "us-doe-pnnl-protein-digestion-simulator",
+    "us-doe-pnnl-smaqc",
+    "us-doe-pnnl-uniprot-dat-file-parser",
+    "us-doe-pnnl-bmdrc",
+    "us-doe-pnnl-coderdata",
+    "us-doe-pnnl-snekmer",
+    "us-doe-pnnl-srp-analytics",
+    "us-doe-pnnl-isomatchms",
+    "us-doe-pnnl-proteometer",
+    "us-doe-pnnl-aptviz",
+    "us-doe-pnnl-atlas",
+    "us-doe-pnnl-bim2rdf",
+    "us-doe-pnnl-brain-ohsu",
+    "us-doe-pnnl-bspline-mutual-information",
+    "us-doe-pnnl-cactus",
+    "us-doe-pnnl-chemreasoner",
+    "us-doe-pnnl-comet",
+    "us-doe-pnnl-copper",
+    "us-doe-pnnl-dancepartner",
+    "us-doe-pnnl-datalife",
+    "us-doe-pnnl-lipidimea",
+    "us-doe-pnnl-lipidoz",
+    "us-doe-pnnl-metabolomics-ensemble-score",
+    "us-doe-pnnl-mzapy",
+    "us-doe-pnnl-qcgnoms",
+    "us-doe-pnnl-ratlle",
+    "us-doe-pnnl-mcor",
+    "us-doe-pnnl-mcrasta",
+    "us-doe-pnnl-memgaze",
+    "us-doe-pnnl-mints",
+    "us-doe-pnnl-neuralmie",
+    "us-doe-pnnl-pvml-fault-signature-detection",
+    "us-doe-pnnl-quality-install-tool",
+    "us-doe-pnnl-ruleset-checking-tool",
+    "us-doe-pnnl-shad",
+    "us-doe-pnnl-stomp-w",
+    "us-doe-pnnl-tesp",
+    "us-doe-pnnl-uq-mlip",
+    "us-doe-stellopt",
+    "us-doe-xicsrt",
+    "us-doe-asgard",
+    "us-doe-pruners-flit",
+    "us-doe-sandia-pyomo",
+    "us-doe-cabbi-hse-sequence-finder",
+    "us-doe-llnl-multi-stage-fno",
+    "us-doe-qmcpack",
+    "us-nist-detection-limits",
+    "us-nist-sdnist-temporal-map",
+    "us-doe-ames-sigma",
+    "us-doe-lbnl-qn-server",
+    "us-doe-lbnl-quantnet-real-time-control",
+    "us-doe-genesis-cvdv-compiler",
+    "us-doe-argonne-best-use-of-biomass",
+    "us-doe-stor4build",
+    "us-doe-lanl-discofluxm",
+    "us-doe-cathub",
+    "us-doe-lanl-glopw",
+    "us-doe-sunny-jl",
+    "us-doe-argonne-swift-t",
+    "us-doe-argonne-psz-cusz",
+    "us-doe-argonne-tdcosim",
+    "us-epa-gifmod",
+    "us-epa-global-aq-rft",
+    "us-nih-scirun"
   ]
 }
