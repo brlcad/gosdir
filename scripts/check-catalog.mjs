@@ -1196,6 +1196,22 @@ try {
   );
 
   projects.forEach((project, index) => {
+    if (typeof project?.summary === 'string') {
+      if (/https?:\/\//i.test(project.summary)) {
+        errors.push(
+          `${entryLabel('projects', project, index)}.summary must describe the software without raw URLs; use the dedicated URL fields or research notes`,
+        );
+      }
+      if (
+        /(?:^publish as\b|government-to-project evidence:|first licensed-source year:|product-specific notability evidence:)/i.test(
+          project.summary,
+        )
+      ) {
+        errors.push(
+          `${entryLabel('projects', project, index)}.summary contains review notes; keep editorial decisions and evidence history in research notes`,
+        );
+      }
+    }
     validateHttpUrl(project, 'projects', index, 'repository');
     validateHttpUrl(project, 'projects', index, 'officialUrl');
     validateHttpUrl(project, 'projects', index, 'evidenceUrl', {

@@ -34,6 +34,19 @@ Every timeline milestone needs a `category`. `us-policy` covers U.S. federal and
 10. Update timeline or source-reference data only when the new record warrants it.
 11. Run `npm run check`, `npm run build:apache`, and `npm run build` before committing.
 
+Write each software `summary` for directory readers: explain what the software
+does and any product boundary or maturity caveat that helps someone use it.
+Keep raw URLs, review decisions, inclusion arguments, and license-history notes
+out of summaries. Put primary links and attribution in the record's dedicated
+fields and preserve detailed evidence in `docs/research/`.
+
+`docs/research/project-description-notes.jsonl` preserves historical notes removed
+from public descriptions, keyed by `projectId`, with their original citations
+and corresponding record fields. Those notes are historical evidence, not current
+descriptions or a new verification of their claims. Recorded corrections explain
+where project documentation contradicted the old notes. Consult the canonical
+software record and its review evidence when reconciling a discrepancy.
+
 Software uses one record per file because it is expected to grow substantially. If another catalog becomes too large for practical review, use the same pattern: a same-named directory with one record per file and an explicit `index.ts`. Keep grouping by record type; do not split records into historical growth batches.
 
 ## Freshness reviewer
