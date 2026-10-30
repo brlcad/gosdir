@@ -14009,6 +14009,1595 @@
           "httpStatus": 200
         }
       }
+    },
+    "fr-inria-infrared": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/amibio/infrared",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://amibio.gitlabpages.inria.fr/Infrared/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10943887/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-ipanemap": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/amibio/ipanemap",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/amibio/ipanemap",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11934922/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-varna-api": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/amibio/varna-api",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://amibio.gitlabpages.inria.fr/varna-api/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/varnaapi/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-astec": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/astec/astec",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://astec.gitlabpages.inria.fr/astec/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://rex-radar.inria.fr/report/2025/morpheme/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-pycapacity": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/auctus-team/pycapacity",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/auctus-team/pycapacity",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://joss.theoj.org/papers/10.21105/joss.05670",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-parcoursvis": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/aviz/parcoursvis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.aviz.fr/Research/ParcoursVis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.health-data-hub.fr/projets/parcoursvis",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-belenios": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/belenios/belenios",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.belenios.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/caramba/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-plantinator": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/botascopia/plantinator",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://botascopia.inria.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/semis/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cado-nfs": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/cado-nfs/cado-nfs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://cado-nfs.gitlabpages.inria.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/caramba/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cromast": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/capsid.public_codes/CroMaSt",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://workflowhub.eu/workflows/390",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2023/capsid/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cartolabe-visu": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/cartolabe/cartolabe-visu",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://cartolabe.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cat.opidor.fr/index.php/Cartolabe",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-coccinelle": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/coccinelle/coccinelle",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://coccinelle.gitlabpages.inria.fr/website/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/whisper/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-kami-lib": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/KaMI-tools-project/KaMi-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/KaMI-tools-project/KaMi-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2023/almanach/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cheops-for-edge": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/discovery/cheops",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://radar.inria.fr/report/2024/stack/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2024/stack/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-enoslib": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/discovery/enoslib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://discovery.gitlabpages.inria.fr/enoslib/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/stack/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-discretelogdb": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dldb/discretelogdb",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dldb/discretelogdb",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2017/caramba/uid56.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-headwork": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/druid-public/headwork",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://headwork.irisa.fr/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://headwork.irisa.fr/headwork/"
+        },
+        "provenance": {
+          "url": "https://anr.fr/Projet-ANR-16-CE23-0015",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-core": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-core",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://dtk.gitlabpages.inria.fr/dtk-core/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-fonts": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-fonts",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-fonts",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-log": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-log",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-log",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-visualization": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-visualization",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-visualization",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-widgets": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-widgets",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-widgets",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cadbiom": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dyliss/cadbiom",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://cadbiom.genouest.org/doc/cadbiom/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2024/dyliss/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-e2clab": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/e2clab/e2clab",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://e2clab.gitlabpages.inria.fr/e2clab/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2024/kerdata/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-projectivefriction": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/elan-public-code/projectivefriction",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/elan-public-code/projectivefriction",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2021/elan/uid0.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-unsegqc": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/epione/unsegqc",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www-sop.inria.fr/members/Herve.Delingette/site/soft/unsegqc/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2024/epione/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-order-manager": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/gazelle/public/simulation/order-manager",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://connectathon.ihe-catalyst.net/OrderManager/home.seam",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://connectathon.ihe-catalyst.net/gazelle-documentation/Order-Manager/installation.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-patient-manager": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/gazelle/public/simulation/patient-manager",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://interop.referencement.esante.gouv.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://interop.referencement.esante.gouv.fr/gazelle-documentation/Patient-Manager/installation.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-grid5000-resources-explorer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/grid5000/resources-explorer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://grid5000.gitlabpages.inria.fr/resources-explorer/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.grid5000.fr/w/Production:Getting_Started",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-guix-hpc": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/guix-hpc/guix-hpc",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hpc.guix.info/channel/guix-hpc",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hpc.guix.info/channel/guix-hpc",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-guix-jupyter": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://codeberg.org/guix-science/guix-jupyter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hpc.guix.info/blog/2024/11/guix-jupyter-0.3.0-released/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hpc.guix.info/static/doc/activity-report-2019.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-guix-modules": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://codeberg.org/guix-science/guix-modules",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hpc.guix.info/blog/2022/05/back-to-the-future-modules-for-guix-packages/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hpc.guix.info/blog/2022/05/back-to-the-future-modules-for-guix-packages/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-guix-past": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-20",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://codeberg.org/guix-science/guix-past",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hpc.guix.info/channel/guix-past",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hpc.guix.info/static/doc/activity-report-2020.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-tick": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/X-DataInitiative/tick",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://x-datainitiative.github.io/tick/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/X-DataInitiative/tick#readme",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-grand-est-opm2020": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-grandest/scdd/pub/opm2020",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.grand-est.developpement-durable.gouv.fr/l-outil-portrait-mobilite-a19915.html?lang=fr",
+          "status": "transient",
+          "httpStatus": 503
+        },
+        "provenance": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-grandest/scdd/pub/opm2020/-/blob/dev/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-pdl-bilan-eco-insee": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/bilan.eco.insee",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/bilan.eco.insee",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/bilan.eco.insee",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-pdl-collectr": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/adl/collectr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://dreal-pdl.gitlab-pages.din.developpement-durable.gouv.fr/csd/adl/collectr/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://gitlab-forge.din.developpement-durable.gouv.fr/oauth/authorize?client_id=0f5263147370c1fccb70acf779ffe403f0cad94dc3b7a61457272edd5ad8da44&redirect_uri=https://projects.gitlab-pages.din.developpement-durable.gouv.fr/auth&response_type=code&state=f2P3jtLSjlNBJ3Suf339_A==&scope=api&root_namespace_id=1012"
+        },
+        "provenance": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/adl/collectr/-/blob/main/README.Rmd",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-pdl-datalibaba": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/datalibaba",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://dreal-pdl.gitlab-pages.din.developpement-durable.gouv.fr/csd/datalibaba/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/datalibaba",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-pdl-diagnostic-regional-etiages": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-19",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/eau-milieux-aquatiques/diagnostic-regional-etiages",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pays-de-la-loire.developpement-durable.gouv.fr/les-realisations-a4801.html?lang=fr",
+          "status": "transient",
+          "httpStatus": 503
+        },
+        "provenance": {
+          "url": "https://www.pays-de-la-loire.developpement-durable.gouv.fr/les-realisations-a4801.html?lang=fr",
+          "status": "transient",
+          "httpStatus": 503
+        }
+      }
+    },
+    "fr-geonature-depobio": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_plugin_depobio",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.geonature.fr/CHANGELOG.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/PnX-SI/gn_plugin_depobio/releases/tag/depobio-21-01-2026",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-habref-api": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/Habref-api-module",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.geonature.fr/admin-manual.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://docs.geonature.fr/CHANGELOG.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-nomenclature-api": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/Nomenclature-api-module",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.geonature.fr/admin-manual.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://docs.geonature.fr/CHANGELOG.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-odk2gn": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/odk2gn",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://geonature.fr/documents/2022-12-PNX-OFB-Workshop-ODK.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/rencontres/2024/presentations/06a-monitoring-presentation.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-refgeo": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/RefGeo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.geonature.fr/admin-manual.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://docs.geonature.fr/CHANGELOG.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-suivi-habitat-station": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_monitoring_habitat_station",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://geonature.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/2022-09-Cendrine-Hoarau--rapport-stage-M2-CBNA.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-suivi-flore-territoire": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_suivi_flore_territoire",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://floresentinelle.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/2018-09-Nguyen-Khanh-Chau-Rapport-stage-M2DCISS.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-suivi-habitat-territoire": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_suivi_habitat_territoire",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://floresentinelle.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/2022-09-Cendrine-Hoarau--rapport-stage-M2-CBNA.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-zones-humides-module": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_ZH",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://zones-humides.pnrsud.fr/map/",
+          "status": "not-found",
+          "httpStatus": 404
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/rencontres/2024/posters/Poster-ZH-SIT-PNR-PACA.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-monitoring": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_monitoring",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://geonature.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/cctp/2021-06-DEPOBIO-CC-suivi-chiro-eolien.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-usershub": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/UsersHub",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://geonature.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/2018-10-si-pne.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-pyjoules": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/powerapi-ng/pyJoules",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pyjoules.readthedocs.io/en/stable/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/spirals/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-pyrapl": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/powerapi-ng/pyRAPL",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pyrapl.readthedocs.io/en/stable/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/spirals/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-proconnect-hyyypertool": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/proconnect-gouv/hyyypertool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.proconnect.gouv.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/proconnect-gouv/hyyypertool/releases/tag/2026.10.2",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-proconnect-oidc2fer": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/proconnect-gouv/oidc2fer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.proconnect.gouv.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/proconnect-gouv/oidc2fer/releases/tag/v1.0.16",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-proconnect-identite": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/proconnect-gouv/proconnect-identite",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://identite.proconnect.gouv.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://partenaires.proconnect.gouv.fr/docs/fournisseur-identite",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-vitam-sedatools": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/ProgrammeVitam/sedatools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.programmevitam.fr/pages/ressources/sedalib/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ProgrammeVitam/sedatools/releases/tag/v2.9.1",
+          "status": "not-found",
+          "httpStatus": 404
+        }
+      }
+    },
+    "fr-riate-distanamo": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/distanamo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://riatelab.r-universe.dev/distanamo",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-geocountries": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geocountries",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/geocountries",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-geoimport": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geoimport",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/riatelab/geoimport/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-geotoolbox": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geotoolbox",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/geotoolbox",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-geoverview": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geoverview",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/geoverview",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-geoviz": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geoviz",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/geoviz",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-linearcorrelation": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/linearcorrelation",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/linearcorrelation",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-mapinsetr": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/mapinsetr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/riatelab/mapinsetr/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-mapiso": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/mapiso",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cran.r-project.org/web/packages/mapiso/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-mapsf": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/mapsf",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cran.r-project.org/web/packages/mapsf/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-statsbreaks": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/statsbreaks",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/statsbreaks",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-tricolore": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/tricolore.js",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/riatelab/tricolore.js/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-valh": {
+      "status": "enabled",
+      "statusChangedAt": "2026-10-18",
+      "failureStreak": 0,
+      "reasonCodes": [],
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/valh",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cran.r-project.org/web/packages/valh/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
     }
   },
   "carriedForwardProjectIds": [
@@ -14622,6 +16211,75 @@
     "us-doe-argonne-tdcosim",
     "us-epa-gifmod",
     "us-epa-global-aq-rft",
-    "us-nih-scirun"
+    "us-nih-scirun",
+    "fr-inria-infrared",
+    "fr-inria-ipanemap",
+    "fr-inria-varna-api",
+    "fr-inria-astec",
+    "fr-inria-pycapacity",
+    "fr-inria-parcoursvis",
+    "fr-inria-belenios",
+    "fr-inria-plantinator",
+    "fr-inria-cado-nfs",
+    "fr-inria-cromast",
+    "fr-inria-cartolabe-visu",
+    "fr-inria-coccinelle",
+    "fr-inria-kami-lib",
+    "fr-inria-cheops-for-edge",
+    "fr-inria-enoslib",
+    "fr-inria-discretelogdb",
+    "fr-inria-headwork",
+    "fr-inria-dtk-core",
+    "fr-inria-dtk-fonts",
+    "fr-inria-dtk-log",
+    "fr-inria-dtk-visualization",
+    "fr-inria-dtk-widgets",
+    "fr-inria-cadbiom",
+    "fr-inria-e2clab",
+    "fr-inria-projectivefriction",
+    "fr-inria-unsegqc",
+    "fr-inria-order-manager",
+    "fr-inria-patient-manager",
+    "fr-inria-grid5000-resources-explorer",
+    "fr-inria-guix-hpc",
+    "fr-inria-guix-jupyter",
+    "fr-inria-guix-modules",
+    "fr-inria-guix-past",
+    "fr-tick",
+    "fr-dreal-grand-est-opm2020",
+    "fr-dreal-pdl-bilan-eco-insee",
+    "fr-dreal-pdl-collectr",
+    "fr-dreal-pdl-datalibaba",
+    "fr-dreal-pdl-diagnostic-regional-etiages",
+    "fr-geonature-depobio",
+    "fr-geonature-habref-api",
+    "fr-geonature-nomenclature-api",
+    "fr-geonature-odk2gn",
+    "fr-geonature-refgeo",
+    "fr-geonature-suivi-habitat-station",
+    "fr-geonature-suivi-flore-territoire",
+    "fr-geonature-suivi-habitat-territoire",
+    "fr-geonature-zones-humides-module",
+    "fr-geonature-monitoring",
+    "fr-usershub",
+    "fr-inria-pyjoules",
+    "fr-inria-pyrapl",
+    "fr-proconnect-hyyypertool",
+    "fr-proconnect-oidc2fer",
+    "fr-proconnect-identite",
+    "fr-vitam-sedatools",
+    "fr-riate-distanamo",
+    "fr-riate-geocountries",
+    "fr-riate-geoimport",
+    "fr-riate-geotoolbox",
+    "fr-riate-geoverview",
+    "fr-riate-geoviz",
+    "fr-riate-linearcorrelation",
+    "fr-riate-mapinsetr",
+    "fr-riate-mapiso",
+    "fr-riate-mapsf",
+    "fr-riate-statsbreaks",
+    "fr-riate-tricolore",
+    "fr-riate-valh"
   ]
 }

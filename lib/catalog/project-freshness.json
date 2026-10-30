@@ -29886,6 +29886,3389 @@
           "httpStatus": 200
         }
       }
+    },
+    "fr-inria-infrared": {
+      "activitySource": "https://gitlab.inria.fr/amibio/infrared",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/amibio/infrared",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://amibio.gitlabpages.inria.fr/Infrared/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10943887/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-ipanemap": {
+      "activitySource": "https://gitlab.inria.fr/amibio/ipanemap",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/amibio/ipanemap",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/amibio/ipanemap",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11934922/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-varna-api": {
+      "activitySource": "https://gitlab.inria.fr/amibio/varna-api",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/amibio/varna-api",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://amibio.gitlabpages.inria.fr/varna-api/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/varnaapi/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-astec": {
+      "activitySource": "https://gitlab.inria.fr/astec/astec",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/astec/astec",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://astec.gitlabpages.inria.fr/astec/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://rex-radar.inria.fr/report/2025/morpheme/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-pycapacity": {
+      "activitySource": "https://github.com/auctus-team/pycapacity",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-13",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/auctus-team/pycapacity",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/auctus-team/pycapacity",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://joss.theoj.org/papers/10.21105/joss.05670",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-parcoursvis": {
+      "activitySource": "https://gitlab.inria.fr/aviz/parcoursvis",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/aviz/parcoursvis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.aviz.fr/Research/ParcoursVis",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.health-data-hub.fr/projets/parcoursvis",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-belenios": {
+      "activitySource": "https://gitlab.inria.fr/belenios/belenios",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/belenios/belenios",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.belenios.org/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/caramba/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-plantinator": {
+      "activitySource": "https://gitlab.inria.fr/botascopia/plantinator",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/botascopia/plantinator",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://botascopia.inria.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/semis/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cado-nfs": {
+      "activitySource": "https://gitlab.inria.fr/cado-nfs/cado-nfs",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/cado-nfs/cado-nfs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://cado-nfs.gitlabpages.inria.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/caramba/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cromast": {
+      "activitySource": "https://gitlab.inria.fr/capsid.public_codes/CroMaSt",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/capsid.public_codes/CroMaSt",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://workflowhub.eu/workflows/390",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2023/capsid/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cartolabe-visu": {
+      "activitySource": "https://gitlab.inria.fr/cartolabe/cartolabe-visu",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/cartolabe/cartolabe-visu",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://cartolabe.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cat.opidor.fr/index.php/Cartolabe",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-coccinelle": {
+      "activitySource": "https://gitlab.inria.fr/coccinelle/coccinelle",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/coccinelle/coccinelle",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://coccinelle.gitlabpages.inria.fr/website/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/whisper/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-kami-lib": {
+      "activitySource": "https://github.com/KaMI-tools-project/KaMi-lib",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2023-03-23",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/KaMI-tools-project/KaMi-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/KaMI-tools-project/KaMi-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2023/almanach/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cheops-for-edge": {
+      "activitySource": "https://gitlab.inria.fr/discovery/cheops",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/discovery/cheops",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://radar.inria.fr/report/2024/stack/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2024/stack/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-enoslib": {
+      "activitySource": "https://gitlab.inria.fr/discovery/enoslib",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/discovery/enoslib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://discovery.gitlabpages.inria.fr/enoslib/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/stack/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-discretelogdb": {
+      "activitySource": "https://gitlab.inria.fr/dldb/discretelogdb",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dldb/discretelogdb",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dldb/discretelogdb",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2017/caramba/uid56.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-headwork": {
+      "activitySource": "https://gitlab.inria.fr/druid-public/headwork",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/druid-public/headwork",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://headwork.irisa.fr/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://headwork.irisa.fr/headwork/"
+        },
+        "provenance": {
+          "url": "https://anr.fr/Projet-ANR-16-CE23-0015",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-core": {
+      "activitySource": "https://gitlab.inria.fr/dtk/dtk-core",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-core",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://dtk.gitlabpages.inria.fr/dtk-core/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-fonts": {
+      "activitySource": "https://gitlab.inria.fr/dtk/dtk-fonts",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-fonts",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-fonts",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-log": {
+      "activitySource": "https://gitlab.inria.fr/dtk/dtk-log",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-log",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-log",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-visualization": {
+      "activitySource": "https://gitlab.inria.fr/dtk/dtk-visualization",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-visualization",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-visualization",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-dtk-widgets": {
+      "activitySource": "https://gitlab.inria.fr/dtk/dtk-widgets",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-widgets",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/dtk/dtk-widgets",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/rapportsactivite/RA2018/mosaic/uid26.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-cadbiom": {
+      "activitySource": "https://gitlab.inria.fr/dyliss/cadbiom",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/dyliss/cadbiom",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://cadbiom.genouest.org/doc/cadbiom/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2024/dyliss/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-e2clab": {
+      "activitySource": "https://gitlab.inria.fr/e2clab/e2clab",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/e2clab/e2clab",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://e2clab.gitlabpages.inria.fr/e2clab/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2024/kerdata/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-projectivefriction": {
+      "activitySource": "https://gitlab.inria.fr/elan-public-code/projectivefriction",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/elan-public-code/projectivefriction",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab.inria.fr/elan-public-code/projectivefriction",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2021/elan/uid0.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-unsegqc": {
+      "activitySource": "https://gitlab.inria.fr/epione/unsegqc",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/epione/unsegqc",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www-sop.inria.fr/members/Herve.Delingette/site/soft/unsegqc/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2024/epione/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-order-manager": {
+      "activitySource": "https://gitlab.inria.fr/gazelle/public/simulation/order-manager",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/gazelle/public/simulation/order-manager",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://connectathon.ihe-catalyst.net/OrderManager/home.seam",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://connectathon.ihe-catalyst.net/gazelle-documentation/Order-Manager/installation.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-patient-manager": {
+      "activitySource": "https://gitlab.inria.fr/gazelle/public/simulation/patient-manager",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/gazelle/public/simulation/patient-manager",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://interop.referencement.esante.gouv.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://interop.referencement.esante.gouv.fr/gazelle-documentation/Patient-Manager/installation.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-grid5000-resources-explorer": {
+      "activitySource": "https://gitlab.inria.fr/grid5000/resources-explorer",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/grid5000/resources-explorer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://grid5000.gitlabpages.inria.fr/resources-explorer/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.grid5000.fr/w/Production:Getting_Started",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-guix-hpc": {
+      "activitySource": "https://gitlab.inria.fr/guix-hpc/guix-hpc",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab.inria.fr/guix-hpc/guix-hpc",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hpc.guix.info/channel/guix-hpc",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hpc.guix.info/channel/guix-hpc",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-guix-jupyter": {
+      "activitySource": "https://codeberg.org/guix-science/guix-jupyter",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://codeberg.org/guix-science/guix-jupyter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hpc.guix.info/blog/2024/11/guix-jupyter-0.3.0-released/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hpc.guix.info/static/doc/activity-report-2019.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-guix-modules": {
+      "activitySource": "https://codeberg.org/guix-science/guix-modules",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://codeberg.org/guix-science/guix-modules",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hpc.guix.info/blog/2022/05/back-to-the-future-modules-for-guix-packages/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hpc.guix.info/blog/2022/05/back-to-the-future-modules-for-guix-packages/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-guix-past": {
+      "activitySource": "https://codeberg.org/guix-science/guix-past",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://codeberg.org/guix-science/guix-past",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://hpc.guix.info/channel/guix-past",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://hpc.guix.info/static/doc/activity-report-2020.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-tick": {
+      "activitySource": "https://github.com/X-DataInitiative/tick",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-04",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/X-DataInitiative/tick",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://x-datainitiative.github.io/tick/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/X-DataInitiative/tick#readme",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-grand-est-opm2020": {
+      "activitySource": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-grandest/scdd/pub/opm2020",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-grandest/scdd/pub/opm2020",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.grand-est.developpement-durable.gouv.fr/l-outil-portrait-mobilite-a19915.html?lang=fr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-grandest/scdd/pub/opm2020/-/blob/dev/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-pdl-bilan-eco-insee": {
+      "activitySource": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/bilan.eco.insee",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/bilan.eco.insee",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/bilan.eco.insee",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/bilan.eco.insee",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-pdl-collectr": {
+      "activitySource": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/adl/collectr",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/adl/collectr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://dreal-pdl.gitlab-pages.din.developpement-durable.gouv.fr/csd/adl/collectr/",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://gitlab-forge.din.developpement-durable.gouv.fr/users/sign_in"
+        },
+        "provenance": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/adl/collectr/-/blob/main/README.Rmd",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-pdl-datalibaba": {
+      "activitySource": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/datalibaba",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/datalibaba",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://dreal-pdl.gitlab-pages.din.developpement-durable.gouv.fr/csd/datalibaba/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/datalibaba",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-dreal-pdl-diagnostic-regional-etiages": {
+      "activitySource": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/eau-milieux-aquatiques/diagnostic-regional-etiages",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "No supported public provider API is available for this repository host in the API-only check; latest-change date, archive state, and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": null,
+      "status": "unknown",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://gitlab-forge.din.developpement-durable.gouv.fr/dreal-pdl/csd/eau-milieux-aquatiques/diagnostic-regional-etiages",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.pays-de-la-loire.developpement-durable.gouv.fr/les-realisations-a4801.html?lang=fr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.pays-de-la-loire.developpement-durable.gouv.fr/les-realisations-a4801.html?lang=fr",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-depobio": {
+      "activitySource": "https://github.com/PnX-SI/gn_plugin_depobio",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-07-28",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_plugin_depobio",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.geonature.fr/CHANGELOG.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/PnX-SI/gn_plugin_depobio/releases/tag/depobio-21-01-2026",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-habref-api": {
+      "activitySource": "https://github.com/PnX-SI/Habref-api-module",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/Habref-api-module",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.geonature.fr/admin-manual.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://docs.geonature.fr/CHANGELOG.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-nomenclature-api": {
+      "activitySource": "https://github.com/PnX-SI/Nomenclature-api-module",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/Nomenclature-api-module",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.geonature.fr/admin-manual.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://docs.geonature.fr/CHANGELOG.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-odk2gn": {
+      "activitySource": "https://github.com/PnX-SI/odk2gn",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-09-19",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/odk2gn",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://geonature.fr/documents/2022-12-PNX-OFB-Workshop-ODK.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/rencontres/2024/presentations/06a-monitoring-presentation.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-refgeo": {
+      "activitySource": "https://github.com/PnX-SI/RefGeo",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/RefGeo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.geonature.fr/admin-manual.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://docs.geonature.fr/CHANGELOG.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-suivi-habitat-station": {
+      "activitySource": "https://github.com/PnX-SI/gn_module_monitoring_habitat_station",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-25",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_monitoring_habitat_station",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://geonature.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/2022-09-Cendrine-Hoarau--rapport-stage-M2-CBNA.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-suivi-flore-territoire": {
+      "activitySource": "https://github.com/PnX-SI/gn_module_suivi_flore_territoire",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-10-24",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_suivi_flore_territoire",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://floresentinelle.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/2018-09-Nguyen-Khanh-Chau-Rapport-stage-M2DCISS.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-suivi-habitat-territoire": {
+      "activitySource": "https://github.com/PnX-SI/gn_module_suivi_habitat_territoire",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-03-19",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_suivi_habitat_territoire",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://floresentinelle.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/2022-09-Cendrine-Hoarau--rapport-stage-M2-CBNA.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-zones-humides-module": {
+      "activitySource": "https://github.com/PnX-SI/gn_module_ZH",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-14",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_ZH",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://zones-humides.pnrsud.fr/map/",
+          "status": "not-found",
+          "httpStatus": 404
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/rencontres/2024/posters/Poster-ZH-SIT-PNR-PACA.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-geonature-monitoring": {
+      "activitySource": "https://github.com/PnX-SI/gn_module_monitoring",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-27",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/gn_module_monitoring",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://geonature.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/cctp/2021-06-DEPOBIO-CC-suivi-chiro-eolien.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-usershub": {
+      "activitySource": "https://github.com/PnX-SI/UsersHub",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-03-03",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/PnX-SI/UsersHub",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://geonature.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://geonature.fr/documents/2018-10-si-pne.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-pyjoules": {
+      "activitySource": "https://github.com/powerapi-ng/pyJoules",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-12-29",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/powerapi-ng/pyJoules",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pyjoules.readthedocs.io/en/stable/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/spirals/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-inria-pyrapl": {
+      "activitySource": "https://github.com/powerapi-ng/pyRAPL",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-03-07",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/powerapi-ng/pyRAPL",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pyrapl.readthedocs.io/en/stable/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://radar.inria.fr/report/2025/spirals/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-proconnect-hyyypertool": {
+      "activitySource": "https://github.com/proconnect-gouv/hyyypertool",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/proconnect-gouv/hyyypertool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.proconnect.gouv.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/proconnect-gouv/hyyypertool/releases/tag/2026.10.2",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-proconnect-oidc2fer": {
+      "activitySource": "https://github.com/proconnect-gouv/oidc2fer",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-07",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/proconnect-gouv/oidc2fer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.proconnect.gouv.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/proconnect-gouv/oidc2fer/releases/tag/v1.0.16",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-proconnect-identite": {
+      "activitySource": "https://github.com/proconnect-gouv/proconnect-identite",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/proconnect-gouv/proconnect-identite",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://identite.proconnect.gouv.fr/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://partenaires.proconnect.gouv.fr/docs/fournisseur-identite",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-vitam-sedatools": {
+      "activitySource": "https://github.com/ProgrammeVitam/sedatools",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-23",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ProgrammeVitam/sedatools",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.programmevitam.fr/pages/ressources/sedalib/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ProgrammeVitam/sedatools/releases/tag/v2.9.1",
+          "status": "not-found",
+          "httpStatus": 404
+        }
+      }
+    },
+    "fr-riate-distanamo": {
+      "activitySource": "https://github.com/riatelab/distanamo",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-03-16",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/distanamo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://riatelab.r-universe.dev/distanamo",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-geocountries": {
+      "activitySource": "https://github.com/riatelab/geocountries",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2022-11-09",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geocountries",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/geocountries",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-geoimport": {
+      "activitySource": "https://github.com/riatelab/geoimport",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-11-19",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geoimport",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/riatelab/geoimport/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-geotoolbox": {
+      "activitySource": "https://github.com/riatelab/geotoolbox",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-12",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geotoolbox",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/geotoolbox",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-geoverview": {
+      "activitySource": "https://github.com/riatelab/geoverview",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2022-10-14",
+      "status": "historical",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geoverview",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/geoverview",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-geoviz": {
+      "activitySource": "https://github.com/riatelab/geoviz",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-07",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/geoviz",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/geoviz",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-linearcorrelation": {
+      "activitySource": "https://github.com/riatelab/linearcorrelation",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2023-07-06",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/linearcorrelation",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/linearcorrelation",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-mapinsetr": {
+      "activitySource": "https://github.com/riatelab/mapinsetr",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-03-20",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/mapinsetr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/riatelab/mapinsetr/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-mapiso": {
+      "activitySource": "https://github.com/riatelab/mapiso",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2023-05-12",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/mapiso",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cran.r-project.org/web/packages/mapiso/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-mapsf": {
+      "activitySource": "https://github.com/riatelab/mapsf",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-09",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/mapsf",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cran.r-project.org/web/packages/mapsf/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-statsbreaks": {
+      "activitySource": "https://github.com/riatelab/statsbreaks",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-07-25",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/statsbreaks",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/statsbreaks",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "fr-riate-tricolore": {
+      "activitySource": "https://github.com/riatelab/tricolore.js",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/tricolore.js",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/riatelab/tricolore.js/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "fr-riate-valh": {
+      "activitySource": "https://github.com/riatelab/valh",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-02-12",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/riatelab/valh",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.riate.cnrs.fr/riatelab.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://cran.r-project.org/web/packages/valh/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
     }
   },
   "carriedForwardProjectIds": [
@@ -30499,6 +33882,75 @@
     "us-doe-argonne-tdcosim",
     "us-epa-gifmod",
     "us-epa-global-aq-rft",
-    "us-nih-scirun"
+    "us-nih-scirun",
+    "fr-inria-infrared",
+    "fr-inria-ipanemap",
+    "fr-inria-varna-api",
+    "fr-inria-astec",
+    "fr-inria-pycapacity",
+    "fr-inria-parcoursvis",
+    "fr-inria-belenios",
+    "fr-inria-plantinator",
+    "fr-inria-cado-nfs",
+    "fr-inria-cromast",
+    "fr-inria-cartolabe-visu",
+    "fr-inria-coccinelle",
+    "fr-inria-kami-lib",
+    "fr-inria-cheops-for-edge",
+    "fr-inria-enoslib",
+    "fr-inria-discretelogdb",
+    "fr-inria-headwork",
+    "fr-inria-dtk-core",
+    "fr-inria-dtk-fonts",
+    "fr-inria-dtk-log",
+    "fr-inria-dtk-visualization",
+    "fr-inria-dtk-widgets",
+    "fr-inria-cadbiom",
+    "fr-inria-e2clab",
+    "fr-inria-projectivefriction",
+    "fr-inria-unsegqc",
+    "fr-inria-order-manager",
+    "fr-inria-patient-manager",
+    "fr-inria-grid5000-resources-explorer",
+    "fr-inria-guix-hpc",
+    "fr-inria-guix-jupyter",
+    "fr-inria-guix-modules",
+    "fr-inria-guix-past",
+    "fr-tick",
+    "fr-dreal-grand-est-opm2020",
+    "fr-dreal-pdl-bilan-eco-insee",
+    "fr-dreal-pdl-collectr",
+    "fr-dreal-pdl-datalibaba",
+    "fr-dreal-pdl-diagnostic-regional-etiages",
+    "fr-geonature-depobio",
+    "fr-geonature-habref-api",
+    "fr-geonature-nomenclature-api",
+    "fr-geonature-odk2gn",
+    "fr-geonature-refgeo",
+    "fr-geonature-suivi-habitat-station",
+    "fr-geonature-suivi-flore-territoire",
+    "fr-geonature-suivi-habitat-territoire",
+    "fr-geonature-zones-humides-module",
+    "fr-geonature-monitoring",
+    "fr-usershub",
+    "fr-inria-pyjoules",
+    "fr-inria-pyrapl",
+    "fr-proconnect-hyyypertool",
+    "fr-proconnect-oidc2fer",
+    "fr-proconnect-identite",
+    "fr-vitam-sedatools",
+    "fr-riate-distanamo",
+    "fr-riate-geocountries",
+    "fr-riate-geoimport",
+    "fr-riate-geotoolbox",
+    "fr-riate-geoverview",
+    "fr-riate-geoviz",
+    "fr-riate-linearcorrelation",
+    "fr-riate-mapinsetr",
+    "fr-riate-mapiso",
+    "fr-riate-mapsf",
+    "fr-riate-statsbreaks",
+    "fr-riate-tricolore",
+    "fr-riate-valh"
   ]
 }

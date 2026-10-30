@@ -616,6 +616,76 @@ import usEpaGifmod from './us-epa-gifmod';
 import usEpaGlobalAqRft from './us-epa-global-aq-rft';
 import usNihScirun from './us-nih-scirun';
 
+import frInriaInfrared from './fr-inria-infrared';
+import frInriaIpanemap from './fr-inria-ipanemap';
+import frInriaVarnaApi from './fr-inria-varna-api';
+import frInriaAstec from './fr-inria-astec';
+import frInriaPycapacity from './fr-inria-pycapacity';
+import frInriaParcoursvis from './fr-inria-parcoursvis';
+import frInriaBelenios from './fr-inria-belenios';
+import frInriaPlantinator from './fr-inria-plantinator';
+import frInriaCadoNfs from './fr-inria-cado-nfs';
+import frInriaCromast from './fr-inria-cromast';
+import frInriaCartolabeVisu from './fr-inria-cartolabe-visu';
+import frInriaCoccinelle from './fr-inria-coccinelle';
+import frInriaKamiLib from './fr-inria-kami-lib';
+import frInriaCheopsForEdge from './fr-inria-cheops-for-edge';
+import frInriaEnoslib from './fr-inria-enoslib';
+import frInriaDiscreteLogDb from './fr-inria-discretelogdb';
+import frInriaHeadwork from './fr-inria-headwork';
+import frInriaDtkCore from './fr-inria-dtk-core';
+import frInriaDtkFonts from './fr-inria-dtk-fonts';
+import frInriaDtkLog from './fr-inria-dtk-log';
+import frInriaDtkVisualization from './fr-inria-dtk-visualization';
+import frInriaDtkWidgets from './fr-inria-dtk-widgets';
+import frInriaCadbiom from './fr-inria-cadbiom';
+import frInriaE2clab from './fr-inria-e2clab';
+import frInriaProjectiveFriction from './fr-inria-projectivefriction';
+import frInriaUnsegqc from './fr-inria-unsegqc';
+import frInriaOrderManager from './fr-inria-order-manager';
+import frInriaPatientManager from './fr-inria-patient-manager';
+import frInriaGrid5000ResourcesExplorer from './fr-inria-grid5000-resources-explorer';
+import frInriaGuixHpc from './fr-inria-guix-hpc';
+import frInriaGuixJupyter from './fr-inria-guix-jupyter';
+import frInriaGuixModules from './fr-inria-guix-modules';
+import frInriaGuixPast from './fr-inria-guix-past';
+import frTick from './fr-tick';
+import frDrealGrandEstOpm2020 from './fr-dreal-grand-est-opm2020';
+import frDrealPdlBilanEcoInsee from './fr-dreal-pdl-bilan-eco-insee';
+import frDrealPdlCollectr from './fr-dreal-pdl-collectr';
+import frDrealPdlDatalibaba from './fr-dreal-pdl-datalibaba';
+import frDrealPdlDiagnosticRegionalEtiages from './fr-dreal-pdl-diagnostic-regional-etiages';
+import frGeoNatureDepobio from './fr-geonature-depobio';
+import frGeoNatureHabrefApi from './fr-geonature-habref-api';
+import frGeoNatureNomenclatureApi from './fr-geonature-nomenclature-api';
+import frGeoNatureOdk2gn from './fr-geonature-odk2gn';
+import frGeoNatureRefgeo from './fr-geonature-refgeo';
+import frGeoNatureSuiviHabitatStation from './fr-geonature-suivi-habitat-station';
+import frGeoNatureSuiviFloreTerritoire from './fr-geonature-suivi-flore-territoire';
+import frGeoNatureSuiviHabitatTerritoire from './fr-geonature-suivi-habitat-territoire';
+import frGeoNatureZonesHumidesModule from './fr-geonature-zones-humides-module';
+import frGeoNatureMonitoring from './fr-geonature-monitoring';
+import frUsersHub from './fr-usershub';
+import frInriaPyJoules from './fr-inria-pyjoules';
+import frInriaPyRAPL from './fr-inria-pyrapl';
+import frProConnectHyyypertool from './fr-proconnect-hyyypertool';
+import frProConnectOidc2fer from './fr-proconnect-oidc2fer';
+import frProConnectIdentite from './fr-proconnect-identite';
+import frVitamSedatools from './fr-vitam-sedatools';
+import frRiateDistanamo from './fr-riate-distanamo';
+import frRiateGeocountries from './fr-riate-geocountries';
+import frRiateGeoimport from './fr-riate-geoimport';
+import frRiateGeotoolbox from './fr-riate-geotoolbox';
+import frRiateGeoverview from './fr-riate-geoverview';
+import frRiateGeoviz from './fr-riate-geoviz';
+import frRiateLinearcorrelation from './fr-riate-linearcorrelation';
+import frRiateMapinsetr from './fr-riate-mapinsetr';
+import frRiateMapiso from './fr-riate-mapiso';
+import frRiateMapsf from './fr-riate-mapsf';
+import frRiateStatsbreaks from './fr-riate-statsbreaks';
+import frRiateTricolore from './fr-riate-tricolore';
+import frRiateValh from './fr-riate-valh';
+
 export const projects: Project[] = [
   uswds,
   loginGov,
@@ -1228,4 +1298,73 @@ export const projects: Project[] = [
   usEpaGifmod,
   usEpaGlobalAqRft,
   usNihScirun,
+  frInriaInfrared,
+  frInriaIpanemap,
+  frInriaVarnaApi,
+  frInriaAstec,
+  frInriaPycapacity,
+  frInriaParcoursvis,
+  frInriaBelenios,
+  frInriaPlantinator,
+  frInriaCadoNfs,
+  frInriaCromast,
+  frInriaCartolabeVisu,
+  frInriaCoccinelle,
+  frInriaKamiLib,
+  frInriaCheopsForEdge,
+  frInriaEnoslib,
+  frInriaDiscreteLogDb,
+  frInriaHeadwork,
+  frInriaDtkCore,
+  frInriaDtkFonts,
+  frInriaDtkLog,
+  frInriaDtkVisualization,
+  frInriaDtkWidgets,
+  frInriaCadbiom,
+  frInriaE2clab,
+  frInriaProjectiveFriction,
+  frInriaUnsegqc,
+  frInriaOrderManager,
+  frInriaPatientManager,
+  frInriaGrid5000ResourcesExplorer,
+  frInriaGuixHpc,
+  frInriaGuixJupyter,
+  frInriaGuixModules,
+  frInriaGuixPast,
+  frTick,
+  frDrealGrandEstOpm2020,
+  frDrealPdlBilanEcoInsee,
+  frDrealPdlCollectr,
+  frDrealPdlDatalibaba,
+  frDrealPdlDiagnosticRegionalEtiages,
+  frGeoNatureDepobio,
+  frGeoNatureHabrefApi,
+  frGeoNatureNomenclatureApi,
+  frGeoNatureOdk2gn,
+  frGeoNatureRefgeo,
+  frGeoNatureSuiviHabitatStation,
+  frGeoNatureSuiviFloreTerritoire,
+  frGeoNatureSuiviHabitatTerritoire,
+  frGeoNatureZonesHumidesModule,
+  frGeoNatureMonitoring,
+  frUsersHub,
+  frInriaPyJoules,
+  frInriaPyRAPL,
+  frProConnectHyyypertool,
+  frProConnectOidc2fer,
+  frProConnectIdentite,
+  frVitamSedatools,
+  frRiateDistanamo,
+  frRiateGeocountries,
+  frRiateGeoimport,
+  frRiateGeotoolbox,
+  frRiateGeoverview,
+  frRiateGeoviz,
+  frRiateLinearcorrelation,
+  frRiateMapinsetr,
+  frRiateMapiso,
+  frRiateMapsf,
+  frRiateStatsbreaks,
+  frRiateTricolore,
+  frRiateValh,
 ];
