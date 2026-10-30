@@ -15,15 +15,13 @@ import { fileURLToPath } from 'node:url';
 
 import { createServer } from 'vite';
 
+import { replaceLedgerDatabase } from './lib/government-oss-ledger-db.mjs';
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ledgerDirectory = path.join(root, 'docs/research/ledger');
 const sourceDirectory = path.join(ledgerDirectory, 'sources');
 const reviewDirectory = path.join(ledgerDirectory, 'reviews');
 const batchDirectory = path.join(ledgerDirectory, 'batches');
-const stateDirectory = process.env.GOSDIR_LEDGER_STATE_DIR
-  ? path.resolve(process.env.GOSDIR_LEDGER_STATE_DIR)
-  : path.join(root, '.ledger-state');
-const candidateProjectionPath = path.join(stateDirectory, 'candidates.jsonl');
 const checks = [
   'government_provenance',
   'public_source',
@@ -116,7 +114,6 @@ async function loadCatalog() {
 
 await mkdir(reviewDirectory, { recursive: true });
 await mkdir(batchDirectory, { recursive: true });
-await mkdir(stateDirectory, { recursive: true });
 const sourceFiles = (await readdir(sourceDirectory))
   .filter((name) => name.endsWith('.jsonl'))
   .sort();
@@ -395,24 +392,6 @@ const output = [...candidates.values()]
     a.normalized_repository_url.localeCompare(b.normalized_repository_url),
   );
 
-const candidateProjection = output.map((candidate) => ({
-  normalized_repository_url: candidate.normalized_repository_url,
-  titles: candidate.titles,
-  source_rows: candidate.source_rows.map(({ source_id, source_row_id }) => ({
-    source_id,
-    source_row_id,
-  })),
-  metadata_candidate: candidate.metadata_candidate,
-  catalog_project_id: candidate.catalog_project_id,
-  catalog_match_basis: candidate.catalog_match_basis,
-  reviewed_canonical_repository_url:
-    candidate.reviewed_canonical_repository_url,
-  review_status: candidate.review_status,
-  review_file: candidate.review_file,
-  first_observed_at_utc: candidate.first_observed_at_utc,
-  latest_observed_at_utc: candidate.latest_observed_at_utc,
-}));
-
 const decisionCounts = { unreviewed: 0, publishable: 0, hold: 0, reject: 0 };
 for (const candidate of output) decisionCounts[candidate.review_status] += 1;
 const metadataCandidateDecisionCounts = {
@@ -436,6 +415,7 @@ for (const [sourceId, urls] of sourceUrlSets) {
 }
 const batchProgress = {};
 const assignments = new Set();
+const databaseBatchAssignments = [];
 for (const [filename, rows] of batchRowsByFile) {
   const batchId = filename.slice(0, -'.jsonl'.length);
   const decisions = { unreviewed: 0, publishable: 0, hold: 0, reject: 0 };
@@ -454,6 +434,7 @@ for (const [filename, rows] of batchRowsByFile) {
     if (assignments.has(key))
       throw new Error(`${label}: duplicate batch assignment for ${key}`);
     assignments.add(key);
+    databaseBatchAssignments.push({ batch_id: batchId, candidate_url: key });
     decisions[byUrl.get(key).review_status] += 1;
   }
   batchProgress[batchId] = { assigned: rows.length, ...decisions };
@@ -566,10 +547,14 @@ async function writeAtomic(target, contents) {
   }
 }
 
-await writeAtomic(
-  candidateProjectionPath,
-  candidateProjection.map((item) => JSON.stringify(item)).join('\n') + '\n',
-);
+await replaceLedgerDatabase({
+  root,
+  generatedAt: summary.generated_at_utc,
+  candidates: output,
+  reviews,
+  reviewOrigins,
+  batchAssignments: databaseBatchAssignments,
+});
 await writeAtomic(
   path.join(ledgerDirectory, 'summary.json'),
   JSON.stringify(summary, null, 2) + '\n',

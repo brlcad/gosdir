@@ -13,14 +13,11 @@ import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { openLedgerDatabase } from './lib/government-oss-ledger-db.mjs';
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ledger = path.join(root, 'docs/research/ledger');
 const batchDirectory = path.join(ledger, 'batches');
-const stateDirectory = process.env.GOSDIR_LEDGER_STATE_DIR
-  ? path.resolve(process.env.GOSDIR_LEDGER_STATE_DIR)
-  : path.join(root, '.ledger-state');
-const candidateProjectionPath = path.join(stateDirectory, 'candidates.jsonl');
-const sourceDirectory = path.join(ledger, 'sources');
 const option = (name) => {
   const index = process.argv.indexOf(name);
   return index < 0 ? null : process.argv[index + 1];
@@ -91,43 +88,6 @@ try {
     for (const line of lines)
       assigned.add(JSON.parse(line).normalized_repository_url);
   }
-  const candidates = (
-    await readFile(candidateProjectionPath, 'utf8').catch((error) => {
-      if (error?.code === 'ENOENT') {
-        throw new Error(
-          `Missing local ledger projection at ${candidateProjectionPath}; run node scripts/build-government-oss-ledger.mjs first`,
-        );
-      }
-      throw error;
-    })
-  )
-    .split(/\r?\n/)
-    .filter(Boolean)
-    .map(JSON.parse);
-  const sourceRowsByReference = new Map();
-  const sourceFiles = (await readdir(sourceDirectory))
-    .filter((name) => name.endsWith('.jsonl'))
-    .sort();
-  for (const filename of sourceFiles) {
-    const sourceId = filename.slice(0, -'.jsonl'.length);
-    const rows = (await readFile(path.join(sourceDirectory, filename), 'utf8'))
-      .split(/\r?\n/)
-      .filter(Boolean)
-      .map(JSON.parse);
-    for (const row of rows) {
-      const sourceRowId = String(row.source_row_id);
-      sourceRowsByReference.set(`${sourceId}\0${sourceRowId}`, {
-        source_id: sourceId,
-        source_row_id: sourceRowId,
-        source_record_url: row.source_record_url ?? null,
-        metadata_screen: row.metadata_screen,
-        metadata_screen_reason: row.metadata_screen_reason ?? null,
-        metadata_license: row.metadata_license ?? null,
-        metadata_owner: row.metadata_owner ?? null,
-        retrieved_at_utc: row.retrieved_at_utc ?? null,
-      });
-    }
-  }
   let flaggedSourceUrls = null;
   if (sourceMetadataFlag) {
     const sourceFile = path.join(ledger, 'sources', `${sourceId}.jsonl`);
@@ -140,45 +100,96 @@ try {
         .map((row) => row.normalized_repository_url),
     );
   }
-  const eligible = candidates.filter(
-    (candidate) =>
-      candidate.review_status === 'unreviewed' &&
-      (metadataScreen === 'all' ||
-        candidate.metadata_candidate === (metadataScreen === 'candidate')) &&
-      (!exactUrl || candidate.normalized_repository_url === exactUrl) &&
-      !assigned.has(candidate.normalized_repository_url) &&
-      (!sourceId ||
-        candidate.source_rows.some((row) => row.source_id === sourceId)) &&
-      (!flaggedSourceUrls ||
-        flaggedSourceUrls.has(candidate.normalized_repository_url)),
-  );
-  eligible.sort((a, b) => {
-    const aSourceCount = new Set(a.source_rows.map((row) => row.source_id))
-      .size;
-    const bSourceCount = new Set(b.source_rows.map((row) => row.source_id))
-      .size;
-    if (aSourceCount !== bSourceCount) return bSourceCount - aSourceCount;
-    return a.normalized_repository_url.localeCompare(
-      b.normalized_repository_url,
+  const database = openLedgerDatabase(root);
+  let eligible;
+  let batch;
+  try {
+    const conditions = ["c.review_status = 'unreviewed'"];
+    const parameters = [];
+    if (metadataScreen !== 'all') {
+      conditions.push('c.metadata_candidate = ?');
+      parameters.push(metadataScreen === 'candidate' ? 1 : 0);
+    }
+    if (exactUrl) {
+      conditions.push('c.normalized_repository_url = ?');
+      parameters.push(exactUrl);
+    }
+    if (sourceId) {
+      conditions.push(`EXISTS (
+        SELECT 1
+        FROM source_rows selected_source
+        WHERE selected_source.candidate_url = c.normalized_repository_url
+          AND selected_source.source_id = ?
+      )`);
+      parameters.push(sourceId);
+    }
+    const candidates = database
+      .prepare(`
+        SELECT
+          c.normalized_repository_url,
+          c.catalog_project_id,
+          COUNT(DISTINCT source_rows.source_id) AS source_count
+        FROM candidates c
+        JOIN source_rows
+          ON source_rows.candidate_url = c.normalized_repository_url
+        WHERE ${conditions.join(' AND ')}
+        GROUP BY c.normalized_repository_url, c.catalog_project_id
+        ORDER BY source_count DESC, c.normalized_repository_url
+      `)
+      .all(...parameters);
+    eligible = candidates.filter(
+      (candidate) =>
+        !assigned.has(candidate.normalized_repository_url) &&
+        (!flaggedSourceUrls ||
+          flaggedSourceUrls.has(candidate.normalized_repository_url)),
     );
-  });
-  const batch = eligible.slice(0, limit).map((candidate) => ({
-    batch_id: batchId,
-    normalized_repository_url: candidate.normalized_repository_url,
-    titles: candidate.titles,
-    catalog_project_id: candidate.catalog_project_id,
-    source_rows: candidate.source_rows.map((reference) => {
-      const sourceRow = sourceRowsByReference.get(
-        `${reference.source_id}\0${reference.source_row_id}`,
-      );
-      if (!sourceRow) {
-        throw new Error(
-          `Missing source row ${reference.source_id}/${reference.source_row_id} for ${candidate.normalized_repository_url}; rebuild the ledger projection`,
-        );
-      }
-      return sourceRow;
-    }),
-  }));
+
+    const selectTitles = database.prepare(`
+      SELECT title
+      FROM candidate_titles
+      WHERE candidate_url = ?
+      ORDER BY title
+    `);
+    const selectSourceRows = database.prepare(`
+      SELECT
+        source_id,
+        source_row_id,
+        source_record_url,
+        metadata_screen,
+        metadata_screen_reason,
+        metadata_license_json,
+        metadata_owner_json,
+        retrieved_at_utc
+      FROM source_rows
+      WHERE candidate_url = ?
+      ORDER BY source_id, source_row_id
+    `);
+    batch = eligible.slice(0, limit).map((candidate) => ({
+      batch_id: batchId,
+      normalized_repository_url: candidate.normalized_repository_url,
+      titles: selectTitles
+        .all(candidate.normalized_repository_url)
+        .map((row) => row.title),
+      catalog_project_id: candidate.catalog_project_id,
+      source_rows: selectSourceRows
+        .all(candidate.normalized_repository_url)
+        .map(
+          ({ metadata_license_json, metadata_owner_json, ...sourceRow }) => ({
+            ...sourceRow,
+            metadata_license:
+              metadata_license_json == null
+                ? null
+                : JSON.parse(metadata_license_json),
+            metadata_owner:
+              metadata_owner_json == null
+                ? null
+                : JSON.parse(metadata_owner_json),
+          }),
+        ),
+    }));
+  } finally {
+    database.close();
+  }
   if (exactUrl && batch.length !== 1) {
     throw new Error(
       `--url ${exactUrl} has no eligible unreviewed, unassigned candidate`,
