@@ -8,12 +8,16 @@ const el = (tag, text, className) => {
 let csrf = '';
 let snapshot;
 let page = 1;
+let pageSize = 50;
+const recordCollator = new Intl.Collator(undefined, {
+  numeric: true,
+  sensitivity: 'base',
+});
 const selected = new Set();
 let pendingAction;
 let refreshing = false;
 let authSettings = { provider: 'password', setupRequired: false, google: null };
 let googleLibrary;
-const pageSize = 25;
 const setupToken = new URLSearchParams(location.hash.slice(1)).get('setup');
 if (setupToken) history.replaceState(null, '', '/admin/');
 const jobLabels = {
@@ -279,7 +283,7 @@ function renderMetrics() {
 function filteredRecords() {
   const query = $('search').value.toLowerCase().trim();
   const filter = $('filter').value;
-  return snapshot.records.filter((r) => {
+  const records = snapshot.records.filter((r) => {
     if (
       query &&
       !`${r.name} ${r.sponsor} ${r.id} ${r.geography}`
@@ -299,6 +303,58 @@ function filteredRecords() {
     if (filter === 'recovered')
       return ['hidden', 'suspended'].includes(r.status) && r.canReinstate;
     return r.status === filter;
+  });
+  const sort = $('record-sort').value;
+  return records.sort((a, b) => {
+    let difference = 0;
+    if (sort === 'name-desc')
+      difference = recordCollator.compare(b.name, a.name);
+    else if (sort === 'sponsor')
+      difference = recordCollator.compare(a.sponsor, b.sponsor);
+    else if (sort === 'dead-links')
+      difference =
+        b.deadLinks - a.deadLinks || b.uncertainLinks - a.uncertainLinks;
+    else if (sort === 'oldest' || sort === 'newest') {
+      difference =
+        (Date.parse(a.checkedAt) || 0) - (Date.parse(b.checkedAt) || 0);
+      if (sort === 'newest') difference *= -1;
+    }
+    return (
+      difference ||
+      recordCollator.compare(a.name, b.name) ||
+      recordCollator.compare(a.id, b.id)
+    );
+  });
+}
+function navigateRecords(targetPage) {
+  page = targetPage;
+  renderRecords();
+  $('record-management').scrollIntoView({ block: 'start' });
+}
+function renderPagination(recordCount) {
+  const pageCount = Math.max(1, Math.ceil(recordCount / pageSize));
+  const range = recordCount
+    ? `${((page - 1) * pageSize + 1).toLocaleString()}–${Math.min(page * pageSize, recordCount).toLocaleString()} of ${recordCount.toLocaleString()} records`
+    : '0 records';
+  document.querySelectorAll('[data-record-range]').forEach((node) => {
+    node.textContent = range;
+  });
+  document.querySelectorAll('[data-page-total]').forEach((node) => {
+    node.textContent = `of ${pageCount.toLocaleString()}`;
+  });
+  document.querySelectorAll('[data-page-number]').forEach((input) => {
+    // Leave an unfinished page jump alone when the eight-second poll renders.
+    if (document.activeElement !== input) input.value = String(page);
+    input.max = String(pageCount);
+    input.disabled = recordCount === 0;
+  });
+  document.querySelectorAll('[data-page-jump] button').forEach((button) => {
+    button.disabled = recordCount === 0;
+  });
+  document.querySelectorAll('[data-page-action]').forEach((button) => {
+    button.disabled = ['first', 'previous'].includes(button.dataset.pageAction)
+      ? page === 1
+      : page === pageCount;
   });
 }
 function renderRecords() {
@@ -326,7 +382,11 @@ function renderRecords() {
       const checkCell = el('td');
       checkCell.append(checkbox);
       const name = el('td');
-      name.append(el('strong', record.name), el('small', record.sponsor));
+      name.append(
+        el('strong', record.name),
+        el('small', record.sponsor),
+        el('small', record.id, 'record-id'),
+      );
       const status = el('td');
       status.append(el('span', record.status, `badge ${record.status}`));
       const links = el('td');
@@ -364,12 +424,7 @@ function renderRecords() {
     visible.length > 0 && visible.every((r) => selected.has(r.id));
   $('select-page').indeterminate =
     visible.some((r) => selected.has(r.id)) && !$('select-page').checked;
-  $('range').textContent = records.length
-    ? `${(page - 1) * pageSize + 1}–${Math.min(page * pageSize, records.length)} of ${records.length.toLocaleString()}`
-    : '0 records';
-  $('page-label').textContent = `Page ${page}`;
-  $('previous').disabled = page <= 1;
-  $('next').disabled = page * pageSize >= records.length;
+  renderPagination(records.length);
   document.querySelectorAll('[data-action]').forEach((node) => {
     node.disabled = !selected.size || snapshot.working;
   });
@@ -577,13 +632,36 @@ $('filter').addEventListener('change', () => {
   renderMetrics();
   renderRecords();
 });
-$('previous').addEventListener('click', () => {
-  page--;
+$('record-sort').addEventListener('change', () => {
+  page = 1;
   renderRecords();
 });
-$('next').addEventListener('click', () => {
-  page++;
-  renderRecords();
+$('page-size').addEventListener('change', () => {
+  const firstRecord = (page - 1) * pageSize;
+  pageSize = Number($('page-size').value);
+  navigateRecords(Math.floor(firstRecord / pageSize) + 1);
+});
+document.querySelectorAll('[data-page-action]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const pageCount = Math.max(
+      1,
+      Math.ceil(filteredRecords().length / pageSize),
+    );
+    const destination = {
+      first: 1,
+      previous: page - 1,
+      next: page + 1,
+      last: pageCount,
+    }[button.dataset.pageAction];
+    navigateRecords(destination);
+  });
+});
+document.querySelectorAll('[data-page-jump]').forEach((form) => {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (form.reportValidity())
+      navigateRecords(Number(form.querySelector('[data-page-number]').value));
+  });
 });
 $('clear-selection').addEventListener('click', () => {
   selected.clear();

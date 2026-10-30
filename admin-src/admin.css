@@ -257,6 +257,20 @@ h3 {
 .search-label {
   flex: 1;
 }
+.record-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  padding: 0 20px 20px;
+}
+.record-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
 input:not([type='checkbox']),
 select,
 textarea {
@@ -341,6 +355,10 @@ td small {
   font-size: 11px;
   max-width: 430px;
 }
+td .record-id {
+  font-family: monospace;
+  overflow-wrap: anywhere;
+}
 td .link-state {
   font-size: 12px;
 }
@@ -393,13 +411,27 @@ tr.selected {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
-.pagination > div {
+.pagination-controls,
+.page-buttons,
+.page-jump {
   display: flex;
   align-items: center;
-  gap: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
   font-size: 12px;
+}
+.pagination-controls {
+  gap: 12px;
+}
+.page-jump {
+  margin: 0;
+}
+.page-jump input {
+  width: 5em;
+  padding: 7px 8px;
 }
 .pagination button {
   font-size: 11px;
@@ -633,6 +665,9 @@ dialog label {
   .filters select {
     width: 100%;
   }
+  .record-options {
+    padding: 0 14px 14px;
+  }
   .bulk {
     align-items: start;
     flex-wrap: wrap;
@@ -645,10 +680,25 @@ dialog label {
   .pagination {
     align-items: start;
     flex-direction: column;
+    padding-inline: 14px;
   }
-  .pagination > div {
+  .pagination-controls {
     width: 100%;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .pagination .page-jump {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .page-buttons {
+    flex-wrap: nowrap;
+  }
+  .page-buttons:last-child {
+    justify-content: end;
+  }
+  .pagination button {
+    padding-inline: 8px;
   }
   .job-heading {
     flex-wrap: wrap;
