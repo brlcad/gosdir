@@ -1,6 +1,13 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useId,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import {
   ArrowRight,
   ArrowUpRight,
@@ -35,7 +42,19 @@ const jurisdictions = [
   'U.S. state',
   'International',
 ];
-const PAGE_SIZE = 24;
+const pageSizes = [24, 48, 96];
+const sortOptions = [
+  ['name', 'Name A–Z'],
+  ['name-desc', 'Name Z–A'],
+  ['sponsor', 'Sponsor A–Z'],
+  ['year-newest', 'Newest open-source year'],
+  ['year-oldest', 'Oldest open-source year'],
+] as const;
+type SortOrder = (typeof sortOptions)[number][0];
+const projectCollator = new Intl.Collator('en', {
+  numeric: true,
+  sensitivity: 'base',
+});
 const dateFormatter = new Intl.DateTimeFormat('en', {
   day: 'numeric',
   month: 'short',
@@ -48,6 +67,8 @@ export function ProjectExplorer() {
   const [jurisdiction, setJurisdiction] = useState('All jurisdictions');
   const [domain, setDomain] = useState('All domains');
   const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(24);
+  const [sort, setSort] = useState<SortOrder>('name');
   const [selected, setSelected] = useState<Project | null>(null);
   const [requestedProjectId, setRequestedProjectId] = useState<string | null>(
     null,
@@ -87,11 +108,12 @@ export function ProjectExplorer() {
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return projects.filter((project) => {
+    const matching = projects.filter((project) => {
       const matchesQuery =
         !needle ||
         [
           project.name,
+          project.id,
           project.summary,
           project.sponsor,
           agencySearchTextByProjectId.get(project.id),
@@ -111,16 +133,32 @@ export function ProjectExplorer() {
         domain === 'All domains' || project.domain === domain;
       return matchesQuery && matchesJurisdiction && matchesDomain;
     });
-  }, [domain, jurisdiction, query]);
+    return matching.sort((a, b) => {
+      let difference = 0;
+      if (sort === 'name-desc')
+        difference = projectCollator.compare(b.name, a.name);
+      else if (sort === 'sponsor')
+        difference = projectCollator.compare(a.sponsor, b.sponsor);
+      else if (sort === 'year-newest')
+        difference = b.openSourceYear - a.openSourceYear;
+      else if (sort === 'year-oldest')
+        difference = a.openSourceYear - b.openSourceYear;
+      return (
+        difference ||
+        projectCollator.compare(a.name, b.name) ||
+        projectCollator.compare(a.id, b.id)
+      );
+    });
+  }, [domain, jurisdiction, query, sort]);
 
-  const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
   const currentPage = Math.min(page, pageCount);
   const visibleProjects = filtered.slice(
-    (currentPage - 1) * PAGE_SIZE,
-    currentPage * PAGE_SIZE,
+    (currentPage - 1) * pageSize,
+    currentPage * pageSize,
   );
-  const rangeStart = filtered.length ? (currentPage - 1) * PAGE_SIZE + 1 : 0;
-  const rangeEnd = Math.min(currentPage * PAGE_SIZE, filtered.length);
+  const rangeStart = filtered.length ? (currentPage - 1) * pageSize + 1 : 0;
+  const rangeEnd = Math.min(currentPage * pageSize, filtered.length);
 
   const reset = () => {
     setQuery('');
@@ -129,7 +167,8 @@ export function ProjectExplorer() {
     setPage(1);
   };
   const changePage = (nextPage: number) => {
-    setPage(nextPage);
+    if (!Number.isInteger(nextPage)) return;
+    setPage(Math.max(1, Math.min(nextPage, pageCount)));
     requestAnimationFrame(() => statusRef.current?.focus());
   };
   const selectedFreshness = selected ? getProjectFreshness(selected.id) : null;
@@ -176,7 +215,7 @@ export function ProjectExplorer() {
                   setQuery(event.target.value);
                   setPage(1);
                 }}
-                placeholder="Search name, agency, place, license…"
+                placeholder="Search name, record ID, agency, place, license…"
                 className="w-full bg-transparent outline-none"
               />
               {query && (
@@ -227,6 +266,49 @@ export function ProjectExplorer() {
               </select>
             </label>
           </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:flex">
+            <label className="filter-control">
+              <span className="shrink-0 text-xs font-bold text-slate">
+                Sort by
+              </span>
+              <select
+                value={sort}
+                onChange={(event) => {
+                  setSort(event.target.value as SortOrder);
+                  setPage(1);
+                }}
+                className="min-w-0 flex-1 bg-transparent outline-none"
+              >
+                {sortOptions.map(([value, label]) => (
+                  <option key={value} value={value}>
+                    {label}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="filter-control">
+              <span className="shrink-0 text-xs font-bold text-slate">
+                Records per page
+              </span>
+              <select
+                value={pageSize}
+                onChange={(event) => {
+                  const nextSize = Number(event.target.value);
+                  setPage(
+                    Math.floor(((currentPage - 1) * pageSize) / nextSize) + 1,
+                  );
+                  setPageSize(nextSize);
+                }}
+                className="min-w-0 flex-1 bg-transparent outline-none"
+              >
+                {pageSizes.map((size) => (
+                  <option key={size} value={size}>
+                    {size}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
             <p className="font-mono text-[11px] font-bold uppercase tracking-[.12em] text-slate">
               <span className="text-ink">{filtered.length}</span> verified
@@ -248,16 +330,17 @@ export function ProjectExplorer() {
             <p
               ref={statusRef}
               tabIndex={-1}
-              className="text-sm text-slate"
+              className="scroll-mt-24 text-sm text-slate"
               aria-live="polite"
               aria-atomic="true"
             >
               {filtered.length
-                ? `Showing ${rangeStart}–${rangeEnd} of ${filtered.length}`
+                ? `Showing ${rangeStart.toLocaleString('en')}–${rangeEnd.toLocaleString('en')} of ${filtered.length.toLocaleString('en')}`
                 : 'Showing 0 of 0'}
             </p>
-            {filtered.length > PAGE_SIZE && (
+            {pageCount > 1 && (
               <ProjectPagination
+                label="Project result pages above list"
                 page={currentPage}
                 pageCount={pageCount}
                 setPage={changePage}
@@ -351,9 +434,10 @@ export function ProjectExplorer() {
             </button>
           </div>
         )}
-        {filtered.length > PAGE_SIZE && (
+        {pageCount > 1 && (
           <div className="mt-8 flex justify-end">
             <ProjectPagination
+              label="Project result pages below list"
               page={currentPage}
               pageCount={pageCount}
               setPage={changePage}
@@ -438,10 +522,7 @@ export function ProjectExplorer() {
                       ? 'Editorial review'
                       : 'Automated availability checks'}
                   </p>
-                  <a
-                    href="/contact/"
-                    className="text-link mt-4 inline-flex"
-                  >
+                  <a href="/contact/" className="text-link mt-4 inline-flex">
                     Submit corrected public evidence →
                   </a>
                 </section>
@@ -570,35 +651,88 @@ function formatDate(value: string | null) {
 }
 
 function ProjectPagination({
+  label,
   page,
   pageCount,
   setPage,
 }: {
+  label: string;
   page: number;
   pageCount: number;
   setPage: (page: number) => void;
 }) {
+  const pageInputId = useId();
+  const pageInputRef = useRef<HTMLInputElement>(null);
+  const buttonClass =
+    'inline-flex h-11 items-center justify-center rounded-lg border border-ink bg-transparent px-3 text-sm font-bold text-ink transition-colors hover:bg-ink hover:text-white disabled:cursor-not-allowed disabled:opacity-45';
   return (
-    <nav className="flex items-center gap-3" aria-label="Project result pages">
-      <button
-        type="button"
-        className="button-secondary disabled:cursor-not-allowed disabled:opacity-45"
-        disabled={page === 1}
-        onClick={() => setPage(page - 1)}
+    <nav
+      className="flex w-full flex-wrap items-center justify-between gap-3 sm:w-auto sm:justify-start"
+      aria-label={label}
+    >
+      <div className="flex gap-2">
+        <button
+          type="button"
+          className={buttonClass}
+          disabled={page === 1}
+          onClick={() => setPage(1)}
+        >
+          First
+        </button>
+        <button
+          type="button"
+          className={buttonClass}
+          disabled={page === 1}
+          onClick={() => setPage(page - 1)}
+        >
+          Previous
+        </button>
+      </div>
+      <form
+        className="order-first flex w-full items-center gap-2 text-sm font-bold text-ink sm:order-none sm:w-auto"
+        onSubmit={(event) => {
+          event.preventDefault();
+          if (event.currentTarget.reportValidity() && pageInputRef.current)
+            setPage(pageInputRef.current.valueAsNumber);
+        }}
       >
-        Previous
-      </button>
-      <span className="text-sm font-bold text-ink">
-        Page {page} of {pageCount}
-      </span>
-      <button
-        type="button"
-        className="button-secondary disabled:cursor-not-allowed disabled:opacity-45"
-        disabled={page === pageCount}
-        onClick={() => setPage(page + 1)}
-      >
-        Next
-      </button>
+        <label htmlFor={pageInputId}>Page</label>
+        <input
+          key={page}
+          ref={pageInputRef}
+          id={pageInputId}
+          type="number"
+          inputMode="numeric"
+          min={1}
+          max={pageCount}
+          step={1}
+          required
+          defaultValue={page}
+          className="h-11 w-16 rounded-lg border border-line bg-white px-2 text-center"
+        />
+        <span>of {pageCount.toLocaleString('en')}</span>
+        <button type="submit" className={buttonClass}>
+          Go
+        </button>
+      </form>
+      <div className="flex gap-2">
+        <button
+          type="button"
+          className={buttonClass}
+          disabled={page === pageCount}
+          onClick={() => setPage(page + 1)}
+        >
+          Next
+        </button>
+        <button
+          type="button"
+          className={buttonClass}
+          disabled={page === pageCount}
+          onClick={() => setPage(pageCount)}
+        >
+          Last
+        </button>
+      </div>
     </nav>
   );
 }
