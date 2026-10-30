@@ -36650,6 +36650,5206 @@
           "httpStatus": 200
         }
       }
+    },
+    "uk-aisi-optstop": {
+      "activitySource": "https://github.com/UKGovernmentBEIS/optstop",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-09-13 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKGovernmentBEIS/optstop",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.aisi.gov.uk/blog/optimal-stopping-spending-evaluation-compute-where-it-counts",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2608.14425",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukets-registry": {
+      "activitySource": "https://github.com/UKGovernmentBEIS/ukets-registry",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-09-23 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-23",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKGovernmentBEIS/ukets-registry",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://view-emissions-trading-registry.service.gov.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/government/publications/uk-emissions-trading-scheme-for-installations-how-to-comply/uk-emissions-trading-scheme-for-installations-how-to-comply",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-vllm-lens": {
+      "activitySource": "https://github.com/UKGovernmentBEIS/vllm-lens",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-02 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-02",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKGovernmentBEIS/vllm-lens",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKGovernmentBEIS/vllm-lens",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKGovernmentBEIS/vllm-lens/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukho-devops-azdo-yaml-pipeline-templates": {
+      "activitySource": "https://github.com/UKHO/devops-azdo-yaml-pipeline-templates",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-06 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHO/devops-azdo-yaml-pipeline-templates",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHO/devops-azdo-yaml-pipeline-templates",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHO/devops-azdo-yaml-pipeline-templates/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukho-devops-gated-infrastructure-deploy": {
+      "activitySource": "https://github.com/UKHO/devops-gated-infrastructure-deploy",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-09 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-09",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHO/devops-gated-infrastructure-deploy",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHO/devops-gated-infrastructure-deploy",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHO/devops-gated-infrastructure-deploy/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukho-eventhub-logging-provider": {
+      "activitySource": "https://github.com/UKHO/EventHub-Logging-Provider",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-08-25 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-25",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHO/EventHub-Logging-Provider",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.nuget.org/packages/UKHO.Logging.EventHubLogProvider",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.nuget.org/packages/UKHO.Logging.EventHubLogProvider",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukho-exchange-set-service": {
+      "activitySource": "https://github.com/UKHO/exchange-set-service",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-01 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-01",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHO/exchange-set-service",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://fss.admiralty.co.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://assets.admiralty.co.uk/public/documents/2025-04/AVCS-user-guide.pdf?VersionId=m9aY2LOgdqRajxLaq_L20iRAcmsBq3OO",
+          "status": "not-found",
+          "httpStatus": 404
+        }
+      }
+    },
+    "uk-ukho-file-share-service-ui": {
+      "activitySource": "https://github.com/UKHO/file-share-service-ui",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-02 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-02",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHO/file-share-service-ui",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://fss.admiralty.co.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.admiralty.co.uk/share-data/ports-and-harbours",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukho-idam-azure-monitor-dashboard-reports": {
+      "activitySource": "https://github.com/UKHO/idam-azure-monitor-dashboard-reports",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-09-10 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-10",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHO/idam-azure-monitor-dashboard-reports",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHO/idam-azure-monitor-dashboard-reports",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHO/idam-azure-monitor-dashboard-reports",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukho-vm-agent-aib": {
+      "activitySource": "https://github.com/UKHO/vm-agent-aib",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2025-11-04 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2025-11-04",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHO/vm-agent-aib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHO/vm-agent-aib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHO/vm-agent-aib/blob/master/README.md",
+          "status": "redirected",
+          "httpStatus": 200,
+          "finalUrl": "https://github.com/UKHO/vm-agent-aib/blob/main/README.md"
+        }
+      }
+    },
+    "uk-home-office-appeal-rights-exhausted": {
+      "activitySource": "https://github.com/UKHomeOffice/AppealRightsExhausted",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-16 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/AppealRightsExhausted",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.appeal-rights-exhausted.homeoffice.gov.uk/first-page",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://www.appeal-rights-exhausted.homeoffice.gov.uk/first-page?hof-cookie-check"
+        },
+        "provenance": {
+          "url": "https://www.appeal-rights-exhausted.homeoffice.gov.uk/first-page",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://www.appeal-rights-exhausted.homeoffice.gov.uk/first-page?hof-cookie-check"
+        }
+      }
+    },
+    "uk-home-office-business-data-manager": {
+      "activitySource": "https://github.com/UKHomeOffice/business-data-manager",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-09-10 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-10",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/business-data-manager",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/business-data-manager",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/business-data-manager/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-clamav-http": {
+      "activitySource": "https://github.com/UKHomeOffice/clamav-http",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-09-10 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-10",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/clamav-http",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/clamav-http",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/clamav-http/releases/tag/v0.5.5",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-dq-acl-sftp-python": {
+      "activitySource": "https://github.com/UKHomeOffice/dq-acl-sftp-python",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-01-23 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-01-23",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/dq-acl-sftp-python",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://quay.io/repository/ukhomeofficedigital/dq-acl-sftp-python",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://quay.io/api/v1/repository/ukhomeofficedigital/dq-acl-sftp-python/tag/?limit=20&onlyActiveTags=true",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-dq-tf-ad": {
+      "activitySource": "https://github.com/UKHomeOffice/dq-tf-ad",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-07-08 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/dq-tf-ad",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/dq-tf-ad",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/dq-tf-ad/releases/tag/v1.0.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-dq-tf-cloudwatch-rds": {
+      "activitySource": "https://github.com/UKHomeOffice/dq-tf-cloudwatch-rds",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-04-09 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-09",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/dq-tf-cloudwatch-rds",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/dq-tf-cloudwatch-rds",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/dq-tf-cloudwatch-rds/releases/tag/v1.0.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-drt-react": {
+      "activitySource": "https://github.com/UKHomeOffice/drt-react",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-09 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-09",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/drt-react",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukhomeoffice.github.io/drt-react/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/drt-react/releases/tag/v2.13.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-drt-v2": {
+      "activitySource": "https://github.com/UKHomeOffice/drt-v2",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-13 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/drt-v2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/drt-v2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/drt-v2/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-dsa-test-harnesses": {
+      "activitySource": "https://github.com/UKHomeOffice/dsa-test-harnesses",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-06-02 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-02",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/dsa-test-harnesses",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/dsa-test-harnesses",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/dsa-test-harnesses/releases/tag/v2.1.3",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-ecs": {
+      "activitySource": "https://github.com/UKHomeOffice/ecs",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-15 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/ecs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/check-job-applicant-right-to-work",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/check-job-applicant-right-to-work",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-egar-public-site-ui": {
+      "activitySource": "https://github.com/UKHomeOffice/egar-public-site-ui",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-15 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/egar-public-site-ui",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.submit-general-aviation-report.service.gov.uk/welcome/index",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/government/publications/general-aviation-operators-and-pilots-notification-of-flights/general-aviation-report-guidance-accessible",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-eslint-config-asl": {
+      "activitySource": "https://github.com/UKHomeOffice/eslint-config-asl",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2024-08-20 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2024-08-20",
+      "status": "quiet",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/eslint-config-asl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/eslint-config-asl",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/eslint-config-asl/releases/tag/3.0.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-eta": {
+      "activitySource": "https://github.com/UKHomeOffice/eta",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-16 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/eta",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/eta/apply",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/service-standard-reports/electronic-travel-authorisation-eta-beta-assessment",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-explosives-precursors-poisons": {
+      "activitySource": "https://github.com/UKHomeOffice/explosives-precursors-poisons",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-16 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/explosives-precursors-poisons",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/government/publications/explosives-precursors-and-poisons-licences-application-guidance",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/government/publications/explosives-precursors-and-poisons-licences-application-guidance/licensing-for-home-users-of-poisons-and-explosive-precursors",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-file-vault": {
+      "activitySource": "https://github.com/UKHomeOffice/file-vault",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-06 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/file-vault",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/file-vault",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/file-vault/releases/tag/v3.3.0",
+          "status": "not-found",
+          "httpStatus": 404
+        }
+      }
+    },
+    "uk-home-office-firearms": {
+      "activitySource": "https://github.com/UKHomeOffice/firearms",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-16 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/firearms",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.firearms-licensing.homeoffice.gov.uk/",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://www.firearms-licensing.homeoffice.gov.uk/?hof-cookie-check"
+        },
+        "provenance": {
+          "url": "https://www.firearms-licensing.homeoffice.gov.uk/",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://www.firearms-licensing.homeoffice.gov.uk/?hof-cookie-check"
+        }
+      }
+    },
+    "uk-home-office-firehose-splunk-tf-module": {
+      "activitySource": "https://github.com/UKHomeOffice/firehose-splunk-tf-module",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-15 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/firehose-splunk-tf-module",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/firehose-splunk-tf-module",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/firehose-splunk-tf-module/releases/tag/2.5.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-gro-certificate-ordering": {
+      "activitySource": "https://github.com/UKHomeOffice/gro",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-15 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/gro",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/order-copy-birth-death-marriage-certificate",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/order-copy-birth-death-marriage-certificate",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-hocs-ci-infrastructure": {
+      "activitySource": "https://github.com/UKHomeOffice/hocs-ci-infrastructure",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-08-20 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-20",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/hocs-ci-infrastructure",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukhomeoffice.github.io/hocs/get-started/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/hocs-ci-infrastructure/releases/tag/1.6.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-hof-genesys-chat-component": {
+      "activitySource": "https://github.com/UKHomeOffice/hof-genesys-chat-component",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-16 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/hof-genesys-chat-component",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/hof-genesys-chat-component",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/hof-genesys-chat-component/releases/tag/v0.7.3",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-keycloak-theme-govuk": {
+      "activitySource": "https://github.com/UKHomeOffice/keycloak-theme-govuk",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-17",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/keycloak-theme-govuk",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/keycloak-theme-govuk",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/keycloak-theme-govuk",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-lmr": {
+      "activitySource": "https://github.com/UKHomeOffice/lmr",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/lmr",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.landlords-reporting.homeoffice.gov.uk/",
+          "status": "auth-required",
+          "httpStatus": 403,
+          "finalUrl": "https://www.landlords-reporting.homeoffice.gov.uk/?hof-cookie-check"
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/government/publications/right-to-rent-landlords-code-of-practice/code-of-practice-for-landlords-and-their-agents-the-right-to-rent-scheme-for-landlords-and-their-agents-1-october-2026",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-modern-slavery": {
+      "activitySource": "https://github.com/UKHomeOffice/modern-slavery",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/modern-slavery",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/guidance/report-modern-slavery-as-a-first-responder",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/guidance/report-modern-slavery-as-a-first-responder",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-paf": {
+      "activitySource": "https://github.com/UKHomeOffice/paf",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/paf",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/report-immigration-crime",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/report-immigration-crime",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-return-of-documents": {
+      "activitySource": "https://github.com/UKHomeOffice/return-of-documents",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/return-of-documents",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/visa-documents-returned",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/visa-documents-returned",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-rotm": {
+      "activitySource": "https://github.com/UKHomeOffice/rotm",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/rotm",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/report-terrorism",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/report-terrorism",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-unhcr-erff-validation-tool": {
+      "activitySource": "https://github.com/UKHomeOffice/unhcr-erff-validation-tool",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-24",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/unhcr-erff-validation-tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/unhcr-erff-validation-tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/unhcr-erff-validation-tool/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-vault-sidekick": {
+      "activitySource": "https://github.com/UKHomeOffice/vault-sidekick",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-04-29",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/vault-sidekick",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/UKHomeOffice/vault-sidekick",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/UKHomeOffice/vault-sidekick/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-home-office-visa-processing-times-tool": {
+      "activitySource": "https://github.com/UKHomeOffice/visa-processing-times-tool",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UKHomeOffice/visa-processing-times-tool",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/check-visa-processing-time",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/check-visa-processing-time",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukhsa-gpha-mscape-chimera-synteny": {
+      "activitySource": "https://github.com/ukhsa-collaboration/gpha-mscape-chimera-synteny",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-05",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-chimera-synteny",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-chimera-synteny",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-chimera-synteny/releases/tag/v0.0.3",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukhsa-gpha-mscape-nf-strep-pneumo": {
+      "activitySource": "https://github.com/ukhsa-collaboration/gpha-mscape-nf-strep-pneumo",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-25",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-nf-strep-pneumo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-nf-strep-pneumo",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-nf-strep-pneumo/releases/tag/v0.3.1",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukhsa-gpha-mscape-orangebox-claspar": {
+      "activitySource": "https://github.com/ukhsa-collaboration/gpha-mscape-orangebox-claspar",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-24",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-orangebox-claspar",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-orangebox-claspar",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-orangebox-claspar/releases/tag/v3.0.1",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukhsa-gpha-mscape-taxaplease": {
+      "activitySource": "https://github.com/ukhsa-collaboration/gpha-mscape-taxaplease",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-taxaplease",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-taxaplease",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukhsa-collaboration/gpha-mscape-taxaplease/releases/tag/v2.4.2",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukhsa-pygom": {
+      "activitySource": "https://github.com/ukhsa-collaboration/pygom",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-31",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukhsa-collaboration/pygom",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukhsa-collaboration.github.io/pygom/md/intro.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/government/publications/business-critical-models-for-department-of-health-and-social-care/business-critical-models-for-department-of-health-and-social-care-and-its-arms-length-bodies",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-companies-house-overseas-entities": {
+      "activitySource": "https://github.com/companieshouse/overseas-entities-web",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "commits reachable from the current default branch",
+      "headOid": "0e39055227e2993eb35e89c71091ccf2b32be684",
+      "lastChangeAt": "2026-10-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": 1766
+        },
+        {
+          "year": 2023,
+          "commits": 1607
+        },
+        {
+          "year": 2024,
+          "commits": 1471
+        },
+        {
+          "year": 2025,
+          "commits": 228
+        },
+        {
+          "year": 2026,
+          "commits": 327
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "measured",
+      "links": {
+        "repository": {
+          "url": "https://github.com/companieshouse/overseas-entities-web",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/guidance/register-an-overseas-entity",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/companieshouse/overseas-entities-api/blob/main/LICENSE",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-insolvency-rps-calculation-engine": {
+      "activitySource": "https://github.com/insolvencyservice/rpscalculationengine",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the connected public GitHub REST API; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/insolvencyservice/rpscalculationengine",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/claim-redundancy",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/algorithmic-transparency-records/insolvency-service-redundancy-payment-calculation-engine",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-hmlr-common-dev-env": {
+      "activitySource": "https://github.com/landregistry/common-dev-env",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through the connected public GitHub REST API; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-05-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/landregistry/common-dev-env",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/government/organisations/land-registry",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/LandRegistry/common-dev-env/releases/tag/v3.4.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-address-toolkit": {
+      "activitySource": "https://github.com/ONSdigital/address-toolkit",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/address-toolkit",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/address-toolkit/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/address-toolkit",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-blaise-design-system-react-components": {
+      "activitySource": "https://github.com/ONSdigital/blaise-design-system-react-components",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/blaise-design-system-react-components",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://onsdigital.github.io/blaise-design-system-react-components/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/blaise-design-system-react-components/releases/tag/v2.0.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-blaise-iap-node-provider": {
+      "activitySource": "https://github.com/ONSdigital/blaise-iap-node-provider",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/blaise-iap-node-provider",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ONSdigital/blaise-iap-node-provider",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/blaise-iap-node-provider/releases/tag/v3.0.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-blaise-uac-service-node-client": {
+      "activitySource": "https://github.com/ONSdigital/blaise-uac-service-node-client",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/blaise-uac-service-node-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ONSdigital/blaise-uac-service-node-client",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/blaise-uac-service-node-client/releases/tag/v4.1.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-cloud-status-alerter": {
+      "activitySource": "https://github.com/ONSdigital/cloud-status-alerter",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/cloud-status-alerter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ONSdigital/cloud-status-alerter",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/cloud-status-alerter/releases/tag/v2.2.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-charts-lib": {
+      "activitySource": "https://github.com/ONSdigital/charts-lib",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-02",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/charts-lib",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.npmjs.com/package/@onsvisual/charts-lib",
+          "status": "auth-required",
+          "httpStatus": 403
+        },
+        "provenance": {
+          "url": "https://www.npmjs.com/package/@onsvisual/charts-lib",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "uk-ons-dp-vault": {
+      "activitySource": "https://github.com/ONSdigital/dp-vault",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-01",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/dp-vault",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ONSdigital/dp-vault",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/dp-vault/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-eq-author-app": {
+      "activitySource": "https://github.com/ONSdigital/eq-author-app",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/eq-author-app",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://onsdigital.github.io/eq-author-app/?path=/docs/introduction--page",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://digitalblog.ons.gov.uk/2020/03/09/moving-paper-surveys-online-automating-the-process-of-publishing-surveys/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-explore-local-statistics": {
+      "activitySource": "https://github.com/ONSdigital/explore-local-statistics-app",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/explore-local-statistics-app",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.ons.gov.uk/explore-local-statistics/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/methodologies/explorelocalstatisticsserviceqmi",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-gcp-projects-dashboard": {
+      "activitySource": "https://github.com/ONSdigital/gcp-projects-dashboard",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/gcp-projects-dashboard",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ONSdigital/gcp-projects-dashboard",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/gcp-projects-dashboard/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-gdhi-adj": {
+      "activitySource": "https://github.com/ONSdigital/gdhi-adj",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-20",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/gdhi-adj",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/articles/disaggregatinguksubnationalgrossdisposablehouseholdincometolowerlevelsofgeography/2002to2021",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/gdhi-adj/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-health-insight-survey-dashboard": {
+      "activitySource": "https://github.com/onsdigital/health-insight-survey-dashboard",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/onsdigital/health-insight-survey-dashboard",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://onsdigital.github.io/health-insight-survey-dashboard/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/datasets/experiencesofnhshealthcareservicesinengland",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-keh-digital-landscape": {
+      "activitySource": "https://github.com/onsdigital/keh-digital-landscape",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/onsdigital/keh-digital-landscape",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://onsdigital.github.io/keh-digital-landscape/documentation/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/keh-digital-landscape/releases/tag/v1.26.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-mean-splice-decomposition": {
+      "activitySource": "https://github.com/onsdigital/mean-splice-decomposition",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-10",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/onsdigital/mean-splice-decomposition",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ONSdigital/mean-splice-decomposition",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://unece.org/sites/default/files/2025-04/geneva%20paper.pdf",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "uk-ons-crow": {
+      "activitySource": "https://github.com/onsdigital/ons-crow",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-05",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/onsdigital/ons-crow",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/methodologies/2021censuslinkagetodwpmasterkeyandencryptednino",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/methodologies/2021censuslinkagetodwpmasterkeyandencryptednino",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-python-template": {
+      "activitySource": "https://github.com/onsdigital/ons-python-template",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-12",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/onsdigital/ons-python-template",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ONSdigital/ons-python-template",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/ons-python-template/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-prototype-kit": {
+      "activitySource": "https://github.com/onsdigital/prototype-kit",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-25",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/onsdigital/prototype-kit",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://service-manual.ons.gov.uk/design-system/guidance/ons-prototype-kit",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://service-manual.ons.gov.uk/design-system/guidance/ons-prototype-kit",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-rdsa-utils": {
+      "activitySource": "https://github.com/onsdigital/rdsa-utils",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/onsdigital/rdsa-utils",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/rdsa-utils/0.16.1/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://pypi.org/project/rdsa-utils/0.16.1/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-robo-utils": {
+      "activitySource": "https://github.com/ONSdigital/robo-utils",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-08",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/robo-utils",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.npmjs.com/package/@onsvisual/robo-utils/v/0.6.1",
+          "status": "auth-required",
+          "httpStatus": 403
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/robo-utils/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ons-sdc-cryptography": {
+      "activitySource": "https://github.com/ONSdigital/sdc-cryptography",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ONSdigital/sdc-cryptography",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://pypi.org/project/sdc-cryptography/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ONSdigital/sdc-cryptography/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-stfc-janus-core": {
+      "activitySource": "https://github.com/stfc/janus-core",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-02 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-02",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/stfc/janus-core",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://stfc.github.io/janus-core/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sc.stfc.ac.uk/software/type/computational-materials-and-molecular-science/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-stfc-psyclone": {
+      "activitySource": "https://github.com/stfc/PSyclone",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-15 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/stfc/PSyclone",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/stfc/PSyclone",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/stfc/PSyclone/blob/master/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-stfc-quantum-molecular-encodings": {
+      "activitySource": "https://github.com/stfc/quantum-molecular-encodings",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-06-22 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-22",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/stfc/quantum-molecular-encodings",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://epubs.stfc.ac.uk/work/64073179",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://epubs.stfc.ac.uk/work/64073179",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-stfc-st2-cloud-pack": {
+      "activitySource": "https://github.com/stfc/st2-cloud-pack",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-06 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-06",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/stfc/st2-cloud-pack",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://openstack.stfc.ac.uk/auth/login/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/stfc/st2-cloud-pack/blob/main/docs/DEVELOPER_NOTES.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-nhs-england-new-hospital-programme-demand-model": {
+      "activitySource": "https://github.com/The-Strategy-Unit/nhp_model",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Public GitHub REST API returned HTTP 403; latest default-branch commit date 2026-10-13 was read from the repository's public commits Atom feed. Archive state and five-year commit totals remain unknown. No repository content was downloaded.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/The-Strategy-Unit/nhp_model",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.strategyunitwm.nhs.uk/new-hospital-programme-demand-model",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/government/publications/new-hospital-programme-annual-report-financial-year-2025-to-2026/new-hospital-programme-annual-report-2025-to-2026",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-nhs-nhp-tagged-runs": {
+      "activitySource": "https://github.com/The-Strategy-Unit/nhp_tagged_runs",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-18",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/The-Strategy-Unit/nhp_tagged_runs",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://connect.strategyunitwm.nhs.uk/nhp/tagged_runs/",
+          "status": "auth-required",
+          "httpStatus": 401
+        },
+        "provenance": {
+          "url": "https://github.com/The-Strategy-Unit/nhp_tagged_runs/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-nhs-nhp-tpma-rationale": {
+      "activitySource": "https://github.com/The-Strategy-Unit/nhp_tpma_rationale",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-22",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/The-Strategy-Unit/nhp_tpma_rationale",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://connect.strategyunitwm.nhs.uk/nhp/tpma-rationale/",
+          "status": "auth-required",
+          "httpStatus": 401
+        },
+        "provenance": {
+          "url": "https://github.com/The-Strategy-Unit/nhp_tpma_rationale/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-nhs-perioperative-pathway-explorer": {
+      "activitySource": "https://github.com/The-Strategy-Unit/perioperative-pathway-explorer",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-07",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/The-Strategy-Unit/perioperative-pathway-explorer",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://exchange.iseesystems.com/public/strategy-unit/perioperative-care-pathways/index.html",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/The-Strategy-Unit/perioperative-pathway-explorer/blob/main/README.md",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-nhs-renal-capacity-model": {
+      "activitySource": "https://github.com/The-Strategy-Unit/renal-capacity-model",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-26",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/The-Strategy-Unit/renal-capacity-model",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.strategyunitwm.nhs.uk/news/planning-rising-renal-demand-simulating-capacity-across-care-system",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.strategyunitwm.nhs.uk/news/planning-rising-renal-demand-simulating-capacity-across-care-system",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-tpr-govuk-frontend-aspnetcore-extensions": {
+      "activitySource": "https://github.com/thepensionsregulator/govuk-frontend-aspnetcore-extensions",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/thepensionsregulator/govuk-frontend-aspnetcore-extensions",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.nuget.org/packages/ThePensionsRegulator.Frontend",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/thepensionsregulator/govuk-frontend-aspnetcore-extensions/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-tpr-umbraco-analyzers": {
+      "activitySource": "https://github.com/thepensionsregulator/umbraco-analyzers",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-02",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/thepensionsregulator/umbraco-analyzers",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/thepensionsregulator/umbraco-analyzers",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.nuget.org/packages/ThePensionsRegulator.Analyzers.Umbraco",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukef-digital-trade-finance-service": {
+      "activitySource": "https://github.com/UK-Export-Finance/dtfs2",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UK-Export-Finance/dtfs2",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/government/publications/uk-export-finance-annual-report-and-accounts-2022-to-2023/uk-export-finance-annual-report-and-accounts-2022-23-web-accessible",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/government/publications/uk-export-finance-annual-report-and-accounts-2022-to-2023/uk-export-finance-annual-report-and-accounts-2022-23-web-accessible",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukef-export-insurance-policies": {
+      "activitySource": "https://github.com/UK-Export-Finance/exip",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-03",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/UK-Export-Finance/exip",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/guidance/apply-for-ukef-export-insurance",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/guidance/apply-for-ukef-export-insurance",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-crc-open-ros2-driver": {
+      "activitySource": "https://github.com/ukaea/CRCOpenROS2Driver",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-09-17",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/CRCOpenROS2Driver",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukaea/CRCOpenROS2Driver",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukaea/CRCOpenROS2Driver/releases/tag/v0.6.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-fair-mast": {
+      "activitySource": "https://github.com/ukaea/fair-mast",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-07-17",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/fair-mast",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://mastapp.site/",
+          "status": "error",
+          "errorCode": "request-timeout"
+        },
+        "provenance": {
+          "url": "https://www.ukaea.org/service/fair-mast/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-libtokamap": {
+      "activitySource": "https://github.com/ukaea/libtokamap",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-27",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/libtokamap",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukaea/libtokamap",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukaea/libtokamap/releases/tag/0.3.0",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-multiparser": {
+      "activitySource": "https://github.com/ukaea/Multiparser",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-20",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/Multiparser",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukaea.github.io/Multiparser/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://ukaea.github.io/Multiparser/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-power-balance-models": {
+      "activitySource": "https://github.com/ukaea/powerbalance",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-01",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/powerbalance",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukaea.github.io/powerbalance/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0920379623001473",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "uk-ukaea-process": {
+      "activitySource": "https://github.com/ukaea/PROCESS",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/PROCESS",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.ukaea.org/service/process/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://scientific-publications.ukaea.uk/papers/preparing-systems-codes-for-power-plant-design/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-pyvmcon": {
+      "activitySource": "https://github.com/ukaea/PyVMCON",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-23",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/PyVMCON",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukaea.github.io/PyVMCON/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukaea/PyVMCON/releases/tag/v2.4.2",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-remkit1d": {
+      "activitySource": "https://github.com/ukaea/ReMKiT1D",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-11-20",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/ReMKiT1D",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.ukaea.org/service/remkit1d/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0010465524001188",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "uk-ukaea-remkit1d-python": {
+      "activitySource": "https://github.com/ukaea/ReMKiT1D-Python",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-20",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/ReMKiT1D-Python",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://remkit1d-python.readthedocs.io/en/latest/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0010465524001188",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "uk-ukaea-tokamap": {
+      "activitySource": "https://github.com/ukaea/tokamap",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-21",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/tokamap",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukaea.github.io/tokamap/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://indico.iter.org/event/732/timetable/?view=standard_numbered_inline_minutes",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-toktagger": {
+      "activitySource": "https://github.com/ukaea/toktagger",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/toktagger",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.ukaea.org/service/toktagger/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.ukaea.org/service/toktagger/",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-ukaea-universal-data-access": {
+      "activitySource": "https://github.com/ukaea/uda",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2025-11-28",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukaea/uda",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukaea.github.io/UDA/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://indico.ukaea.uk/event/163/contributions/257/attachments/77/103/uda231019.pdf",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-office-for-equality-and-opportunity-gender-pay-gap": {
+      "activitySource": "https://github.com/ukgov-equality-hub/gender-pay-gap",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-25",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgov-equality-hub/gender-pay-gap",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://gender-pay-gap.service.gov.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://gender-pay-gap.service.gov.uk/accessibility-statement",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-dsit-oda-reporting-application": {
+      "activitySource": "https://github.com/ukgovernmentbeis/beis-report-official-development-assistance",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-15",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/beis-report-official-development-assistance",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.report-official-development-assistance.service.gov.uk/",
+          "status": "auth-required",
+          "httpStatus": 403
+        },
+        "provenance": {
+          "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/942acc7d-d21d-4429-9777-99fbba96b7c2",
+          "status": "auth-required",
+          "httpStatus": 403
+        }
+      }
+    },
+    "uk-aisi-control-arena": {
+      "activitySource": "https://github.com/ukgovernmentbeis/control-arena",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-13",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/control-arena",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://control-arena.aisi.org.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.aisi.gov.uk/blog/introducing-controlarena-a-library-for-running-ai-control-experiments",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-desnz-chpqa-app-portal": {
+      "activitySource": "https://github.com/ukgovernmentbeis/desnz-chpqa-app-portal",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2024-11-22",
+      "status": "current",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/desnz-chpqa-app-portal",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://manage-combined-and-heat-power.service.gov.uk/",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        },
+        "provenance": {
+          "url": "https://manage-combined-and-heat-power.service.gov.uk/",
+          "status": "error",
+          "errorCode": "invalid-tls-certificate"
+        }
+      }
+    },
+    "uk-desnz-esos": {
+      "activitySource": "https://github.com/ukgovernmentbeis/esos",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-28",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/esos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://www.gov.uk/guidance/energy-savings-opportunity-scheme-esos",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/government/publications/comply-with-the-energy-savings-opportunity-scheme-esos-phase-4",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-inspect-ai": {
+      "activitySource": "https://github.com/ukgovernmentbeis/inspect_ai",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-16",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_ai",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://inspect.aisi.org.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.aisi.gov.uk/blog/open-sourcing-our-testing-framework-inspect",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-inspect-cyber": {
+      "activitySource": "https://github.com/ukgovernmentbeis/inspect_cyber",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-18",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_cyber",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://inspect.cyber.aisi.org.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.aisi.gov.uk/blog/inspect-cyber",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-inspect-ec2-sandbox": {
+      "activitySource": "https://github.com/ukgovernmentbeis/inspect_ec2_sandbox",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-20",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_ec2_sandbox",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_ec2_sandbox",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://engineering-playbook.aisi.org.uk/isolate.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-inspect-evals": {
+      "activitySource": "https://github.com/ukgovernmentbeis/inspect_evals",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-17",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_evals",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://ukgovernmentbeis.github.io/inspect_evals/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_evals/releases",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-inspect-k8s-sandbox": {
+      "activitySource": "https://github.com/ukgovernmentbeis/inspect_k8s_sandbox",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-09",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_k8s_sandbox",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://k8s-sandbox.aisi.org.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://engineering-playbook.aisi.org.uk/isolate.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-inspect-proxmox-sandbox": {
+      "activitySource": "https://github.com/ukgovernmentbeis/inspect_proxmox_sandbox",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_proxmox_sandbox",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukgovernmentbeis/inspect_proxmox_sandbox",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://engineering-playbook.aisi.org.uk/isolate.html",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-isambard-containers": {
+      "activitySource": "https://github.com/ukgovernmentbeis/isambard_containers",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-08-11",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/isambard_containers",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://docs.isambard.ac.uk/user-documentation/guides/containers/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://github.com/ukgovernmentbeis/isambard_containers",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-aisi-lie-detectors": {
+      "activitySource": "https://github.com/ukgovernmentbeis/lie_detectors",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-06-04",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/lie_detectors",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://github.com/ukgovernmentbeis/lie_detectors",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://arxiv.org/abs/2606.12618",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
+    },
+    "uk-desnz-mets": {
+      "activitySource": "https://github.com/ukgovernmentbeis/mets",
+      "activitySourceLabel": "Canonical repository",
+      "activityBasis": "Latest default-branch commit date checked through one public GitHub REST API call; archive status and five-year commit counts unavailable in API-only mode, which does not download repository data.",
+      "headOid": null,
+      "lastChangeAt": "2026-10-14",
+      "status": "fresh",
+      "annualCommits": [
+        {
+          "year": 2022,
+          "commits": null
+        },
+        {
+          "year": 2023,
+          "commits": null
+        },
+        {
+          "year": 2024,
+          "commits": null
+        },
+        {
+          "year": 2025,
+          "commits": null
+        },
+        {
+          "year": 2026,
+          "commits": null
+        }
+      ],
+      "archived": null,
+      "collectionStatus": "unavailable",
+      "links": {
+        "repository": {
+          "url": "https://github.com/ukgovernmentbeis/mets",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "official": {
+          "url": "https://manage-emissions-reporting.service.gov.uk/",
+          "status": "ok",
+          "httpStatus": 200
+        },
+        "provenance": {
+          "url": "https://www.gov.uk/guidance/uk-emissions-trading-scheme-for-aviation-how-to-comply",
+          "status": "ok",
+          "httpStatus": 200
+        }
+      }
     }
   },
   "carriedForwardProjectIds": [
@@ -37401,6 +42601,112 @@
     "uk-hmcts-sptribs-frontend",
     "uk-hmcts-trigger-ado-pipeline",
     "uk-hmcts-version-reporter-services",
-    "uk-hmcts-wa-chart"
+    "uk-hmcts-wa-chart",
+    "uk-aisi-optstop",
+    "uk-ukets-registry",
+    "uk-aisi-vllm-lens",
+    "uk-ukho-devops-azdo-yaml-pipeline-templates",
+    "uk-ukho-devops-gated-infrastructure-deploy",
+    "uk-ukho-eventhub-logging-provider",
+    "uk-ukho-exchange-set-service",
+    "uk-ukho-file-share-service-ui",
+    "uk-ukho-idam-azure-monitor-dashboard-reports",
+    "uk-ukho-vm-agent-aib",
+    "uk-home-office-appeal-rights-exhausted",
+    "uk-home-office-business-data-manager",
+    "uk-home-office-clamav-http",
+    "uk-home-office-dq-acl-sftp-python",
+    "uk-home-office-dq-tf-ad",
+    "uk-home-office-dq-tf-cloudwatch-rds",
+    "uk-home-office-drt-react",
+    "uk-home-office-drt-v2",
+    "uk-home-office-dsa-test-harnesses",
+    "uk-home-office-ecs",
+    "uk-home-office-egar-public-site-ui",
+    "uk-home-office-eslint-config-asl",
+    "uk-home-office-eta",
+    "uk-home-office-explosives-precursors-poisons",
+    "uk-home-office-file-vault",
+    "uk-home-office-firearms",
+    "uk-home-office-firehose-splunk-tf-module",
+    "uk-home-office-gro-certificate-ordering",
+    "uk-home-office-hocs-ci-infrastructure",
+    "uk-home-office-hof-genesys-chat-component",
+    "uk-home-office-keycloak-theme-govuk",
+    "uk-home-office-lmr",
+    "uk-home-office-modern-slavery",
+    "uk-home-office-paf",
+    "uk-home-office-return-of-documents",
+    "uk-home-office-rotm",
+    "uk-home-office-unhcr-erff-validation-tool",
+    "uk-home-office-vault-sidekick",
+    "uk-home-office-visa-processing-times-tool",
+    "uk-ukhsa-gpha-mscape-chimera-synteny",
+    "uk-ukhsa-gpha-mscape-nf-strep-pneumo",
+    "uk-ukhsa-gpha-mscape-orangebox-claspar",
+    "uk-ukhsa-gpha-mscape-taxaplease",
+    "uk-ukhsa-pygom",
+    "uk-companies-house-overseas-entities",
+    "uk-insolvency-rps-calculation-engine",
+    "uk-hmlr-common-dev-env",
+    "uk-ons-address-toolkit",
+    "uk-ons-blaise-design-system-react-components",
+    "uk-ons-blaise-iap-node-provider",
+    "uk-ons-blaise-uac-service-node-client",
+    "uk-ons-cloud-status-alerter",
+    "uk-ons-charts-lib",
+    "uk-ons-dp-vault",
+    "uk-ons-eq-author-app",
+    "uk-ons-explore-local-statistics",
+    "uk-ons-gcp-projects-dashboard",
+    "uk-ons-gdhi-adj",
+    "uk-ons-health-insight-survey-dashboard",
+    "uk-ons-keh-digital-landscape",
+    "uk-ons-mean-splice-decomposition",
+    "uk-ons-crow",
+    "uk-ons-python-template",
+    "uk-ons-prototype-kit",
+    "uk-ons-rdsa-utils",
+    "uk-ons-robo-utils",
+    "uk-ons-sdc-cryptography",
+    "uk-stfc-janus-core",
+    "uk-stfc-psyclone",
+    "uk-stfc-quantum-molecular-encodings",
+    "uk-stfc-st2-cloud-pack",
+    "uk-nhs-england-new-hospital-programme-demand-model",
+    "uk-nhs-nhp-tagged-runs",
+    "uk-nhs-nhp-tpma-rationale",
+    "uk-nhs-perioperative-pathway-explorer",
+    "uk-nhs-renal-capacity-model",
+    "uk-tpr-govuk-frontend-aspnetcore-extensions",
+    "uk-tpr-umbraco-analyzers",
+    "uk-ukef-digital-trade-finance-service",
+    "uk-ukef-export-insurance-policies",
+    "uk-ukaea-crc-open-ros2-driver",
+    "uk-ukaea-fair-mast",
+    "uk-ukaea-libtokamap",
+    "uk-ukaea-multiparser",
+    "uk-ukaea-power-balance-models",
+    "uk-ukaea-process",
+    "uk-ukaea-pyvmcon",
+    "uk-ukaea-remkit1d",
+    "uk-ukaea-remkit1d-python",
+    "uk-ukaea-tokamap",
+    "uk-ukaea-toktagger",
+    "uk-ukaea-universal-data-access",
+    "uk-office-for-equality-and-opportunity-gender-pay-gap",
+    "uk-dsit-oda-reporting-application",
+    "uk-aisi-control-arena",
+    "uk-desnz-chpqa-app-portal",
+    "uk-desnz-esos",
+    "uk-aisi-inspect-ai",
+    "uk-aisi-inspect-cyber",
+    "uk-aisi-inspect-ec2-sandbox",
+    "uk-aisi-inspect-evals",
+    "uk-aisi-inspect-k8s-sandbox",
+    "uk-aisi-inspect-proxmox-sandbox",
+    "uk-aisi-isambard-containers",
+    "uk-aisi-lie-detectors",
+    "uk-desnz-mets"
   ]
 }

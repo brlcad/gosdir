@@ -756,6 +756,113 @@ import ukHmctsTriggerAdoPipeline from './uk-hmcts-trigger-ado-pipeline';
 import ukHmctsVersionReporterServices from './uk-hmcts-version-reporter-services';
 import ukHmctsWaChart from './uk-hmcts-wa-chart';
 
+import ukAisiOptstop from './uk-aisi-optstop';
+import ukUketsRegistry from './uk-ukets-registry';
+import ukAisiVllmLens from './uk-aisi-vllm-lens';
+import ukUkhoDevopsAzdoYamlPipelineTemplates from './uk-ukho-devops-azdo-yaml-pipeline-templates';
+import ukUkhoDevopsGatedInfrastructureDeploy from './uk-ukho-devops-gated-infrastructure-deploy';
+import ukUkhoEventhubLoggingProvider from './uk-ukho-eventhub-logging-provider';
+import ukUkhoExchangeSetService from './uk-ukho-exchange-set-service';
+import ukUkhoFileShareServiceUi from './uk-ukho-file-share-service-ui';
+import ukUkhoIdamAzureMonitorDashboardReports from './uk-ukho-idam-azure-monitor-dashboard-reports';
+import ukUkhoVmAgentAib from './uk-ukho-vm-agent-aib';
+import ukHomeOfficeAppealRightsExhausted from './uk-home-office-appeal-rights-exhausted';
+import ukHomeOfficeBusinessDataManager from './uk-home-office-business-data-manager';
+import ukHomeOfficeClamavHttp from './uk-home-office-clamav-http';
+import ukHomeOfficeDqAclSftpPython from './uk-home-office-dq-acl-sftp-python';
+import ukHomeOfficeDqTfAd from './uk-home-office-dq-tf-ad';
+import ukHomeOfficeDqTfCloudwatchRds from './uk-home-office-dq-tf-cloudwatch-rds';
+import ukHomeOfficeDrtReact from './uk-home-office-drt-react';
+import ukHomeOfficeDrtV2 from './uk-home-office-drt-v2';
+import ukHomeOfficeDsaTestHarnesses from './uk-home-office-dsa-test-harnesses';
+import ukHomeOfficeEcs from './uk-home-office-ecs';
+import ukHomeOfficeEgarPublicSiteUi from './uk-home-office-egar-public-site-ui';
+import ukHomeOfficeEslintConfigAsl from './uk-home-office-eslint-config-asl';
+import ukHomeOfficeEta from './uk-home-office-eta';
+import ukHomeOfficeExplosivesPrecursorsPoisons from './uk-home-office-explosives-precursors-poisons';
+import ukHomeOfficeFileVault from './uk-home-office-file-vault';
+import ukHomeOfficeFirearms from './uk-home-office-firearms';
+import ukHomeOfficeFirehoseSplunkTfModule from './uk-home-office-firehose-splunk-tf-module';
+import ukHomeOfficeGroCertificateOrdering from './uk-home-office-gro-certificate-ordering';
+import ukHomeOfficeHocsCiInfrastructure from './uk-home-office-hocs-ci-infrastructure';
+import ukHomeOfficeHofGenesysChatComponent from './uk-home-office-hof-genesys-chat-component';
+import ukHomeOfficeKeycloakThemeGovuk from './uk-home-office-keycloak-theme-govuk';
+import ukHomeOfficeLmr from './uk-home-office-lmr';
+import ukHomeOfficeModernSlavery from './uk-home-office-modern-slavery';
+import ukHomeOfficePaf from './uk-home-office-paf';
+import ukHomeOfficeReturnOfDocuments from './uk-home-office-return-of-documents';
+import ukHomeOfficeRotm from './uk-home-office-rotm';
+import ukHomeOfficeUnhcrErffValidationTool from './uk-home-office-unhcr-erff-validation-tool';
+import ukHomeOfficeVaultSidekick from './uk-home-office-vault-sidekick';
+import ukHomeOfficeVisaProcessingTimesTool from './uk-home-office-visa-processing-times-tool';
+import ukUkhsaGphaMscapeChimeraSynteny from './uk-ukhsa-gpha-mscape-chimera-synteny';
+import ukUkhsaGphaMscapeNfStrepPneumo from './uk-ukhsa-gpha-mscape-nf-strep-pneumo';
+import ukUkhsaGphaMscapeOrangeboxClaspar from './uk-ukhsa-gpha-mscape-orangebox-claspar';
+import ukUkhsaGphaMscapeTaxaplease from './uk-ukhsa-gpha-mscape-taxaplease';
+import ukUkhsaPygom from './uk-ukhsa-pygom';
+import ukCompaniesHouseOverseasEntities from './uk-companies-house-overseas-entities';
+import ukInsolvencyRpsCalculationEngine from './uk-insolvency-rps-calculation-engine';
+import ukHmlrCommonDevEnv from './uk-hmlr-common-dev-env';
+import ukOnsAddressToolkit from './uk-ons-address-toolkit';
+import ukOnsBlaiseDesignSystemReactComponents from './uk-ons-blaise-design-system-react-components';
+import ukOnsBlaiseIapNodeProvider from './uk-ons-blaise-iap-node-provider';
+import ukOnsBlaiseUacServiceNodeClient from './uk-ons-blaise-uac-service-node-client';
+import ukOnsCloudStatusAlerter from './uk-ons-cloud-status-alerter';
+import ukOnsChartsLib from './uk-ons-charts-lib';
+import ukOnsDpVault from './uk-ons-dp-vault';
+import ukOnsEqAuthorApp from './uk-ons-eq-author-app';
+import ukOnsExploreLocalStatistics from './uk-ons-explore-local-statistics';
+import ukOnsGcpProjectsDashboard from './uk-ons-gcp-projects-dashboard';
+import ukOnsGdhiAdj from './uk-ons-gdhi-adj';
+import ukOnsHealthInsightSurveyDashboard from './uk-ons-health-insight-survey-dashboard';
+import ukOnsKehDigitalLandscape from './uk-ons-keh-digital-landscape';
+import ukOnsMeanSpliceDecomposition from './uk-ons-mean-splice-decomposition';
+import ukOnsCrow from './uk-ons-crow';
+import ukOnsPythonTemplate from './uk-ons-python-template';
+import ukOnsPrototypeKit from './uk-ons-prototype-kit';
+import ukOnsRdsaUtils from './uk-ons-rdsa-utils';
+import ukOnsRoboUtils from './uk-ons-robo-utils';
+import ukOnsSdcCryptography from './uk-ons-sdc-cryptography';
+import ukStfcJanusCore from './uk-stfc-janus-core';
+import ukStfcPsyclone from './uk-stfc-psyclone';
+import ukStfcQuantumMolecularEncodings from './uk-stfc-quantum-molecular-encodings';
+import ukStfcSt2CloudPack from './uk-stfc-st2-cloud-pack';
+import ukNhsEnglandNewHospitalProgrammeDemandModel from './uk-nhs-england-new-hospital-programme-demand-model';
+import ukNhsNhpTaggedRuns from './uk-nhs-nhp-tagged-runs';
+import ukNhsNhpTpmaRationale from './uk-nhs-nhp-tpma-rationale';
+import ukNhsPerioperativePathwayExplorer from './uk-nhs-perioperative-pathway-explorer';
+import ukNhsRenalCapacityModel from './uk-nhs-renal-capacity-model';
+import ukTprGovukFrontendAspnetcoreExtensions from './uk-tpr-govuk-frontend-aspnetcore-extensions';
+import ukTprUmbracoAnalyzers from './uk-tpr-umbraco-analyzers';
+import ukUkefDigitalTradeFinanceService from './uk-ukef-digital-trade-finance-service';
+import ukUkefExportInsurancePolicies from './uk-ukef-export-insurance-policies';
+import ukUkaeaCrcOpenRos2Driver from './uk-ukaea-crc-open-ros2-driver';
+import ukUkaeaFairMast from './uk-ukaea-fair-mast';
+import ukUkaeaLibtokamap from './uk-ukaea-libtokamap';
+import ukUkaeaMultiparser from './uk-ukaea-multiparser';
+import ukUkaeaPowerBalanceModels from './uk-ukaea-power-balance-models';
+import ukUkaeaProcess from './uk-ukaea-process';
+import ukUkaeaPyvmcon from './uk-ukaea-pyvmcon';
+import ukUkaeaRemkit1d from './uk-ukaea-remkit1d';
+import ukUkaeaRemkit1dPython from './uk-ukaea-remkit1d-python';
+import ukUkaeaTokamap from './uk-ukaea-tokamap';
+import ukUkaeaToktagger from './uk-ukaea-toktagger';
+import ukUkaeaUniversalDataAccess from './uk-ukaea-universal-data-access';
+import ukOfficeForEqualityAndOpportunityGenderPayGap from './uk-office-for-equality-and-opportunity-gender-pay-gap';
+import ukDsitOdaReportingApplication from './uk-dsit-oda-reporting-application';
+import ukAisiControlArena from './uk-aisi-control-arena';
+import ukDesnzChpqaAppPortal from './uk-desnz-chpqa-app-portal';
+import ukDesnzEsos from './uk-desnz-esos';
+import ukAisiInspectAi from './uk-aisi-inspect-ai';
+import ukAisiInspectCyber from './uk-aisi-inspect-cyber';
+import ukAisiInspectEc2Sandbox from './uk-aisi-inspect-ec2-sandbox';
+import ukAisiInspectEvals from './uk-aisi-inspect-evals';
+import ukAisiInspectK8sSandbox from './uk-aisi-inspect-k8s-sandbox';
+import ukAisiInspectProxmoxSandbox from './uk-aisi-inspect-proxmox-sandbox';
+import ukAisiIsambardContainers from './uk-aisi-isambard-containers';
+import ukAisiLieDetectors from './uk-aisi-lie-detectors';
+import ukDesnzMets from './uk-desnz-mets';
+
 export const projects: Project[] = [
   uswds,
   loginGov,
@@ -1506,4 +1613,110 @@ export const projects: Project[] = [
   ukHmctsTriggerAdoPipeline,
   ukHmctsVersionReporterServices,
   ukHmctsWaChart,
+  ukAisiOptstop,
+  ukUketsRegistry,
+  ukAisiVllmLens,
+  ukUkhoDevopsAzdoYamlPipelineTemplates,
+  ukUkhoDevopsGatedInfrastructureDeploy,
+  ukUkhoEventhubLoggingProvider,
+  ukUkhoExchangeSetService,
+  ukUkhoFileShareServiceUi,
+  ukUkhoIdamAzureMonitorDashboardReports,
+  ukUkhoVmAgentAib,
+  ukHomeOfficeAppealRightsExhausted,
+  ukHomeOfficeBusinessDataManager,
+  ukHomeOfficeClamavHttp,
+  ukHomeOfficeDqAclSftpPython,
+  ukHomeOfficeDqTfAd,
+  ukHomeOfficeDqTfCloudwatchRds,
+  ukHomeOfficeDrtReact,
+  ukHomeOfficeDrtV2,
+  ukHomeOfficeDsaTestHarnesses,
+  ukHomeOfficeEcs,
+  ukHomeOfficeEgarPublicSiteUi,
+  ukHomeOfficeEslintConfigAsl,
+  ukHomeOfficeEta,
+  ukHomeOfficeExplosivesPrecursorsPoisons,
+  ukHomeOfficeFileVault,
+  ukHomeOfficeFirearms,
+  ukHomeOfficeFirehoseSplunkTfModule,
+  ukHomeOfficeGroCertificateOrdering,
+  ukHomeOfficeHocsCiInfrastructure,
+  ukHomeOfficeHofGenesysChatComponent,
+  ukHomeOfficeKeycloakThemeGovuk,
+  ukHomeOfficeLmr,
+  ukHomeOfficeModernSlavery,
+  ukHomeOfficePaf,
+  ukHomeOfficeReturnOfDocuments,
+  ukHomeOfficeRotm,
+  ukHomeOfficeUnhcrErffValidationTool,
+  ukHomeOfficeVaultSidekick,
+  ukHomeOfficeVisaProcessingTimesTool,
+  ukUkhsaGphaMscapeChimeraSynteny,
+  ukUkhsaGphaMscapeNfStrepPneumo,
+  ukUkhsaGphaMscapeOrangeboxClaspar,
+  ukUkhsaGphaMscapeTaxaplease,
+  ukUkhsaPygom,
+  ukCompaniesHouseOverseasEntities,
+  ukInsolvencyRpsCalculationEngine,
+  ukHmlrCommonDevEnv,
+  ukOnsAddressToolkit,
+  ukOnsBlaiseDesignSystemReactComponents,
+  ukOnsBlaiseIapNodeProvider,
+  ukOnsBlaiseUacServiceNodeClient,
+  ukOnsCloudStatusAlerter,
+  ukOnsChartsLib,
+  ukOnsDpVault,
+  ukOnsEqAuthorApp,
+  ukOnsExploreLocalStatistics,
+  ukOnsGcpProjectsDashboard,
+  ukOnsGdhiAdj,
+  ukOnsHealthInsightSurveyDashboard,
+  ukOnsKehDigitalLandscape,
+  ukOnsMeanSpliceDecomposition,
+  ukOnsCrow,
+  ukOnsPythonTemplate,
+  ukOnsPrototypeKit,
+  ukOnsRdsaUtils,
+  ukOnsRoboUtils,
+  ukOnsSdcCryptography,
+  ukStfcJanusCore,
+  ukStfcPsyclone,
+  ukStfcQuantumMolecularEncodings,
+  ukStfcSt2CloudPack,
+  ukNhsEnglandNewHospitalProgrammeDemandModel,
+  ukNhsNhpTaggedRuns,
+  ukNhsNhpTpmaRationale,
+  ukNhsPerioperativePathwayExplorer,
+  ukNhsRenalCapacityModel,
+  ukTprGovukFrontendAspnetcoreExtensions,
+  ukTprUmbracoAnalyzers,
+  ukUkefDigitalTradeFinanceService,
+  ukUkefExportInsurancePolicies,
+  ukUkaeaCrcOpenRos2Driver,
+  ukUkaeaFairMast,
+  ukUkaeaLibtokamap,
+  ukUkaeaMultiparser,
+  ukUkaeaPowerBalanceModels,
+  ukUkaeaProcess,
+  ukUkaeaPyvmcon,
+  ukUkaeaRemkit1d,
+  ukUkaeaRemkit1dPython,
+  ukUkaeaTokamap,
+  ukUkaeaToktagger,
+  ukUkaeaUniversalDataAccess,
+  ukOfficeForEqualityAndOpportunityGenderPayGap,
+  ukDsitOdaReportingApplication,
+  ukAisiControlArena,
+  ukDesnzChpqaAppPortal,
+  ukDesnzEsos,
+  ukAisiInspectAi,
+  ukAisiInspectCyber,
+  ukAisiInspectEc2Sandbox,
+  ukAisiInspectEvals,
+  ukAisiInspectK8sSandbox,
+  ukAisiInspectProxmoxSandbox,
+  ukAisiIsambardContainers,
+  ukAisiLieDetectors,
+  ukDesnzMets,
 ];
