@@ -375,6 +375,12 @@ function renderRecords() {
   });
 }
 function renderJobs() {
+  const detailsState = new Map(
+    [...$('jobs').querySelectorAll('details')].map((details) => [
+      details.dataset.jobId,
+      { open: details.open, scrollTop: details.querySelector('pre').scrollTop },
+    ]),
+  );
   $('jobs').replaceChildren(
     ...snapshot.jobs.map((job) => {
       const row = el('article', undefined, 'job-row');
@@ -393,6 +399,8 @@ function renderJobs() {
         row.append(progress);
       }
       const details = el('details');
+      details.dataset.jobId = job.id;
+      details.open = detailsState.get(job.id)?.open ?? false;
       details.append(el('summary', `Job details · ${job.id}`));
       details.append(
         el(
@@ -411,6 +419,10 @@ function renderJobs() {
       return row;
     }),
   );
+  for (const details of $('jobs').querySelectorAll('details')) {
+    details.querySelector('pre').scrollTop =
+      detailsState.get(details.dataset.jobId)?.scrollTop ?? 0;
+  }
   if (!snapshot.jobs.length)
     $('jobs').append(
       el(
@@ -480,9 +492,10 @@ async function submitJob(action, extra = {}) {
           : [...selected],
       ...extra,
     });
-    message(
-      `${jobLabels[action]} started. Follow its progress in Job history.`,
-    );
+    message(`${jobLabels[action]} started. `);
+    const historyLink = el('a', 'Follow its progress in Job history.');
+    historyLink.href = '#job-history';
+    $('message').append(historyLink);
     if (!action.startsWith('scan-')) selected.clear();
     await refresh();
     return true;
